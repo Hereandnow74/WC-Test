@@ -74,7 +74,7 @@ const schema = toFormValidator(
     from: zod.string().min(1, 'World is required'),
     waifu: zod.string().min(1, 'Name is required').array().min(1, 'At least one companion is required'),
     waifuUID: zod.number().min(1, 'UID is required').array().min(1, 'At least one companion is required'),
-    image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
+    image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/i, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
     desc: zod.string().max(5000, 'Max length is 5000 chars').nonempty('Description is required'),
   }),
 )

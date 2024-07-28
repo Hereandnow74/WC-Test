@@ -173,7 +173,7 @@ export const pvpRules = `
   If a member of a retinue is captured by an enemy and held in their territory (whether that territory is purchased from the company or acquired locally) for a period of 24 hours, the hostage loses the benefits of Creature, Stress, Mind, Addiction, Wyldscape, and Corruption Defenses until rescued. The timer begins only when the hostage is both defeated and restrained, and it will reset if they are touched by their master or leave enemy territory unrestrained. The timer will pause if they leave while still restrained by the enemy.  </p>
   <p>Once the timer has run its course, the kidnapper is free to use any bindings, lures, or third-party mind control methods they have, as if the hostage were free. Targets stolen from another contractor are worth 0 capture credits, but may be sold at the usual rate, adjusting for their effective tier after step 3. Recapturing one of your own companions does not grant any credits.</p>
 
-  <h3 class="font-bold text-xl pt-4 pb-2 mt-4">Gauntlet(Continuous PvP)</h3>
+  <h3 class="font-bold text-xl pt-4 pb-2 mt-4">Gauntlet (Continuous PvP)</h3>
   Starting one week into your journey, another contractor will appear in your current world, with their own
   agenda and retinue of waifus and / or husbandos. All opposing contractors will have legal builds. Their budgets
   are equal to your PvP credit value, at chargen or the end of the previous round, plus 1 % of that sum per

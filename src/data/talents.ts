@@ -1118,6 +1118,29 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'hkEPh',
+  title: 'l’Cie Summoner',
+  category: 'Generic',
+  requires: 'Any l’Cie from Final Fantasy XIII',
+  complex: 'target',
+  cost: 50,
+  image: 'https://images2.imgbox.com/c0/57/SidF0s9O_o.png',
+  desc: `
+<p>In a l’Cie’s moment of greatest despair, the goddess Etro sends an Eidolon to test them in combat. Should the l’Cie win, the Eidolon will obey their new master, granting the master an eidolith crystal to call upon the Eidolon at any time so it may fight at the l’Cie’s side.</p>
+<p>If you purchased your l’Cie but not this perk, their Eidolon will be sealed until such a moment, so that it may initiate the trial without Etro’s involvement. For captured l’Cie who are taken away from the worlds of Cocoon and Grand Pulse, the Eidolon will still meet their l’Cie as normal.</p>
+<br>
+Here is the full list of known l’Cie and their Eidolons:
+<ul class="list-disc list-inside">
+  <li>Snow Villiers: Shiva (Stiria and Nix)</li>
+  <li>Lightning Farron: Odin</li>
+  <li>Sazh Katzroy:  Brynhilder</li>
+  <li>Oerba Yun Fang: Bahamut</li>
+  <li>Hope Estheim: Alexander</li>
+  <li>Oerba Dia Vanille: Hecatoncheir</li>
+</ul>`,
+})
+
+genericPerks.push({
   uid: 'lgk5f',
   title: 'Mamonomorphosis (Papillon)',
   category: 'Generic',

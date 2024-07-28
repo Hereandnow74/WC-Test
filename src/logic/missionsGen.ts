@@ -11,6 +11,7 @@ export class MissionGenerator {
   conditions: { value: string }[] = []
   reward = '0 credits'
   loca = 'Generic'
+  generated = true
   allChars = ref<DBCharacter[]>([])
   constructor(scope: MissionGenerator['scope'] = 'Quick') {
     this.scope = scope
@@ -273,6 +274,7 @@ export class MissionGenerator {
       methods.push(this.capture, this.kill, this.impregnate, this.matchmaker)
     const method = sample(methods) as () => typeof this
     method.apply(this)
+    this.uid = Math.random().toString(36).substring(7)
     return this
   }
 
@@ -285,6 +287,8 @@ export class MissionGenerator {
       loca: this.loca,
       conditions: this.conditions,
       reward: this.reward,
+      generated: this.generated,
+      uid: this.uid,
     }
   }
 }

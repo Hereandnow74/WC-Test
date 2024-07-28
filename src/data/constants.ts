@@ -492,7 +492,19 @@ export const getAllChars = async() => {
     allChars.value.map(char => char.c ? char : (char.c = 'none', char))
     running = false
   }
-
+  // Check if any characters have the same UID
+  // const allUIDObjects = {} as Record<string, DBCharacter[]>
+  // allChars.value.forEach((char, i) => {
+  //   if (!allUIDObjects[char.u])
+  //     allUIDObjects[char.u] = []
+  //   allUIDObjects[char.u].push(char)
+  // })
+  // for (const [uid, chars] of Object.entries(allUIDObjects)) {
+  //   if (chars.length > 1) {
+  //     console.log('Duplicate UID:', uid)
+  //     console.log(chars)
+  //   }
+  // }
   return allChars.value
 }
 

@@ -7590,5 +7590,7 @@
   {"uid":"HnnQLW", "worldName":"Restaurant to Another World", "rating":4, "image":"https://www.theouterhaven.net/wp-content/uploads/2020/06/1667002_Latvian_ShowMasterKeyArt_4219d4bf-0069-e711-8175-020165574d09-scaled.jpg"},
   {"uid":"SgiViH", "worldName":"My Senpai is Annoying", "rating":1, "image":"https://i.imghippo.com/files/ZhxU91720385238.jpg"},
   {"uid":"ycXwPa", "worldName":"Zenless Zone Zero", "rating":4, "image":"https://img3.gelbooru.com/images/84/c4/84c4c62f025e8c3f628da059a47e963d.jpg"},
-  {"uid":"vpCGly", "worldName":"Hardcore Leveling Warrior", "rating":7, "image":"https://i.imghippo.com/files/c0N8h1720645925.jpg", "condition":[{"name":"Lucid Adventure (Canon Start to Combat Tournament's End)", "rating":7}, {"name":"HCLW Gone (Post Time skip to Zero's Awakening)", "rating":9}, {"name":"Earth Game (Reset Timeline: Zero's Revival)", "rating":10}]}
+  {"uid":"vpCGly", "worldName":"Hardcore Leveling Warrior", "rating":7, "image":"https://i.imghippo.com/files/c0N8h1720645925.jpg", "condition":[{"name":"Lucid Adventure (Canon Start to Combat Tournament's End)", "rating":7}, {"name":"HCLW Gone (Post Time skip to Zero's Awakening)", "rating":9}, {"name":"Earth Game (Reset Timeline: Zero's Revival)", "rating":10}]},
+  {"uid":"TAUTKq", "worldName":"Kaiju No 8", "rating":5, "image":"https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/04/kaiju-no-8-defence-force.jpg?q=70&fit=crop&w=1100&h=618&dpr=1", "condition":[{"name":"Before Kaiju", "rating":2, "official":false}]},
+  {"uid":"LAsREw", "worldName":"Seiken Gakuin no Makentsukai", "rating":4, "image":"https://i.pinimg.com/originals/df/86/16/df86164c00a96d2619d5afe91dc932ff.jpg"}
 ]

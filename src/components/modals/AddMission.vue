@@ -6,7 +6,7 @@
         <Button label="Rules" size="Small" bg-color="bg-red-500" @click="showRules = true" />
       </Note>
       <div v-if="mission?.uid" class="text-sm font-semibold text-red-700 dark:text-red-400">
-        This form is for fixing errors, do not use is to submit new missions.
+        This form is for fixing errors, please do not use it to submit new missions.
       </div>
       <div class="flex gap-2">
         <Input v-model.trim="title" class="flex-grow" placeholder="Mission title*" :error-message="errors.title" />
@@ -225,7 +225,7 @@ const schema = toFormValidator(
     }).array(),
     reward: zod.string().min(1, 'Reward should not be empty').max(256, 'Max 256 characters').or(zod.number().min(0, 'Min 0 credits').max(20000, 'Max 20000 credits')),
     rewardType: zod.string().min(1, 'Reward type is required'),
-    image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }),
+    image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/i, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }),
     lewd: zod.boolean(),
     desc: zod.string().max(5000, 'Max length is 5000 chars').min(1, 'Description is required'),
   }),

@@ -92,7 +92,7 @@ const schema = toFormValidator(
     max: zod.number().min(1, { message: 'Minimum count is 1' }),
     type: zod.string().nonempty('Type is required'),
     subType: zod.string(),
-    image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
+    image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/i, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
     desc: zod.string().max(5000, 'Max length is 5000 chars').nonempty('Description is required'),
   }),
 )

@@ -1,4 +1,423 @@
 [
+
+  {
+    "reward": 100,
+    "image": "https://i.pinimg.com/736x/ea/db/f7/eadbf7d6452699791114acf751751a73.jpg",
+    "author": "Heisen",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Call of Duty: Black Ops",
+    "uid": "KyTfk",
+    "loca": "Call of Duty",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Finish World at War"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Finish Black Op 1"
+      },
+      {
+        "reward": "Your paper trail will be upgraded so that you become an important military figure in your future worlds (Minimum of Captain)",
+        "type": "Other",
+        "value": "Finish Cold War"
+      },
+      {
+        "reward": "Tier 5 companion",
+        "type": "Other",
+        "value": "Finish Black Ops 2"
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Save Dimitri Petrenko from his fate if you can"
+      },
+      {
+        "reward": "You will never be unguarded against sneak attacks",
+        "type": "Other",
+        "value": "Win overwhelmingly against the Vietcong"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Dragovich...Kravchenko...Steiner...All must die!"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Should not exceed Tier 5"
+      },
+      {
+        "value": "Can only bring 2 retinue members that do not exceed tier 4"
+      },
+      {
+        "value": "Must do a visible change from the original story"
+      }
+    ],
+    "budget": 100,
+    "desc": "Your mission is to go through the Black Ops continuity starting from World at War as a soldier in the Pacific and making your way up through the series until you finish Black Ops 2.\nYou will be put in the unit where the protagonist from the game is to ensure that you do not just become some background character"
+  },
+  {
+    "reward": 30,
+    "image": "https://images2.imgbox.com/07/dc/L5V0siWm_o.png",
+    "author": "vhawkes",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Beta Testers Needed!",
+    "uid": "MmApc",
+    "loca": "Rising of the Shield Hero",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Red, White, Blue or Green Eye Orb , whichever you don't have and is least expensive; up to 50 credits, depending on data rarity.",
+        "type": "Other",
+        "value": "You have provided new, or valuable data to the Client."
+      },
+      {
+        "reward": "Template for a Dungeons & Dragons Class of your choice.",
+        "type": "Perks",
+        "value": "The replacement System is Dungeons & Dragons."
+      },
+      {
+        "reward": "Template Stacking (Psyker).",
+        "type": "Perks",
+        "value": "The replacement System is Rogue Trader (Warhammer 40k)."
+      },
+      {
+        "reward": "Twelve monthly shipments of all documented transformatives from Corruption of Champions.",
+        "type": "Other",
+        "value": "The replacement System is Corruption of Champions."
+      },
+      {
+        "reward": "Template Stacking for a Shadowrun Archetype of your choice.",
+        "type": "Perks",
+        "value": "The replacement System is Shadowrun."
+      },
+      {
+        "reward": "Pick 1: A single 25% discount to any non-IMG Dragon Heritage purchase; Template Stacking for a character or archetype from TES.",
+        "type": "Other",
+        "value": "The replacement System is The Elder Scrolls V: Skyrim."
+      },
+      {
+        "reward": "Added Potential ([Any]), [Any] being any valid target for Added Potential, ignoring personal requirements.",
+        "type": "Perks",
+        "value": "The replacement System is GURPS."
+      },
+      {
+        "reward": "Template Stacking (Wraeclastian Geomancer), which allows you to craft and make use of Virtue Gems.",
+        "type": "Perks",
+        "value": "The replacement System is Path of Exile."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "To take this mission, you must have Added Potential (Isekai Victim). Upon applying for this mission, you will be summoned as one of the Four Cardinal Heroes, at random."
+      },
+      {
+        "value": "If you already have Added Potential (Isekai Victim) from taking this mission before, you only need to re-apply to be summoned again."
+      },
+      {
+        "value": "The duration of this mission is 30 days of 'gameplay', or 30 cumulative days of actively making use of the System."
+      },
+      {
+        "value": "Should you (permanently) die before the 30 days are up, you will not receive the main reward, but you will still be eligible for the reward of Objective #1, the only repeatable Additional Objective. You will also be ejected from the world and revived."
+      },
+      {
+        "value": "You cannot bring any companions with you into this mission."
+      },
+      {
+        "value": "Capturing locals won't grant credits or the characters themselves. You will instead be provided with their canonical counterparts upon mission end, as if you had bought a Company clone. 'Captured' locals are otherwise affected by bindings, as normal."
+      },
+      {
+        "value": "Any items you acquire over the course of the mission will disappear upon mission end."
+      },
+      {
+        "value": "You can't make new purchases for the duration of the mission."
+      },
+      {
+        "value": "You can't leave the world without failing or completing the mission. If you fail deliberately, the Client might blacklist you from taking it up again."
+      },
+      {
+        "value": "If you have Blue Eye Orb, you will be summoned with other mission-takers and share the world with them."
+      }
+    ],
+    "budget": 0,
+    "desc": "One of our contractors (the Client) has been experimenting with Levelling Systems and has managed to implement a number of different replacements for the one canonically used in Rising of the Shield Hero.\n\nThey have posted bounties for their fellow contractors for some rigorous Beta-testing for each of the implemented Systems. To avoid cluttering the Missions pool, the bounties have been collated into one mission, meaning this mission can be taken multiple times, but the Additional Objectives can't be repeated, the only exception being Objective #1."
+  },
+  {
+    "reward": 50,
+    "image": "https://i.redd.it/f4cbtr9gd85b1.jpg",
+    "author": "TJMRocks19",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Fall of Beacon",
+    "uid": "qfTIO",
+    "loca": "RWBY",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Science Talent or it's equivalent credits",
+        "type": "Perks",
+        "value": "Stop Cinder from planting the virus"
+      },
+      {
+        "reward": "Penny Polendia",
+        "type": "Companions",
+        "value": "Save Penny from her fate."
+      },
+      {
+        "reward": "Pyrrha's tier is boosted to tier 6, if she is not already there, and gains the fall maiden's power, instant capture of Pyrrha",
+        "type": "Other",
+        "value": "Save Pyrrha"
+      },
+      {
+        "reward": "Gain a bonded dragon from ASOIF and Targaryen bloodline",
+        "type": "Other",
+        "value": "Kill the Grimm Wyvern"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Kill Adam Taurus"
+      },
+      {
+        "reward": "Instant capture of Amber",
+        "type": "Companions",
+        "value": "Kill Cinder before she gets the full abilities of the fall maiden"
+      },
+      {
+        "reward": "1 T6 companion ticket",
+        "type": "Companions",
+        "value": "Kill Cinder as a full Maiden"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Stop the Fall of Beacon"
+      }
+    ],
+    "budget": 250,
+    "desc": "Well, since everyone seems all gung-ho about this anyway whenever they get here, we might as well make this a milestone or some shit.  I mean, why do something for free when you can get paid to do it?  Your mission is simple; stop the fall of Beacon, beat back Cinder and her merry band of misfits.  Anything after that is up to you.  Short, sweet and to the point.\nNow, if you do it in an interesting way or go above and beyond... well, there might be a little something extra."
+  },
+  {
+    "reward": 1,
+    "image": "https://pbs.twimg.com/media/CjNQprHVAAA9AH2.jpg",
+    "author": "imafuturecorpse",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Sample Gathering - Exotic Specimens",
+    "uid": "nSmIr",
+    "loca": "DC - Smallville",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "Capture 1x Brainiac (Chloe Sullivan Variant)"
+      },
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "Capture 1x Kara Zor-El (Lindsay Harrison Variant)"
+      },
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "Capture 1x Faora (Lois Lane Variant)"
+      },
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "Capture 1x Conner Kent"
+      },
+      {
+        "reward": "1x Power Girl (Larkin Love Variant)",
+        "type": "Companions",
+        "value": "Capture All Targets"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Capute 1x Brainiac, 1x Kara Zor-El, 1x Faora, 1x Davis Bloome (Doomsday)"
+      }
+    ],
+    "budget": 1000,
+    "desc": "R&D's study of Kryptonite and its uses has turned up some intriguing results. But we've come as far as we can go studying raw mineral samples and common specimens. We need to acquire more \"unique\" specimens to truly unlock the secrets of Kryptonite.\n\nYour new mission is straightforward, albeit not an easy task. We need Kryptonian and hybrid subjects. But because of the difficulty of the request, we're locking this mission behind a 1000 credit requirement to prevent needless casualties. As a reminder, a fully empowered Kryptonian will usually be a Tier 8 combatant. As a result, only the most powerful of our Contractors should apply for this mission.\n\nAs another side effect of the difficulty, this mission is a one time only request. R&D will have enough difficulty containing the few Kryptonians this mission will provide without adding duplicates to the mix.\n\nTransportation to the required universe(s) will be handled by the company. Upon completion of this mission all Contractors and their retinue will be returned to their prior universe."
+  },
+  {
+    "reward": 42,
+    "image": "https://static-ca-cdn.eporner.com/gallery/Ud/RK/Qq2fXF1RKUd/108216-wet-in-the-forest.jpg",
+    "author": "Lorthazar",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Naked and Afraid: Sexy Edition",
+    "uid": "hHmAC",
+    "loca": "Generic",
+    "lewd": true,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "2 credits per additional day",
+        "type": "Other",
+        "value": "Extend your stay: Accept the more rugged challenge of staying past the date where starvation effects start."
+      },
+      {
+        "reward": "Faerie Feast, Faerie Feast: Master Chef, and Faerie Feast: The Secret Ingredient is Love or 20 credits",
+        "type": "Perks",
+        "value": "Eating Well: Managed to eat at least once each day"
+      },
+      {
+        "reward": "Pocket Space, Apartment x2, and Sweet Home x2 or 65 credits",
+        "type": "Perks",
+        "value": "Homesteading: Build a rough cabin, Dig and line a well, and plant garden"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Survive 21+ days without developing any severe medical conditions."
+      },
+      {
+        "value": "Have sex in the wild at least 7 of those days"
+      },
+      {
+        "value": "You must bring only one Companion"
+      },
+      {
+        "value": "Rides are not allowed"
+      },
+      {
+        "value": "Access to the Demiplane is cut off during mission"
+      },
+      {
+        "value": "Defenses operate at half effectiveness"
+      },
+      {
+        "value": "Dimensional Transport Powers will not work"
+      },
+      {
+        "value": "Reality Warping Powers will not function"
+      },
+      {
+        "value": "Using Magic to create Water, Food, Shelter or Clothing will not work"
+      },
+      {
+        "value": "Life threatening injury or disease that is not treated quickly enough will resort in a Forced Tap out ending the mission"
+      }
+    ],
+    "budget": 5,
+    "desc": "Hello Contractor. As you are well aware we have an Entertainment Division that provides a very healthy proportion of our profits. Well, one of the Production has discovered the Primitive Survival Reality Show called Naked and Afraid. They decided that you and one of your retinue would make a good team for a segment. You’re going to spend 21 days in an isolated wilderness with nothing more than a Knife, Firestarter, Metal Pot, and two Sacks. Yep, that’s right you will have no clothes, no weapons, and no rides. You have to survive for twenty one days battling Mother Nature. Of course, since we are a porn company we want to see you doing it in the wild.\n\nOh, in case we forgot the wildlife will be scaled according to the higher Tier of the participants, and it might not always be out to kill you. Some of it will just want to breed. \n"
+  },
+  {
+    "reward": 100,
+    "image": "https://www.escapistmagazine.com/wp-content/uploads/2024/01/ZoeGrizzbolt-fight-palworld.jpg",
+    "author": "Irugaa0",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Palworld Survival Enhanced",
+    "uid": "nPJAF",
+    "loca": "Palworld",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Complete 10 Dungeons"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Complete 20 Dungeons"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Attack 10 human enemy settlements."
+      },
+      {
+        "reward": "25 credits per leader",
+        "type": "Other",
+        "value": "Capture / Kill a Faction Leader"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture 10 Alpha Pals."
+      },
+      {
+        "reward": "50 credits + one perk up to 50 credits",
+        "type": "Other",
+        "value": "Capture 10 Boss Pals"
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Capture 10 or more humans – 30 credits"
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Plant a Skill Fruit Tree inside your base."
+      },
+      {
+        "reward": "a copy of your base with all your captures inside your demiplane /dungeon.",
+        "type": "Other",
+        "value": "Turn your base into a proper settlement with at least 20 or more humans captured or not and 20 Pals."
+      },
+      {
+        "reward": "Money talent",
+        "type": "Perks",
+        "value": "Have at least one merchant in your settlement."
+      },
+      {
+        "reward": "Administrative talent",
+        "type": "Perks",
+        "value": "Have at least one Pal merchant in your settlement."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Survive there for 13 months."
+      },
+      {
+        "value": "Reach at Least Level 40."
+      },
+      {
+        "value": "You must set a main Base in a level 30 or higher area."
+      },
+      {
+        "value": "Regular Pals will attack your base or bases will at least once or twice every week or two."
+      },
+      {
+        "value": "At the end of every 30 days an Alpha Pal / Human Leader will lead a group to attack your base."
+      },
+      {
+        "value": "At the end of every 90 days a Boss level Pal / Human Leader alongside with one to three Alphas/Lucky pals or humans will lead a large group of Pals to attack your base."
+      },
+      {
+        "value": "At the end of every 6 months a Raid-Boss level Pal / Human Leader alongside with one to three Boss level Pals/Humans and one to five Alphas/Lucky pals will lead a very large group of Pals to attack your base."
+      },
+      {
+        "value": "Each Alpha level Human Leader will possess a team of 2 to 3 pals."
+      },
+      {
+        "value": "Each Boss level Human Leader will possess a team of 4 to 5 pals."
+      },
+      {
+        "value": "Each Raid level Human Leader will possess a team of 6 pals with at least 1 boss level Pal."
+      }
+    ],
+    "budget": 400,
+    "desc": "This setting is a company’s DR7 variation of the DR5 Palworld. Pals in this setting are stronger, harder to capture, and much more aggressive. Humans have more active settlements, but are also much more, tougher, prone to violence and are as dangerous as Pals. Survival here is both a matter of skill and luck.\nPals and Humans alike will constantly attack you and your bases, but as a measure of help the company will guarantee that your BASES are not attacked for the period of 30 days.\n\nThis Mission is NOT adequate for new or low-level contractors. \n"
+  },
   {
     "reward": "50 Credits + Palworld Technology Production (Craft) System.",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/capsule_616x353.jpg",
@@ -20611,7 +21030,7 @@
       {
         "reward": "2 credits per additional day",
         "type": "Other",
-        "value": "Extend your stay: Except the more rugged challenge of staying past the date where starvation effects start."
+        "value": "Extend your stay: Accept the more rugged challenge of staying past the date where starvation effects start."
       },
       {
         "reward": "Faerie Feast, Faerie Feast: Master Chef, and Faerie Feast: The Secret Ingredient is Love or 20 credits",
@@ -20656,7 +21075,7 @@
         "value": "Life threatening injury or disease that is not treated quickly enough will resort in a Forced Tap out ending the mission"
       }
     ],
-    "budget": 25,
+    "budget": 5,
     "desc": "Hello Contractor. As you are well aware we have an Entertainment Division that provides a very healthy proportion of our profits. Well, one of the Production has discovered the Primitive Survival Reality Show called Naked and Afraid. They decided that you and one of your retinue would make a good team for a segment. You’re going to spend 21 days in an isolated wilderness with nothing more than a Knife, Firestarter, Metal Pot, and two Sacks. Yep, that’s right you will have no clothes, no weapons, and no rides. You have to survive for twenty one days battling Mother Nature. Of course, since we are a porn company we want to see you doing it in the wild.\n\nOh, in case we forgot the wildlife will be scaled according to the higher Tier of the participants, and it might not always be out to kill you. Some of it will just want to breed. \n"
   },
   {

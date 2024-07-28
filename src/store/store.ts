@@ -75,6 +75,7 @@ const heritageOptions = computed(() => [
   { label: 'Psychopomp', value: 'pp' },
   { label: 'Wendigo', value: 'we' },
   { label: 'Mastermind', value: 'mm' },
+  { label: 'Infernal', value: 'in' },
 ])
 
 if (settings.value.allDLCTypes === undefined)
@@ -248,19 +249,8 @@ const types = {
   pp: 'Psychopomp',
   we: 'Wendigo',
   mm: 'Mastermind',
+  in: 'Infernal',
 }
-// const powerSwapDiscount = computed(() => {
-//   const ps = startingOrigin.value.swap?.tier
-//   const discount = { value: 0, archetype: '' }
-//   if (ps) {
-//     const yourPS = find(ps.complex, el => !!el.hr)
-//     if (yourPS) {
-//       discount.value = CHAR_COSTS[yourPS.newTier]
-//       discount.archetype = types[yourPS.hr] || ''
-//     }
-//   }
-//   return discount
-// })
 
 const maxHeritageDiscount = computed(() => {
   const discount = { archetype: '', value: 0 }
@@ -274,7 +264,7 @@ const maxHeritageDiscount = computed(() => {
 const usedHeritageDiscount = computed(() => {
   const hrCost = heritage.value.filter(x => x.tree && x.tree === maxHeritageDiscount.value.archetype)
     .reduce((a, x) => a += x.cost, 0)
-  return maxHeritageDiscount.value.value < hrCost * 0.8 ? maxHeritageDiscount.value.value : hrCost * 0.8
+  return maxHeritageDiscount.value.value < Math.ceil(hrCost * 0.8) ? maxHeritageDiscount.value.value : Math.ceil(hrCost * 0.8)
 })
 
 const talentsDiscount = computed(() => {
