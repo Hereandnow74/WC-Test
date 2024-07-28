@@ -2491,10 +2491,11 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     waifuUID: [
       2992840,
     ],
-    tier: 10,
+    tier: 0,
     image: 'https://i.imgur.com/aIelyEr.png',
-    cost: 800,
-    desc: 'Ranni the Witch has supplanted Marika and has become a goddess, bringing forth a new Age of Stars in her wake. Now a fully-fledged goddess in her own right, having attained that which she sought for so long, it is time for the moon and stars to shine their light onto others. Raani will always have this perk if captured post the events of the Age of Stars ending.',
+    cost: 50,
+    costT: 0,
+    desc: 'Ranni the Witch has supplanted Marika and has become a goddess, bringing forth a new Age of Stars in her wake. Now a fully-fledged goddess in her own right, having attained that which she sought for so long, it is time for the moon and stars to shine their light onto others. Ranni will always have this perk if captured post the events of the Age of Stars ending.',
     whitelist: [],
   },
   {
@@ -2508,8 +2509,9 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     waifuUID: [
       9901054,
     ],
+    tier: 8
     image: 'https://i.imgur.com/nrAgJav.jpg',
-    cost: 200,
+    cost: 100,
     desc: 'The Tarnished has accepted, embraced, and assimilated the full might of the Frenzied Flame into himself, now wielding the full might of the flames of chaos. All that stands in his path will be burnt to ash, as he wields unmatched control over the blaze. The spark has been lit, and a new age of fire and nothingness is beginning. The Tarnished will always have this perk if captured post the events of the Frenzied Flame ending. This perk does not change the Tarnished tier rating. ',
     whitelist: [],
   },
