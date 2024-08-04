@@ -1067,6 +1067,23 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: '8Kgf9',
+  title: 'Checkmate',
+  category: 'Generic',
+  requires: 'Any Highschool DxD Devil of T6 or higher',
+  complex: 'target',
+  cost: 50,
+  image: 'https://images2.imgbox.com/90/8d/pneduCio_o.png',
+  desc: `
+  <p>Select an eligible retinue member to receive a standard set of Evil Pieces: 1 Queen, 2 Knights, 2 Bishops, 2 Rooks, and 8 Pawns. We do not supply King or Mutation pieces.</p>
+  <p>Evil Pieces allow you to turn others into Reincarnated Devils, giving them increased strength, durability, senses, demonic power, and a massive lifespan. If you have the intensity option Intact Weaknesses, they will become lethargic in the sunlight (mitigated by Wild Defense) and weak to light magic and holy magic (mitigated by Blessed Talent). New Devils are immediately raised to Tier 4, if they were not already.</p>
+  <p>Each type of Evil Piece has direct benefits to combat. Knights gain increased agility and martial skill, Bishops gain increased power and skill to all of their supernatural abilities, Rooks gain increased strength and durability, and Queens gain all of the above. Pawns instead gain the ability to temporarily promote themselves to Knight, Bishop, Rook, or Queen while they are inside enemy territory. Rooks additionally have the ability to Castle, to switch places with their King (the recipient of this perk) across any distance, even between multiverses.</p>
+  <p>If you add someone to your personal peerage, they will be captured immediately, as if by the Stamp, and receive an active binding tattoo. If your retinue member adds someone to their peerage, the new Devil’s binding tattoo will automatically activate after three days (72 hours). Evil Pieces can resurrect the dead, but only within one hour of the time of death.</p>
+  <p>All DxD Devils qualify for this perk, whether they’re naturally-born or converted from another race by natural means, Power Swap, or Template Stacking.</p>
+  `,
+})
+
+genericPerks.push({
   uid: '1rWq8',
   title: 'Galactic Presence',
   category: 'Generic',
