@@ -279,7 +279,7 @@ const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   otherPerks, patron, pvpPerks, yourTier, baseBudget, budget, totalCost,
-  totalDiscount, specificMods, loan, difficulties, legacyMode, difficultyRating, difficultyAdjustedBudgets,
+  totalDiscount, specificMods, loan, difficulties, legacyMode, difficultyRating, difficultyAdjustedBudgets, heritageOptions,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
@@ -288,12 +288,10 @@ const { allCharsObject } = useAllChars()
 
 const { imageSettings } = useSettings()
 
-const archetype = {
-  dr: 'Dragon',
-  th: 'Transhuman',
-  ou: 'Outsider',
-  pi: 'Pirate',
-}
+const archetype = heritageOptions.value.reduce((acc, cur) => {
+  acc[cur.value] = cur.label
+  return acc
+}, {} as Record<string, string>)
 
 const originText = computed(() => {
   const variants = {

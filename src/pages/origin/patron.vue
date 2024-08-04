@@ -10,6 +10,9 @@
           here
         </router-link>
       </Note>
+      <Note class="my-4 max-w-screen-md mx-auto" type="warning" title="Warning">
+        Patrons are implemented very shallowly, so if you close the page, refresh or load build that rely on bonuses provided automatically, you need to reselect them.
+      </Note>
 
       <Desc class="p-2 bg-gray-200 dark:bg-teal-900 max-w-4xl mx-auto my-4 italic" :desc="patronIntro" />
 

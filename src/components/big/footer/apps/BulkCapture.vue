@@ -8,21 +8,16 @@
         rule
       </router-link>
     </p>
-    <div class="flex gap-1">
-      <Input v-model.number="capturePercent" label="Capture %" />
-      <Input v-model.number="sellPercent" label="Sell %" />
-      <Input v-model.number="extraPercent" label="Extra %" />
-    </div>
     <table class="table-fixed w-full">
       <thead>
         <th class="w-1/5">
           Tier
         </th>
         <th class="">
-          Main cast
+          Main cast count
         </th>
         <th class="">
-          Extra
+          Extra count
         </th>
       </thead>
       <tbody>
@@ -84,21 +79,22 @@
 </template>
 
 <script lang="ts" setup>
-import { CHAR_COSTS } from '~/data/constants'
+import { useDifficulty } from '~/store/difficulty'
 import { useStore } from '~/store/store'
 
-const { specificMods } = useStore()
+const { specificMods, captureKoeff, sellKoeff, difficultyAdjustedCapture, difficultyAdjustedSell } = useStore()
+const { captureExtraRow } = useDifficulty()
 
 const main = ref([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 const extra = ref([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 
-const capturePercent = ref(60)
-const sellPercent = ref(20)
-const extraPercent = ref(5)
+// const capturePercent = ref(captureKoeff.value * 100)
+// const sellPercent = ref(sellKoeff.value * 100)
+// const extraPercent = ref(5)
 
-const totalCapture = computed(() => main.value.reduce((a, x, i) => a += x * Math.ceil(CHAR_COSTS[i + 1] * (capturePercent.value / 100)), 0)
-                                  + extra.value.reduce((a, x, i) => a += x * Math.floor(CHAR_COSTS[i + 1] * (extraPercent.value / 100)), 0))
-const totalSell = computed(() => main.value.reduce((a, x, i) => a += x * Math.round(CHAR_COSTS[i + 1] * (sellPercent.value / 100)), 0))
+const totalCapture = computed(() =>
+  main.value.reduce((a, x, i) => a += x * difficultyAdjustedCapture.value[i + 1]))
+const totalSell = computed(() => main.value.reduce((a, x, i) => a += x * difficultyAdjustedSell.value[i + 1], 0))
 
 function addMod(type: string) {
   let message = ''

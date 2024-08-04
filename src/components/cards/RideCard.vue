@@ -36,7 +36,7 @@
         <Button
           v-if="active && bought"
           class="text-base ml-2"
-          label="sell"
+          label="return"
           size="Small"
           bg-color="bg-blue-500"
           @click.stop="sellRide"

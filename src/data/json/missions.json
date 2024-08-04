@@ -1,6 +1,440 @@
 [
 
   {
+    "reward": 30,
+    "image": "https://www.britishmuseum.org/sites/default/files/styles/16_9_media_small/public/2020-06/BMImages_01613301973_SuperRes_2000px.jpg",
+    "author": "Irugaa0",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Doing like the Britts",
+    "uid": "JoxpP",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Steal the Hearth of a fair lady. (Conceptual or not)"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Steal an item of the collection in a British museum"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Steal all items of the collection in a British museum"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Steal all the collections in a British museum"
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Steal A British Museum Itself"
+      },
+      {
+        "reward": "1 expansion to demiplane/dungeon",
+        "type": "Other",
+        "value": "Steal an entire City"
+      },
+      {
+        "reward": "2 expansions to demiplane/dungeon",
+        "type": "Other",
+        "value": "Steal an entire Island"
+      },
+      {
+        "reward": "A tier-4 companion",
+        "type": "Companions",
+        "value": "Steal An important Item/Artifact/Location from a from a DR-4 world"
+      },
+      {
+        "reward": "A tier-5 companion",
+        "type": "Companions",
+        "value": "Steal An important Item/Artifact/Location from a from a DR-5 world"
+      },
+      {
+        "reward": "A tier-6 companion",
+        "type": "Companions",
+        "value": "Steal An important Item/Artifact/Location from a from a DR-6 world."
+      },
+      {
+        "reward": 80,
+        "type": "Credits",
+        "value": "Steal An important Item/Artifact/Location from a from a DR-7 world"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Steal An important Item/Artifact/Location from a from a DR-8 world"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Steal An important Item/Artifact/Location from a from a DR-9 world"
+      },
+      {
+        "reward": 300,
+        "type": "Credits",
+        "value": "Steal An important Item/Artifact/Location from a from a DR-10 world"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Certain limitation of the demiplanes and dungeons will be lift off. Portals for them can be opened in any place."
+      },
+      {
+        "value": "Portals created by yourself or you companion using magic or other means can directly access your demiplane/dungeons."
+      },
+      {
+        "value": "Locations like cities or islands can be stolen if you or your retinue can transport it by any means to inside your demiplane/dungeons"
+      },
+      {
+        "value": "if the location has a characteristic like a ley line, a sacred underground water vein, etc. that is needed to it value it will be transported along it inside your demiplane/dungeons"
+      }
+    ],
+    "budget": 100,
+    "desc": "If there is one characteristic that the british share across several timelines, is their habit of sticking their noses in someone else's country, taking everything of cultural/intellectual/artistic/monetary value and putting them on display in their museums. \nit just happens that some clients of the company incetivate this and even were willing to reward it.\n"
+  },
+  {
+    "reward": "50",
+    "image": "https://i.postimg.cc/vTxrMbp5/sample-15bbe9a69917c5b1f891e7f961f48db68094ccb6.jpg",
+    "author": "darkXhadow",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Lure testing",
+    "uid": "QCrTB",
+    "loca": "Yu-Gi-Oh!",
+    "lewd": true,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Contract a duel spirit as your Ba."
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Contract 5 duel spirit's as your Ba."
+      },
+      {
+        "reward": "A one time use item that will teleport you to the start of a Yu-Gi-Oh! series timeline.",
+        "type": "Other",
+        "value": "Contract 10 duel spirit's as your Ba."
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Capture 5 more waifus by love confession. This is repeatable to the maximum of 50 credits."
+      },
+      {
+        "reward": "A one time use item that will teleport you to the start of a Yu-Gi-Oh! series timeline.",
+        "type": "Other",
+        "value": "Capture at least 25 waifus by love confession."
+      },
+      {
+        "reward": "A one time use item that will teleport you to a fixed point of your choice of a Yu-Gi-Oh! series timeline.",
+        "type": "Other",
+        "value": "Contract at least 50 duel spirit's as your Ba."
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Capture at least 50 waifus by love confession."
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Contract at least 100 duel spirit's as your Ba."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Complete all additional objectives."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Capture 5 waifus by love confession."
+      },
+      {
+        "value": "Must have  Zenryoku Zenkai lure."
+      },
+      {
+        "value": "Do not use mind control to get a confession, that will invalidate this test."
+      }
+    ],
+    "budget": 0,
+    "desc": "We have a need to test the limits of the Zenryoku Zenkai lure. If you are interested, we need you to go to the GX timeline of Yu-Gi-Oh! and gather a few waifus by a love confession, easy, right?\n\nWrong, we are disabling all lures besides Zenryoku Zenkai and also disabling sexual calibration and fertility calibration. The reason for this is to test how useful Zenryoku Zenkai is in competitive settings for trading card games."
+  },
+  {
+    "reward": "The Pact is Sealed",
+    "image": "https://www.themonastery.org/assets/themonastery/blog/scaled/seven-deadly-sins.jpg",
+    "author": "Anonymous Brainwash",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Startup-Infernal",
+    "uid": "qunio",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Complete a pact corresponding to Lust"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Complete a pact corresponding to Gluttony"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Complete a pact corresponding to Avarice"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Complete a pact corresponding to Sloth"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Complete a pact corresponding to Wrath"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Complete  a pact corresponding to Envy"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Complete a pact corresponding to Pride"
+      },
+      {
+        "reward": "Siphoned Strength",
+        "type": "Perks",
+        "value": "Complete a pact for someone's soul"
+      },
+      {
+        "reward": "At the Crossroads",
+        "type": "Perks",
+        "value": "Complete a pact by granting abilities/skills"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Mutual exchange: Whoever you make a pact with, it will only count if both of you hold up your respective sides of the deal. If you deal in something intangible, such as a soul or memories, an IOU will be acceptable"
+      }
+    ],
+    "budget": 0,
+    "desc": "All creatures have their beginnings, and this will be the beginning of the Infernal. \n\nInfernals at their most basic have two things going for them, bodies made for sin (literally) and their pacts.\n\nMake and complete 7 pacts, one for each of the 7 deadly sins:  Lust, Gluttony, Avarice, Sloth, Wrath, Envy, and Pride.\n\nThese pacts should be representations of each of their respective sins, and only 1 pact can count for 1 sin.\n\nFor example, a pact of pride could be a pact to hide someone's shame, a pact of envy could be to steal and fetch someone else's object on behalf of someone, a pact of sloth could be to ensure someone's lacking work is ignored, etc.\n\nThere are no real limits on the types of pacts that can be made"
+  },
+  {
+    "reward": 1,
+    "image": "https://miro.medium.com/v2/resize:fit:640/1*sHjfUpcmHmJAf8BXcBajFw.png",
+    "author": "Kail",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Myth Slayer",
+    "uid": "glhUx",
+    "loca": "RWBY",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Slay The Great Weaver, Arachne"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Slay The Seven-Headed Serpent, Orochi"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Slay the Ninetailed Trickster, Kuzunoha"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Slay the Wyvern of Mt. Glenn, Kevin"
+      },
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "Slay The King of Grimm, Typhon"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Slay all five Mythical Grimm"
+      }
+    ],
+    "budget": 365,
+    "desc": "The Grimm are great in number and vary in shape and size, some have lived for centuries and amassed great strength. But only five have ever earned the status of Myth. Your goal is to locate and eliminate these Myths, with whatever means necessary. But be warned, these are of the few Grimm that survived the purge of the God of Darkness. These creatures come from a time of magic, and retain abilities from that time. Luckily, you've got the company to help you out!"
+  },
+  {
+    "reward": 525,
+    "image": "https://i0.wp.com/www.paolopuggioni.com/admin/wp-content/uploads/2016/05/Orion_Mining.jpeg",
+    "author": "red-000",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Dimensional Treader",
+    "uid": "ATCWt",
+    "loca": "Generic Modern/Sci-fi",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Choose a tier 5 companion or equivalent in credits. Alternatively, select a lower tier companion and get the balance in credits.",
+        "type": "Other",
+        "value": "Get the better of at least one business savvy hero or villain in negotiations."
+      },
+      {
+        "reward": 75,
+        "type": "Credits",
+        "value": "Complete objective one while not making an enemy or bitter rival."
+      },
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "Maintain steady trade with eight worlds"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Take over the majority of international trade in at least one of your worlds."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Steadily trade with At least six World's for months."
+      },
+      {
+        "value": "transport at least five chartered cargos."
+      }
+    ],
+    "budget": 450,
+    "desc": "\nJoin our team as a newly contracted interdimensional trader! In this exciting role, you must choose at least a medium-sized starship. Regardless of your choice, it will be equipped with a self-contained dimensional drive in addition to any other type of FTL drive, if applicable. Your primary objective is to transport and trade goods across various dimensions. Ten percent of your goods will be kicked back to your boss as a business expense. Occasionally, your superior will charter the transport of specific cargo, which may be questionable or illegal in certain dimensions. This cargo must be delivered to specified locations and is exempt from the aforementioned kickback. Success hinges on your discretion, adaptability, and maintaining the ship’s operational integrity. Your journey begins now. "
+  },
+  {
+    "reward": "Credits based on a tenth of all the Solarians you manage to get away from New Kunlun, (will be capped at 250 credits)",
+    "image": "https://i1.sndcdn.com/artworks-2iubzB1so9xdjMu3-kltbGw-t500x500.jpg",
+    "author": "JustaFan",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Rebuilding a civilization is HARD!",
+    "uid": "HlvXS",
+    "loca": "Nine Sols",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Save and/or bind (Posses, Walk-In and Substitute counts) 25% of the Sols"
+      },
+      {
+        "reward": 15,
+        "type": "Credits",
+        "value": "Save and/or bind (Posses, Walk-In and Substitute counts) 50% of the Sols"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Save and/or bind (Posses, Walk-In and Substitute counts) 75% of the Sols"
+      },
+      {
+        "reward": "Tier 5 companion and 5 credits",
+        "type": "Other",
+        "value": "Save and/or bind (Posses, Walk-In and Substitute counts) 100% of the Sols"
+      },
+      {
+        "reward": "The Pale Blue Planet becomes your base of operation or Tier 7 companion",
+        "type": "Other",
+        "value": "Bring the Solarians, along with the 'Apemen', on the Pale Blue Planet"
+      },
+      {
+        "reward": "Tier 7 companion (if you are not a Solarian) or have Penglai as your base of operation (if you are a Solarian)",
+        "type": "Other",
+        "value": "Bring the Solarians back to their ancestral home, Penglai"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Must be completed before jumping to another world, you can still access your demiplane and take missions to other worlds"
+      },
+      {
+        "value": "No Cloning"
+      },
+      {
+        "value": "Make sure that the Tianhuo Virus will no longer be a problem"
+      }
+    ],
+    "budget": 400,
+    "desc": "The actions of a scientist who wished for eternal life for her people, ended up condemning them.\nNow, reduced to almost nothing, it seems that all hope is lost...\n\nBut that is where You come in.\n\nThe Solarian race MUST. NOT. DIE!\n\nSave as many Solarians as you can from New Kunlun, but enough to assure that they can repopulate."
+  },
+  {
+    "reward": "1x Add Potential (Kryptonite Mutation)",
+    "image": "",
+    "author": "imafuturecorpse",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Sample Gathering",
+    "uid": "TLhXp",
+    "loca": "Smallville",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Gather 100 pieces of Red Kryptonite"
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Gather 100 pieces of Blue Kryptonite"
+      },
+      {
+        "reward": "Chloe Sullivan (Unlimited Healing)",
+        "type": "Companions",
+        "value": "Capture Chloe Sullivan"
+      },
+      {
+        "reward": "1x Added Potential (Line of Sight Teleportation)",
+        "type": "Perks",
+        "value": "Capture Alicia Baker"
+      },
+      {
+        "reward": "1x Added Potential (Self Polymorph, Wolf)",
+        "type": "Perks",
+        "value": "Capture Kyla Willowbrooke"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Gather 100 pieces of Kryptonite."
+      },
+      {
+        "value": "Capture 10 Kryptonite Mutants"
+      }
+    ],
+    "budget": 200,
+    "desc": "Despite it's existence as a type of exotic matter, Kryptonite is a fairly common mineral throughout the multiverse. It can be found in most universes with a Kryptonian population. Composed of minerals native to the planet Krypton and irradiated by it subsequent extinction event, a variety of effects occur when a Kryptonian is exposed to the substance.\n\nHowever, in a rare few universes Kryptonite appears to possess mutative qualities when exposed to human subjects. Functionally, this expresses itself as a super power unique to an individual. Considering that long term exposure to Kryptonite usually expresses itself as onset cancer in most universes, R&D is curious to discover whether these empowerment effects are reproducible using Kryptonite from other universes.\n\nTransportation to the relevant universe will be provided by the Company. Upon completion of this mission you will be return to your previous universe."
+  },
+  {
     "reward": 100,
     "image": "https://i.pinimg.com/736x/ea/db/f7/eadbf7d6452699791114acf751751a73.jpg",
     "author": "Heisen",
@@ -3485,9 +3919,10 @@
     "rewardType": "IMG Tickets",
     "source": "",
     "title": "Patience Running Short",
+    "uid": "xHwQm",
     "loca": "Warhammer Fantasy",
     "lewd": false,
-    "scope": "Standard",
+    "scope": "Grand",
     "objectives": [
       {
         "reward": 1000,
@@ -3520,9 +3955,8 @@
         "value": "Resolve and/or Absolve any and all grudges the Dwarves have by any means necessary"
       }
     ],
-    "budget": 2,
-    "desc": "The Dawi/Dwarves are an admirable race. With a persistence and willpower to match. Always holding true to their oaths, their beliefs, and in this case: their grudges. Dwarves in other fantasy realms are known to keep grudges quite well, for a long time for that matter and most of the time for good reason. Though the Dwarves of this universe take this a step to the absolute extreme. They do this by using their super ultra mega secret 'Bok of Grudges™'. This ranges from coming up a cent short in paying the dwarves their dues, losing an eye to a goblin with brittle teeth to which splinters after being punched in the face one too many times, wasting their time, insulting their version of liquors, and saying the word \"short\" or anything related to height one too many times in their presence. Yeah.... This one is going to be one for the books with how hard it is to 'not' offend them.\n\n(Ahab waz here)",
-    "uid": "xHwQm"
+    "budget": 500,
+    "desc": "The Dawi/Dwarves are an admirable race. With a persistence and willpower to match. Always holding true to their oaths, their beliefs, and in this case: their grudges. Dwarves in other fantasy realms are known to keep grudges quite well, for a long time for that matter and most of the time for good reason. Though the Dwarves of this universe take this a step to the absolute extreme. They do this by using their super ultra mega secret 'Bok of Grudges™'. This ranges from coming up a cent short in paying the dwarves their dues, losing an eye to a goblin with brittle teeth to which splinters after being punched in the face one too many times, wasting their time, insulting their version of liquors, and saying the word \"short\" or anything related to height one too many times in their presence. Yeah.... This one is going to be one for the books with how hard it is to 'not' offend them.\n\n(Ahab waz here)"
   },
   {
     "reward": "Access to Monarch's domain (She is unaware of the change) and two IMG tickets.",

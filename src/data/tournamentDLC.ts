@@ -98,7 +98,7 @@ export const tournamentPerks = [
     special: 'Reward: +20%',
     reward: 0.2,
     cost: 0,
-    image: 'https://images2.imgbox.com/54/54/eBH0eahO_o.jpeg',
+    image: 'https://images2.imgbox.com/e8/a9/KNpZcE21_o.png',
     whitelist: ['Alternative Arrangements'],
     desc: 'This tournament’s Asset Cap is higher than the default. A doubled cap is the most common, but a high multiplier to make clashes of low tier armies is also popular.',
   },

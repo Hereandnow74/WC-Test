@@ -508,7 +508,7 @@ DLCtalents.push({
   category: 'Home',
   dlclink: 'https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-879#post-4440542',
   title: 'Money Talent',
-  image: 'https://i.ibb.co/RSXnxTf/Money-Talent.jpg',
+  image: 'https://images2.imgbox.com/3d/19/4wy7ulex_o.jpeg',
   cost: 10,
   desc: `
   You are extremely talented at making money. You can smell opportunity and feel the flow of the market in your bones. As long as you actually put effort into it you can go from being broke to being a millionaire in a few months.
@@ -552,7 +552,7 @@ DLClures.push({
   uid: 'ugDHv',
   dlc: 'Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
-  image: 'https://i.ibb.co/sFDhQBX/Fools-Gold.jpg',
+  image: 'https://images2.imgbox.com/dc/0a/h68OWHa5_o.png',
   category: 'Lure',
   title: 'Fools Gold',
   cost: 10,
@@ -762,7 +762,7 @@ DLCotherControls.push({
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Demi-Servant',
   category: 'Other Controls',
-  image: 'https://i.imgur.com/KRm5O9J.jpg',
+  image: 'https://images2.imgbox.com/d6/38/ECqqgA29_o.png',
   cost: 120,
   freebies: {
     talentPerks: [{ title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Science Talent', cost: 0, count: 1 }, { title: 'Soul Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent', cost: 0 }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Soul Talent', cost: 0 }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Science Talent', cost: 0 }], count: 1 }],
@@ -816,7 +816,7 @@ DLCotherControls.push({
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Saint Graph Library',
   category: 'Other Controls',
-  image: 'https://i.imgur.com/WEoBkBu.jpg',
+  image: 'https://images2.imgbox.com/31/29/H2O1qgyd_o.png',
   cost: 50,
   desc: `This perk provides an easy way to switch between Classes as a Demi-Servant. A Demi-Servant may save their current class configuration as a Saint Graph, a metaphysical template that stores abilities and memories of that Demi-Servant. Switching classes using  Saint Graphs requires directly accessing a Saint Graph Library in which the Demi-Servant has already saved a copy of the Saint Graph they wish to switch to. If the companion does not have any saved Saint Graphs of the class they wish to switch to, they must first switch to that class normally to be able to save that class configuration as a Saint Graph for future use. 
   <p>The Saint Graph Library itself exists to hold these imprints separate from any Throne of Heroes. Its primary form exists as a large server-sized device placed in a secure pocket space, or other location if you do not have one. Secondary form is that of a high tech briefcase. Saved Graphs may also be accessed via an app on the Company provided phone.</p>

@@ -40,6 +40,9 @@
     <LocalPerksManager v-if="showPerksManager" @click="showPerksManager = false" @sendDelete="deletePerk" @sendEdit="editPerk" />
     <Modal v-if="showRules" label="Rules" @click="showRules=false">
       <div class="p-2 flex flex-col gap-2 min-h-0 w-full">
+        <Note class="my-4 max-w-screen-md mx-auto" type="warning" title="Warning">
+          Perks for unpopular waifus, no matter how well made they are, will be rejected.
+        </Note>
         <p>Specific Waifu Perks are perks created to grant waifu access to abilities and forms that would be <b>unobtainable</b> to them <b>without external means</b>. This could be via an artifact that is not typically part of their iconic equipment, a powerup granted by a third party, an alternate form that does not qualify for a separate catalog entry or a fusion form that requires another waifu to be achieved. A powerup that can be unlocked through regular training is an example of an upgrade that <b>does not</b> qualify to be locked behind a Specific Waifu Perk.</p>
         <p>It is <b>highly recommended</b> to check the Setting Specific Rules of a world before submitting a specific or generic waifu perk. More often than not these rules cover the specifics of an alternate form or powerup of a waifu for which a perk can be made, making the submission of such a perk redundant. Perks submitted to unlock powerups or forms addressed by the Setting Specific Rules will be rejected. </p>
         <p>Low-effort perks of one or two sentences, as well as those written poorly, will have increasingly low chances of being accepted. Perks also require a good quality and meaningful image. </p>

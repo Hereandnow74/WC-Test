@@ -594,9 +594,9 @@ const yourTier = computed(() => {
     let tier = 1
     perks.forEach((perk) => {
       if (tier < 4 && ['Death Mask', 'Under Jolly Roger'].includes(perk.title)) tier = 4
-      if (tier < 5 && ['First Augmentation', 'The First Bite', 'Your Soul Is Mine'].includes(perk.title)) tier = 5
+      if (tier < 5 && ['First Augmentation', 'The First Bite', 'Your Soul Is Mine', 'The Pact is Sealed'].includes(perk.title)) tier = 5
       if (tier < 6 && ['Corporeal Transcendence Engineering', 'Dragon Heart', 'Harbinger of Deаth'].includes(perk.title)) tier = 6
-      if (tier < 7 && ['Evolutionary Engine Array', 'Dragon Scale', 'Foul Darkness', 'None Can Excel'].includes(perk.title)) tier = 7
+      if (tier < 7 && ['Evolutionary Engine Array', 'Dragon Scale', 'Foul Darkness', 'None Can Excel', 'Sinforged Visage'].includes(perk.title)) tier = 7
       if (tier < 8 && ['Incandescent Ascendancy Machine', 'Double Dragon', 'The Great Hunger'].includes(perk.title)) tier = 8
     })
     return tier

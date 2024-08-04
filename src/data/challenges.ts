@@ -251,7 +251,7 @@ export const challenges = [
     dlc: 'DepressedAlucard',
     dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
     title: 'Frog in a Well',
-    image: 'https://i.imgur.com/XyHjUKDl.jpg',
+    image: 'https://images2.imgbox.com/40/e1/NxkGFaHI_o.png',
     special: 'Chargen Only.',
     cost: 0,
     bonus: 0.2,
