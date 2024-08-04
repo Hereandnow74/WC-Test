@@ -514,9 +514,8 @@ export const difficultyOptions = [
     intensity: 2,
     desc: `
     <p>Your signing bonus… isn’t. Whatever you spend from it will instead be a loan, subject to the rules in Loans and Credit Debt. Your starting world will not necessarily have enough available credits to pay back your loan or even the interest, but Missions and Invasion PvP can help cover that. Your baseline interest rate will also increase to 20%.</p>
-    <p>Budgets below the starting loan limit for your intensity will experience an effective increase to that limit using the Loan rules. Budgets above that limit will be overcapped until you’ve paid enough of the principal to fall beneath the limit and/or visited enough new worlds to raise the limit above your principal. No additional loans may be taken while overcapped.
+    <p>If your starting budget is below the starting loan limit for your intensity, you may take additional loans to that limit after chargen, as normal. Budgets above that limit will be overcapped until you’ve paid enough of the principal to fall beneath the limit and/or visited enough new worlds to raise the limit above your principal. No additional loans may be taken while overcapped.
     </p>
-    <p>Note that the budget-based caps on Substitute, Yoink, and other options will follow the original budgets for each Danger Rating and intensity.</p>
     `,
     category: 'difficulty',
     type: 'other5',
