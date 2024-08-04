@@ -344,6 +344,7 @@ export const offspring = `<h3 class="font-bold text-xl pt-4 pb-2">Offspring</h3>
 <p>If you have <b>Commerce Room: Hotel California</b>: The company suggests abiding by all local laws and barring your descendants from sex work or serving alcohol until they’re of age.</p>
 <p>If you have <b>Dragon Scale</b>: Your children will all be dragons as well, with their dragon abilities coming in at puberty and their elements dependent on their personalities and themes. Later generations may hybridize with whatever local races they encounter.</p>
 <p>If you are a <b>Transhuman</b>: We at the company never quite figured out how reproduction works for you. Your biological creations, any AIs you construct, or soul hierarchy are sort of like children.</p>
+<p>If you are an <b>Outsider</b>:██████████████████████████████████████████████████████████████████████████████████████████████████████ ███████████████████████████████████████████████████████████████████████████████</p>
 `
 export const nasuDLC = `
 <h3 class="font-bold text-xl pt-4 pb-2">Pseudo-Servants and Other Alternates</h3>
