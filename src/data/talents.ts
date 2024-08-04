@@ -1084,6 +1084,20 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: '8Kgf7',
+  title: 'Tower Access',
+  category: 'Generic',
+  requires: 'Any Reyvateil Origin from Ar tonelico',
+  complex: 'target',
+  cost: 180,
+  image: 'https://images2.imgbox.com/9c/0d/4MJldfNC_o.png',
+  desc: `
+  <p>Without their Towers, Reyvateil Origins (and Mir, through hacking Shurelia’s tower, Eoria), are limited in power and range. With this perk, you become a conduit to a Tower for them. If you have Life’s a Beach and at least one of the three canon Origins (Frelia, Shurelia, and Tyria) their Towers will be physically present in your world, increasing her range to 400 km (measured from the last used portal site) and power, allowing them to truly warp the reality around them with suitable Songs. Your entire demiplane is always covered by these towers, regardless of the usual range.</p>
+  <p>This perk may be purchased for any Reyvateil Origin in your retinue, including those created through Template Stacking. Each repurchase adds 400 km to the range of every girl who has this perk: with two purchases, 800 km from the last-used portal, with three purchases, 1200 km, with four purchases, 1600 km, etc.</p>
+ `,
+})
+
+genericPerks.push({
   uid: '1rWq8',
   title: 'Galactic Presence',
   category: 'Generic',
