@@ -46,10 +46,9 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       5726,
     ],
-    tier: 8,
     from: 'Danmachi',
     image: '/img/waifu_perks/compressed/image203.png',
-    cost: 100,
+    cost: 50,
     desc: 'Hestia can now swap to her alternate form, Vesta. While Vesta, the full power of her Arcanum is much greater than it was as Hestia. While Hestia and Vesta are the same person and thus share the same memories and desires, their personalities are slightly different, with Vesta being more serious and goal-focused. Hestia/Vesta will take note of which form you prefer and default to that one naturally.',
   },
   {
