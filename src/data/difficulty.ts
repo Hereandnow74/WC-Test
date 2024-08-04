@@ -383,6 +383,38 @@ export const difficultyOptions = [
     type: 'death',
   },
   {
+    uid: 'Ix67G9',
+    title: 'Is There Anybody Out There?',
+    image: 'https://images2.imgbox.com/3e/ee/YdjeIxmv_o.png',
+    intensity: -1,
+    desc: 'You value your privacy. We will ensure that other contractors do not accidentally stumble upon “your” parallels of the worlds you visit while traveling the multiverse. You’re welcome.',
+    category: 'difficulty',
+    type: 'pvp',
+  },
+  {
+    uid: 'Ix27G9',
+    title: 'So You’re Telling Me There’s A Chance!',
+    image: 'https://images2.imgbox.com/1c/ec/MofHhYQX_o.png',
+    intensity: 0,
+    desc: `
+    <p>You do not have any active protections against other contractors stumbling into your world by accident. The odds of that actually happening are really low, though. Company matchmaking is still in effect even for these random encounters, assuring that the retinue of any random encounter will be of a similar power level to yours.</p>
+    <p>Additionally, randomly encountered contractors will not be immediately hostile to your retinue, though they are still people. Should relations turn sour, we will not protect either side from the consequences of their own actions.</p>
+    `,
+    category: 'difficulty',
+    type: 'pvp',
+  },
+  {
+    uid: 'naH12',
+    title: 'Nah, I’d Win.',
+    image: 'https://images2.imgbox.com/7a/b6/H6iFsiyR_o.png',
+    intensity: +2,
+    desc: `
+    <p>You do not have any active protections against other contractors stumbling into your world by accident. The odds of that actually happening are relatively low. In addition, your world is always a valid target for PVP interactions as if you own a Red Eye Orb.</p>
+    `,
+    category: 'difficulty',
+    type: 'pvp',
+  },
+  {
     uid: 'fraqs',
     title: 'Alignment',
     image: 'https://images2.imgbox.com/93/27/hJ6QSsra_o.png',

@@ -213,6 +213,7 @@ const typeTitles = {
   worlds: 'Worlds',
   warranty: 'Warranty',
   death: 'Death',
+  pvp: 'Pvp'
   random: 'Random',
   other: 'Misc',
 }
@@ -230,6 +231,7 @@ const typeIcons = {
   worlds: 'ic:outline-public',
   warranty: 'ic:outline-shield',
   death: 'game-icons:tombstone',
+  pvp: 'game-icons:ancient-sword',
   random: 'ic:outline-casino',
   other: 'ic:outline-more-horiz',
 }
