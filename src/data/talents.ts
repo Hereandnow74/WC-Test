@@ -624,7 +624,7 @@ perks.push({
   category: 'Misc',
   image: 'https://i.ibb.co/fGnn30j/Blank-Slate.jpg',
   cost: 75,
-  whitelist: ['Meta Shift II', 'We Will Meet Again'],
+  whitelist: ['Universal Calibration II', 'We Will Meet Again'],
   desc: `
 <p>The Meta Shift app can now generate a fresh parallel of any world you’ve visited at any time. You can apply or remove sacrifice results to these new parallels just like anywhere else.</p>`,
 })
