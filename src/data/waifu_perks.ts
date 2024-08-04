@@ -689,10 +689,11 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       7782,
     ],
-    tier: 8,
-    image: 'https://i.imgur.com/7kkfOTQ.png',
-    cost: 180,
-    desc: 'Byleth has come into her own as a vessel of the goddess Sothis. You and your retinue can sense and interact with Sothis normally at all times. The goddess may instead be purchased separately, in her own body, for 200 credits.',
+    tier: 6,
+    image:'https://images2.imgbox.com/df/87/9ki7GEkb_o.png',
+    cost: 30,
+    desc: `The goddess Sothis, previously reduced to a projection in Byleth’s mind, has merged with her host to create Enlightened Byleth. Despite the listed tier, Enlightened Byleth’s skill framework, available to both captures and purchases, also includes all of Sothis’s, ultimately matching the goddess’s Tier 8. Byleth will always have this perk if captured after their merger.
+    <p>You may also keep Sothis’s projection around. In that case, just as before, you and your retinue can sense and interact with Sothis normally at all times. The Sothis projection is automatically part of your retinue, is not worth capture credits, and cannot be sold separately from Byleth.</p>`,
   },
   {
     uid: 'dyJbf',
