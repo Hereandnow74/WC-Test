@@ -478,27 +478,6 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Konjiki no Yami was created as a transformation weapon, but her creators left a hidden Darkness transformation in her that would activate if she ever felt a sense of peace in her heart. This form is so powerful that it can slice planets in half and (allegedly) destroy the universe itself. The purchase of this perk enables Yami to change into this mode at will. This form may also be forcibly activated via the Company smart device, which will also result in the more hyperactive and perverted personality associated with this form coming to the fore. If you capture Yami in setting, you will automatically receive this perk and the capture value of a T10',
   },
   {
-    uid: 'hNxTd',
-    title: 'Tower Access',
-    waifu: [
-      'Shurelia',
-      'Mir',
-      'Frelia',
-      'Tyria',
-    ],
-    from: 'Ar tonelico',
-    waifuUID: [
-      7588,
-      7586,
-      7597,
-      7598,
-    ],
-    tier: 8,
-    image: '/img/waifu_perks/compressed/image148.png',
-    cost: 180,
-    desc: 'Without their Towers, the Origins, and Mir through hacking Shurelia\'s tower Eoria, are limited in power and range. With this perk, you become a conduit to a Tower for them. If you have Life\'s a Beach, this Tower is physically present in your world, increasing her range to 3,200 km (measured from the last used portal site), and power to truly warp the reality around them with suitable Songs. Your entire pocket universe is always covered by this tower, regardless of its usual range. You may buy this perk up to four times, once for each girl. Each repurchase adds 3,200 km to the range of every girl who has the perk, up to 12,800 km total. This range is measured separately for each world you or any member of your retinue visits.',
-  },
-  {
     uid: 'i9MTw',
     title: 'Prime Evil',
     waifu: [
