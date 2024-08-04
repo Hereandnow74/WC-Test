@@ -107,7 +107,8 @@
           {{ ruleTitle[rule.uid] }} <span class="text-gray-700 dark:text-gray-500 iconify h-7 w-7 cursor-pointer hover:(text-orange-600 dark:text-orange-400)" :data-icon="!hiddenCategories.includes((rule.type.match(/\d+$/) ? rule.type.slice(0, -1) : rule.type)) ? 'mdi:arrow-collapse-up' : 'mdi:arrow-collapse-down'"></span>
         </div>
         <div v-if="rule.type === 'random1' && !hiddenCategories.includes('random')" class="dark:bg-gray-800 bg-blue-gray-300 rounded p-2 mb-2">
-          All randomizer options are mutually compatible. Randomizers that do not affect intensity have a 1% chance of applying to any new world visited (after a contractor’s starting world) even if they are not chosen. This applies separately for each randomizer.
+          <p>All randomizer options are mutually compatible. Randomizers that do not affect intensity have a 1% chance of applying to any new world visited (after a contractor’s starting world) even if they are not chosen. This applies separately for each randomizer.</p>
+          <p>Additionally, after each of those four randomizers are paid off, randomization of that kind for new worlds will revert to the base chance, while already-existing randomization of any worlds visited will remain as-is. Additionally, when using company travel methods such as Exit Stage Left, Blank Slate, or Dragon Break to visit a new world, you may still, as an option in our app, guarantee that a paid-off randomizer will apply there. </p>
         </div>
 
         <DifficultyCard
