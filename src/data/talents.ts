@@ -74,7 +74,7 @@ talents.push({
   category: 'Talent',
   image: 'https://fictionhorizon.com/wp-content/uploads/2021/12/Captain-Tsubasa-2018-1024x576.jpg',
   cost: 5,
-  desc: `You can rapidly learn any non-supernatural athletic skills you encounter: acrobatics, physical sports, parkour, swimming, etc. Skills directly related to combat fall under Martial Talent instead, while supernatural extensions of skill are affected by Psychic, Soul, or other Basic Talents.
+  desc: `You can rapidly learn any non-supernatural athletic skills you encounter: acrobatics, physical sports, parkour, swimming, etc. This includes physical ability as well. Skills directly related to combat fall under Martial Talent instead, while supernatural extensions of skill are affected by Psychic, Soul, or other Talents.
   `,
 })
 
