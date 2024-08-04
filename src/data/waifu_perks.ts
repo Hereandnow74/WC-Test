@@ -779,7 +779,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 5,
     image: 'https://static.zerochan.net/Samus.Aran.full.3031190.jpg',
     discount: 30,
-    desc: 'Samus is instead a less experienced version from around the time of her first mission to Zebes. She still has her Power Suit and ship, but has not yet fabricated her Zero Suit or let her hair return to its natural blonde. If you already have Metroid Hybrid Samus, you may still buy this perk, pre-applied to a new Samus, for 20 credits. ',
+    desc: 'Samus is instead a less experienced version, from before her first mission to Zebes. She still has her Power Suit and ship, but has not yet fabricated her Zero Suit or let her hair return to its natural blonde. If you already have Metroid Hybrid Samus from the perk Killer Instinct, you may still buy this perk, pre-applied to a new Samus, for 20 credits. ',
   },
   {
     uid: 'uQdN5',
