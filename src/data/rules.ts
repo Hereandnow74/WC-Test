@@ -278,9 +278,9 @@ export const missions = `<h3 class="font-bold text-xl pt-4 pb-2">Missions</h3>
 `
 
 export const refund = `<h3 class="font-bold text-xl pt-4 pb-2">Refund and Return Policy</h3>
-<p>Origins, Heritages, and subjects that were purchased at chargen in DRX are all non-refundable.</p>
+<p>Origins, Heritages, and your other half in a Couple’s Account (including as part of Danger Rating X starts) are all non-refundable.</p>
 <p>All items in the Bindings, Lures and Other Controls, Demiplanes & Dungeons, Talents and Defenses, Catch-a- Ride Perks, Other Perks, and Waifu Perks sections may be refunded at any time, for 80% of the full price you paid. If you return a Control or Perk that gives other items for free, but wish to keep the bundled items, their list prices will be deducted from the standard refund value.</p>
-<p>If you return a purchased subject or Ride within two weeks (336 hours) of purchase, you will be refunded the full price you paid, including any waifu perks or Ride add-ons applied to the returnee. Meta-Talents applied to the returnee will only be refunded up to 80%.</p>
+<p>If you return a purchased subject or Ride within two weeks (336 hours) of purchase, you will be refunded the full price you paid, including any waifu perks or Ride add-ons applied to the returnee. Waifu perks applied to the returnee will only be refunded up to 80%.</p>
 <p>If you return a purchased subject or Ride after that point, you’ll only receive 80% the price you paid, including the total cost of waifu perks, meta-Talents, and Ride add-ons applied to the returnee.</p>
 <p>If you use Evolutionary Engine Array or other means to copy the purchase’s abilities, or otherwise bought that person with the intent of returning them after a task or time, the original purchase will be treated as a rental and capped at 60%.</p>
 <p>Like with captures, if a returned subject is damaged or robbed, such that her effective tier at step 3 is less than her tier at step 1a, the return value will instead be relative to the purchase price of her new tier, not her listed tier. This applies to all three of the previous contexts.</p>
