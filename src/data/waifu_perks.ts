@@ -1544,7 +1544,7 @@ export const waifu_perks: WaifuPerk[] = [
       9777,
     ],
     tier: 2,
-    image: '',
+    image: 'https://images2.imgbox.com/27/a0/3UuupE3d_o.png',
     discount: 18,
     desc: 'Rin is instead the non-canon Matou Rin, a version of her who was traded to that family instead of her sister. If you already have Tohsaka Sakura alongside this Rin, they will recognize each other. This perk may not be applied to the same Rin as Nameless Red Devil, Mistress of Heaven, or Kaleidosick Magical Ruby. If you have any of those perks and want Matou Rin, you may still purchase this, pre-applied to a new Rin, for 2 credits.',
   },
