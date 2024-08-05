@@ -1109,7 +1109,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 8,
     image: 'https://cdn.donmai.us/sample/2e/7e/__bronya_zaychik_project_bunny_and_bronya_zaychik_honkai_and_1_more_drawn_by_broseele__sample-2e7e6a3765efa300a89f556fc6c7c07d.jpg',
     cost: 100,
-    desc: 'Bronya has absorbed the other 300,000 souls that make up the Herrscher of Reason, metamorphosing her power into the Herrscher of Truth. Bronya will always have this perk if captured after the events of New Atra and the Final Crater (chapter 31).',
+    desc: 'Bronya has absorbed the other 300,000 souls that make up the Herrscher of Reason, metamorphosing her power into the Herrscher of Truth. In Extremum form, Bronya fights with a spear and uses her Authority to conjure flying drones. In Continuation form, she assembles a mech suit around herself for extreme firepower. Bronya will always have this perk if captured after the events of New Atra and the Final Crater (chapter 31).',
   },
   {
     uid: 'KFOfj',
