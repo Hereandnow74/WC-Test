@@ -1419,7 +1419,7 @@ export const waifu_perks: WaifuPerk[] = [
     image: 'https://i.imgur.com/h1HSXoX.png?1',
     tier: 8,
     cost: 150,
-    desc: 'Ana gains the abilities of the Herrscher of Rimestar, a form that combined her core with that of Owl’s Herrscher of the Earth. Not only does she retain her Ice manipulation, she also gains gravity manipulation and black hole creation.',
+    desc: 'Ana gains the abilities of the Herrscher of Rimestar, a form that combines her regular powers as Herrscher of Ice with those of Owl’s Herrscher of Earth. “Earth” is more appropriately “Stars,” primarily focusing on gravity manipulation, including black hole creation. As Rimestar, Ana can use both Herrscher cores freely.',
   },
   {
     uid: 'O1235',
