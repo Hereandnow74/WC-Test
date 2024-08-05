@@ -1840,7 +1840,7 @@ export const waifu_perks: WaifuPerk[] = [
       9780,
     ],
     tier: 7,
-    image: 'https://i.imgur.com/D1P53XP.png?1',
+    image: 'https://images2.imgbox.com/d2/cf/d4IzxFh5_o.jpg',
     cost: 80,
     desc: 'The perverted and troublesome Mystical Code, capable of taking its user between worlds in the same local multiverse May be given to Rin to create Kaleido Ruby or Iliya to create Prisma Iliya, but not both. If you purchase or capture Rin or Iliya first and apply this perk later, the recipient will not receive any new memories from the Prisma Iliya timeline; if you purchase Rin or Ulya and this perk simultaneously, you will only get the version from the Prisma Iliya timeline. This perk may not be applied to the same Rin as Swapped Vessel, Nameless Red Devil, or Mistress of Heaven, or the same Iliya as Snow Fairy If you already have any of those perks for Rin and want Kaleido Ruby, or have Sitonai and want Prisma Ulya, you may still purchase this, pre-applied to a new Rin or Iliya as appropriate, for 100 credits.',
   },
