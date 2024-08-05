@@ -685,7 +685,7 @@ export const waifu_perks: WaifuPerk[] = [
       7814,
     ],
     tier: 6,
-    image: '',
+    image: 'https://images2.imgbox.com/cf/1e/hqhDSDsb_o.png',
     cost: 49,
     desc: 'Nobody knows why Paimon can still move while the rest of the world is paused, but it\'s still sufficient inspiration for a waifu perk. This allows Paimon to stop time for all beings within 1 AU. Anyone entering this sphere will also find themselves frozen. Furthermore, Paimon now has a personal Pocket Inventory. Unlike the one offered by the perk, its interior volume is roughly the same as the entire Grand Manor\'s. You and the rest of your retinue can access this storage space at any time. ',
   },
