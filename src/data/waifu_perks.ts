@@ -1777,7 +1777,7 @@ export const waifu_perks: WaifuPerk[] = [
       4754,
     ],
     tier: 7,
-    image: 'https://i.imgur.com/Oiuc8yV.png?1',
+    image: 'https://images2.imgbox.com/ae/08/pMJFCQz6_o.png',
     cost: 50,
     desc: 'Semiramis\'s Noble Phantasm, the Hanging Gardens of "Babylon/ normally requires genuine Mesopotamian materials in its construction. As such, it is impossible to construct in a world where Mesopotamia doesn\'t exist. This perk bypasses that restriction, allowing you to witness the power of the fully armed and operational battle station in any setting.',
   },
