@@ -1625,7 +1625,7 @@ export const waifu_perks: WaifuPerk[] = [
       9777,
     ],
     tier: 9,
-    image: 'https://i.imgur.com/bDrHkOw.png?1',
+    image: 'https://images2.imgbox.com/aa/69/sbLb6An3_o.png',
     cost: 498,
     desc: 'The adopted daughter of the Matou, whether Sakura or Rin, has been corrupted by Angra Mainyu as per the events of Heaven\'s Feel. The subject of this perk only counts as directly captured if she\'s already experienced her gothic makeover. Otherwise, you\'ll still only have regular Matou Sakura or Matou Rin. Dark Sakura and Dark Rin both qualify for special Alterzelu Symbiote theming. If you already have Undivided, Knight of the Cherry Blossom, or Kouhai of Light and want Dark Sakura, you may still purchase this, pre-applied to a new Sakura, for 500 credits. If you already have Nameless Red Devil or Mistress of Heaven, or created Kaleido Ruby and want Dark Rin. you may still purchase this, pre-applied to a new Rin, for 500 credits. ',
   },
