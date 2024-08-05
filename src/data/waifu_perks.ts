@@ -3909,11 +3909,11 @@ export const DLCwaifu_perks: WaifuPerk[] = [
       13905,
     ],
     tier: 9,
-    image: 'https://cdn.donmai.us/original/df/2d/__karna_and_super_karna_fate_and_1_more_drawn_by_lvn_iritoki__df2d95b0d1ad1fd4f60dca29abd062ea.jpg',
+    image: 'https://images2.imgbox.com/78/05/eJgWZMEs_o.jpg',
     cost: 300,
     discount: 0,
     costT: 0,
-    desc: 'Karna has borrowed the powers of Shiva and Vishnu, making them his own. In this state, he has become a god in his own right, fighting on par with the perfected being that is Arjuna Alter. Karna will always have this perk if captured during the events of the Indian Lostbelt.',
+    desc: 'Karna, the Lancer of Red has borrowed the powers of Shiva and Vishnu, making them his own. In this state, he has become a god in his own right, fighting on par with the perfected being Arjuna Alter. Able to bend space and time with the power he now wields, few can hope to match the might of Karna in this state. Nigh-invulnerable to all forms of damage he could take and able to turn mountains to dust with his incredible magical energy, Karna now wields strength many would not even dare to dream of. Karna will always have this perk if captured during the events of the Indian Lostbelt.',
     whitelist: [],
   },
   {
