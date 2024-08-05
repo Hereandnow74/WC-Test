@@ -473,7 +473,7 @@ export const waifu_perks: WaifuPerk[] = [
       6800,
     ],
     tier: 10,
-    image: 'https://i.imgur.com/KsUMMAWm.jpg?1',
+    image: 'https://images2.imgbox.com/f1/7d/DJ97Zsi8_o.png',
     cost: 950,
     desc: 'Konjiki no Yami was created as a transformation weapon, but her creators left a hidden Darkness transformation in her that would activate if she ever felt a sense of peace in her heart. This form is so powerful that it can slice planets in half and (allegedly) destroy the universe itself. The purchase of this perk enables Yami to change into this mode at will. This form may also be forcibly activated via the Company smart device, which will also result in the more hyperactive and perverted personality associated with this form coming to the fore. If you capture Yami in setting, you will automatically receive this perk and the capture value of a T10',
   },
