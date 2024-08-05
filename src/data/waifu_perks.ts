@@ -138,7 +138,7 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     from: 'Date A Live',
     tier: 10,
-    image: '/img/waifu_perks/compressed/image189.png',
+    image: 'https://images2.imgbox.com/0e/b5/IQ2Fg6WN_o.png',
     cost: 998,
     desc: `Reine reveals her true identity as the First Spirit, Mio Takamiya. By default, she will primarily take Mio’s form and identity. Regardless of the primary personality, this perk provides Reine the tremendous power of the Spirit of Origin, as well her three Angels: Ain, Ain Soph, and Ain Soph Aur.
     <p>Mio/Reine may manifest the secondary identity into her body at will, maintain her own body while they’re separated, and re-combine with the other on contact. The secondary personality will take on the role of Phantom.</p>
