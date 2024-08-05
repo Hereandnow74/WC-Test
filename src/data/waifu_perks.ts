@@ -122,7 +122,7 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     from: 'Date A Live',
     tier: 7,
-    image: '/img/waifu_perks/compressed/image164.png',
+    image: 'https://images2.imgbox.com/00/c1/jhEVgtZX_o.png',
     cost: 80,
     desc: `Origami now possesses her Sephira Crystal once more, becoming the Spirit codenamed Angel. With this perk, Origami gains the Angel Metatron and the associated powers she had as a Spirit. Origami will always have this perk if captured after the events of Tobiichi Devil.
     `,
