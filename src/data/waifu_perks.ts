@@ -1822,7 +1822,7 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       9924,
     ],
-    image: 'https://cdn.donmai.us/sample/ca/92/__artoria_pendragon_mysterious_heroine_xx_mysterious_heroine_x_alter_and_mysterious_heroine_x_alter_fate_and_1_more_drawn_by_kagami_uekusa__sample-ca922e304a5c836036d4f95b3683a6aa.jpg',
+    image: 'https://images2.imgbox.com/6d/48/ol2XiYf7_o.jpg',
     tier: 10,
     cost: 900,
     desc: 'Desire. Sugar content. Sales location. Cost price. Production. Demand. With these six elements, the Anti-Anti-Saber Ultimate Weapon gains infinity power, capable of turning half the universe into a confectionery factory. Mysterious Heroine X Alter technically always has this, as the skill “Black Bean Paste EX,” but the normal version of her doesn’t understand what she holds. This perk represents that understanding… though Ecchan may still lack the motivation to use it. As a bonus, this perk also grants Ecchan a body type comparable to Mysterious Heroine X’s adult form.',
