@@ -106,7 +106,7 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     from: 'Date A Live',
     tier: 8,
-    image: '/img/waifu_perks/compressed/image244.png',
+    image: 'https://i.imgur.com/e4n25C6.jpg',
     cost: 100,
     desc: `Tohka is now the version of herself from a parallel world who went insane after the demise of her version of Shido and became the Spirit codenamed Beast. As Beast, Tohka wields the Angels of the other Spirits and the Demon King of her Inversion, Tenka, as a set of ten swords, allowing her to use the powers of each Angel. Her original Angel, Sandalphon, has become a claw hovering over her hand.
     <p>This perk may not be applied to the same Tohka as Dea. If you already have that perk and want Beast, you may still purchase this perk, pre-applied to a new Tohka, for 200 credits.</p>`,
