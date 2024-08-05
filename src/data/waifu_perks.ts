@@ -1900,7 +1900,7 @@ export const waifu_perks: WaifuPerk[] = [
       9819,
     ],
     tier: 9,
-    image: 'https://cdn.donmai.us/sample/9b/86/__fujimaru_ritsuka_sun_wukong_and_fujimaru_ritsuka_fate_and_1_more_drawn_by_mashima_saki_mashimasa__sample-9b86a7d535840e7ab33b56402092cd69.jpg',
+    image: 'https://images2.imgbox.com/e6/4a/v2TG7rHb_o.png',
     cost: 480,
     desc: 'The Female Master of Chaldea has blended with the Monkey King, Sun Wukong, to become a Lancer-class Pseudo-Servant. We\'re not quite sure how it happened either \u2022 the Research Department\'s best guess is that it had something to do with the Journey to the West event and the pair\u2019s extreme compatibility. The Male Master of Chaldea is not eligible for this perk',
   },
@@ -1928,7 +1928,7 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       9831,
     ],
-    image: 'https://cdn.donmai.us/sample/0c/cf/__mash_kyrielight_and_mash_kyrielight_fate_and_1_more_drawn_by_sakuramochi1003__sample-0ccf3e569ceedd1f170635b4e2fda826.jpg',
+    image: 'https://images2.imgbox.com/32/43/oYWJIW1b_o.png',
     cost: 30,
     desc: 'When her decision to continue fighting for humanity cost her Galahad’s support and powers, Mash asked Da Vinci to build her a new set of armor so she could return to the field without him. This suit, dubbed Ortinax, was later upgraded with a replica of the god-killing superweapon Black Barrel. Buying this perk will not disable Mash’s normal Demi-Servant abilities, nor will it alter Mash’s tier rating.',
   },
