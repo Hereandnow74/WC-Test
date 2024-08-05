@@ -824,7 +824,7 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       8876,
     ],
-    image: '',
+    image: 'https://images2.imgbox.com/a7/35/9rHdepjY_o.png',
     cost: 500,
     desc: 'Lotara Sarrin is a captain, and what is a captain without her ship? Lotara once again has command of the Conqueror, the mighty Gloriana-class battleship that served as the flagship of Angron, Primarch of the World Eaters. This perk does not affect Lotara\'s tier rating.',
   },
@@ -852,7 +852,7 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       8884,
     ],
-    image: '',
+    image: 'https://images2.imgbox.com/ba/66/JV5kshps_o.png',
     cost: 200,
     desc: 'Lady Solaria, Matriarch of House Varlock, is not to be underestimated under any circumstance by anyone with half a brain in their heads. However, only the truly insane (or the Ork menace) would consider attacking her when she is astride the Questoris-type Imperial Knight Drakaina. A \'mere\' 12 meters tall, this war-machine helps define the phrase \'peace through superior firepower\'. This perk does not affect Solaria\'s tier rating. ',
   },
