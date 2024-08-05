@@ -2229,7 +2229,7 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     desc: '\n  <p>Shirahoshi the mermaid princess of One Piece, gains full access and control over her nature as the Ancient Weapon Poseidon.  This grants her command and control over all Sea Kings, Leviathans, Krakens, or other Aquatic Kaiju in a given setting.  If said Kaiju are sapient, then they will obey her as their natural queen.  She can also summon Sea Kings from her native  setting if she desires.</p>',
     cost: 490,
     tier: 9,
-    image: 'https://i.pinimg.com/564x/76/7b/c2/767bc2364c7152eda29927609b321ccc.jpg',
+    image: 'https://images2.imgbox.com/14/53/gVN69I3q_o.jpg',
     title: 'Poseidon',
   },
   {
