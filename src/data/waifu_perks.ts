@@ -3348,16 +3348,14 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     title: 'Holy City Of Camelot',
     from: 'Nasuverse',
     waifu: [
-      'Artoria Pendragon (Lancer)',
       'Artoria Pendragon (Lancer Alter)',
-      'Atoria Pendragon (Ruler)',
+      'Mysterious Heroine X',
       'Gray',
       'Corpse King',
     ],
     waifuUID: [
-      9865,
       9862,
-      20645526,
+      9909,
       9779,
       9870574,
     ],
@@ -3365,7 +3363,7 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     image: 'https://m.media-amazon.com/images/M/MV5BMzE4ZjhkYWUtZjMyMC00ZmQ2LWFlNTAtYzk4OTMyMjZmOTZhXkEyXkFqcGdeQXVyNzEyMDQ1MDA@._V1_.jpg',
     cost: 150,
     costT: 0,
-    desc: 'The true form of the Holy Spear Rhongomyniad is unsealed, or at least partially so, and is in turn, anchored into the Earth. Use it to manifest the Holy City of Camelot as is seen from the Camelot Singularity. This acts as a personal Territory and is subjected to all the demiplane and dungeon perks if they are purchased. While within the castle walls, Artoria can use Rhongomyniad as a defensive and offensive armament that can be used from anywhere within the territory provided that is aware of the target. She can also create \'Enforcement Knights\' to patrol, maintain and defend the City. In its base state, it has high defensive capabilities, but it can be transformed into a doomsday device at the cost of destroying most of its volume and drastically reducing its defensive capabilities by rendering its outer layers fragile. It\'s theme and appearance can also vary depending on the wielder of the Spear.',
+    desc: 'The true form of the Holy Spear Rhongomyniad is unsealed, or at least partially so, and is in turn, anchored into the Earth. Its wielders can now draw on its full power without running the risk of losing themselves, able to safely manifest the Holy City of Camelot as seen from the Camelot Singularity. This city acts as a personal territory and is subjected to all purchased Demiplane and Dungeon perks. The Spear boasts several capabilities beyond its overwhelming power, including the creation of the fabled Enforcement Knights, as well as the ability to become a doomsday device at the cost of destroying most of its volume and drastically reducing its defensive capabilities by rendering its outer layers fragile. Note that its theme and appearance may vary depending on the Spear’s wielder.',
     whitelist: [],
   },
   {
