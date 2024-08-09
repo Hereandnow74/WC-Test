@@ -2061,7 +2061,7 @@ export const waifu_perks: WaifuPerk[] = [
       10093,
     ],
     tier: 8,
-    image: '',
+    image: 'https://images2.imgbox.com/11/e8/iVuPH5dA_o.png',
     cost: 150,
     desc: 'A duplicate of the Mirror\'s Cup prize Mitama crafted using energy from the Mirror Witch\'s Labyrinth, then stolen by one of her Familiars copying Shizuku and her magic. The original opened a portal that brought Nanoha, Fate, and Hayate to Kamihama City. With this orb, the size and range of the portals Shizuku can create are increased, enabling her to open portals to other worlds and travel the multiverse instead of just one planet. ',
   },
