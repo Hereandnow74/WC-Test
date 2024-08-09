@@ -102,7 +102,7 @@ heritages.push({
 <p>Every part of a dragon is infused with the concept of power, including their bodily fluids. Taking in large amounts of your fluids, over long periods of time, will make your waifus more powerful and slowly raise their effective tier. This is calculated after any tier changes from waifu perks, but before cross- training, equipment - including the waifu’s own equipment - or bindings, and only affects the attraction bonus from Dragon Aura until the drinker is captured. Take one copy each of Polymorph Defense and Wyldscape Defense for free.</p>
 <p>On a Tier 1 waifu, the first dose(120 mL) will improve her physical fitness by a noticeable, but still mundane, amount and grant her a burst of inspiration that she can funnel into any one field of expertise, elevating her to Tier 2 on the spot. A Tier 2 waifu will experience the same effects for the course of five doses, until she becomes Tier 3.  Over the course of twenty - five doses, a Tier 3 waifu’s skills and fitness will become supernatural enough to qualify her for Tier 4, with the exact manifestation dependent on your element and her personality and themes. Every tier boost after that requires five times as many doses as the one before it.</p>
 <p>Waifus of Tier 7 or above cannot be boosted higher with this perk alone. Those whose tiers have been raised to Tier 7 by this perk will instead begin to manifest draconic traits, with the specifics dependent on your element and their personalities and themes. Waifus with pre - existing draconic, serpentine, or feline traits will experience this effect sooner. Waifus with pre existing elements, whether from their own history, an Elemental Shroud, or a previously - applied Heritage perk, will retain those elements and not gain a new one. Costume animal parts are not enough to qualify a waifu for the transformative effect unless they’re worn for significant and ongoing timespans, while permanent augmentations(organic or otherwise) always do. Affected waifus may always shapeshift obvious draconic traits back to their original forms.</p>
-<p>PvP note: If another contractor, whether they captured you or you captured them, has used this perk on you often enough to make you manifest draconic traits, take Dragon Heart for free the next time you have an account to access. The remaining Dragon Heritage perks must be bought using your own funds.</p> `,
+<p>PvP note: If you have the Ancestral Diversity intensity modifier active and another contractor has used this perk on you often enough to make you manifest draconic traits, take Dragon Heart for free the next time you have an account to access. The remaining Dragon Heritage perks must be bought using your own funds.</p> `,
 })
 
 heritages.push({
@@ -119,7 +119,7 @@ heritages.push({
   whitelist: ['Dragon Thrall'],
   desc: `
 <p>The tier cap on Dragon Thrall is now lifted. Waifus may now be boosted by it all the way to Tier 10.  Further doses after that will strengthen them, but without further tier- ups. Dragon Thrall’s transformative effect now affects all waifus of Tier 7 or higher. Take one copy each of Polymorph Defense and Wyldscape Defense for free.</p>
-<p>PvP note: If another contractor, whether they captured you or you captured them, has used this perk on you often enough to make you manifest draconic traits, take Dragon Scale for free the next time you have an account to access. The remaining Dragon Heritage perks must be bought using your own funds.</p> `,
+<p>PvP note: If you have the Ancestral Diversity intensity modifier active and another contractor has used this perk on you often enough to make you manifest draconic traits, take Dragon Scale for free the next time you have an account to access. The remaining Dragon Heritage perks must be bought using your own funds.</p> `,
 })
 
 heritages.push({
@@ -857,7 +857,10 @@ heritages.push({
   cost: 0,
   costT: 1,
   whitelist: ['Incandescent Ascendancy Machine'],
-  desc: 'Surpassing limitations is the very nature of transhumanism. Choose a second Transhuman Type. All Transhuman perks treat you as having both types. When the aesthetics of two Transhuman types conflict, you may determine which one takes precedent.',
+  desc: `
+  <p>Surpassing limitations is the very nature of transhumanism. Choose a second Transhuman Type. All Transhuman perks treat you as having both types. When the aesthetics of two Transhuman types conflict, you may determine which one takes precedent.</p>
+  <p>This perk may only be purchased once. Access to a third Transhuman Type is not available without a Couple's Account, PvP, or other such means.</p>
+  `,
 })
 
 heritages.push({
@@ -1065,5 +1068,7 @@ heritages.push({
   whitelist: ['Prophet Of Paradox', 'The Gate And The Key'],
   desc: `
 <p>You are capable of teaching the members of your retinue how to become Outsiders; they gain their own true forms, their own Omens, and their own Elemental affinities in the process, acting with all of your Outsider abilities except for Elder Sign and Endless Gospels Unspoken.</p>
-<p>As your Heralds, their teaching effects are extensions of your own authority, and draw their students towards you instead of them; likewise, you may treat your Heralds as if they were your own Omens, and they always count as a critical mass of your own Omen for purposes of summoning you into a world.</p> `,
+<p>As your Heralds, their teaching effects are extensions of your own authority, and draw their students towards you instead of them; likewise, you may treat your Heralds as if they were your own Omens, and they always count as a critical mass of your own Omen for purposes of summoning you into a world.</p>
+<p>Contractors who lack the Ancestral Diversity intensity modifier are not valid targets of this feature.</p>
+`,
 })
