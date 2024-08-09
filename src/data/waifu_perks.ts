@@ -715,7 +715,7 @@ export const waifu_perks: WaifuPerk[] = [
       9079435,
     ],
     tier: 9,
-    image: '/img/waifu_perks/compressed/image137.png',
+    image: 'https://images2.imgbox.com/a6/b8/6xopdyWt_o.png',
     cost: 300,
     desc: 'Larxene has become recompleted, returning to her Somebody, Elrena. Elrena retains all the abilities Larxene had, while also being able to use her Keyblade and its associated powers. Her base Keyblade is the basic form of Missing Ache, and she can form-change her blade into her Foudre Knives.',
   },
