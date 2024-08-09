@@ -1512,7 +1512,7 @@ export const waifu_perks: WaifuPerk[] = [
       9836,
     ],
     tier: 6,
-    image: 'https://i.imgur.com/9Pl5qiV.jpg?1',
+    image: 'https://images2.imgbox.com/2f/02/w7OA9QBa_o.png',
     discount: 50,
     desc: 'Instead of the detached King of Knights, there is only Saber Lily. Artoria\'s personality now more accurately reflects the idealistic youth who first drew Caliburn and qualifies for special Alterzelu Symbiote (purification) theming. Her outfits, skills, and Noble Phantasms are changed accordingly. This perk may also be applied to the male Arthur Pendragon of Fate/Prototype, but not an Artoria or Arthur who already has The Everdistant Utopia. If you already have Avalon, you may still purchase this perk, pre-applied to a new Artoria or Arthur, for 50 credits. ',
   },
