@@ -615,22 +615,7 @@
     "image": "https://cdn.imgchest.com/files/pyvdcbeqdjy.png",
     "uid": "mszimf"
   },
-  {
-    "worldName": "Highschool of the Dead",
-    "rating": 2,
-    "condition": [
-      {
-        "name": "Before Z-Day.",
-        "rating": 2
-      },
-      {
-        "name": "Starting from Z-Day.",
-        "rating": 4
-      }
-    ],
-    "image": "https://evedonusfilm.com/wp-content/uploads/2021/07/HOTD.jpg",
-    "uid": "DGXLOz"
-  },
+  {"uid":"DsxvfA", "worldName":"Highschool of the Dead", "rating":2, "image":"https://m.media-amazon.com/images/S/pv-target-images/b4a77b5abb856eb63bdc68bc7b9234e396b1c002001abd63bb96ca362d615164._SX1080_FMjpg_.jpg", "condition":[{"name":"Before Z-Day.", "rating":2}, {"name":"Starting from Z-Day.", "rating":4}]},
   {
     "worldName": "How not to Summon a Demon Lord",
     "rating": 6,
@@ -3390,12 +3375,7 @@
     "image": "https://pbs.twimg.com/media/Djc41Z5UwAAM8mb.jpg",
     "uid": "rEOm4E"
   },
-  {
-    "worldName": "Trials In Tainted Space",
-    "rating": 6,
-    "image": "https://i.imgur.com/pPbYMZI.jpg",
-    "uid": "MMHlyE"
-  },
+  {"uid":"cNEZxQ", "worldName":"Trials In Tainted Space", "rating":6, "image":"https://images2.imgbox.com/63/06/ptMeqkti_o.png"},
   {
     "worldName": "True Blood",
     "rating": 5,
@@ -7579,6 +7559,6 @@
   {"uid":"TAUTKq", "worldName":"Kaiju No 8", "rating":5, "image":"https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/04/kaiju-no-8-defence-force.jpg?q=70&fit=crop&w=1100&h=618&dpr=1", "condition":[{"name":"Before Kaiju", "rating":2, "official":false}]},
   {"uid":"LAsREw", "worldName":"Seiken Gakuin no Makentsukai", "rating":4, "image":"https://i.pinimg.com/originals/df/86/16/df86164c00a96d2619d5afe91dc932ff.jpg"},
   {"uid":"hJdObQ", "worldName":"The Legend of Vox Machina", "rating":7, "image":"https://variety.com/wp-content/uploads/2021/06/Critical-Role-Legend-of-Vox-Machina-character-art.png?w=1024"},
-  {"uid":"qZhDfJ", "worldName":"Kaiju no 8", "rating":5, "image":"https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/04/kaiju-no-8-defence-force.jpg?q=70&fit=crop&w=1100&h=618&dpr=1"},
-  {"uid":"APMlVt", "worldName":"SpongeBob SquarePants", "rating":3, "image":"https://variety.com/wp-content/uploads/2023/09/SpongeBob-Press-Art-e1696001639545.jpeg?w=1024"}
+  {"uid":"APMlVt", "worldName":"SpongeBob SquarePants", "rating":3, "image":"https://variety.com/wp-content/uploads/2023/09/SpongeBob-Press-Art-e1696001639545.jpeg?w=1024"},
+  {"uid":"fYigMd", "worldName":"Tokyo ESP", "rating":4, "image":"https://i.imghippo.com/files/047ET1722828814.jpg"}
 ]

@@ -214,7 +214,7 @@ const typeTitles = {
   worlds: 'Worlds',
   warranty: 'Warranty',
   death: 'Death',
-  pvp: 'Pvp'
+  pvp: 'Pvp',
   random: 'Random',
   other: 'Misc',
 }
