@@ -2076,7 +2076,7 @@ export const waifu_perks: WaifuPerk[] = [
       10035,
     ],
     tier: 8,
-    image: 'https://i.imgur.com/FkgLJiC.png?1',
+    image: 'https://images2.imgbox.com/7b/80/4zgDuil8_o.png',
     cost: 150,
     desc: 'Mami is fused with the Uwasa Of Kamihama\'s Holy Maiden, greatly increasing her magical power and stamina. She can freely switch between it and her normal magical girl outfit, with the change being purely cosmetic. ',
   },
