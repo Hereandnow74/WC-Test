@@ -215,7 +215,7 @@ export const laws = `
 <h3 class="text-xl">Mechanic: Laws</h3>
 <p>Laws are forbidden actions that automatically apply effects on those that violate them. By default, all are equal under the eye of your Laws, and they apply equally to all beings within your Jurisdiction except the Contractor. You can set all conditions in an app on your smart device.</p>
 <p>Laws are made up of three main components: the Infraction, the Severity, and the Consequence. An Infraction is the specific action of breaking a specific Law. The Consequence is the effect inflicted upon the Offender. The Severity is the degree of the effect inflicted. Laws can only be made regarding or related to things within a Contractor’s Jurisdiction.</p>
-<p><b>A Contractor has Jurisdiction within Company provided spaces (Pocket Apartment and its upgrades, Dragon Cabin, space claimed by Alterzelu Creep, etc), meaning Laws only function (and apply their Consequences) within those areas.</b> A Contractor does not have a default set of Laws or actions they can make Laws about, but the default Consequence that all Contractors have access to is to affect an Offender's libido, arousal, or sensitivity.</p>
+<p><b>A Contractor has Jurisdiction within company- provided spaces (Pocket Apartment and its upgrades, Dragon Cabin, enclosed Rides, etc), meaning Laws only function (and apply their Consequences) within those areas</b> Alterzelu Creep requires Stained-Glass Sky to benefit from Sanctuary Laws. A Contractor does not have a default set of Laws or actions they can make Laws about, but the default Consequence that all Contractors have access to is to affect an Offender's libido, arousal, or sensitivity.</p>
 <p>Consequences operate similarly to adjustment sliders provided via Tempest Jewelry, Operating on a scale of 0% - 100%. Unlike that binding’s Runes, Consequences cap at 500%. You may cap the effect for either specific laws or offenders in general lower than the maximum. Past 300%, most changes become extremely debilitating: examples include breasts the size of their torso or submissiveness to the point of bowing and begging forgiveness for tiny offenses. Offenders that are not applicable targets (such as being featureless geometric robots or formless AIs) instead have a ‘failure’ slider, that upon being filled causes the Offender to break down, fail, or otherwise be rendered inoperable.</p>
 <p>While a single action may break multiple laws, and thus suffer multiple Consequences at once, a specific Law will only apply once per Infraction. A continuous violation (such as flying in a no-flying zone) will apply its Consequences once per hour. A Law’s Consequences may adjust multiple ‘sliders’ that the Contractor has access to at once, but only adjust each one up to the maximum severity of the infraction. Any particular Law will have a maximum severity any Consequences it causes can be, though you may set laws to have smaller effects as desired. By default, these changes fade over time while outside your controlled spaces at a rate of 1% per day.</p>
 <p>A Minor infraction may instill changes up to ~1% per infraction. Major infractions may instill up to ~5% changes per; Severe infractions up to ~10%, and Extreme infractions up to ~25%.</p>
@@ -295,7 +295,7 @@ demiplane.push({
   needed: 2,
   whitelist: ['Demiplane', 'Life’s A Beach', 'Nomad'],
   desc: `
-  This perk adds any actions undertaken by or that directly relate to or affect non-sapient flora and fauna to your Jurisdiction, and adds the ability to modify the same traits as Advanced Runes: Body to your available Consequences. Additionally, this allows you to set the weather patterns in areas you control, as well as the general nature of the ecology.
+  This perk adds any actions undertaken by or that directly relate to or affect non-sapient flora and fauna to your Jurisdiction, and adds the ability to modify the same traits as Advanced Runes: Body to your available Consequences, except for hybridization. Additionally, this allows you to set the weather patterns in areas you control, as well as the general nature of the ecology.
   <p>Non-sapients brought into your Domain or that are controlled, tamed, or guided by others feel compulsions to follow through with the laws set out. If they are made to do otherwise, infractions apply to both the creature as well as the master of the creature.
   </p>
   <p>The Flora and Fauna in an area may be modified gradually by these laws, taking on fantastical shapes, up to T4 or the most powerful native variant, whichever is higher. A repurchase of this Law increases that limit to T7.</p>
@@ -313,7 +313,7 @@ demiplane.push({
   cost: 50,
   whitelist: ['Demiplane'],
   desc: `
-  This perk adds any actions, equipment, or skills that would fall under the Engineering or Science Talents to your Jurisdiction, and your potential Consequences now include mechanical failure chances, increased scientific magic failure chances, or changes that Advanced Runes: Hybrid could implement, provided any racial template abilities would fall under the purview of Engineering or Science Talents.
+  This perk adds any actions, equipment, or skills that would fall under the Engineering or Science Talents to your Jurisdiction, and your potential Consequences now include mechanical failure chances, increased scientific magic failure chances, or hybridization from Advanced Runes: Body could implement, provided any racial template abilities would fall under the purview of Engineering or Science Talents.
   <p>While in an area governed by these Laws, forbidden equipment, technology, or ‘tech levels’ will quickly begin to misfire, and eventually entirely fail. People attempting to use them will also suffer a minor Infraction.</p>
   <p>Laws of Science are at most Major Infractions.</p>
   `,
@@ -327,7 +327,7 @@ demiplane.push({
   cost: 50,
   whitelist: ['Demiplane'],
   desc: `
-  This perk adds any actions, equipment, or skills that would fall under the Soul or Blessed Talents to your Jurisdiction, and your Consequences can now affect things like mana regen, mana capacity, chakra, current mana, spell slots, and similar things related to magic, or changes that Advanced Runes: Hybrid could implement, provided any racial template abilities would fall under the purview of Soul or Blessed Talents.
+  This perk adds any actions, equipment, or skills that would fall under the Soul or Blessed Talents to your Jurisdiction, and your Consequences can now affect things like mana regen, mana capacity, chakra, current mana, spell slots, and similar things related to magic, or hybridization from Advanced Runes: Body, provided any racial template abilities would fall under the purview of Soul or Blessed Talents.
   <p>While in an area governed by these Laws, forbidden equipment or magic can have increased difficulty and energy costs.</p>
   <p>Laws of Magic are at most Major Infractions.</p>
   `,
@@ -341,7 +341,7 @@ demiplane.push({
   cost: 50,
   whitelist: ['Demiplane'],
   desc: `
-  This perk adds any actions, pieces of equipment, or skills that would fall under the Psychic Talent to your Jurisdiction, and adds the ability to modify the same traits as Advanced Runes: Mind to your available Consequences, as well as changes that Advanced Runes: Hybrid could implement, provided any racial templates abilities would fall under the purview of the Psychic Talent.
+  This perk adds any actions, pieces of equipment, or skills that would fall under the Psychic Talent to your Jurisdiction, and adds the ability to modify the same traits as Advanced Runes: Mind to your available Consequences, as well as hybridization from Advanced Runes: Body, provided any racial templates abilities would fall under the purview of the Psychic Talent.
   <p>While in an area governed by these Laws, forbidden pieces of equipment or psionics will begin to have increased difficulty and energy costs.</p>
   <p>Laws of Cognition are at most Major Infractions.</p>
   `,
