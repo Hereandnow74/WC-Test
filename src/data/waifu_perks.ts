@@ -1464,7 +1464,7 @@ export const waifu_perks: WaifuPerk[] = [
       4796289,
     ],
     tier: 8,
-    image: 'https://cdn.donmai.us/sample/8e/0f/__medusa_and_gorgon_fate_and_1_more_drawn_by_genyaky__sample-8e0f25b9cc71f3332b7bd2b96e57d7df.jpg',
+    image: 'https://images2.imgbox.com/13/83/VFbAfy0A_o.png',
     cost: 100,
     discount: 0,
     costT: 0,
