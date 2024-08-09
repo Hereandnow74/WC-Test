@@ -297,7 +297,7 @@ export const waifu_perks: WaifuPerk[] = [
       6026,
     ],
     tier: 6,
-    image: 'https://i.imgur.com/AQ74QBy.jpg?1',
+    image: 'https://images2.imgbox.com/e3/a3/gAFK7rm6_o.png',
     cost: 30,
     desc: 'Tsubasa can now summon the manifestation of her envy, Kako, a \u201CHysteria Tiger\u201C with a penchant for arson. This version of Kako is much better-controlled than the original, only burning what his master directs him to burn, and will disappear back into Tsubasa\'s mind when she no longer needs his services. Tsubasa\'s hair will also gain a natural black-and-white tiger-stripe pattern. If Tsubasa is captured after the events of Tsubasa Tiger, she will always have this perk',
   },
