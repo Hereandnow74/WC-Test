@@ -383,10 +383,42 @@ export const difficultyOptions = [
     type: 'death',
   },
   {
+    uid: 'Ix67G9',
+    title: 'Is There Anybody Out There?',
+    image: 'https://images2.imgbox.com/3e/ee/YdjeIxmv_o.png',
+    intensity: -1,
+    desc: 'You value your privacy. We will ensure that other contractors do not accidentally stumble upon “your” parallels of the worlds you visit while traveling the multiverse. You’re welcome.',
+    category: 'difficulty',
+    type: 'pvp',
+  },
+  {
+    uid: 'Ix27G9',
+    title: 'So You’re Telling Me There’s A Chance!',
+    image: 'https://images2.imgbox.com/1c/ec/MofHhYQX_o.png',
+    intensity: 0,
+    desc: `
+    <p>You do not have any active protections against other contractors stumbling into your world by accident. The odds of that actually happening are really low, though. Company matchmaking is still in effect even for these random encounters, assuring that the retinue of any random encounter will be of a similar power level to yours.</p>
+    <p>Additionally, randomly encountered contractors will not be immediately hostile to your retinue, though they are still people. Should relations turn sour, we will not protect either side from the consequences of their own actions.</p>
+    `,
+    category: 'difficulty',
+    type: 'pvp',
+  },
+  {
+    uid: 'naH12',
+    title: 'Nah, I’d Win.',
+    image: 'https://images2.imgbox.com/7a/b6/H6iFsiyR_o.png',
+    intensity: +2,
+    desc: `
+    <p>You do not have any active protections against other contractors stumbling into your world by accident. The odds of that actually happening are relatively low. In addition, your world is always a valid target for PVP interactions as if you own a Red Eye Orb.</p>
+    `,
+    category: 'difficulty',
+    type: 'pvp',
+  },
+  {
     uid: 'fraqs',
     title: 'Alignment',
     image: 'https://images2.imgbox.com/93/27/hJ6QSsra_o.png',
-    intensity: 0,
+    intensity: +1,
     desc: 'In each world visited, the people’s personal morality and factional membership is randomized on an individual level. Individuals in the same factions will tend to have similar morality, but their lineups and goals are likely to be wildly different from what you remember. Purchases are not affected.',
     category: 'difficulty',
     type: 'random1',
@@ -395,7 +427,7 @@ export const difficultyOptions = [
     uid: '7429Y',
     title: 'Power Swap',
     image: 'https://i.imgur.com/b98eKLFl.jpg',
-    intensity: 0,
+    intensity: +1,
     desc: 'In each world visited, the people’s skills and abilities are randomized on an individual level. This is effectively a global Power Swap on every individual, with no respect for setting boundaries. These swaps obey the star color system, so someone who is normally Tier 4 may be swapped to a Tier 6 power, but not a Tier 3. Purchases are not affected.',
     category: 'difficulty',
     type: 'random2',
@@ -404,7 +436,7 @@ export const difficultyOptions = [
     uid: 'Wo37i',
     title: 'Homeworld',
     image: 'https://i.imgur.com/unl0WlXl.jpg',
-    intensity: 0,
+    intensity: +1,
     desc: 'The local populations of each world you visit are shuffled. They are all fully native to their new worlds, not isekai transplants. This shuffle obeys the star color system, so a local Tier 4 may be swapped with a Tier 6, but not a Tier 3. Purchases are not affected.',
     category: 'difficulty',
     type: 'random3',
@@ -422,7 +454,7 @@ export const difficultyOptions = [
     uid: 'dsM0L',
     title: 'Item',
     image: 'https://images2.imgbox.com/f0/1d/FdWPzyv4_o.jpg',
-    intensity: 0,
+    intensity: +1,
     desc: 'The local artifacts, treasures, and rarities of each world you visit are shuffled. This can include combat equipment, though mass-deployed gear will be shuffled as whole groups, not individually. Plot-relevant items will always remain in their home worlds, though they could be anywhere within those worlds. This shuffle obeys the star color system, so equipment that makes its user a Tier 4 may be swapped with a Tier 6, but not a Tier 3. Purchases are not affected.',
     category: 'difficulty',
     type: 'random5',
@@ -482,9 +514,8 @@ export const difficultyOptions = [
     intensity: 2,
     desc: `
     <p>Your signing bonus… isn’t. Whatever you spend from it will instead be a loan, subject to the rules in Loans and Credit Debt. Your starting world will not necessarily have enough available credits to pay back your loan or even the interest, but Missions and Invasion PvP can help cover that. Your baseline interest rate will also increase to 20%.</p>
-    <p>Budgets below the starting loan limit for your intensity will experience an effective increase to that limit using the Loan rules. Budgets above that limit will be overcapped until you’ve paid enough of the principal to fall beneath the limit and/or visited enough new worlds to raise the limit above your principal. No additional loans may be taken while overcapped.
+    <p>If your starting budget is below the starting loan limit for your intensity, you may take additional loans to that limit after chargen, as normal. Budgets above that limit will be overcapped until you’ve paid enough of the principal to fall beneath the limit and/or visited enough new worlds to raise the limit above your principal. No additional loans may be taken while overcapped.
     </p>
-    <p>Note that the budget-based caps on Substitute, Yoink, and other options will follow the original budgets for each Danger Rating and intensity.</p>
     `,
     category: 'difficulty',
     type: 'other5',

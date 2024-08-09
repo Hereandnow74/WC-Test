@@ -74,7 +74,7 @@ talents.push({
   category: 'Talent',
   image: 'https://fictionhorizon.com/wp-content/uploads/2021/12/Captain-Tsubasa-2018-1024x576.jpg',
   cost: 5,
-  desc: `You can rapidly learn any non-supernatural athletic skills you encounter: acrobatics, physical sports, parkour, swimming, etc. Skills directly related to combat fall under Martial Talent instead, while supernatural extensions of skill are affected by Psychic, Soul, or other Basic Talents.
+  desc: `You can rapidly learn any non-supernatural athletic skills you encounter: acrobatics, physical sports, parkour, swimming, etc. This includes physical ability as well. Skills directly related to combat fall under Martial Talent instead, while supernatural extensions of skill are affected by Psychic, Soul, or other Talents.
   `,
 })
 
@@ -272,7 +272,8 @@ talents.push({
   complex: 'target_f',
   anything: 'Power Name',
   desc: `
-<p>Sometimes you just want to copy a powerset, either a generic one or a specific character’s. This perk lets you do just that. Only Imaginary Tier abilities, abilities that originated in other CYOAs, and abilities found elsewhere in this catalog, including the loadouts of other contractors, are not eligible. The exact capabilities at the time of purchase will be scaled to Tier 4. This perk is not necessary for any abilities that your subjects might grant you via surgery, ritual, or other means. Templates for characters who are only purchasable in sets must be bought separately. Templates for alternative versions of the same character must also be bought separately, unless otherwise specified. Characters who are represented as Specific Waifu Perks may be purchased as templates for individuals who are not eligible for the actual perks, whether natively or with Power Swap, and follow any mutual exclusivity rules stated in the perk descriptions.</p>
+<p>Sometimes you just want to copy a powerset, either a generic one or a specific character’s. This perk lets you do just that. The target ability must be copper-, silver-, or gold-star in tier; the use of this perk on blue-star abilities produces incoherent results. Imaginary Tier abilities, abilities that originated in other CYOAs, and abilities found elsewhere in this catalog, including the loadouts of other contractors, are not eligible. The exact capabilities at the time of purchase will be scaled down to Tier 4.</p>
+<p>This perk is not necessary for any abilities that your subjects might grant you via surgery, ritual, or other means. Templates for characters who are only purchasable in sets must be bought separately. Templates for alternative versions of the same character must also be bought separately, unless otherwise specified. Characters who are represented as Specific Waifu Perks may be purchased as templates for individuals who are not eligible for the actual perks, whether natively or with Power Swap, and follow any mutual exclusivity rules stated in the perk descriptions.</p>
 <p>All templates come with a skill framework, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological abilities as well. Iconic equipment is included with this perk, but may see its parameters and functionality locked until you’re capable of using it safely or have trained enough with the more basic features.</p>
 <p>After the skill framework runs out and you’ve achieved the typical heights of the template, the appropriate Basic Talent will let you continue to train beyond that point, as described in the opening of that section. Any familiars that would normally come with a template (i.e. are included with a purchase or Power Swap) must be purchased, captured or otherwise spawned separately.</p>
 <p>For racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.), unlike Advanced Runes: Body, a living, natural example of that template is not required for your selection with this perk. Racial templates otherwise follow the same rules as in that perk.</p>
@@ -599,7 +600,7 @@ perks.push({
 <p>An unwitting anime protagonist once stumbled into a portal to the “Real World,” discovered an anime convention after being mistaken for a cosplayer, and brought back (hentai) doujins as proof of her experiences. The next time she opened one of the doujin volumes, however, she saw only blank pages, as her world mistook the stories within for anecdotes that hadn’t occurred yet and integrated them into its common sense. She remained the only one in her world who was aware that it wasn’t always as erotic as it quickly became.</p>
 <p>This perk allows you to do just that, via a special app in your company smart device. Any physical copy of merchandise or doujin material may be permanently sacrificed through this app, in an inherently destructive process. A material’s effectiveness scales with its artistic quality, with no requirement that it be purchased. Materials that anyone in your retinue created yourselves, even with Aesthetic or Communication Talents, work just fine. Materials sacrificed must have been created in other worlds, including your Demiplane or Dungeon. Multiple sacrifices may be applied to the same world, whether simultaneously or successively, but each sacrifice may only affect a single world. If you sacrifice material while anyone in your retinue is within the target world, the changes will proliferate over the course of the next week (168 hours). Otherwise, the changes will have already taken full effect the next time anyone in your retinue visits.</p>
 <p>Contractors and their subjects, including their Demiplanes, Dungeons, and registered Catch-a-Ride vehicles including Heavenbuilt Proto, may, by the contractor’s choice, be directly affected by these alterations. By default, they will be aware that any differences created are not the standard way of things, but must discover the exact nature of the changes themselves. Cheat-sheets detailing these alterations, beyond the general theme, are not available.</p>
-<p>Alternatively, every member of the contractor’s retinue who calls the altered world home may be affected, all of the contractor’s subjects, or the contractor as well. The contractor may also choose to only accept physical changes to their retinue, limit mental changes to common knowledge and episodic memories of any altered pasts, or accept all changes. As with Advanced Tempest Runes, any sufficiently-disabling effect on the contractor will have an automatic time limit of 48 hours so they don’t get stuck. If they return to that same transformation within 10 minutes, the time limit will be doubled each time until their streak ends. The contractor may set a shorter limit if they like.</p>
+<p>Alternatively, every member of the contractor’s retinue who calls the altered world home may be affected, all of the contractor’s subjects, or the contractor as well. The contractor may also choose to only accept physical changes to their retinue, limit mental changes to common knowledge and episodic memories of any altered pasts, or accept all changes. As with Advanced Runes, any sufficiently-disabling effect on the contractor will have an automatic time limit of 48 hours so they don’t get stuck. If they return to that same transformation within 10 minutes, the time limit will be doubled each time until their streak ends. The contractor may set a shorter limit if they like.</p>
 <p>Potential reality alterations include, but are not limited to: hentaification of a wholesome setting and vice versa, common fashions, aesthetic eras, large-scale genre rewrites, and fusing the target setting with the specific one represented by the sacrificed material (if one exists). This perk, and any that follow from it, follow a karmic balance of sorts: it will not cleanly resolve any problem in a world without introducing at least the same number or degree of new ones.</p>
 <p>A fusion setting will have the highest danger rating of all components, but will not add any actual characters from the material’s setting. Instead, the target setting’s locals will be matched to their closest equivalents and their roles and abilities changed to fit, while still remaining recognizable as themselves; this can affect their individual tier ratings. The one exception to this is for worlds with many alternative continuities, where members of a common cast are present in some continuities but not others. This most frequently occurs in the western superhero genre, but is not limited to such. This perk can spawn in missing cast members with no penalty other than the karmic balance.</p>`,
 })
@@ -623,7 +624,7 @@ perks.push({
   category: 'Misc',
   image: 'https://i.ibb.co/fGnn30j/Blank-Slate.jpg',
   cost: 75,
-  whitelist: ['Meta Shift II', 'We Will Meet Again'],
+  whitelist: ['Universal Calibration II', 'We Will Meet Again'],
   desc: `
 <p>The Meta Shift app can now generate a fresh parallel of any world you’ve visited at any time. You can apply or remove sacrifice results to these new parallels just like anywhere else.</p>`,
 })
@@ -767,7 +768,7 @@ perks.push({
   cost: 0,
   costT: 2,
   desc: `
-<p>Run the Built in the <a href="https://imgur.com/gallery/dUkFmZF" target="_blank" rel="noopener noreferrer" class="text-red-500 hover:underline">Heavens CYOA</a>, (<a href="https://built-in-the-heavens.neocities.org/"  target="_blank" rel="noopener noreferrer" class="text-red-500 hover:underline">interactive version</a>), ignoring the origins choice and all personal perks. The only allowed complications are the ones that grant followers. These followers will count as their original inspirations: Broken Toy (YorHa A2), Jewelled Collar (Starfire and Blackfire), All According to Plan (Taldeer), Yan Yan Dere Dere (Just Monika), Forgotten and Lost (Dragon from Worm, in the body of Cibo from Blame!) or A Loyal Vizier (Caster Tamamo-no-Mae). From Heights Brought Low (Shub-Niggurath) must be purchased separately. These followers cannot be refunded for credits, so you should only take the ones you want. Otherwise, follow its rules as written.</p>
+<p>Run the <a href="https://imgur.com/gallery/dUkFmZF" target="_blank" rel="noopener noreferrer" class="text-red-500 hover:underline"> Built in the Heavens CYOA</a>, (<a href="https://built-in-the-heavens.neocities.org/"  target="_blank" rel="noopener noreferrer" class="text-red-500 hover:underline">Interactive version</a>), ignoring the origins choice and all personal perks. The only allowed complications are the ones that grant followers. These followers will count as their original inspirations: Broken Toy (YorHa A2), Jewelled Collar (Starfire and Blackfire), All According to Plan (Taldeer), Yan Yan Dere Dere (Just Monika), Forgotten and Lost (Dragon from Worm, in the body of Cibo from Blame!) or A Loyal Vizier (Caster Tamamo-no-Mae). From Heights Brought Low (Shub-Niggurath) must be purchased separately. These followers cannot be refunded for credits, so you should only take the ones you want. Otherwise, follow its rules as written.</p>
 <p>You will start aboard your ship, in the same star system as your starting world, unless you also purchased Life’s A Beach. Your ship's AI counts as a purchased waifu of Tier 6. Alternatively, you may plug one of your purchased or captured waifus into your ship to make her a pseudo-AI or shipgirl and take a 50-credit toward future purchases, you monster. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet.</p>
 <p>In addition to the ship’s Imaginary Tier-granted multiversal capability, if you have a subject capable of time-travel, they'll be able to channel their power through your ship so it can make such journeys too, even if you keep the Heavenbuilt AI as a separate subject.</p>
 `,
@@ -905,8 +906,10 @@ genericPerks.push({
   complex: 'target',
   max: 10,
   desc: `
-<p>In some worlds, anonymity is a danger in and of itself. This perk retroactively modifies all records (paper, digital, and even memories) to create a legal existence for your waifu. Where applicable, the waifu will receive any real documentation she would be expected to have. This perk will not actually make your backstory true, no matter how many locals believe it. You may also purchase and apply this perk to yourself; the all-waifus package will always apply it to you. If you chose the Extra or Substitute origins, this perk will not apply to you until you visit your second world. Similarly, this cannot give a captured or Yoinked retinue member a new identity in their own homeworld. Once you’ve purchased this perk ten times, it will apply to every member of your retinue.</p>
-<p>By default, this history is of a middle-class or analogous citizen. If plausible and desired, they will instead be of a social class that can associate with you. Under the same conditions, any powers they have may be documented in a way that best fits your needs. If you have Trace Defense, any attempt at remote viewing where failure or invisibility would itself be a red flag will seemingly succeed, showing either a convincing match to their documented past or a present or future with nothing important to note.</p>`,
+<p>In some worlds, anonymity is a danger in and of itself. This perk retroactively modifies all local records (paper, digital, and even memories) to create a faked legal existence for your waifu. Where applicable, the waifu will receive any real documentation she would be expected to have, along with a briefing on her role in the new world. This perk will not actually make the backstory true, no matter how many locals believe it.</p>
+<p>You may also purchase and apply this perk to yourself; the all-waifus package will always apply it to you. If you chose the Extra or Substitute origins, you already have a backstory in your first world. Thus, this perk will not apply to you until you visit your second world. Similarly, this cannot give a captured or Yoinked retinue member a new identity in their own homeworld. Once you’ve purchased this perk ten times, it will apply to every member of your retinue.</p>
+<p>By default, this history is of a middle-class or analogous citizen. If plausible and desired, they will instead be of a social class that can associate with you. Under the same conditions, any powers they have may be documented in a way that best fits your needs. If you have Information or Trace Defenses, any attempt at scanning or remote viewing where failure or invisibility would itself be a red flag will seemingly succeed, showing the viewer what you want them to see, such as a convincing match to their documented past, or a present or future with nothing important to note.</p>
+<p>When entering a world for the first time, you may instead choose to not use this perk. If so, you may not change your mind and activate this perk for that world at a later time.</p>`,
 })
 
 genericPerks.push({
@@ -1061,6 +1064,37 @@ genericPerks.push({
   cost: 40,
   image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/L1ex5.jpg',
   desc: 'The Spirit can now enter her Inverse Form, greatly increasing her strength and changing her Angel into a Demon King. The Spirit will remain in full control of herself. This perk may be applied to any Spirit from Date A Live, including those who lack a canonical Inverse Form or aren’t listed in the catalog as Spirits. This perk is free if you capture the Spirit while she’s in her Inverse Form, or if she unlocks it herself by force.',
+})
+
+genericPerks.push({
+  uid: '8Kgf9',
+  title: 'Checkmate',
+  category: 'Generic',
+  requires: 'Any Highschool DxD Devil of T6 or higher',
+  complex: 'target',
+  cost: 50,
+  image: 'https://images2.imgbox.com/90/8d/pneduCio_o.png',
+  desc: `
+  <p>Select an eligible retinue member to receive a standard set of Evil Pieces: 1 Queen, 2 Knights, 2 Bishops, 2 Rooks, and 8 Pawns. We do not supply King or Mutation pieces.</p>
+  <p>Evil Pieces allow you to turn others into Reincarnated Devils, giving them increased strength, durability, senses, demonic power, and a massive lifespan. If you have the intensity option Intact Weaknesses, they will become lethargic in the sunlight (mitigated by Wild Defense) and weak to light magic and holy magic (mitigated by Blessed Talent). New Devils are immediately raised to Tier 4, if they were not already.</p>
+  <p>Each type of Evil Piece has direct benefits to combat. Knights gain increased agility and martial skill, Bishops gain increased power and skill to all of their supernatural abilities, Rooks gain increased strength and durability, and Queens gain all of the above. Pawns instead gain the ability to temporarily promote themselves to Knight, Bishop, Rook, or Queen while they are inside enemy territory. Rooks additionally have the ability to Castle, to switch places with their King (the recipient of this perk) across any distance, even between multiverses.</p>
+  <p>If you add someone to your personal peerage, they will be captured immediately, as if by the Stamp, and receive an active binding tattoo. If your retinue member adds someone to their peerage, the new Devil’s binding tattoo will automatically activate after three days (72 hours). Evil Pieces can resurrect the dead, but only within one hour of the time of death.</p>
+  <p>All DxD Devils qualify for this perk, whether they’re naturally-born or converted from another race by natural means, Power Swap, or Template Stacking.</p>
+  `,
+})
+
+genericPerks.push({
+  uid: '8Kgf7',
+  title: 'Tower Access',
+  category: 'Generic',
+  requires: 'Any Reyvateil Origin from Ar tonelico',
+  complex: 'target',
+  cost: 180,
+  image: 'https://images2.imgbox.com/9c/0d/4MJldfNC_o.png',
+  desc: `
+  <p>Without their Towers, Reyvateil Origins (and Mir, through hacking Shurelia’s tower, Eoria), are limited in power and range. With this perk, you become a conduit to a Tower for them. If you have Life’s a Beach and at least one of the three canon Origins (Frelia, Shurelia, and Tyria) their Towers will be physically present in your world, increasing her range to 400 km (measured from the last used portal site) and power, allowing them to truly warp the reality around them with suitable Songs. Your entire demiplane is always covered by these towers, regardless of the usual range.</p>
+  <p>This perk may be purchased for any Reyvateil Origin in your retinue, including those created through Template Stacking. Each repurchase adds 400 km to the range of every girl who has this perk: with two purchases, 800 km from the last-used portal, with three purchases, 1200 km, with four purchases, 1600 km, etc.</p>
+ `,
 })
 
 genericPerks.push({

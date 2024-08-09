@@ -903,7 +903,19 @@ export const lureExpansions: PerkFull[] = [
       talentPerks: [{ title: 'Performance Talent', cost: 0, count: 1 }],
     },
     desc: 'Your voice is supernaturally compelling. As an active effect, you can empower your words to give specific commands to individuals, or rally a crowd with a song. Additionally, take Performance Talent for free. Beings with sufficient willpower can resist or even block this lure. It will never affect someone who lacks a sense of hearing.',
-  }]
+  },
+  {
+    uid: '133333',
+    title: 'Love Spot: Your Wings Are Beautiful',
+    category: 'Lure Expansion',
+    image: 'https://images2.imgbox.com/67/10/2b9VDb83_o.png',
+    cost: 20,
+    whitelist: ['Love Spot'],
+    desc: `
+    <p>Blocking the line of sight to your Love Spot no longer simply serves to preserve the sanity of your potential victims. Covering your spot will now build up a charge as well. The longer it is covered or unseen by others, and the more dramatic its reveal, the more powerful the impact it has on all those who see it, besides yourself. At greater charges, the world practically slows down for your victims as they watch the reveal. The colors are brighter and sharper, the sounds more distinct, and the scents forever engraved into their mind, helping them remember the moment perfectly in the future.</p>
+    <p>At the maximum potency of one week (168 hours), the effect is intense enough to stun individuals with its beauty. This effect only lasts for an instant and its objective duration time is variable, though it may cause longer-lasting disorientation. Once revealed and the charge spent, the effects of Love Spot will return to normal within several minutes.</p>
+    <p>A charged Love Spot may pierce even powerful magical resistances, but its effectiveness will still be reduced. Repeated exposure will diminish the potency of this perk’s aftereffects while the immediate impacts remain unchanged.</p>`,
+   }]
 
 export const otherDesc = 'These perks are either expansions to multiple Bindings or serve as alternative methods to capturing or controlling your retinue. Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.'
 export const otherControls: PerkFull[] = [
