@@ -188,7 +188,7 @@ export const waifu_perks: WaifuPerk[] = [
       5453,
     ],
     tier: 11,
-    image: 'https://cdn.donmai.us/original/ad/3e/__ayanami_rei_angel_and_lilith_neon_genesis_evangelion_and_1_more_drawn_by_ahi_tb__ad3eff86f9eb46f73a0ed76eecd508c6.jpg',
+    image: 'https://i.imgur.com/aTuHwfV.jpg',
     discount: 20,
     cost: 0,
     costT: 2,
