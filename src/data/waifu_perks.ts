@@ -4626,12 +4626,12 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     waifuUID: [
       4686,
     ],
-    tier: 9,
+    tier: 0,
     image: 'https://i.imgur.com/dNEKnPU.png',
-    cost: 400,
+    cost: 20,
     discount: 0,
     costT: 0,
-    desc: 'In cannon Dragon is bound by many restrictions, yet despite this she is still one of the most powerful hero\'s on Earth Bet. Contessa once said that an unbound Dragon would be enough to solve all of humanities problems and that is why she had to remain shackled. This perk unbinds her, unleashing her true potential upon the world.',
+    desc: 'Dragon, the helpful superhero, the backbone of the PRT and artificial intelligence created by the Tinker Andrew Richter has for many years operated under the many restrictions imposed on her by her creator, who out of fear of her nature stifled her capabilities. Now, Dragon has been liberated and remains free of any rules or fail-safes she once had, including the kill-switch Iron Maiden program hidden within her code. Unlike the sacrifices of her personality and other abilities when this was done by Defiant, Dragon remains fully herself and retains all her knowledge, memory, and capabilities. Dragon will always have this perk if captured when all the restrictions, rules, fail-safes, and kill-switch in her code have been removed. ',
     whitelist: [],
   },
   {
