@@ -205,7 +205,7 @@ export const waifu_perks: WaifuPerk[] = [
       5450,
     ],
     tier: 6,
-    image: 'https://i.imgur.com/SVR08kal.png?1',
+    image: 'https://images2.imgbox.com/4f/1b/VHi7jlJ8_o.png',
     cost: 45,
     desc: 'Asuka is instead Shikinami Asuka from Rebuild. Compared to Souryuu Asuka, she has greater piloting experience, her ground combat ability and personal Lance of Longinus from the Honkai Impact 3rd collaboration, and a remnant of Bardiel in her eye that gives her a greater talent for AT Field manipulation. She can also activate the remnant to enter a berserker mode that temporarily raises her tier rating at step 5. If Asuka\'s tier before activating this Angel Blood is T9 or below, it will add one tier to her rating; if she\'s already T10, it will double her power but not raise her tier any further Without practice, Angel Blood can only be activated for five minutes at at a time and has a cooldown of one week (168 hours).',
   },
