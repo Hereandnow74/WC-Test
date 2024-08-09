@@ -1642,7 +1642,7 @@ export const waifu_perks: WaifuPerk[] = [
       9777,
     ],
     tier: 10,
-    image: 'https://i.imgur.com/db85iO2.png?1',
+    image: 'https://images2.imgbox.com/62/aa/CPM3JV3P_o.png',
     cost: 500,
     desc: 'Dark Sakura or Dark Rin has fully merged with Angra Mainyu to become the Beast of Retribution. Even if you have both Dark Sakura and Dark Rin, you may only apply this perk to one of them. Beast Sakura and Beast Rin both qualify for special Alterzelu Symbiote theming. ',
   },
