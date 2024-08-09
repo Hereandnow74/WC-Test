@@ -2091,7 +2091,7 @@ export const waifu_perks: WaifuPerk[] = [
       10259,
     ],
     tier: 8,
-    image: 'https://i.imgur.com/XnXrpIo.png?1',
+    image: 'https://images2.imgbox.com/41/07/9Hguf4kD_o.jpg',
     cost: 100,
     desc: 'Chibiusa is instead Black Lady, her brainwashed Black Moon alter-ego with massive parental issues. Black Lady qualifies for special Alterzelu Symbiote theming.lf you captured Chibiusa or there was any amount of time between buying her and this upgrade, she will gain Black Lady\'s form, costumes, and additional power, but her personality will not be affected. Strangely, Black Lady x Mistress 9 is a frequent ship in the Sailor Moon fanart community, despite the two never meeting or even appearing in the same seasons.',
   },
