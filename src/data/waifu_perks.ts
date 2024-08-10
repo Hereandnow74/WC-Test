@@ -1209,7 +1209,7 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       7262,
     ],
-    image: '',
+    image: 'https://images2.imgbox.com/be/b8/nukXwZNf_o.png',
     cost: 20,
     desc: 'Bronya is instead her adult self, the veteran captain of the reformed Schicksal (and game developer) from A Post-Honkai Odyssey. Buying this perk for an existing Bronya will give her new skills, memories, and gear from the decade or so between the end of the main story and APHO. This perk is not mutually exclusive with Herrscher of Reason and does not raise Bronya’s tier rating.',
   },
