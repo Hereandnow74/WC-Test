@@ -1593,9 +1593,9 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       'NxNJJ',
     ],
-    image: 'https://i.imgur.com/haMwMjv.png?1',
+    image: 'https://images2.imgbox.com/a8/5b/ry2aftug_o.png',
     cost: 500,
-    desc: 'Ishtar\'s familiar, Gugalanna. was the greatest of the Mesopotamian Divine Beasts. The bull the size of a mountain required Gilgamesh and Enkidu to work together to defeat it. Ordinarily. Gugalanna is only available for capture during the Snowfield Grail War, as the version of Ishtar at the Babylonian Singularity and Chaldea sheepishly admitted that she lost her pet - though she later manifested it as a diminutive mascot. This perk restores "Gugalanna Lily* to its full power, but does not raise Ishtar\'s tier. ',
+    desc: 'Ishtar\'s familiar, Gugalanna. was the greatest of the Mesopotamian Divine Beasts. The bull the size of a mountain required Gilgamesh and Enkidu to work together to defeat it. Ordinarily. Gugalanna is only available for capture during the Snowfield Grail War, as the version of Ishtar at the Babylonian Singularity and Chaldea sheepishly admitted that she lost her pet - though she later manifested it as a diminutive mascot. This perk restores "Gugalanna Lily" to its full power, but does not raise Ishtar\'s tier. ',
   },
   {
     uid: 'kC10u',
