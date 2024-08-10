@@ -1401,7 +1401,7 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       7279,
     ],
-    image: 'https://i.imgur.com/h1HSXoX.png?1',
+    image: 'https://images2.imgbox.com/9a/7b/sNnF9DuO_o.png',
     tier: 8,
     cost: 150,
     desc: 'Ana gains the abilities of the Herrscher of Rimestar, a form that combines her regular powers as Herrscher of Ice with those of Owl’s Herrscher of Earth. “Earth” is more appropriately “Stars,” primarily focusing on gravity manipulation, including black hole creation. As Rimestar, Ana can use both Herrscher cores freely.',
