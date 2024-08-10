@@ -1717,7 +1717,7 @@ export const waifu_perks: WaifuPerk[] = [
       9773,
     ],
     tier: 7,
-    image: 'https://i.imgur.com/QbDtkDu.png?1',
+    image: 'https://images2.imgbox.com/e8/2a/4ykPKj3G_o.png',
     cost: 80,
     desc: 'Luvia is instead the Ruler-class Pseudo-Servant Astraea, the Greek goddess of justice as portrayed in Fate/Grand Order. If you purchase or capture Luvia first and apply this perk later, Astraea will keep Luvia\'s memories, as if she had taken Substitute into her host\'s life; if you purchase Luvia and this perk simultaneously, you will only get Astraea. This perk may not be applied to the same Luvia as Kaleidostick Magical Sapphire. If you already have Kaleido Sapphire and want Astraea, you may still purchase this, pre-applied to a second Luvia, for 100 credits.',
   },
