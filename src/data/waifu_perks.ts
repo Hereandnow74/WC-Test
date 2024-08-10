@@ -1345,7 +1345,7 @@ export const waifu_perks: WaifuPerk[] = [
   },
   {
     uid: 'cgwc0',
-    title: 'SEELE: Herrscher of Death',
+    title: 'Herrscher of Rebirth',
     waifu: [
       'Seele Vollerei',
     ],
@@ -1353,10 +1353,10 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       7270,
     ],
-    tier: 8,
-    image: '',
-    cost: 100,
-    desc: 'With this perk, Seele gains the full memories, experiences, and power of the Previous Era’s Herrscher of Death. Not much is known about this one, except for her defeat.',
+    tier: 9,
+    image: 'https://images2.imgbox.com/89/c4/xouLVDo4_o.png',
+    cost: 400,
+    desc: 'Seele has recovered from Sa’s reset of Salt Snow Holy City to become a new type of Herrscher, one whose power comes from the Sea of Quanta. Saule can use her Authority as Herrscher of Rebirth in two distinct forms. Her Soul Shaper form is joined by the deer spirit Diana, while her Life Binder form is joined by the flower spirit Flora. As a bonus, Veliona once more has her old power to wither as the Herrscher of Death by the Cocoon of Finality. Note that these two Herrschers only truly differ in their sources, not capabilities. If you have Bronya with the Herrscher of Reason perk or higher, this perk will also upgrade Project Bunny into its ELF form. Seele will always have this perk if captured after her ascension (chapter 39).',
   },
   // {
   //   uid: 'db0xf',
