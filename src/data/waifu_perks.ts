@@ -978,7 +978,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 8,
     image: '/img/waifu_perks/compressed/image128.png',
     cost: 150,
-    desc: 'Kiana has mastered the powers of the Void and is no longer haunted by the Herrscher personality of Sirin, her past life. Purchased versions of Kiana will always have this perk, as will any captured after the events of Chapter 25.',
+    desc: 'Kiana or Sirin has attained her full power as the Herrscher of the Void. and may call the white dragon Benares to the battlefield once more as a personal familiar. This perk must be purchased separately for Kiana (K423) and Sirin, but will only summon one copy of Benares. The two sisters will have to share her. If Sirin is captured at any point from her reawakening in Schicksal custody (chapter 8) to her final defeat in the Theater of Domination (chapter 25), she will always have this perk. Capturing Sirin during her assault on Schicksal will eject K423 into a new body, allowing her to be captured separately in her baseline Tier 5 form.',
   },
   {
     uid: 'oHFJy',
