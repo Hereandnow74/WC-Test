@@ -342,7 +342,7 @@ export const waifu_perks: WaifuPerk[] = [
       5539,
     ],
     tier: 7,
-    image: '/img/waifu_perks/compressed/image191.png',
+    image: 'https://images2.imgbox.com/cb/71/xPgW6SbC_o.png',
     cost: 80,
     desc: 'Selesia has her personal mecha, Vogelchevalier. It may not be especially titanic like Gigas Machina, but she\'s not complete without it ',
   },
