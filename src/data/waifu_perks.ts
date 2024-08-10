@@ -968,7 +968,7 @@ export const waifu_perks: WaifuPerk[] = [
     uid: 'gC8zD',
     title: 'Herrscher of the Void',
     waifu: [
-      'Kiana Kaslana (Void Drifter)',
+      'Kiana Kaslana (K423) (Void Drifter)',
       'Sirin (Ich Liebe Dich)',
     ],
     from: 'Honkai Impact',
@@ -993,10 +993,10 @@ export const waifu_perks: WaifuPerk[] = [
     perkUID: [
       'gC8zZ',
     ],
-    image: '/img/waifu_perks/compressed/image194.png',
-    tier: 8,
+    image: 'https://images2.imgbox.com/15/25/vRaiog04_o.png',
+    tier: 0,
     cost: 20,
-    desc: 'Kiana (K423) has reclaimed Himeko’s legacy, defeated the Herrscher of the Void for good, and used the power of both the cores of Void and Flames to become a new Herrscher, different from her predecessor. Gathering additional Herrscher cores, as Sirin did during the Second Honkai War, will increase her tier further. This perk adds the Herrscher of Flamescion battlesuit to Kiana’s panoply, in addition to the suits granted by its prerequisite. Kiana will always have this perk if captured after the events of Chapter 25. This perk is unavailable to Sirin and does not increase Kiana’s tier rating.',
+    desc: 'Kiana (K423) has reclaimed Himeko’s legacy, defeated the Herrscher of the Void for good, and used the power of both the cores of Void and Flames to become a new Herrscher, different from her predecessor. Gathering additional Herrscher cores, as Sirin did during the Second Honkai War, will increase her tier further. This perk adds the Herrscher of Flamescion battlesuit to Kiana’s panoply, in addition to the suits granted by its prerequisite, as well as ELF Sirin as a personal familiar. Kiana will always have this perk if captured after her ascension in the Theater of Domination (Chapter 25). This perk is unavailable to Sirin and does not increase Kiana’s tier rating.',
   },
   {
     uid: 'w2qOJ',
