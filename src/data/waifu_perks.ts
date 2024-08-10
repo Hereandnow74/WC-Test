@@ -968,7 +968,8 @@ export const waifu_perks: WaifuPerk[] = [
     uid: 'gC8zD',
     title: 'Herrscher of the Void',
     waifu: [
-      'Ich Liebe Dich',
+      'Kiana Kaslana (Void Drifter)',
+      'Sirin (Ich Liebe Dich)',
     ],
     from: 'Honkai Impact',
     waifuUID: [
@@ -977,22 +978,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 8,
     image: '/img/waifu_perks/compressed/image128.png',
     cost: 150,
-    desc: 'Kiana has mastered the powers of the Void and is no longer haunted by the Herrscher personality of Sirin, her past life. Purchased versions of Kiana will always have this perk, as will any captured after the events of Chapter 25',
-  },
-  {
-    uid: 'gC8zZ',
-    title: 'Herrscher of the Void (K423)',
-    waifu: [
-      'Void Drifter',
-    ],
-    from: 'Honkai Impact',
-    waifuUID: [
-      'ojHDF',
-    ],
-    tier: 8,
-    image: '/img/waifu_perks/compressed/image128.png',
-    cost: 150,
-    desc: 'Kiana has mastered the powers of the Void and is no longer haunted by the Herrscher personality of Sirin, her past life. Purchased versions of Kiana will always have this perk, as will any captured after the events of Chapter 25',
+    desc: 'Kiana has mastered the powers of the Void and is no longer haunted by the Herrscher personality of Sirin, her past life. Purchased versions of Kiana will always have this perk, as will any captured after the events of Chapter 25.',
   },
   {
     uid: 'oHFJy',
