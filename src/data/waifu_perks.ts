@@ -456,7 +456,7 @@ export const waifu_perks: WaifuPerk[] = [
       6217,
     ],
     tier: 12,
-    image: 'https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/sample_3b263dbfafe2296c1ebff38335ac287a.jpg',
+    image: 'https://images2.imgbox.com/5e/61/YnKJI6rN_o.png',
     discount: 200,
     cost: 0,
     costT: 5,
