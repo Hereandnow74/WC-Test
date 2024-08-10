@@ -638,7 +638,7 @@ export const waifu_perks: WaifuPerk[] = [
       7549,
     ],
     tier: 9,
-    image: '',
+    image: 'https://images2.imgbox.com/05/76/icd0c55h_o.png',
     cost: 400,
     desc: 'The Warrior of Light is now a Paragon, an Unsundered Ancient of Amaurot. Their soul has been reunified and they possess all the power and the memories of Azem, Shepherd of the Stars and Fourteenth Seat of the Convocation of Fourteen. A powerful sorcerer of Eld, their power in their home dimension is now only outmatched by the First Primals themselves, Zodiark and Hydaelyn.',
   },
