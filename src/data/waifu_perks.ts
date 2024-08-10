@@ -1078,7 +1078,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 8,
     image: '/img/waifu_perks/compressed/image185.png',
     cost: 150,
-    desc: 'Mei is now in full control of her powers as the Herrscher of Thunder, including the service of the red dragon Kurikara as her familiar. Gathering additional Herrscher cores, as Sirin did during the Second Honkai War, will increase her tier further. Mei will always have this perk if captured after her return to Nagazora (chapter 17).',
+    desc: 'Mei is now in full control of her powers as the Herrscher of Thunder, including the service of the red dragon Kurikara as her familiar. Gathering additional Herrscher cores, as Sirin did during the Second Honkai War, will increase her tier further. Mei will always have this perk if captured after her return to Nagazora (Chapter 17).',
   },
   {
     uid: 'JDJfo',
@@ -1091,9 +1091,9 @@ export const waifu_perks: WaifuPerk[] = [
       7262,
     ],
     tier: 7,
-    image: '/img/waifu_perks/compressed/image224.png',
+    image: 'https://images2.imgbox.com/19/86/jcE8NEzL_o.png',
     cost: 50,
-    desc: 'Bronya has inherited Welt Yang’s mantle as the Herrscher of Reason, using that power to thoroughly remodel her machine familiar Project Bunny and escape the Sea of Quanta. Gathering additional Herrscher cores, as Sirin did during the Second Honkai War, will increase her tier further. Bronya will always have this perk if captured after her reunion with Seele (chapter 11).',
+    desc: 'Bronya has inherited Welt Yang’s mantle as the Herrscher of Reason, using that power to thoroughly remodel her machine familiar Project Bunny and escape the Sea of Quanta. Gathering additional Herrscher cores, as Sirin did during the Second Honkai War, will increase her tier further. Bronya will always have this perk if captured after her reunion with Seele (Chapter 11).',
   },
   {
     uid: 'JDJf1',
@@ -1106,9 +1106,9 @@ export const waifu_perks: WaifuPerk[] = [
       'JDJfo',
     ],
     tier: 8,
-    image: 'https://cdn.donmai.us/sample/2e/7e/__bronya_zaychik_project_bunny_and_bronya_zaychik_honkai_and_1_more_drawn_by_broseele__sample-2e7e6a3765efa300a89f556fc6c7c07d.jpg',
+    image: 'https://images2.imgbox.com/ea/64/eCdipS2x_o.png',
     cost: 100,
-    desc: 'Bronya has absorbed the other 300,000 souls that make up the Herrscher of Reason, metamorphosing her power into the Herrscher of Truth. In Extremum form, Bronya fights with a spear and uses her Authority to conjure flying drones. In Continuation form, she assembles a mech suit around herself for extreme firepower. Bronya will always have this perk if captured after the events of New Atra and the Final Crater (chapter 31).',
+    desc: 'Bronya has absorbed the other 300,000 souls that make up the Herrscher of Reason, metamorphosing her power into the Herrscher of Truth. In Extremum form, Bronya fights with a spear and uses her Authority to conjure flying drones. In Continuation form, she assembles a mech suit around herself for extreme firepower. Bronya will always have this perk if captured after the events of New Atra and the Final Crater (Chapter 31).',
   },
   {
     uid: 'KFOfj',
