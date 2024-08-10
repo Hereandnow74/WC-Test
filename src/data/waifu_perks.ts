@@ -1339,7 +1339,7 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       7270,
     ],
-    image: 'https://cdn.donmai.us/sample/c3/c4/__seele_vollerei_seele_and_seele_vollerei_honkai_and_1_more_drawn_by_aka26540655__sample-c3c4500c14fcb9e87c63da329172f289.jpg',
+    image: 'https://images2.imgbox.com/0a/ea/N5rY25GY_o.png',
     cost: 20,
     desc: 'With this perk, you can split Seele into her two halves: Seele herself and her dark side, Veliona. Seele uses her original battlesuit Swallowtail Phantasm, while Veliona uses the battlesuit Starchasm Nyx. This does not change Seele\'s tier rating. Starchasm Nyx is not available without this perk. ',
   },
@@ -1387,9 +1387,9 @@ export const waifu_perks: WaifuPerk[] = [
       7273,
       7276,
     ],
-    image: '',
+    image: 'https://images2.imgbox.com/6e/15/kxI1oCNf_o.png',
     cost: 100,
-    desc: 'This hard drive contains all scientific and technological data of the Current Era of Civilization. This includes mechs, weaponry, battlesuits - those not locked behind Waifu Perks, at least - vehicle designs, and stigmata. This perk may only be purchased once and does not increase Lizelle and Frederika\'s or Jackal\'s tier ratings.',
+    desc: 'This hard drive contains all scientific and technological data of the Current Era of Civilization. This includes mechs, weaponry, battlesuits - those not locked behind Waifu Perks, at least - vehicle designs, and stigmata. With additional work, your techs may even develop a safe way to hot-swap between different stigmata, a feat that’s normally just game mechanics. This perk may only be purchased once and does not increase tier ratings.',
   },
   {
     uid: 'O123g',
