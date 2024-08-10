@@ -653,7 +653,7 @@ export const waifu_perks: WaifuPerk[] = [
       7739,
     ],
     tier: 8,
-    image: 'https://i.kym-cdn.com/photos/images/facebook/001/356/740/e51.jpg_large',
+    image: 'https://images2.imgbox.com/6e/9c/64cNEZ1E_o.png',
     cost: 180,
     desc: 'The Ylissean tactician is now the host to Grima, the Fell Dragon and big bad of their original story, with full access to the dragon\'s power and the ability to switch between dragon and human forms like any Manakete. Grima-Robin qualifies for a special Alterzelu Symbiote theme. Applying this perk to an existing Robin will not cause unwanted effects on their personality. Grima may instead be purchased separately, in a new body, for 200 credits. ',
   },
