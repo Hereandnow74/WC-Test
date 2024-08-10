@@ -1887,7 +1887,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 9,
     image: 'https://images2.imgbox.com/e6/4a/v2TG7rHb_o.png',
     cost: 480,
-    desc: 'The Female Master of Chaldea has blended with the Monkey King, Sun Wukong, to become a Lancer-class Pseudo-Servant. We\'re not quite sure how it happened either \u2022 the Research Department\'s best guess is that it had something to do with the Journey to the West event and the pair\u2019s extreme compatibility. The Male Master of Chaldea is not eligible for this perk',
+    desc: 'The Female Master of Chaldea has blended with the Monkey King, Sun Wukong, to become a Lancer-class Pseudo-Servant. We\'re not quite sure how it happened either. The Research Department\'s best guess is that it had something to do with the Journey to the West event and the pair\u2019s extreme compatibility. The Male Master of Chaldea is not eligible for this perk.',
   },
   {
     uid: 'b6Dah',
