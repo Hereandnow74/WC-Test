@@ -1497,7 +1497,7 @@ export const waifu_perks: WaifuPerk[] = [
       5858697,
     ],
     tier: 7,
-    image: 'https://cdn.donmai.us/original/0d/80/__noel_and_dead_apostle_noel_tsukihime_and_3_more_drawn_by_hinoru_saikusa__0d8086f2d68419a3a0c9a5a099250404.jpg',
+    image: 'https://images2.imgbox.com/0d/4c/HBeeMog9_o.png',
     cost: 50,
     desc: 'Noel\'s wish for strength has been granted, turning her into an artificially created Dead Apostle, with all of one’s usual abilities, as well as Mystic Eyes of Rita Rozay-en. Versions of Noel captured after receiving any dosage of Idea Replica will always have this perk. Any version of Noel with this perk will be stable and capable of using her Mystic Eyes as if they were the original.',
   },
