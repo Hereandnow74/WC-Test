@@ -518,7 +518,7 @@ export const waifu_perks: WaifuPerk[] = [
       7508,
     ],
     tier: 10,
-    image: '/img/waifu_perks/compressed/image162.png',
+    image: 'https://images2.imgbox.com/6e/e2/V22GBo2V_o.png',
     cost: 998,
     desc: 'Above and beyond her own power, Minfilia channels the existence of the Primal most ancient and famous - Hydaelyn. Bound together in body and spirit, what kind of person will this union create?',
   },
