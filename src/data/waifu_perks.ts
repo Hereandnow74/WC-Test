@@ -1425,13 +1425,13 @@ export const waifu_perks: WaifuPerk[] = [
     uid: 'O1235',
     title: 'Purified Corruption',
     waifu: [
-      'Yae Sakura (medieval)',
+      'Yae Sakura',
     ],
     from: 'Honkai Impact',
     waifuUID: [
       7267,
     ],
-    image: 'https://cdn.donmai.us/sample/4a/fd/__yae_sakura_and_yae_sakura_honkai_and_1_more_drawn_by_rabbit_tukenitian__sample-4afdaaee21c64c27f8af309d6a32e5d4.jpg',
+    image: 'https://images2.imgbox.com/f8/cb/ChKFpQXH_o.png',
     tier: 7,
     cost: 50,
     desc: 'Yae Sakura has purified the Black Box of Corruption and forged that core into the Divine Key it always was meant to be. Now able to wield the curse that once haunted her, she and her familiar Higokumaru can now unleash the deadly force that is the 12th Herrscher of the Previous Era.',
