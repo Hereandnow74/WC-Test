@@ -61,7 +61,7 @@ export const waifu_perks: WaifuPerk[] = [
       4215127,
     ],
     from: 'Date A Live',
-    image: '/img/waifu_perks/compressed/image170.png',
+    image: 'https://images2.imgbox.com/a8/b5/OSanAsIO_o.png',
     cost: 50,
     desc: 'Kaguya and Yuzuru may now freely merge into their original self, Yamai Kazamachi, and split back apart at will. As a result of this fusion, Yamai exhibits a sharp increase to her abilities, in comparison to her component selves, and can access her Angel Raphael’s full power. This perk does not change Yamai’s tier rating.',
   },
@@ -90,7 +90,7 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     from: 'Date A Live',
     tier: 9,
-    image: '/img/waifu_perks/compressed/image225.png',
+    image: 'https://images2.imgbox.com/aa/3d/y7dZ0yH0_o.png',
     cost: 400,
     desc: `Tohka gains the final remnants of Mio’s Sephira Crystal. With it, Tohka and her inversion, Tenka, may manifest a pocket reality in which they may exhibit god-like control over through the usage of Mio’s Angel Ain Soph authority. Tenka, whether inside or outside this reality, may also manifest herself in a separate body from Tohka. Tohka and Tenka may re-merge with each other to become the Spirit codenamed Dea, wielding both the Angel Sandalphon and the Demon King Nahemah at once, and gaining a tremendous boost to their strength. Tohka will always have this perk if captured after the events of Mio True End.
     <p>This perk may not be applied to the same Tohka as Beast. If you already have that perk and want Dea, you may still purchase this perk, pre-applied to a new Tohka, for 550 credits.</p>`,
