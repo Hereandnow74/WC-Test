@@ -593,7 +593,7 @@ export const waifu_perks: WaifuPerk[] = [
       7532,
     ],
     tier: 6,
-    image: '',
+    image: 'https://images2.imgbox.com/db/24/MRXvtuwt_o.png',
     cost: 30,
     desc: 'Power undeserved, obtained by sacrifices unwilling, this facsimile of an Echo lets Fordola read her opponents\' movements before they begin making them, as well as view someone\'s past and resist most forms of mind control and soul invasion.',
   },
