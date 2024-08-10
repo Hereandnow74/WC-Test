@@ -563,7 +563,7 @@ export const waifu_perks: WaifuPerk[] = [
       7512,
     ],
     tier: 7,
-    image: 'https://pibig.info/uploads/posts/2021-05/1620340011_24-pibig_info-p-lu-minfei-anime-krasivo-25.png',
+    image: 'https://images2.imgbox.com/1f/42/MnLR7X32_o.png',
     cost: 95,
     desc: 'The mantle of the Faerie Queen changes hands, bestowing upon Feo UI the full greatness of Titania in all of her splendor, influence, and unassailable might. Titania may also be purchased separately, in her own body, for 100 credits.',
   },
