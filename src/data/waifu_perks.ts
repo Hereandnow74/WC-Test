@@ -623,7 +623,7 @@ export const waifu_perks: WaifuPerk[] = [
       7543,
     ],
     tier: 7,
-    image: '',
+    image: 'https://images2.imgbox.com/c5/44/5ufIjBkO_o.png',
     cost: 50,
     desc: 'Her humanity, sanity, and body all but stripped away, Nael is infused with the essence of the Dreadwyrm - Bahamut, one of the most infamous Primals. This particular Nael may still exist in a human form despite the obtained power, but her sanity rests on a knife\'s edge. ',
   },
