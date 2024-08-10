@@ -1482,7 +1482,7 @@ export const waifu_perks: WaifuPerk[] = [
       9759,
     ],
     tier: 7,
-    image: 'https://i.imgur.com/KfE5NMx.png?1',
+    image: 'https://images2.imgbox.com/44/f8/LRHATgYy_o.png',
     cost: 50,
     desc: 'Sion is fused with the 13th Dead Apostle Ancestor, the Night of Wallachia aka TATARI. She has White Len as a familiar, if you don\'t already have a White Len via Aozaki Aoko, and qualifies for special Alterzelu Symbiote theming. ',
   },
