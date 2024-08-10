@@ -962,7 +962,7 @@ export const waifu_perks: WaifuPerk[] = [
     image: 'https://i.imgur.com/HyNKujz.jpg?1',
     tier: 6,
     cost: 48,
-    desc: 'Born from Sirin\'s wish to have another chance at life as Cecilia Schariac\'s daughter, Sirin instead awakens in the body of K423. Unlike what transpired in canon, she retains her memories in full, lacking only the hatred of humanity that birthed a Herrscher personality. Here, the Herrscher was instead spawned directly by the Will of Honkai. In addition, Sirin will obtain all equipment - including the Gem of Serenity - signature outfits, and combat skills that Kiana Kaslana (K423) has with the Void Drifter perk.',
+    desc: 'Born from Sirin\'s wish to have another chance at life as Cecilia Schariac\'s daughter, Sirin instead awakens in the body of K423. Unlike what transpired in canon, she retains her memories in full, lacking only the hatred of humanity that birthed a Herrscher personality. Here, the Herrscher was instead spawned directly by the Will of Honkai. In addition, Sirin will obtain all equipment - including the Gem of Serenity - signature outfits, and combat skills that Kiana Kaslana (K423) has with the Void Drifter perk. Sirin cannot be captured with only this perk. Instead, she will only ever be her T2 baseline self, the T8 Herrscher of the Void, or T9 Revelation.',
   },
   {
     uid: 'gC8zD',
@@ -1064,7 +1064,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 8,
     image: '/img/waifu_perks/compressed/image185.png',
     cost: 150,
-    desc: 'Mei is now in full control of her powers as the Herrscher of Thunder, including the service of the red dragon Kurikara as her familiar. Gathering additional Herrscher cores, as Sirin did during the Second Honkai War, will increase her tier further. Mei will always have this perk if captured after her return to Nagazora (Chapter 17).',
+    desc: 'Mei is now in full control of her powers as the Herrscher of Thunder, including the service of ELF Bella and the red dragon Kurikara as her personal familiars. Gathering additional Herrscher cores, as Sirin did during the Second Honkai War, will increase her tier further. Mei will always have this perk if captured during the main story, after her return to Nagazora (chapter 17). This perk is not mutually exclusive with Captain Mei.',
   },
   {
     uid: 'JDJfo',
