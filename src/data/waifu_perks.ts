@@ -347,7 +347,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 7,
     image: 'https://images2.imgbox.com/cb/71/xPgW6SbC_o.png',
     cost: 80,
-    desc: 'Selesia has her personal mecha, Vogelchevalier. It may not be especially titanic like Gigas Machina, but she\'s not complete without it ',
+    desc: 'Selesia, the main heroine of the light novel and anime series Elemental Symphony of Vogelchevalier - a blend of elements from Escaflowne, Fire Emblem, and Sword Art Online - now has her personal mecha, the titular Vogelchevalier. It may not be especially titanic like Gigas Machina that she encountered during the events of Re:Creators, but she’s not complete without it.',
   },
   {
     uid: '6rlpB',
@@ -886,7 +886,10 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 10,
     image: 'https://i.redd.it/6yvpn3qilje31.jpg',
     cost: 900,
-    desc: 'Pyra and Mythra can now fuse into their true form, Pneuma. Pneuma can split off both Pyra and Mythra into their own bodies at will, maintain her own body while they\'re separated, and re-combine with the other two on contact. This perk must be purchased separately if you Possess or Substitute into Rex, even if the Substitution is after he\'s met Pneuma. If you capture Pyra & Mythra in-setting, you\'ll automatically receive this perk and the capture value of a T10, as if you had captured Pneuma as herself.',
+    desc: `Pyra and Mythra can now fuse into their true form, Pneuma. Pneuma can split off both Pyra and Mythra into their own bodies at will, maintain her own body while they’re separated, and re-combine with the other two on contact.
+    <p>This perk must be purchased separately if you Possess or Substitute into Rex, even if the Substitution is after he’s met Pneuma. If you capture Pyra & Mythra in-setting, you’ll automatically receive this perk and the capture value of a T10, as if you had captured Pneuma as herself.</p>
+    <p>Pneuma also owns a personal mecha, the Echelon Siren, with demonstrated capabilities of orbital flight and surface bombardment. The Echelon Siren is included in the purchase of this perk, but must be acquired separately if Pyra & Mythra or Pneuma are captured in-setting.</p>
+    `,
   },
   {
     uid: '4AURf',
