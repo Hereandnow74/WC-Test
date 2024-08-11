@@ -1894,10 +1894,12 @@ export const waifu_perks: WaifuPerk[] = [
     title: 'Lord Camelot',
     waifu: [
       'Mash Kyrielight',
+      'Tachie'
     ],
     from: 'Nasuverse',
     waifuUID: [
       9831,
+      9073134,
     ],
     image: '',
     cost: 150,
