@@ -931,17 +931,17 @@ genericPerks.push({
   uid: 'dmynt',
   title: 'Third-Party Riggings',
   category: 'Generic',
-  special: 'Requires at least one first - party Azur Lane shipgirl.',
+  special: 'Requires at least one first-party Azur Lane shipgirl.',
   complex: 'target',
   requires: 'Any Azur Lane collaboration shipgirl',
   image: 'https://i.ibb.co/6y1sh85/Third-Party-Riggings.jpg',
   cost: 20,
   desc: `Dead or Alive, Neptunia, Utawarerumono, Hololive, and others have all had guest appearances on the high seas. This perk grants these characters their shipgirl riggings, allowing them to play by those rules instead and making them eligible for Bifurcation and Space Shipgirl below. If a collaboration shipgirl’s tier after step 1a is less than the following, it will be raised to that value.
 <ul class="list-disc list-inside">
-  <li>22, 33, Akizuki Ritsuko, Futami Ami, Futami Mami, Minato Aqua</li>
-  <li>T5: Marie Rose, Misaki, Miura Azusa, Namiko, Minami Yume, HDN Neptune, Noire, Blanc, Black Heart, White Heart, Kuon, Nekone, Rurutie, Uruuru, Saraana, Kisuna AI, Elegant Kizuna AI, Natsuiro Matsuri, Nakiri Ayame</li>
-  <li>T6: Honoka, Kasumi, Nagisa, Nyotengu, Monica, Amami Haruka, Takarada Rikka, Shinjo Akane, Hass, Mujina, Vert, Purple Heart, Greet Heart, Fumiruiru, Shirakami Fubuki, Murasaki Shion, Ookami Mio</li>
-  <li>T7: Kisaragi Chihaya, Minase Iori, Asukagawa Chise, Anniversary Kizuna AI, Super Gamer Kizuna AI, Tokino Sora</li>
+  <li>T4: 22, 33, Akizuki Ritsuko, Futami Ami, Futami Mami, Minato Aqua, Princess Hime, Homura/li>
+  <li>T5: Marie Rose, Misaki, Miura Azusa, Namiko, Minami Yume, HDN Neptune, Noire, Blanc, Black Heart, White Heart, Kuon, Nekone, Rurutie, Uruuru, Saraana, Kizuna AI, Elegant Kizuna AI, Natsuiro Matsuri, Nakiri Ayame, Lila Decyrus, Kala Ideas, Ikaruga, Yuuyaki</li>
+  <li>T6: Honoka, Kasumi, Nagisa, Nyotengu, Monica, Amami Haruka, Takarada Rikka, Shinjo Akane, Hass, Mujina, Vert, Purple Heart, Green Heart, Fumiruiru, Shirakami Fubuki, Murasaki Shion, Ookami Mio, Reisalin Stout, Klaudia Valentz, Serri Glaus, Luna, Asuka</li>
+  <li>T7: Kisaragi Chihaya, Minase Iori, Asukagawa Chise, Anniversary Kizuna AI, Super Gamer Kizuna AI, Tokino Sora, Patricia Abelheim, Tamaki, The 2nd, Yumi, Fubuki (Senran Kagura)</li>
 </ul>`,
 })
 
@@ -954,12 +954,29 @@ genericPerks.push({
   image: 'https://i.ibb.co/H26yFLZ/Retrofit.jpg',
   cost: 0,
   costVariants: [0, 10, 30, 50],
-  special: '0(T4 → T4, T5 → T5, T6 → T6), 10(T4 → T5), 30(T5 → T6), 50(T6 → T7)',
+  special: '0 (T4 → T4), 10 (T4 → T5), 0 (T5 → T5), 30 (T5 → T6), 0 (T6 → T6), 50 (T6 → T7)',
   desc: `Your shipgirl is her post-retrofit version, with updated abilities, hull, and rigging. This perk is free for all eligible shipgirls except the following, whose tiers are changed as a result:
 <ul class="list-disc list-inside">
-  <li>T4 → T5: Pamiat Merkuria, Curacoa, Curlew</li>
-  <li>T5 → T6: Bogue, Langley, Ranger, Emile Bertin, Leander, Achilles, Ajax, London, York, Exeter, Hermes, Isuzu, Kinu, Mogami, Shouhou, Jintsuu</li>
-  <li>T6 → T7: Warspite, Ark Royal, Souryuu, Hiryuu</li>
+  <li>T4 → T5: Curacoa, Curlew, Pamiat Merkuria</li>
+  <li>T5 → T6: Juneau, Long Island, Bogue, Leander, Achilles, Ajax, London, York, Hermes, Kinu, Mogami, Shouhou, Karlsruhe, Koln, Jintsuu, Emile Bertin, Chen Hai</li>
+  <li>T6 → T7: Saratoga, Warspite, Ark Royal, Souryuu, Hiryuu</li>
+</ul>`,
+})
+
+genericPerks.push({
+  uid: 'piGap',
+  title: 'Type II',
+  category: 'Generic',
+  requires: 'Any eligible Azur Lane shipgirl',
+  complex: 'target',
+  image: 'https://images2.imgbox.com/d6/28/RpbpG5aW_o.png',
+  cost: 0,
+  costVariants: [0, 10, 30, 50],
+  special: '0 (T4 → T4), 10 (T4 → T5), 0 (T5 → T5), 30 (T5 → T6), 0 (T6 → T6), 50 (T6 → T7)',
+  desc: `Your shipgirl has her Type II hull, with updated abilities, hull, and rigging. This perk is free for all eligible shipgirls except the following, whose tiers are changed as a result:
+<ul class="list-disc list-inside">
+  <li>T5 → T6: Langley II, Laffey II</li>
+  <li>T6 → T7: Hornet II, Yorktown II, Bismarck Zwei</li>
 </ul>`,
 })
 
