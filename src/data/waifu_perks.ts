@@ -1834,15 +1834,19 @@ export const waifu_perks: WaifuPerk[] = [
     title: 'Kaleidostick Magical Sapphire',
     waifu: [
       'Luvia Edelfelt',
+      'Sakura Edelfelt',
+      'Irisviel von Einzbern',
     ],
     from: 'Nasuverse',
     waifuUID: [
       9773,
+      9805,
+      9781,
     ],
     tier: 7,
     image: 'https://i.imgur.com/oo2RCAH.png?1',
     cost: 80,
-    desc: 'The perverted and troublesome Mystical Code, capable of taking its user between worlds in the same local multiverse. May be given to Luvia to create Kaleido Sapphire. If you purchase or capture Luvia first and apply this perk later, she will not receive any new memories from the Prisma Iliya timeline; if you purchase Luvia and this perk simultaneously, you will only get the version from the Prisma Iliya timeline. Miyu Edelfelt is assumed to always have Magical Sapphire, so this perk is not available if you have her. This perk may not be applied to the same Luvia as Scales of Justice. If you already have Astraea and want Kaleido Sapphire (but don\'t have Miyu), you may still purchase this, pre-applied to a second Luvia, for 100 credits.',
+    desc: 'The perverted and troublesome Mystical Code, capable of taking its user between worlds in the same local multiverse, may be given to Luvia to create Kaleido Sapphire, or her sister Sakura (Apocrypha timeline only) to create a new, non-canon alternative Kaleido Sapphire. If you purchase or capture Luvia first and apply this perk later, she will not receive any new memories from the Prisma Illya timeline; if you purchase Luvia and this perk simultaneously, you will only get the version from the Prisma Illya timeline. This perk may only be applied to one magus at a time, including Miyu Edelfelt, who is assumed to always have Magical Sapphire - this perk is not available if you have her. This perk may not be applied to the same Luvia as Scales of Justice. If you already have Astraea, don’t have Miyu or a Kaleido Sapphire Sakura, and want a Kaleido Sapphire Luvia, you may still purchase this, pre-applied to a second Luvia, for 100 credits.',
   },
   {
     uid: 'M7mAX',
@@ -1894,7 +1898,7 @@ export const waifu_perks: WaifuPerk[] = [
     title: 'Lord Camelot',
     waifu: [
       'Mash Kyrielight',
-      'Tachie'
+      'Tachie',
     ],
     from: 'Nasuverse',
     waifuUID: [
