@@ -1443,6 +1443,21 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Yae Sakura has purified the Black Box of Corruption and forged that core into the Divine Key it always was meant to be. Now able to wield the curse that once haunted her, she and her familiar Higokumaru can now unleash the deadly force that is the 12th Herrscher of the Previous Era.',
   },
   {
+    uid: 'O123l',
+    title: 'Ritual Imayoh',
+    waifu: [
+      'Kallen Kaslana',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
+      7268,
+    ],
+    image: 'https://images2.imgbox.com/2d/ce/EgfjlfUf_o.png',
+    tier: 0,
+    cost: 20,
+    desc: 'Kallen gains the Ritual Imayoh battlesuit, a representation of her abilities in the in-universe video game Kallen Fantasy VII. Set in a modern-day high school AU, KFVII is a parody of a variety of different works, including Lyrical Nanoha and Kill la Kill. This perk does not increase Kallen’s tier rating.',
+  },
+  {
     uid: '1xKBz',
     title: 'Lunar Vow',
     waifu: [
