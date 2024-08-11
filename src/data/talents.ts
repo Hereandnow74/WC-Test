@@ -1058,7 +1058,7 @@ genericPerks.push({
   cost: 1000,
   desc: `
   The Origin of Keyblades, the Ⲭ-Blade is the companion to the True Kingdom Hearts, and the only blade which can open its door. With this perk, your Keyblade wielding character (yourself included, if you have a Keyblade) can now summon the legendary blade itself. With it, you can call upon both its powers and the powers of Kingdom Hearts itself by summoning it. 
-  <p>You may only have one Ⲭ-Blade at a time, whether or not this perk is applied. It can be passed around your various Keyblade Wielders, but only the one whom this perk is applied to can summon or unsummon the blade at will. You can change which Keyblade Wielder in your Retinue (yourself included if you have a Keyblade) this perk is applied to in your Company App, but you must wait one week (168 hours) after purchasing or after changing targets before you can do so (again).</p>`,
+  <p>You may only have one Ⲭ-Blade at a time, whether or not this perk is applied. It can be passed around your various Keyblade Wielders, but only the one whom this perk is applied to can summon or unsummon the blade at will. This perk may be purchased for any Keyblade Wielder in your retinue, including those created through Template Stacking. You can change which Keyblade Wielder in your Retinue this perk is applied to in your Company App, but you must wait one week (168 hours) after purchasing or after changing targets before you can do so (again).</p>`,
 })
 
 genericPerks.push({
@@ -1094,7 +1094,7 @@ genericPerks.push({
   complex: 'target',
   cost: 40,
   image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/L1ex5.jpg',
-  desc: 'The Spirit can now enter her Inverse Form, greatly increasing her strength and changing her Angel into a Demon King. The Spirit will remain in full control of herself. This perk may be applied to any Spirit from Date A Live, including those who lack a canonical Inverse Form or aren’t listed in the catalog as Spirits. This perk is free if you capture the Spirit while she’s in her Inverse Form, or if she unlocks it herself by force.',
+  desc: 'The Spirit can now enter her Inverse Form, greatly increasing her strength and changing her Angel into a Demon King. The Spirit will remain in full control of herself. This perk may be applied to any Spirit from Date A Live, including those who lack a canonical Inverse Form or aren’t listed in the catalog as Spirits. This perk may be purchased for any Date a Live spirit in your retinue, including those created through Template Stacking. This perk is free if you capture the Spirit while she’s in her Inverse Form, or if she unlocks it herself by force.',
 })
 
 genericPerks.push({
@@ -1163,7 +1163,7 @@ genericPerks.push({
   multiple: true,
   image: 'https://i.ibb.co/1QhZdpg/Four-Seasons.jpg',
   cost: 20,
-  desc: `Maidenhood is special on Remnant, but not particularly so. Anyone can become one under the right circumstances. By default, this perk may be purchased up to four times, once for each temperate season (Spring, Summer, Fall, Winter). Purchasing this once will elevate a character to T6, if she isn’t already. Repurchases for the same character are allowed, but only one for each season and will not affect a tier further.
+  desc: `Maidenhood is special on Remnant, but not particularly so. Anyone can become one under the right circumstances. By default, this perk may be purchased up to four times, once for each temperate season (Spring, Summer, Fall, Winter). Purchasing this once will elevate a character to T6, if she isn’t already. Repurchases for the same character are allowed, but only one for each season and will not affect a tier further. This perk may be purchased for any female Aura user in your retinue, including those created through Template Stacking.
   <p>Additional sets of Maiden mantles become available with each member of your retinue, including yourself, whose effective tier after step 4a is at least T8: one for each T8, two for each T9, five for each T10, ten for each TX, twenty for each TY, and fifty for each TZ. If one of your waifus is already a Maiden when you capture her, that counts against your total, unless you take a refund for this perk. If this puts you over your cap for a particular mantle, you may not buy any more of that mantle until you’ve raised the cap further.</p>
   `,
 })
@@ -1178,8 +1178,8 @@ genericPerks.push({
   image: 'https://i.ibb.co/CK7zwYY/Salvation.jpg',
   cost: 20,
   desc: `
-<p>When your waifu's soul gem darkens completely, she may choose to manifest her Doppel: a materialization of her witch-self which may take the form of an discrete projection, an extension of her body, or even a partial physical transformation, depending upon the details of her relationship to her witch-self and what it represents. An activated Doppel is extremely powerful in its own right, but draws upon the darkness in its master's soul gem to manifest, quickly and completely purifying its master's gem until she can no longer support it - leaving her Doppel as a briefly activated trump card or a simple magic recharge mechanic unless it's somehow further refined. If you have Inexhaustible, any meguca in your retinue, whom this perk has been applied to, will only benefit from this perk.</p>
-<p>If you have Madokami, Akuma Homura, Satomi Touka, Lapin, or any other meguca who is canonically capable of breaking the balance of hope and despair in your retinue, then this perk is free. If you already have this perk when you acquire a relevant waifu, then take a full refund on the value of this perk for as many times as you've purchased it. Upon ten purchases of this perk, all meguca you may purchase will automatically have this perk applied to them.</p>`,
+<p>When your waifu's soul gem darkens completely, she may choose to manifest her Doppel: a materialization of her witch-self which may take the form of a discrete projection, an extension of her body, or even a partial physical transformation, depending upon the details of her relationship to her witch-self and what it represents. An activated Doppel is extremely powerful in its own right, but draws upon the darkness in its master's soul gem to manifest, quickly and completely purifying its master's gem until she can no longer support it - leaving her Doppel as a briefly activated trump card or a simple magic recharge mechanic, unless it's somehow further refined. If you have Inexhaustible, any meguca in your retinue, whom this perk has been applied to, will only benefit from this perk. The Doppel would never activate otherwise.</p>
+<p>All Puella Magi in your retinue qualify for this perk, including those created through Template Stacking. If you have Madokami, Akuma Homura, Satomi Touka, Lapin, or any other meguca who is canonically capable of breaking the balance of hope and despair in your retinue, then this perk is free. If you already have this perk when you acquire a relevant waifu, then take a full refund on the value of this perk for as many times as you've purchased it. Upon ten purchases of this perk, it will automatically apply to all meguca in your retinue.</p>`,
 })
 
 genericPerks.push({
