@@ -1443,6 +1443,21 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Yae Sakura has purified the Black Box of Corruption and forged that core into the Divine Key it always was meant to be. Now able to wield the curse that once haunted her, she and her familiar Higokumaru can now unleash the deadly force that is the 12th Herrscher of the Previous Era.',
   },
   {
+    uid: '1xKBz',
+    title: 'Lunar Vow',
+    waifu: [
+      'Luna Kindred',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
+      9559794,
+    ],
+    image: 'https://images2.imgbox.com/68/09/KtJRRToJ_o.png',
+    tier: 8,
+    cost: 100,
+    desc: 'After eons of self-imposed exile in the Sea of Quanta, the vampire Luna has emerged a new, grown, woman, with an unquenchable thirst for her Captain and a cross- ornamented chainsword. If purchased, Luna will regard her original contractor as her Captain, even under No Bindings; this is reset by Slightly Used and does not apply to captures. Luna will always have this perk if captured at any time during or after the climax of After the Blood Moon Fades.',
+  },
+  {
     uid: '1xKBt',
     title: '\u300C\u300D',
     waifu: [
