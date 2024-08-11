@@ -4663,7 +4663,7 @@ export const DLCwaifu_perks: WaifuPerk[] = [
       1816,
     ],
     tier: 12,
-    image: 'https://i.imgur.com/PBNqI3Yl.jpg',
+    image: 'https://images2.imgbox.com/38/08/Uud7YqKE_o.png',
     cost: 0,
     discount: 10,
     costT: 5,
