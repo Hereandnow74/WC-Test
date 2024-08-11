@@ -359,9 +359,9 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       6063,
     ],
-    tier: 9,
+    tier: 7,
     image: 'https://i.pinimg.com/originals/59/7c/7d/597c7d30a8d88a4b45bf7340c2a49341.jpg',
-    cost: 480,
+    cost: 80,
     desc: 'The oni twins, the rosette Ram & the cerulette Rem, were born sharing a single pair of horns, one for each sister. This made them unable to use the natural extent of their oni powers and marked them as outcasts in their village. This perk rights the injustice, granting each sister a second horn of her own.',
   },
   {
