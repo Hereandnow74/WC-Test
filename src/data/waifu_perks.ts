@@ -1443,6 +1443,21 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Yae Sakura has purified the Black Box of Corruption and forged that core into the Divine Key it always was meant to be. Now able to wield the curse that once haunted her, she and her familiar Higokumaru can now unleash the deadly force that is the 12th Herrscher of the Previous Era.',
   },
   {
+    uid: '1xKBz',
+    title: 'Lunar Vow',
+    waifu: [
+      'Luna Kindred',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
+      9559794,
+    ],
+    image: 'https://images2.imgbox.com/68/09/KtJRRToJ_o.png',
+    tier: 8,
+    cost: 100,
+    desc: 'After eons of self-imposed exile in the Sea of Quanta, the vampire Luna has emerged a new, grown, woman, with an unquenchable thirst for her Captain and a cross- ornamented chainsword. If purchased, Luna will regard her original contractor as her Captain, even under No Bindings; this is reset by Slightly Used and does not apply to captures. Luna will always have this perk if captured at any time during or after the climax of After the Blood Moon Fades.',
+  },
+  {
     uid: 'O123l',
     title: 'Ritual Imayoh',
     waifu: [
@@ -1458,19 +1473,36 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Kallen gains the Ritual Imayoh battlesuit, a representation of her abilities in the in-universe video game Kallen Fantasy VII. Set in a modern-day high school AU, KFVII is a parody of a variety of different works, including Lyrical Nanoha and Kill la Kill. This perk does not increase Kallen’s tier rating.',
   },
   {
-    uid: '1xKBz',
-    title: 'Lunar Vow',
+    uid: 'sHVbo',
+    title: 'Sakuno Rondo',
     waifu: [
-      'Luna Kindred',
+      'Theresa Apocalypse',
     ],
     from: 'Honkai Impact',
     waifuUID: [
-      9559794,
+      7265,
     ],
-    image: 'https://images2.imgbox.com/68/09/KtJRRToJ_o.png',
+    tier: 0,
+    image: 'https://images2.imgbox.com/5f/f4/RN2fbq9L_o.png',
+    cost: 20,
+    desc: `Theresa’s experiences in Yae Sakura’s stigma space have turned her… foxy. “Magical Girl TeriTeri” can now switch to her Sakuno Rondo battlesuit, an emulation of Yae Sakura’s appearance and many of her abilities. Theresa will always have this perk if captured after the events of Sakura Samsara. This perk does not raise Theresa’s tier rating and is not mutually exclusive with Twilight Paladin.
+    <p>The TeRiRi of the magical girl universe where the Captain of Hyperion met and recruited Sirin (Miracle Magical Girl) is visually identical to Sakuno Rondo but otherwise unrelated.</p>`,
+  },
+  {
+    uid: 'sHVbz',
+    title: 'Cosmic Expression',
+    waifu: [
+      'Griseo',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
+      9010513,
+    ],
     tier: 8,
+    image: 'https://images2.imgbox.com/07/33/PGCTB3qU_o.png',
     cost: 100,
-    desc: 'After eons of self-imposed exile in the Sea of Quanta, the vampire Luna has emerged a new, grown, woman, with an unquenchable thirst for her Captain and a cross- ornamented chainsword. If purchased, Luna will regard her original contractor as her Captain, even under No Bindings; this is reset by Slightly Used and does not apply to captures. Luna will always have this perk if captured at any time during or after the climax of After the Blood Moon Fades.',
+    desc: `Griseo has returned from space as a grown woman, having developed her color empathy into a fully-usable form, absorbed most of what MEI, Mobius, and Vill-V’s manuals could teach her about engineering, and also learned the art of the blade from a few strange planets full of civilized Honkai beasts. Griseo will always have this perk if captured after her awakening in Phosphorus and Hesperus (Chapter 41).
+    <p>If this perk is applied to a Griseo who was captured directly from the Elysian Realm, she will also receive a full upload of the memories and personality development of her original physical self up to the end of the Phosphorus arc (Chapter 42).</p>`,
   },
   {
     uid: '1xKBt',
