@@ -1747,7 +1747,7 @@ export const waifu_perks: WaifuPerk[] = [
       9798,
     ],
     tier: 6,
-    image: 'https://i.imgur.com/Kz0Ra2K.jpg?1',
+    image: 'https://images2.imgbox.com/9c/95/k24P9115_o.png',
     cost: 49,
     desc: 'Laeticia is one again host to the Ruler-class Maiden of France, Jeanne d\'Arc. If you purchase or capture Laeticia first and apply this perk later, Jeanne will keep Laeticia\'s memories, as if she had taken Substitute into her host\'s life; if you purchase Laeticia and this perk simultaneously, you will only get Jeanne. If you have Mordred or anyone else involved in the Grand Holy Grail War, Marie Antoinette or anyone else involved in the Orleans singularity, or Altera or anyone else involved in the Extella timeline alongside Jeanne, they and Jeanne will recognize each other. ',
   },
