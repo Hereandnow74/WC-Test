@@ -1037,13 +1037,13 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 6,
     image: '/img/waifu_perks/compressed/image210.png',
     cost: 30,
-    desc: 'Mei has begun to mantle the powers of the Herrscher of Thunder as her own. This perk represents her Lightning Empress form - a partial manifestation of the Herrscher - as well as the Striker Fulminata and Danzai Spectromancer upgrades to her existing Valkyrie Bladestrike and Shadow Dash battlesuits, respectively. Mei cannot be captured with only this perk. Instead, she will either be her T6 baseline self or the Herrscher of Thunder.',
+    desc: 'Mei has begun to mantle the powers of the Herrscher of Thunder as her own. This perk represents her Lightning Empress form - a partial manifestation of the Herrscher - as well as the Striker Fulminata and Danzai Spectromancer upgrades to her existing Valkyrie Bladestrike and Shadow Dash battlesuits, respectively. Mei cannot be captured with only this perk. Instead, she will either be her T5 baseline self, Captain Mei, the Herrscher of Thunder, or the Herrscher of Origin.',
   },
   {
     uid: 'pdfnH',
     title: 'Herrscher of Thunder',
     waifu: [
-      'Lightning Empress',
+      'Raiden Mei (Lightning Empress)',
     ],
     from: 'Honkai Impact',
     waifuUID: [
