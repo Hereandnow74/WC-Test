@@ -938,7 +938,7 @@ export const waifu_perks: WaifuPerk[] = [
     image: '/img/waifu_perks/compressed/image206.png',
     tier: 6,
     cost: 30,
-    desc: 'After shaking off her possession by the Herrscher of the Void, Kiana has taken ownership of the Gem of Serenity and begun to mantle her predecessor’s power as her own. This perk represents Kiana’s Void Drifter form - a partial manifestation of the Herrscher - as well as the Knight Moonbeam mode of her White Comet battlesuit. Neither one is available to her otherwise. Kiana will always have this perk if captured between the events of Chapter 9 and the events of Chapter 25. Capturing Kiana during that period will also eject the Herrscher of the Void into a new body, allowing her to be captured separately, as a version of Sirin with the Herrscher of the Void perk.',
+    desc: 'After shaking off her possession by the Herrscher of the Void, Kiana has taken ownership of the Gem of Serenity and begun to mantle her predecessor’s power as her own. This perk represents Kiana’s Void Drifter form - a partial manifestation of the Herrscher - as well as the Knight Moonbeam mode of her White Comet battlesuit. Neither one is available to her otherwise. Kiana will always have this perk if captured after Himeko’s Final Lesson (Chapter 9) and before the events in the Theater of Domination (Chapter 25). Capturing Kiana during that period will also eject the Herrscher of the Void into a new body, allowing her to be captured separately, as a version of Sirin with the Herrscher of the Void perk.',
   },
   {
     uid: 'tiCHF',
@@ -953,7 +953,7 @@ export const waifu_perks: WaifuPerk[] = [
     image: 'https://i.imgur.com/HyNKujz.jpg?1',
     tier: 6,
     cost: 48,
-    desc: 'Born from Sirin\'s wish to have another chance at life as Cecilia Schariac\'s daughter, Sirin instead awakens in the body of K423. Unlike what transpired in canon, she retains her memories in full, lacking only the hatred of humanity that birthed a Herrscher personality. Here, the Herrscher was instead spawned directly by the Will of Honkai. In addition, Sirin will obtain all equipment - including the Gem of Serenity - signature outfits, and combat skills that Kiana Kaslana (K423) has with the Void Drifter perk. Sirin cannot be captured with only this perk. Instead, she will only ever be her T2 baseline self, the T8 Herrscher of the Void, or T9 Revelation.',
+    desc: 'Inspired by Sirin\'s wish to have another chance at life as Cecilia Schariac\'s daughter, this perk grants Sirin all equipment - including the Gem of Serenity - signature outfits, and combat skills that Kiana Kaslana (K423) has from both her baseline T5 version and the Void Drifter perk. If this perk is applied to Sirin at the time of her purchase, she may have either her own body or a copy of Kiana (K423)’s. Otherwise, she will retain her own appearance by default. Sirin cannot be captured with only this perk. Instead, she will only ever be her T2 baseline self, the T8 Herrscher of the Void, or T9 Revelation.',
   },
   {
     uid: 'gC8zD',
@@ -979,10 +979,10 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     from: 'Honkai Impact',
     waifuUID: [
-      'gC8zZ',
+      'gC8zD',
     ],
     perkUID: [
-      'gC8zZ',
+      'gC8zD',
     ],
     image: 'https://images2.imgbox.com/15/25/vRaiog04_o.png',
     tier: 0,
@@ -1348,7 +1348,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 8,
     image: '/img/waifu_perks/compressed/image173.png',
     cost: 100,
-    desc: 'Durandal’s ancestry has tested her and found her worthy. Now aware of her birth identity, she rides into battle on the Honkai horse Krishna, wielding the full power of the combined Kaslana and Schariac bloodlines. If captured or purchased, she will also regain her childhood memories, seeing Kiana (K423) and Sirin as her younger sisters. Durandal will always have this perk if captured after the events in Kolosten (chapter 28), and this perk is not mutually exclusive with Sumeru Durandal.',
+    desc: 'Durandal’s ancestry has tested her and found her worthy. Now aware of her birth identity, she rides into battle on the Honkai horse Krishna, wielding the full power of the combined Kaslana and Schariac bloodlines. If captured or purchased, she will also regain her childhood memories, seeing Kiana (K423) and Sirin as her younger sisters. Durandal will always have this perk if captured after the events in Kolosten (Chapter 28), and this perk is not mutually exclusive with Sumeru Durandal.',
   },
   {
     uid: 'cHOQt',
