@@ -493,21 +493,6 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Leah is possessed by Diablo, the Prime Evil from her home plane. Their personalities are fused together, creating a new Leah who is still recognizable but (without controls) just as powerful and evil as her father. Leah/Diablo qualifies for special Alterzelu Symbiote theming.',
   },
   {
-    uid: 'xrAet',
-    title: 'Giga-Graviton',
-    waifu: [
-      'Yuna',
-    ],
-    from: 'Final Fantasy X',
-    waifuUID: [
-      7484,
-    ],
-    tier: 10,
-    image: '/img/waifu_perks/compressed/image211.png',
-    cost: 1000,
-    desc: 'The aeon summoner has one more aeon available to her: Sin, the whale-like beast that ravaged her homeworld for a millenium. Sin acts as a superheavy battlecarrier, capable of operating in all planetary and void environments, and can be sustained indefinitely without cost. Sin has all of its normal weaponry, including gravity and dream magic, and an uncountably high number of Sinscales, Sinspawn, and fiends that may be deployed in army-scale engagements or as anti-boarding defense and qualify Sin\'s summoner for special Alterzelu Symbiote theming. At least four layers of interior pocket universes serve as further protection and segregate the fiends from the customizable command and living spaces near the aeon\u2019s core. An empathic link connects the summoner\u2019s will to Sin and, in turn, the fiends that protect it. This link doubles as an IFF, preventing any deadly or otherwise unfortunate encounters between Sin\u2019s guards and its guests or other inhabitants. You may only apply this perk to one of the two summoners. It does not affect their tier rating',
-  },
-  {
     uid: 'uY2gN',
     title: 'The Word of the Mother',
     waifu: [
