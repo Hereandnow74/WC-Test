@@ -1948,6 +1948,21 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Reines is the host to the Rider-class Pseudo- Servant Sima Yi, a general of the Three Kingdoms era as portrayed in Fate/Grand Order. Unlike most other Pseudo- Servants, the two explicitly share her body in FGO canon.',
   },
   {
+    uid: 'M7mAZ',
+    title: 'Tradition Carrier',
+    waifu: [
+      'Bazett Fraga McRemitz',
+    ],
+    from: 'Nasuverse',
+    waifuUID: [
+      9772,
+    ],
+    tier: 7,
+    image: 'https://images2.imgbox.com/6b/1e/3NHbjjZz_o.png',
+    cost: 80,
+    desc: 'Bazette is instead the Alter Ego-class Pseudo-Servant Manannán mac Lir, the Irish deity of the sea - originally male, but inhabiting Bazette’s female body and identifying with now-her host. This is the same god whose wife, Fand, was the one that Cú Chulainn famously cheated on his wife, Emer, with. If you purchase or capture Bazette first and apply this perk later, Manannán will keep Bazette’s memories, as if she had taken Substitute into her host’s life; if you purchase Bazette and this perk simultaneously, you will only get Manannán.',
+  },
+  {
     uid: '4HvbG',
     title: 'Great Statue God',
     waifu: [
