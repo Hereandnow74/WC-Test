@@ -1100,7 +1100,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 8,
     image: '/img/waifu_perks/compressed/image173.png',
     cost: 100,
-    desc: 'Durandal’s ancestry has tested her and found her worthy. Now aware of her birth identity, she rides into battle on the Honkai horse Krishna, wielding the full power of the combined Kaslana and Schariac bloodlines. If captured or purchased, she will also regain her childhood memories, seeing Kiana (K423) and Sirin as her younger sisters. Durandal will always have this perk if captured after the events in Kolosten.',
+    desc: 'Durandal’s ancestry has tested her and found her worthy. Now aware of her birth identity, she rides into battle on the Honkai horse Krishna, wielding the full power of the combined Kaslana and Schariac bloodlines. If captured or purchased, she will also regain her childhood memories, seeing Kiana (K423) and Sirin as her younger sisters. Durandal will always have this perk if captured after the events in Kolosten Cchapter 28), and this perk is not mutually exclusive with Sumeru Durandal.',
   },
   {
     uid: 'qUDIq',
@@ -1292,8 +1292,8 @@ export const waifu_perks: WaifuPerk[] = [
   //   desc: 'Rita gains access to her Captainverse counterpart, the detective known as Irene Adler. Rita will not have the battlesuit Fallen Rosemary without this perk. This does not increase Rita\'s tier rating. Irene may instead be purchased separately, in her own body, for 100 credits.',
   // },
   {
-    uid: 'ldHwo',
-    title: 'Rita Kaslana',
+    uid: 'ldHwc',
+    title: 'Spina Astera',
     waifu: [
       'Rita Rossweisse',
     ],
@@ -1301,10 +1301,25 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       7269,
     ],
+    tier: 7,
+    image: 'https://images2.imgbox.com/93/09/wA5clXM3_o.png',
+    cost: 50,
+    desc: 'After taking temporary custody of the bubble realm that had been anchored to Durandal, Rita has gained the Spina Astera battlesuit, associated outfits, and ability to travel between worlds in the same local multiverse. Rita will always have this perk if captured after the events of Kolosten (Chapter 28).',
+  },
+  {
+    uid: 'ldHwo',
+    title: 'Rita Kaslana',
+    waifu: [
+      'Rita Rossweisse (Spina Astrea)',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
+      'ldHwc',
+    ],
     tier: 8,
-    image: 'https://i.imgur.com/4K3oU4Q.png?1',
-    cost: 200,
-    desc: 'Rita gets access to Kevin Kaslana\'s powers and abilities from the bubble universe/Su\'s illusion where she became Humanity\'s strongest warrior and took Kevin\'s place. This perk also gives Rita the Judgement of Shamash pistols.',
+    image: 'https://images2.imgbox.com/ff/99/0VhWCghA_o.png',
+    cost: 100,
+    desc: 'Rita gets access to Kevin Kaslana’s powers and abilities from the bubble realm (Su’s illusion) where she became humanity’s strongest warrior and took Kevin’s place. This perk also gives Rita the Judgment of Shamash, defaulting to its twin-pistol form.',
   },
   {
     uid: 'u7LiL',
