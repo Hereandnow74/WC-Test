@@ -978,7 +978,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 8,
     image: '/img/waifu_perks/compressed/image128.png',
     cost: 150,
-    desc: 'Kiana or Sirin has attained her full power as the Herrscher of the Void. and may call the white dragon Benares to the battlefield once more as a personal familiar. This perk must be purchased separately for Kiana (K423) and Sirin, but will only summon one copy of Benares. The two sisters will have to share her. If Sirin is captured at any point from her reawakening in Schicksal custody (chapter 8) to her final defeat in the Theater of Domination (chapter 25), she will always have this perk. Capturing Sirin during her assault on Schicksal will eject K423 into a new body, allowing her to be captured separately in her baseline Tier 5 form.',
+    desc: 'Kiana or Sirin has attained her full power as the Herrscher of the Void. and may call the white dragon Benares to the battlefield once more as a personal familiar. This perk must be purchased separately for Kiana (K423) and Sirin, but will only summon one copy of Benares. The two sisters will have to share her. If Sirin is captured at any point from her reawakening in Schicksal custody (Chapter 8) to her final defeat in the Theater of Domination (Chapter 25), she will always have this perk. Capturing Sirin during her assault on Schicksal will eject K423 into a new body, allowing her to be captured separately in her baseline Tier 5 form.',
   },
   {
     uid: 'oHFJy',
@@ -1064,7 +1064,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 8,
     image: '/img/waifu_perks/compressed/image185.png',
     cost: 150,
-    desc: 'Mei is now in full control of her powers as the Herrscher of Thunder, including the service of ELF Bella and the red dragon Kurikara as her personal familiars. Gathering additional Herrscher cores, as Sirin did during the Second Honkai War, will increase her tier further. Mei will always have this perk if captured during the main story, after her return to Nagazora (chapter 17). This perk is not mutually exclusive with Captain Mei.',
+    desc: 'Mei is now in full control of her powers as the Herrscher of Thunder, including the service of ELF Bella and the red dragon Kurikara as her personal familiars. Gathering additional Herrscher cores, as Sirin did during the Second Honkai War, will increase her tier further. Mei will always have this perk if captured during the main story, after her return to Nagazora (Chapter 17). This perk is not mutually exclusive with Captain Mei.',
   },
   {
     uid: 'JDJfo',
@@ -1356,7 +1356,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 9,
     image: 'https://images2.imgbox.com/89/c4/xouLVDo4_o.png',
     cost: 400,
-    desc: 'Seele has recovered from Sa’s reset of Salt Snow Holy City to become a new type of Herrscher, one whose power comes from the Sea of Quanta. Saule can use her Authority as Herrscher of Rebirth in two distinct forms. Her Soul Shaper form is joined by the deer spirit Diana, while her Life Binder form is joined by the flower spirit Flora. As a bonus, Veliona once more has her old power to wither as the Herrscher of Death by the Cocoon of Finality. Note that these two Herrschers only truly differ in their sources, not capabilities. If you have Bronya with the Herrscher of Reason perk or higher, this perk will also upgrade Project Bunny into its ELF form. Seele will always have this perk if captured after her ascension (chapter 39).',
+    desc: 'Seele has recovered from Sa’s reset of Salt Snow Holy City to become a new type of Herrscher, one whose power comes from the Sea of Quanta. Saule can use her Authority as Herrscher of Rebirth in two distinct forms. Her Soul Shaper form is joined by the deer spirit Diana, while her Life Binder form is joined by the flower spirit Flora. As a bonus, Veliona once more has her old power to wither as the Herrscher of Death by the Cocoon of Finality. Note that these two Herrschers only truly differ in their sources, not capabilities. If you have Bronya with the Herrscher of Reason perk or higher, this perk will also upgrade Project Bunny into its ELF form. Seele will always have this perk if captured after her ascension (Chapter 39).',
   },
   // {
   //   uid: 'db0xf',
@@ -1543,7 +1543,7 @@ export const waifu_perks: WaifuPerk[] = [
     from: 'Nasuverse',
     waifuUID: [
       9777,
-      9777,
+      5900929,
     ],
     tier: 7,
     image: 'https://i.imgur.com/eyZuB9e.png?1',
@@ -1618,13 +1618,13 @@ export const waifu_perks: WaifuPerk[] = [
     uid: 'hax3e',
     title: 'All the World\'s Evils',
     waifu: [
-      'Dark Sakura',
-      'Dark Rin',
+      'Dark Matou Sakura',
+      'Dark Matou Rin',
     ],
     from: 'Nasuverse',
     waifuUID: [
       9769,
-      9777,
+      6195353,
     ],
     tier: 10,
     image: 'https://images2.imgbox.com/62/aa/CPM3JV3P_o.png',

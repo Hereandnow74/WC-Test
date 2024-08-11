@@ -859,7 +859,7 @@ heritages.push({
   whitelist: ['Incandescent Ascendancy Machine'],
   desc: `
   <p>Surpassing limitations is the very nature of transhumanism. Choose a second Transhuman Type. All Transhuman perks treat you as having both types. When the aesthetics of two Transhuman types conflict, you may determine which one takes precedent.</p>
-  <p>This perk may only be purchased once. Access to a third Transhuman Type is not available without a Couple's Account, PvP, or other such means.</p>
+  <p>This perk may only be purchased once. Access to a third Transhuman Type is not available without a Couple\'s Account, PvP, or other such means.</p>
   `,
 })
 
