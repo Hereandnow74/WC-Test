@@ -1088,21 +1088,6 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Bronya has absorbed the other 300,000 souls that make up the Herrscher of Reason, metamorphosing her power into the Herrscher of Truth. In Extremum form, Bronya fights with a spear and uses her Authority to conjure flying drones. In Continuation form, she assembles a mech suit around herself for extreme firepower. Bronya will always have this perk if captured after the events of New Atra and the Final Crater (Chapter 31).',
   },
   {
-    uid: 'KFOfj',
-    title: 'Palatinus Equinox',
-    waifu: [
-      'Durandal',
-    ],
-    from: 'Honkai Impact',
-    waifuUID: [
-      7271,
-    ],
-    tier: 8,
-    image: '/img/waifu_perks/compressed/image173.png',
-    cost: 100,
-    desc: 'Durandal’s ancestry has tested her and found her worthy. Now aware of her birth identity, she rides into battle on the Honkai horse Krishna, wielding the full power of the combined Kaslana and Schariac bloodlines. If captured or purchased, she will also regain her childhood memories, seeing Kiana (K423) and Sirin as her younger sisters. Durandal will always have this perk if captured after the events in Kolosten Cchapter 28), and this perk is not mutually exclusive with Sumeru Durandal.',
-  },
-  {
     uid: 'qUDIq',
     title: 'Twilight Paladin',
     waifu: [
@@ -1322,8 +1307,8 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Rita gets access to Kevin Kaslana’s powers and abilities from the bubble realm (Su’s illusion) where she became humanity’s strongest warrior and took Kevin’s place. This perk also gives Rita the Judgment of Shamash, defaulting to its twin-pistol form.',
   },
   {
-    uid: 'u7LiL',
-    title: 'Sumeru Durandal',
+    uid: 'u7Liz',
+    title: 'Dea Anchora',
     waifu: [
       'Bianka "Durandal" Ataegina',
     ],
@@ -1331,9 +1316,39 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       7271,
     ],
-    image: 'https://i.imgur.com/xjYR2Yy.png?1',
+    tier: 7,
+    image: 'https://images2.imgbox.com/a0/8c/LV0Ok6Oj_o.png',
+    cost: 50,
+    desc: 'As a veteran Schicksal valkyrie, Bianka has traveled to bubble realms within her local multiverse, anchored one within her, and additionally earned the Godslayer-type battlesuit, Bright Knight Excelsis. Durandal will always have this perk if captured during Honkai Impact 3rd’s main storyline.',
+  },
+  {
+    uid: 'u7LiL',
+    title: 'Sumeru Durandal',
+    waifu: [
+      'Bianka "Durandal" Ataegina',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
+      'u7Liz'
+    ],
+    image: 'https://images2.imgbox.com/57/92/sAWxPZO6_o.png',
     cost: 20,
-    desc: 'Durandal gains access to the memories and abilities of Sumeru. Kevin\'s friend who lived as an assistant to Doctor Mei. This perk also gives Durandal the Star of Eden pistols and the Second Divine Key, Interdimensional Locomotive. This does not increase Durendal\'s tier rating. ',
+    desc: 'Durandal gains access to the memories and abilities of Su. Kevin’s friend and fellow Flame Chaser for MANTIS. This perk also gives Durandal the Star of Eden, in twin-pistol form, and the Second Divine Key, Interdimensional Locomotive. This does not increase Durandal’s tier rating and is not mutually exclusive with Palatinus Equinox.',
+  },
+  {
+    uid: 'KFOfj',
+    title: 'Palatinus Equinox',
+    waifu: [
+      'Durandal',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
+      'u7Liz',
+    ],
+    tier: 8,
+    image: '/img/waifu_perks/compressed/image173.png',
+    cost: 100,
+    desc: 'Durandal’s ancestry has tested her and found her worthy. Now aware of her birth identity, she rides into battle on the Honkai horse Krishna, wielding the full power of the combined Kaslana and Schariac bloodlines. If captured or purchased, she will also regain her childhood memories, seeing Kiana (K423) and Sirin as her younger sisters. Durandal will always have this perk if captured after the events in Kolosten (chapter 28), and this perk is not mutually exclusive with Sumeru Durandal.',
   },
   {
     uid: 'cHOQt',
