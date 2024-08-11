@@ -1607,7 +1607,7 @@ export const waifu_perks: WaifuPerk[] = [
     from: 'Nasuverse',
     waifuUID: [
       9769,
-      9777,
+      'G7Bne',
     ],
     tier: 9,
     image: 'https://i.imgur.com/f31725T.jpg',
@@ -1623,6 +1623,7 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     from: 'Nasuverse',
     waifuUID: [
+      'kC10u',
       7017991,
       6195353,
     ],
