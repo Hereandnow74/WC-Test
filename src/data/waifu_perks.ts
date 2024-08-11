@@ -313,7 +313,7 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     tier: 6,
     image: 'https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/wan__sample_9cdccef6679f0c34b6decd492ec832f8.jpg',
-    cost: 49,
+    cost: 48,
     desc: 'Nadeko has joined with the Kuchinawa of her delusions to become a snake goddess herself, freeing herself of her emotional burdens and allowing her true nature as a yandere to shine forth. If Nadeko is captured between the events of Nadeko Medusa and the finale of Hitagi End, she will always have this perk',
   },
   {
@@ -329,7 +329,10 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 8,
     image: 'https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/72ae265780e758cdd963e2adaa257f83.jpg',
     cost: 180,
-    desc: 'Shinobu has returned to her full power as the vampire Kiss-Shot Acerola Orion Heart-Under-Blade, with extreme regenerative abilities even by vampire standards and the two swords Kokowatari and Yumewatari. Purchased versions of Shinobu will always have this perk, as well as versions captured before or after, but not during, the events of Koyomi Vamp.',
+    desc: `Shinobu has returned to her full power as the vampire Kiss-Shot Acerola Orion Heart-Under-Blade, with extreme regenerative abilities, even by vampire standards, and the two swords Kokowatari and Yumewatari.
+    <p>In Koyomi Vamp, Shinobu retrieved and devoured each of her legs, arms, and heart to restore herself. This is obviously impossible for purchased Shinobus, but we’ll allow her to emulate this feat by devouring five other vampires. Two must be at least Tier 6 at step 2, two more must be at least Tier 7 at step 2, and the fifth must be at least Tier 8 at step 2. She may devour them in any order, but must deal the killing blow to each target vampire.</p>
+    <p>Versions of Shinobu who were captured before or after, but not during, the events of Koyomi Vamp, will always have this perk.</p>
+    `,
   },
   {
     uid: 'TJTgO',
@@ -356,10 +359,10 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       6063,
     ],
-    tier: 6,
+    tier: 9,
     image: 'https://i.pinimg.com/originals/59/7c/7d/597c7d30a8d88a4b45bf7340c2a49341.jpg',
-    cost: 30,
-    desc: 'Each oni sister has two horns, not just the one each they were born with.',
+    cost: 480,
+    desc: 'The oni twins, the rosette Ram & the cerulette Rem, were born sharing a single pair of horns, one for each sister. This made them unable to use the natural extent of their oni powers and marked them as outcasts in their village. This perk rights the injustice, granting each sister a second horn of her own.',
   },
   {
     uid: 'k74DN',
