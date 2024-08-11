@@ -1035,6 +1035,20 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'KfjKZ',
+  title: 'Giga-Graviton',
+  category: 'Generic',
+  requires: 'Any Final Fantasy X Summoner',
+  complex: 'target',
+  image: 'https://images2.imgbox.com/06/48/vQABbw1F_o.png',
+  cost: 1000,
+  desc: `
+  <p>The aeon summoner has one more option available: Sin, the whale-like beast that ravaged their homeworld for a millennium. Sin acts as a superheavy battlecarrier, capable of operating in all planetary and void environments, and can be sustained indefinitely without cost.</p>
+  <p>Sin has all of its normal weaponry, including gravity and dream magic, and an uncountably high number of Sinscales, Sinspawn, and fiends that may be deployed in army-scale engagements or as anti-boarding defense. If Sin’s summoner is female, these fiends qualify her for special Alterzelu Symbiote theming. At least four layers of interior pocket universes serve as further protection and segregate the fiends from the customizable command and living spaces near the aeon’s core. An empathic link connects the summoner’s will to Sin and, in turn, the fiends that protect it. This link doubles as an IFF, preventing any deadly or otherwise unfortunate encounters between Sin’s guards and its guests or other inhabitants.</p>
+  <p>You may only have one Sin at a time, whether or not this perk is applied. You can change which Aeon Summoner in your retinue - yourself included if you are one - that this perk is applied to in your Company App, but you must wait one week (168 hours) after purchasing or after changing targets before you can do so (again). This perk may be purchased for any FFX Summoner in your retinue, including those created through Template Stacking. This perk does not affect the summoner’s tier rating.</p>`,
+})
+
+genericPerks.push({
   uid: 'kgjKf',
   title: 'Blade of Endings',
   category: 'Generic',
