@@ -2117,7 +2117,7 @@ export const waifu_perks: WaifuPerk[] = [
       150,
       100,
     ],
-    desc: 'Instead of the second Reinforce, you have the original. This upgrades the Tome of the Night Sky to its full power, including a non-rampant NachtWal. (NachtWal is not a waifu.) If you have Reinforce Zwei and all four Wolkenritter, this upgrade only costs 100. If you captured Reinforce Zwei or there was any amount of time between buying her and this upgrade, Zwei will gain the complete Tome, NachtWal, and Eins\' full-size adult form, costumes, and memories, but her personality will not be affected. ',
+    desc: 'Instead of the second Reinforce, you have the original. This upgrades the Tome of the Night Sky to its full power, including a non-rampant NachtWal as a personal familiar.If you have Reinforce Zwei and all four Wolkenritter, this upgrade only costs 100. If you captured Reinforce Zwei or there was any amount of time between buying her and this upgrade, Zwei will gain the complete Tome, NachtWal, and Eins’ full-size adult form, costumes, and memories, but her personality will not be affected.',
   },
   {
     uid: 'izRp1',
@@ -2198,7 +2198,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 9,
     image: 'https://i.imgur.com/TyYQzwt.png?1',
     cost: 300,
-    desc: 'Hotaru is instead the Messiah of Silence, Mistress 9, with the corresponding power boost and no connection to Pharaoh 90. Mistress 9 qualifies for special Alterzelu Symbiote theming. If you captured Hotaru or there was any amount of time between buying her and this upgrade, she will gain Mistress 9\'s form, costumes, and additional power, but her personality will not be affected. Strangely, Black Lady x Mistress 9 is a frequent ship in the Sailor Moon fanart community, despite the two never meeting or even appearing in the same seasons.',
+    desc: 'Hotaru is instead the Messiah of Silence, Mistress 9, with the corresponding power boost and no connection to Pharaoh 90. Mistress 9 qualifies for special Alterzelu Symbiote theming. If you captured Hotaru or there was any amount of time between buying her and this upgrade, she will gain Mistress 9’s form, costumes, and additional power, but her personality will not be affected.Strangely, Black Lady x Mistress 9 is a frequent ship in the Sailor Moon fanart community, despite the two never meeting or even appearing in the same seasons.',
   },
   {
     uid: 'ULirE',
@@ -2215,11 +2215,11 @@ export const waifu_perks: WaifuPerk[] = [
     cost: 0,
     costT: 5,
     discount: 500,
-    desc: 'The 90s anime made Sailor Moon popular worldwide, but its divergent narrative left out lore from the later manga arcs that made the title character even more potent than she already was. This perk elevates your anime version of Usagi to the same heights. If you capture the manga/Crystal version of Usagi, she will always have this perk. Both versions of Usagi qualify for special Alterzelu Symbiote theming.sc',
+    desc: 'The 90s anime made Sailor Moon popular worldwide, but its divergent narrative left out lore from the later manga arcs that made the title character even more potent than she already was. This perk elevates your anime version of Usagi to the same heights. If you capture the manga/Crystal version of Usagi, she will always have this perk. Both versions of Usagi qualify for special Alterzelu Symbiote theming.',
   },
   {
     uid: 'OSnTd',
-    title: 'XV',
+    title: 'XV: Devil',
     waifu: [
       'Kohinata Miku',
     ],
@@ -2230,7 +2230,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 9,
     image: 'https://i.imgur.com/eGO8M3L.png?1',
     cost: 300,
-    desc: 'Miku is now the host to Shem-Ha Mephorash, the devil who betrayed her fellow Custodians, attempted to enslave humanity, and survived her defeat by embedding herself within human language. Shem-Ha may instead be purchased separately, in her own body, for 500 credits. Both versions of Shem-Ha qualify for special Alterzelu Symbiote theming. ',
+    desc: 'Miku is now the host to Shem-Ha Mephorash, the devil who betrayed her fellow Custodians, attempted to enslave humanity, and survived her defeat by embedding herself within human language. Shem-Ha may instead be purchased separately, in her own body, for 500 credits. Both versions of Shem-Ha qualify for special Alterzelu Symbiote theming.',
   },
   {
     uid: 'cKoxn',
