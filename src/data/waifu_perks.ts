@@ -904,7 +904,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 6,
     image: 'https://i.imgur.com/UCrRO4K.png',
     discount: 50,
-    desc: 'Instead of the Grimm-corrupted Salem of the canon era, your Salem is her younger self with strong immortality, magical talent, and no command over the nightmare creatures that plague her homeworld. Light Salem isn\'t necessarily any better of a person than Dark Salem, but at least you have a way to troll her ex-husband.',
+    desc: 'Instead of the Grimm-corrupted Salem of the canon era, your Salem is her younger self with strong immortality, magical talent, and no command over the nightmare creatures that plague her homeworld. Light Salem isn’t necessarily any better of a person than Dark Salem, but at least you have a way to troll her ex-husband.',
   },
   {
     uid: 'Pbes2',
