@@ -1859,9 +1859,9 @@ export const waifu_perks: WaifuPerk[] = [
       9775,
     ],
     tier: 6,
-    image: 'https://i.imgur.com/8tccdTz.png?1',
+    image: 'https://images2.imgbox.com/c1/6d/522CsEwi_o.png',
     cost: 30,
-    desc: 'Reines is the host to the Rider-class Pseudo-Servant Sima Yi, a general of the Three Kingdoms era as portrayed in Fate/Grand Order. Unlike most other Pseudo-Servants, the two explicitly share her body in FGO canon.',
+    desc: 'Reines is the host to the Rider-class Pseudo- Servant Sima Yi, a general of the Three Kingdoms era as portrayed in Fate/Grand Order. Unlike most other Pseudo- Servants, the two explicitly share her body in FGO canon.',
   },
   {
     uid: '4HvbG',
