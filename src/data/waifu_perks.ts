@@ -563,9 +563,9 @@ export const waifu_perks: WaifuPerk[] = [
       7530,
     ],
     tier: 6,
-    image: 'https://i.imgur.com/fviNHAf.jpg?1',
+    image: 'https://images2.imgbox.com/bb/b6/KKYVLbc3_o.png',
     cost: 40,
-    desc: 'Through admiration and determined effort, Ysayle can now channel the spirit of Shiva by taking on her form. Shiva may also be purchased separately, in her own body and with any version\u2019s appearance, for 50 credits.',
+    desc: 'Through admiration and determined effort, Ysayle can now channel the spirit of Shiva by taking on her form. Shiva may also be purchased separately, in her own body and with any version’s appearance, for 50 credits.',
   },
   {
     uid: 'LPFjA',
