@@ -2527,7 +2527,7 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     tier: 6,
     image: 'https://i.imgur.com/hrCmyrd.png',
     cost: 30,
-    desc: 'Tanjirou Kamada has become that which he once hated the most: a demon. Stronger than Muzan, and free to walk in the sun as he pleases, there is a new demon king on the rise. A demon with access to the breath of the sun is quite a dangerous combination indeed. If Tanjirou is captured during the events of the Sunrise Countdown Arc, he will always have this perk.',
+    desc: 'Tanjirou Kamado has become that which he once hated the most: a demon. Stronger than Muzan, and free to walk in the sun as he pleases, there is a new demon king on the rise. A demon with access to the breath of the sun is quite a dangerous combination indeed. With this perk, Tanjirou will not suffer from any loss of sanity, nor have to deal with Muzan’s influence.Tanjirou will always have this perk if captured during the events of the Sunrise Countdown Arc.',
     whitelist: [],
   },
   {
