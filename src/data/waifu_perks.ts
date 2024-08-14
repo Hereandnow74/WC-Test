@@ -1368,7 +1368,7 @@ export const waifu_perks: WaifuPerk[] = [
     uid: 'cgwc0',
     title: 'Herrscher of Rebirth',
     waifu: [
-      'Seele Vollerei (Death Awakening',
+      'Seele Vollerei (Death Awakening)',
     ],
     from: 'Honkai Impact',
     waifuUID: [
