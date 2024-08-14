@@ -2085,7 +2085,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 10,
     image: '/img/waifu_perks/compressed/image177.png',
     cost: 800,
-    desc: 'Koyanskaya\u2019s attempt to collect nine tails has succeeded, ascending her into an alternative Beast IV. Koyanskaya is no longer limited to expressing one aspect of herself at a time, whether the Assassin- class Light form and personality or the Foreigner-class Dark form and personality, but can split into two and re-merge on contact. She gains raw power befitting a Tier 10, and can assume her monstrous Beast form at will when merged. Like regular Koyanskaya, Treasured Beast Koyanskaya also qualifies for special Alterzelu Symbiote theming.',
+    desc: 'Koyanskaya’s attempt to collect nine tails has succeeded, ascending her into an alternative Beast IV. Koyanskaya is no longer limited to expressing one aspect of herself at a time, whether the Assassin-class Light form and personality or the Foreigner-class Dark form and personality, but can split into two and re-merge on contact. She gains raw power befitting a Tier 10 and can assume her monstrous Beast form at will when merged. If Koyanskaya attains this perk the natural way, by eating nine powerful creatures and converting them into tails, her Beast form will be an amalgamation of their forms. Otherwise, it will have the canon design. Like regular Koyanskaya, Treasured Beast Koyanskaya also qualifies for special Alterzelu Symbiote theming.',
   },
   {
     uid: '1Hsmu',
