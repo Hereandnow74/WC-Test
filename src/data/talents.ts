@@ -931,17 +931,17 @@ genericPerks.push({
   uid: 'dmynt',
   title: 'Third-Party Riggings',
   category: 'Generic',
-  special: 'Requires at least one first - party Azur Lane shipgirl.',
+  special: 'Requires at least one first-party Azur Lane shipgirl.',
   complex: 'target',
   requires: 'Any Azur Lane collaboration shipgirl',
   image: 'https://i.ibb.co/6y1sh85/Third-Party-Riggings.jpg',
   cost: 20,
   desc: `Dead or Alive, Neptunia, Utawarerumono, Hololive, and others have all had guest appearances on the high seas. This perk grants these characters their shipgirl riggings, allowing them to play by those rules instead and making them eligible for Bifurcation and Space Shipgirl below. If a collaboration shipgirl’s tier after step 1a is less than the following, it will be raised to that value.
 <ul class="list-disc list-inside">
-  <li>22, 33, Akizuki Ritsuko, Futami Ami, Futami Mami, Minato Aqua</li>
-  <li>T5: Marie Rose, Misaki, Miura Azusa, Namiko, Minami Yume, HDN Neptune, Noire, Blanc, Black Heart, White Heart, Kuon, Nekone, Rurutie, Uruuru, Saraana, Kisuna AI, Elegant Kizuna AI, Natsuiro Matsuri, Nakiri Ayame</li>
-  <li>T6: Honoka, Kasumi, Nagisa, Nyotengu, Monica, Amami Haruka, Takarada Rikka, Shinjo Akane, Hass, Mujina, Vert, Purple Heart, Greet Heart, Fumiruiru, Shirakami Fubuki, Murasaki Shion, Ookami Mio</li>
-  <li>T7: Kisaragi Chihaya, Minase Iori, Asukagawa Chise, Anniversary Kizuna AI, Super Gamer Kizuna AI, Tokino Sora</li>
+  <li>T4: 22, 33, Akizuki Ritsuko, Futami Ami, Futami Mami, Minato Aqua, Princess Hime, Homura/li>
+  <li>T5: Marie Rose, Misaki, Miura Azusa, Namiko, Minami Yume, HDN Neptune, Noire, Blanc, Black Heart, White Heart, Kuon, Nekone, Rurutie, Uruuru, Saraana, Kizuna AI, Elegant Kizuna AI, Natsuiro Matsuri, Nakiri Ayame, Lila Decyrus, Kala Ideas, Ikaruga, Yuuyaki</li>
+  <li>T6: Honoka, Kasumi, Nagisa, Nyotengu, Monica, Amami Haruka, Takarada Rikka, Shinjo Akane, Hass, Mujina, Vert, Purple Heart, Green Heart, Fumiruiru, Shirakami Fubuki, Murasaki Shion, Ookami Mio, Reisalin Stout, Klaudia Valentz, Serri Glaus, Luna, Asuka</li>
+  <li>T7: Kisaragi Chihaya, Minase Iori, Asukagawa Chise, Anniversary Kizuna AI, Super Gamer Kizuna AI, Tokino Sora, Patricia Abelheim, Tamaki, The 2nd, Yumi, Fubuki (Senran Kagura)</li>
 </ul>`,
 })
 
@@ -954,12 +954,29 @@ genericPerks.push({
   image: 'https://i.ibb.co/H26yFLZ/Retrofit.jpg',
   cost: 0,
   costVariants: [0, 10, 30, 50],
-  special: '0(T4 → T4, T5 → T5, T6 → T6), 10(T4 → T5), 30(T5 → T6), 50(T6 → T7)',
+  special: '0 (T4 → T4), 10 (T4 → T5), 0 (T5 → T5), 30 (T5 → T6), 0 (T6 → T6), 50 (T6 → T7)',
   desc: `Your shipgirl is her post-retrofit version, with updated abilities, hull, and rigging. This perk is free for all eligible shipgirls except the following, whose tiers are changed as a result:
 <ul class="list-disc list-inside">
-  <li>T4 → T5: Pamiat Merkuria, Curacoa, Curlew</li>
-  <li>T5 → T6: Bogue, Langley, Ranger, Emile Bertin, Leander, Achilles, Ajax, London, York, Exeter, Hermes, Isuzu, Kinu, Mogami, Shouhou, Jintsuu</li>
-  <li>T6 → T7: Warspite, Ark Royal, Souryuu, Hiryuu</li>
+  <li>T4 → T5: Curacoa, Curlew, Pamiat Merkuria</li>
+  <li>T5 → T6: Juneau, Long Island, Bogue, Leander, Achilles, Ajax, London, York, Hermes, Kinu, Mogami, Shouhou, Karlsruhe, Koln, Jintsuu, Emile Bertin, Chen Hai</li>
+  <li>T6 → T7: Saratoga, Warspite, Ark Royal, Souryuu, Hiryuu</li>
+</ul>`,
+})
+
+genericPerks.push({
+  uid: 'piGap',
+  title: 'Type II',
+  category: 'Generic',
+  requires: 'Any eligible Azur Lane shipgirl',
+  complex: 'target',
+  image: 'https://images2.imgbox.com/d6/28/RpbpG5aW_o.png',
+  cost: 0,
+  costVariants: [0, 10, 30, 50],
+  special: '0 (T4 → T4), 10 (T4 → T5), 0 (T5 → T5), 30 (T5 → T6), 0 (T6 → T6), 50 (T6 → T7)',
+  desc: `Your shipgirl has her Type II hull, with updated abilities, hull, and rigging. This perk is free for all eligible shipgirls except the following, whose tiers are changed as a result:
+<ul class="list-disc list-inside">
+  <li>T5 → T6: Langley II, Laffey II</li>
+  <li>T6 → T7: Hornet II, Yorktown II, Bismarck Zwei</li>
 </ul>`,
 })
 
@@ -1018,6 +1035,20 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'KfjKZ',
+  title: 'Giga-Graviton',
+  category: 'Generic',
+  requires: 'Any Final Fantasy X Summoner',
+  complex: 'target',
+  image: 'https://images2.imgbox.com/06/48/vQABbw1F_o.png',
+  cost: 1000,
+  desc: `
+  <p>The aeon summoner has one more option available: Sin, the whale-like beast that ravaged their homeworld for a millennium. Sin acts as a superheavy battlecarrier, capable of operating in all planetary and void environments, and can be sustained indefinitely without cost.</p>
+  <p>Sin has all of its normal weaponry, including gravity and dream magic, and an uncountably high number of Sinscales, Sinspawn, and fiends that may be deployed in army-scale engagements or as anti-boarding defense. If Sin’s summoner is female, these fiends qualify her for special Alterzelu Symbiote theming. At least four layers of interior pocket universes serve as further protection and segregate the fiends from the customizable command and living spaces near the aeon’s core. An empathic link connects the summoner’s will to Sin and, in turn, the fiends that protect it. This link doubles as an IFF, preventing any deadly or otherwise unfortunate encounters between Sin’s guards and its guests or other inhabitants.</p>
+  <p>You may only have one Sin at a time, whether or not this perk is applied. You can change which Aeon Summoner in your retinue - yourself included if you are one - that this perk is applied to in your Company App, but you must wait one week (168 hours) after purchasing or after changing targets before you can do so (again). This perk may be purchased for any FFX Summoner in your retinue, including those created through Template Stacking. This perk does not affect the summoner’s tier rating.</p>`,
+})
+
+genericPerks.push({
   uid: 'kgjKf',
   title: 'Blade of Endings',
   category: 'Generic',
@@ -1027,7 +1058,7 @@ genericPerks.push({
   cost: 1000,
   desc: `
   The Origin of Keyblades, the Ⲭ-Blade is the companion to the True Kingdom Hearts, and the only blade which can open its door. With this perk, your Keyblade wielding character (yourself included, if you have a Keyblade) can now summon the legendary blade itself. With it, you can call upon both its powers and the powers of Kingdom Hearts itself by summoning it. 
-  <p>You may only have one Ⲭ-Blade at a time, whether or not this perk is applied. It can be passed around your various Keyblade Wielders, but only the one whom this perk is applied to can summon or unsummon the blade at will. You can change which Keyblade Wielder in your Retinue (yourself included if you have a Keyblade) this perk is applied to in your Company App, but you must wait one week (168 hours) after purchasing or after changing targets before you can do so (again).</p>`,
+  <p>You may only have one Ⲭ-Blade at a time, whether or not this perk is applied. It can be passed around your various Keyblade Wielders, but only the one whom this perk is applied to can summon or unsummon the blade at will. This perk may be purchased for any Keyblade Wielder in your retinue, including those created through Template Stacking. You can change which Keyblade Wielder in your Retinue this perk is applied to in your Company App, but you must wait one week (168 hours) after purchasing or after changing targets before you can do so (again).</p>`,
 })
 
 genericPerks.push({
@@ -1063,7 +1094,7 @@ genericPerks.push({
   complex: 'target',
   cost: 40,
   image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/L1ex5.jpg',
-  desc: 'The Spirit can now enter her Inverse Form, greatly increasing her strength and changing her Angel into a Demon King. The Spirit will remain in full control of herself. This perk may be applied to any Spirit from Date A Live, including those who lack a canonical Inverse Form or aren’t listed in the catalog as Spirits. This perk is free if you capture the Spirit while she’s in her Inverse Form, or if she unlocks it herself by force.',
+  desc: 'The Spirit can now enter her Inverse Form, greatly increasing her strength and changing her Angel into a Demon King. The Spirit will remain in full control of herself. This perk may be applied to any Spirit from Date A Live, including those who lack a canonical Inverse Form or aren’t listed in the catalog as Spirits. This perk may be purchased for any Date a Live spirit in your retinue, including those created through Template Stacking. This perk is free if you capture the Spirit while she’s in her Inverse Form, or if she unlocks it herself by force.',
 })
 
 genericPerks.push({
@@ -1132,7 +1163,7 @@ genericPerks.push({
   multiple: true,
   image: 'https://i.ibb.co/1QhZdpg/Four-Seasons.jpg',
   cost: 20,
-  desc: `Maidenhood is special on Remnant, but not particularly so. Anyone can become one under the right circumstances. By default, this perk may be purchased up to four times, once for each temperate season (Spring, Summer, Fall, Winter). Purchasing this once will elevate a character to T6, if she isn’t already. Repurchases for the same character are allowed, but only one for each season and will not affect a tier further.
+  desc: `Maidenhood is special on Remnant, but not particularly so. Anyone can become one under the right circumstances. By default, this perk may be purchased up to four times, once for each temperate season (Spring, Summer, Fall, Winter). Purchasing this once will elevate a character to T6, if she isn’t already. Repurchases for the same character are allowed, but only one for each season and will not affect a tier further. This perk may be purchased for any female Aura user in your retinue, including those created through Template Stacking.
   <p>Additional sets of Maiden mantles become available with each member of your retinue, including yourself, whose effective tier after step 4a is at least T8: one for each T8, two for each T9, five for each T10, ten for each TX, twenty for each TY, and fifty for each TZ. If one of your waifus is already a Maiden when you capture her, that counts against your total, unless you take a refund for this perk. If this puts you over your cap for a particular mantle, you may not buy any more of that mantle until you’ve raised the cap further.</p>
   `,
 })
@@ -1147,8 +1178,8 @@ genericPerks.push({
   image: 'https://i.ibb.co/CK7zwYY/Salvation.jpg',
   cost: 20,
   desc: `
-<p>When your waifu's soul gem darkens completely, she may choose to manifest her Doppel: a materialization of her witch-self which may take the form of an discrete projection, an extension of her body, or even a partial physical transformation, depending upon the details of her relationship to her witch-self and what it represents. An activated Doppel is extremely powerful in its own right, but draws upon the darkness in its master's soul gem to manifest, quickly and completely purifying its master's gem until she can no longer support it - leaving her Doppel as a briefly activated trump card or a simple magic recharge mechanic unless it's somehow further refined. If you have Inexhaustible, any meguca in your retinue, whom this perk has been applied to, will only benefit from this perk.</p>
-<p>If you have Madokami, Akuma Homura, Satomi Touka, Lapin, or any other meguca who is canonically capable of breaking the balance of hope and despair in your retinue, then this perk is free. If you already have this perk when you acquire a relevant waifu, then take a full refund on the value of this perk for as many times as you've purchased it. Upon ten purchases of this perk, all meguca you may purchase will automatically have this perk applied to them.</p>`,
+<p>When your waifu's soul gem darkens completely, she may choose to manifest her Doppel: a materialization of her witch-self which may take the form of a discrete projection, an extension of her body, or even a partial physical transformation, depending upon the details of her relationship to her witch-self and what it represents. An activated Doppel is extremely powerful in its own right, but draws upon the darkness in its master's soul gem to manifest, quickly and completely purifying its master's gem until she can no longer support it - leaving her Doppel as a briefly activated trump card or a simple magic recharge mechanic, unless it's somehow further refined. If you have Inexhaustible, any meguca in your retinue, whom this perk has been applied to, will only benefit from this perk. The Doppel would never activate otherwise.</p>
+<p>All Puella Magi in your retinue qualify for this perk, including those created through Template Stacking. If you have Madokami, Akuma Homura, Satomi Touka, Lapin, or any other meguca who is canonically capable of breaking the balance of hope and despair in your retinue, then this perk is free. If you already have this perk when you acquire a relevant waifu, then take a full refund on the value of this perk for as many times as you've purchased it. Upon ten purchases of this perk, it will automatically apply to all meguca in your retinue.</p>`,
 })
 
 genericPerks.push({
@@ -1178,7 +1209,7 @@ genericPerks.push({
   uid: 'lgk5f',
   title: 'Mamonomorphosis (Papillon)',
   category: 'Generic',
-  requires: 'any Monster Girl Encyclopedia Greenworm',
+  requires: 'Any Monster Girl Encyclopedia Greenworm',
   complex: 'target',
   image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/RTVzw.jpg',
   cost: 5,
@@ -1190,7 +1221,7 @@ genericPerks.push({
   uid: 'aoqp9',
   title: 'Mamonomorphosis (Succubus)',
   category: 'Generic',
-  requires: 'any Monster Girl Encyclopedia Lesser Succubus',
+  requires: 'Any Monster Girl Encyclopedia Lesser Succubus',
   complex: 'target',
   image: 'https://images2.imgbox.com/35/1d/aQquQKpJ_o.png',
   cost: 40,
@@ -1202,7 +1233,7 @@ genericPerks.push({
   uid: 'qsmot',
   title: 'Lilithspawn',
   category: 'Generic',
-  requires: 'any Monster Girl Encyclopedia Mamono, except for Lilims and the Demon Lord',
+  requires: 'Any Monster Girl Encyclopedia Mamono, except for Lilims and the Demon Lord',
   complex: 'target',
   image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/LWSUk.jpg',
   cost: 200,
