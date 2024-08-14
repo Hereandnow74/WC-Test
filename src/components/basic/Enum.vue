@@ -97,7 +97,7 @@ const typeTitles = {
   warranty: 'Warranty',
   death: 'Death',
   random: 'Random',
-  pvp: 'Pvp',
+  pvp: 'PvP',
   other: 'Misc',
   dlc: 'DLC',
 }
