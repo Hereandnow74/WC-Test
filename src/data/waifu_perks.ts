@@ -1742,7 +1742,7 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     tier: 7,
     image: 'https://i.imgur.com/xTfsODX.png?1',
-    cost: 98,
+    cost: 90,
     desc: 'Sakura (Matou) is grafted with the Berserker Class Card of Lancelot du Lac. She will see you as her Senpai at all times. When she has Lancelot\'s card equipped, her morality will recede until only your wants and safety are on her mind. If you capture the Miyuverse version of Sakura, even before the Ainsworth Grail War, she will already have this. This perk may not be applied to the same Sakura as Tainted Vessel, Kouhai of Light, or Undivided. If you already have any of those perks and want Berserker Sakura, you may still purchase this, pre-applied to a new Sakura, for 100 credits.',
   },
   {
