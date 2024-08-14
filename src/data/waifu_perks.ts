@@ -1536,8 +1536,8 @@ export const waifu_perks: WaifuPerk[] = [
     cost: 100,
     discount: 0,
     costT: 0,
-    desc: 'Medusa, either one, has overdosed on her Monstrous Strength to become the Gorgon that devoured her sisters and was in turn slain by Perseus. This is her Avenger-class form, as portrayed in Fate/Grand Order.\nThis perk may not be purchased or earned if you already have a Gorgon. If you have Corruption Defense, the transformation into Gorgon will not occur if you do not intend to earn this perk. If you have Ishtar, Quetzalcoatl, or anyone else involved in the Babylonia singularity alongside Gorgon, they will recognize each other. Gorgon qualifies for special Alterzelu Symbiote theming.\n',
-    whitelist: [],
+    desc: `Medusa, either one, has overdosed on her Monstrous Strength to become the Gorgon that devoured her sisters and was in turn slain by Perseus. This is her Avenger-class form, as portrayed in Fate/Grand Order.
+    <p>This perk may not be purchased or earned if you already have a Gorgon. If you have Corruption Defense, the transformation into Gorgon will not occur if you do not intend to earn this perk. If you have Ishtar, Quetzalcoatl, or anyone else involved in the Babylonia singularity alongside Gorgon, they will recognize each other. Gorgon qualifies for special Alterzelu Symbiote theming.</p>`,
   },
   {
     uid: 'p57PR',
