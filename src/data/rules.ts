@@ -65,20 +65,20 @@ export const effectiveTiers = `<h3 class="font-bold">Effective Tiers</h3>
   <ul>
     <li><b>1.</b>  Companion’s unmodified tier. This is the number given in their Catalog entry.
       <ul class="pl-4">
-        <li><b>a.</b> Apply any waifu perks.</li>
+        <li><b>a.</b> Apply any Specific Waifu Perks.</li>
         <li><b>b.</b> Apply any permanent bonuses from Heritages.</li>
       </ul>
     </li>
-    <li><b>2.</b>  Account for cross-training (including the benefits from training with Talents), Added Potential, Template Stacking, and any sort of third-party augmentations (biological, cybernetic, spiritual, etc.). This step represents an individual’s state if they were suddenly freed from their contractor or otherwise not (or no longer) associated with the company… and also naked.</li>
+    <li><b>2.</b>  Account for cross-training (including the benefits from training with Talents), General Waifu Perks, and any sort of third-party augmentations (biological, cybernetic, spiritual, etc.). This step represents an individual’s state if they were suddenly freed from their contractor or otherwise not (or no longer) associated with the company… and also naked.</li>
     <li><b>3.</b>  Account for any special or empowering equipment that the individual has. This step represents the individual’s state if they were suddenly freed from their contractor or otherwise not (or no longer) associated with the company.</li>
     <li><b>4.</b>  Account for the direct effects of Binding-type controls.
       <ul class="pl-4">
-        <li><b>a.</b> Account for the ongoing effects of all other persistent catalog options: Lures, Demiplane/Dungeon access, Talents and Defenses, and Other Perks. This is the individual’s usual state within a contractor’s retinue.</li> 
+        <li><b>a.</b> Account for the ongoing effects of all other persistent catalog options: Lures, Demiplane access, Talents and Defenses, and Other Perks. This is the individual’s usual state within a contractor’s retinue.</li> 
       </ul>
     </li>
     <li><b>5.</b>  Apply any conditional or other temporary effects from Heritage perks, personal abilities or other sources.</li>
   </ul>
-  <p>Many individuals’ powers rely on henshin devices, fаmiliars, or special equipment that they can be easily separated from and reduced to, usually, only T1-T3. These items are accounted for in their listed tiers, but not included in their effective tier calculations until step 3.</p>`
+  <p>Many individuals’ powers rely on henshin devices, personal familiars, or special equipment that they can be easily separated from and reduced to, usually, only T1-T3. These items are accounted for in their listed tiers, but not included in their effective tier calculations until step 3.</p>`
 
 export const familiars = `<h3 class="font-bold text-xl pt-4 pb-2">Fаmiliars</h3>
 <p>Broadly speaking, a fаmiliar is any individual in your retinue that isn’t a member of your harem proper. This can include beloved pets, support staff, adopted children, people important to your harem that you aren’t interested in maintaining an emotional and sexual relationship with, or more traditional magical beasts such as Pokémon or magical girl mascots. Many purchasable companions are packaged with their fаmiliars and specified as such in the setting-specific rules; this is by no means a comprehensive list. Some fаmiliars named in the setting-specific rules are also present in the catalog listing as companions. If you capture a fаmiliar’s master first, you’ll get the fаmiliar too and receive the full value for both. Much like with humanoid captures, only the first copy of any type of generic magical or other beast is worth capture or sale credits.</p>
