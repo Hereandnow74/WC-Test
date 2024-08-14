@@ -2193,7 +2193,7 @@ export const waifu_perks: WaifuPerk[] = [
     uid: 'ZtHuO',
     title: 'Pharaoh\'s Herald',
     waifu: [
-      'Tomoe Hotaru',
+      'Tomoe Hotaru/Sailor Saturn',
     ],
     from: 'Sailor Moon',
     waifuUID: [
@@ -2202,7 +2202,8 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 9,
     image: 'https://i.imgur.com/TyYQzwt.png?1',
     cost: 300,
-    desc: 'Hotaru is instead the Messiah of Silence, Mistress 9, with the corresponding power boost and no connection to Pharaoh 90. Mistress 9 qualifies for special Alterzelu Symbiote theming. If you captured Hotaru or there was any amount of time between buying her and this upgrade, she will gain Mistress 9’s form, costumes, and additional power, but her personality will not be affected.Strangely, Black Lady x Mistress 9 is a frequent ship in the Sailor Moon fanart community, despite the two never meeting or even appearing in the same seasons.',
+    desc: `Hotaru is instead the Messiah of Silence, Mistress 9, with the corresponding power boost and no connection to Pharaoh 90. Mistress 9 qualifies for special Alterzelu Symbiote theming. If you captured Hotaru or there was any amount of time between buying her and this upgrade, she will gain Mistress 9’s form, costumes, and additional power, but her personality will not be affected.
+    <p>Strangely, Black Lady x Mistress 9 is a frequent ship in the Sailor Moon fanart community, despite the two never meeting or even appearing in the same seasons.</p>`,
   },
   {
     uid: 'ULirE',
