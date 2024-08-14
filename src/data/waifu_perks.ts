@@ -1750,15 +1750,19 @@ export const waifu_perks: WaifuPerk[] = [
     title: 'Kouhai of Light',
     waifu: [
       'Matou Sakura',
+      'Matou Sakura (AI)',
+      'Kasuga no Tsubone',
     ],
     from: 'Nasuverse',
     waifuUID: [
       9769,
+      9785,
+      9969680,
     ],
     tier: 8,
     image: 'https://i.imgur.com/xapAe6N.png?1',
     cost: 198,
-    desc: 'Sakura or Tsubone is instead the Lancer-class Pseudo-Servant Parvati, the Hindu goddess and wife of Shiva as portrayed in Fate/Grand Order. If you purchase or capture the intended host first and apply this perk later, Parvati will keep her host\'s memories and a blend of both host and Servant\'s personalities, as if she had taken Substitute into her host\'s life; if you purchase the host and this perk simultaneously, you will only get Parvati. This perk may not be applied to the same Sakura as Tainted Vessel. Undivided, or Knight of the Cherry Blossom',
+    desc: 'Sakura or Tsubone is instead the Lancer-class Pseudo- Servant Parvati, the Hindu goddess and wife of Shiva. If you purchase or capture the intended host first and apply this perk later, Parvati will keep her host’s memories and a blend of both host and Servant’s personalities, as if she had taken Substitute into her host’s life; if you purchase the host and this perk simultaneously, you will only get Parvati. This perk may not be applied to the same Sakura as Tainted Vessel, Kama Sammohana, Undivided, or Knight of the Cherry Blossom. You can only apply this perk to one of human Sakura, AI Sakura, or Tsubone at a time.',
   },
   {
     uid: 'Bat3e',
