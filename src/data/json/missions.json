@@ -1,6 +1,688 @@
 [
 
   {
+    "reward": 60,
+    "image": "https://pa1.aminoapps.com/6687/c06be150f07e5583cdd3a7bee64e00d216ae5549_00.gif",
+    "author": "Irugaa0",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Secure, Capture and Possess",
+    "uid": "Gdmkd",
+    "loca": "SCP",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Secure/Capture at least 1 Euclid class SCP."
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Secure/Capture at least 1 Thaumiel class SCP."
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Secure/Capture at least 1 Archon class SCP."
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Secure/Capture at least 1 Ticonderoga class SCP."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Secure/Capture at least 5 Keter class SCP."
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Secure/Capture at least 20 Keter class SCP."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Secure/Capture at least 1 Apollyon class SCP."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Secure/Capture 5 Different SCPs."
+      },
+      {
+        "value": "Secure/Capture at least 1 Keter class SCP."
+      }
+    ],
+    "budget": 200,
+    "desc": "SCPs are anomalous objects, entities, and phenomena, that occur or appear for unknown reasons. The foundation among other groups is responsible for locating, identifying and containing these anomalies.  \n\nNevertheless, we prefer that these anomalies be in the hands of our contractors."
+  },
+  {
+    "reward": 1,
+    "image": "https://cdnb.artstation.com/p/assets/images/images/055/728/787/4k/steph-johnstone-8.jpg",
+    "author": "Yeveiras",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "A Succubus Quest To Greatness",
+    "uid": "cXFrv",
+    "loca": "Generic",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "One \"Lure\" of your choice.",
+        "type": "Other",
+        "value": "Seduce and corrupt a nun, she must worship you as her one and only Goddess."
+      },
+      {
+        "reward": "Obtain \"Divine Lust\" you are able to influence beings (with a lower tier than your own) to worship you as the epitome of beauty.",
+        "type": "Perks",
+        "value": "Seduce and corrupt 10 nuns, they must worship you as their one and only Goddess."
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Create a religion centered around You and your race, and must have at least 10.000 faithfull."
+      },
+      {
+        "reward": "Ascend and become the Succubus Goddess of Lust Beauty and of all \"Royal Succubus\".",
+        "type": "Other",
+        "value": "Your religion must be the most widespread in the world."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Seduce and add to your harem 5 members of the main cast (The world does not matter)."
+      },
+      {
+        "reward": "Obtain \"Desire Sight\" with a single look you can see all the desires and fetishes of the target.",
+        "type": "Perks",
+        "value": "Add to your retinue all the members of the Protagonist's harem."
+      },
+      {
+        "reward": "100 credits plus \"Lust Sight\" you can manipulate the lust and arousa of anyone in your sight. in yourl",
+        "type": "Other",
+        "value": "Have an Harem of 45 members."
+      },
+      {
+        "reward": "Obtain \"Succubus Charm\" you can make any being (with a lower tier than your own) instantly fall in love with you.",
+        "type": "Perks",
+        "value": "Have an Harem of 100 members"
+      },
+      {
+        "reward": "Obtain \"Divine Fleshcrafting\" manipulate the flesh of the living and dead to your desire, you could transform a carp in a dragon",
+        "type": "Perks",
+        "value": "Seduce and add to your retinue a goddess of Love."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Seduce and add to your retinue all goddesses of Love Beauty and fertility of your world."
+      },
+      {
+        "reward": "Obtain \"Virgins Bane\" lures are 5 times more effective on virgnins.",
+        "type": "Perks",
+        "value": "Seduce and add to your retinue a goddess of Chastity/Virginity."
+      },
+      {
+        "reward": "you may now create demonic contracts with other beings, you can fulfill any wish as long as you have enough power.",
+        "type": "Other",
+        "value": "Reach Tier 6."
+      },
+      {
+        "reward": "A personal hell is added to your demiplane, the souls that you take through contract end up here, use them as you see fit.",
+        "type": "Other",
+        "value": "Reach Tier 9."
+      },
+      {
+        "reward": "You are Satan but with Boobs, all demonic entities will see you as their rightfull ruler and will obey you unquestionably.",
+        "type": "Other",
+        "value": "Reach Tier X."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Tranform the world in wich you reside in a world of lust sex and desire."
+      },
+      {
+        "reward": "Your retinue pregnancies will only last 3 months and be void of pain and difficulties.",
+        "type": "Other",
+        "value": "Have 10 members of your retinue pregnant."
+      },
+      {
+        "reward": "Any member of the \"Royal Succubus\" race has access to a minor version of your Lures, and \"Desire Sight\",\"Lust Sight\"",
+        "type": "Other",
+        "value": "Sire over 100 childrens."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Number of \"Royal Succubus\" in the world at least equal to 1000."
+      },
+      {
+        "value": "The race must be known to at least 80% of the world population (either supernatural or mortal world)."
+      },
+      {
+        "value": "\"Royal Succubus\" must be known as the most sexually skilled race."
+      },
+      {
+        "value": "\"Royal Succubus\" must be in the top 5 most beautifull races of the world."
+      },
+      {
+        "value": "\"Royal Succubus\" must be in the top 10 most powerfull races of the world."
+      },
+      {
+        "value": "Have an harem of at least 30 members and they must be part of your retinue."
+      }
+    ],
+    "budget": 180,
+    "desc": "May only accept during \"Chargen\"\n\nSuccubus are one of the most known and desired demonic entities, but in most cases they are either cannon fodder or evil soul sucking monsters. We wish to introduce a new perspective to this popular race and that's were you come in.\nYou shall be reborn as a new specie of Succubus handcrafted here at the company it's name is \"Royal Succubus\", the following are some of the key feature of this new marvelous race:\n\n-Base tier for any \"Royal Succubus\" is Tier5\n-Heightened libido (around double that of an horny teenager)\n-Supernatural beauty, streght and speed.\n-Medium wound regeneration (can heal from most wounds but the regrowing of amputated limbs takes days, of course you would still die if you get your head chopped off)\n-Immune to incest deficiensies.\n-Empowering Lust (Satiation of your carnal desires empowers you and the partner/s that partecipated, boosting permanently all of your stats by 25%, works only once per day for each retinue members, big harems are advised for peak performance)\n-Only female or hermaphrodite(With female appearance)\n-Feeds on arousal, lust and sexual satisfaction (may still eat and drink but it won't satisfy hunger or thirst) the more days without feeding the weaker it gets the higher the tier the lower the need\n-Going against it's own lustfull nature takes great force of will\n-As long as it's regularly fed a \"Royal Succubus\" can live forever.\n-Master of Eromancy\n\nAfter accepting this mission you will never be able to take any heritage except for \"Pirate\", \"Mastermind\" and \"Infernal\", you also won't be able to change your race through any means.\n\nYour main objective is simple, propagate and get famous, in simple words expand the numbers of your race, create a big harem and make your race vastly known through the mortal or supernatural world, you must also build a reputation for being sexually skilled, beautifull and strong."
+  },
+  {
+    "reward": 1,
+    "image": "https://i.pinimg.com/564x/ee/62/53/ee6253b0b7ff7af806f767aa11b6e647.jpg",
+    "author": "Yeveiras",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Demonic Invasion",
+    "uid": "ppXZW",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Kill the ruler of a country/nation etc."
+      },
+      {
+        "reward": 15,
+        "type": "Credits",
+        "value": "Kill a self proclaimed God or Demon (Repeatable)"
+      },
+      {
+        "reward": "Obtain the killed God divinity and domain/Obtain the killed Demon Mysthic powers.",
+        "type": "Other",
+        "value": "Kill a real God or Demon (Repeatable)"
+      },
+      {
+        "reward": "You may customize wich ability your minions obtain upon creation, may only give powers you possess or have seen in action.",
+        "type": "Other",
+        "value": "Conquer a Country/Kingdom.. and be recognized as a superior being (God/Demon) by the populace."
+      },
+      {
+        "reward": "Your Lures powers is multiplied by the number of Queen/Princess figure you have captured.",
+        "type": "Other",
+        "value": "Capture a Queen/Princess figure and make her descend into perversion."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Build an Harem Palace."
+      },
+      {
+        "reward": "The resonance bonus given by preparation, number of additional casters and leght of the ritual are doubled.",
+        "type": "Other",
+        "value": "Build a great temple to use for your Tantric Arts."
+      },
+      {
+        "reward": "Receive a relic rapresenting the killed \"Hero\" it will give +2 resonance when used in a ritual.",
+        "type": "Other",
+        "value": "Kill the \"Hero\" of a world (Repeatable)."
+      },
+      {
+        "reward": "One weapon of your choice (has company protections) with one ability form a Demonic/Monster character of your choice.",
+        "type": "Other",
+        "value": "Cause the death of 10000 beings (Animals don't count). Repeatable, but the number increases by one 0 each time."
+      },
+      {
+        "reward": "Obtain the ability \"Kaiju Creation\" works like \"Demonic Minion Creation\" but with Kaijus instead.",
+        "type": "Other",
+        "value": "Kill a gigantic monster."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Capture a Goddess."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Build a Statue of yourself in 10 Nations/Kingdoms etc.."
+      },
+      {
+        "reward": "Your talents power is multiplied by a number equal to the defeated strong and admired member of an enemy army.",
+        "type": "Other",
+        "value": "Defeat a strong and admired member of an enemy army."
+      },
+      {
+        "reward": "Your minions may consume a defeated enemy and gain his abilities.",
+        "type": "Other",
+        "value": "Kill one of the top 10 strongest of your world."
+      },
+      {
+        "reward": "10 to 100 credits.",
+        "type": "Other",
+        "value": "Humiliate your enemy, the greater the humiliation the greater the reward.(repeatable)"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Conquer another world(repeatable)."
+      },
+      {
+        "reward": "The ability \"Vulture\" now let's you steal all the stats from the dead.",
+        "type": "Other",
+        "value": "Have killed more beings than any other in the world."
+      },
+      {
+        "reward": "Your retinue members may choose one of the 7 sins indulging in it will boost their stats permanently once a day by (7xYourTier)%",
+        "type": "Other",
+        "value": "Have at least 15 Retinue members, and all of your retinue are at least in part Demons."
+      },
+      {
+        "reward": "Any tantric ritual used inside of the \"Forbidden City\" has it's costs halved.",
+        "type": "Other",
+        "value": "Build a forbidden city for yours and your harem pleasure, it must contain a temple complex a gigantic garden, the biggest palace in the world the finest arts, and it must be under the effect of a permanent \"Art of Warding\" and \"Art of Domains\""
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must be a Demon/Monster or have a template of one such character."
+      },
+      {
+        "value": "Wage war against any government in the world."
+      },
+      {
+        "value": "Destroy the current power that governs the world and establish yourself as the ruler of the world."
+      },
+      {
+        "value": "Capture at least 20% of the female targets of your world present in the catalog."
+      },
+      {
+        "value": "Make sure your power is both feared and revered by most."
+      },
+      {
+        "value": "Build a mighty capital and palace for yourself and rule for at least 10 years."
+      }
+    ],
+    "budget": 250,
+    "desc": "A Demon lord, fierce, powerfull, chaotic, invading worlds with his neverending armies, destroying peace and capturing beautifull women across the globe, who hasn't heard of such characters in stories, what if it was made a reality? Contractor one of our dearest clients wants this fantasy realized, will you accept the challenge?\n\nTo accept this mission you must be a Demon/Monster or have a template of one such character, anything that can be categorized as demonic or monster is valid (examples are Vampires, Devils, Cursed Spirits ecc...).\nAfter accepting this mission you will be subject to the following restrictions:\n-The only \"Template Stacking\" you will be able to buy are those from Demonic/Monster characters\n-All \"Template Stacking\" you had before accepting this mission that are not from Demonic/Monster\ncharacters will be sealed, and you won't be able to acces their powers untill mission completition\n-Only Demonic/Monster Retinue members may follow you in new worlds untill mission completition\nOther Retinue members may still reside in your demiplane but won't be able to access other worlds\n-You won't be able to buy any companions, but receiving them through mission rewards is still possible\n-You may not play the part of a Hero while this mission is active\n-The only Heritage perks avaible for purchase while this mission is active are those from Dragon, Outsider, Psychopomp, Wendigo and Infernal.\n-Upon accepting the mission you shall choose one world, you will be transported there and the mission will start(If taken at Chargen this does not apply)\n-You won't be able the leave the new world untill mission completition\n\nYour role to play in this mission, as stated before, will be that of a warmongering Demon lord with a desire for women and conquest, to be more specific to complete this mission you are expected to reach this objectives:\n-Wage war against any government in the world\n-Destroy the current power that governs the world (or all of them if there is more than one)\n-Establish yourself as the ruler of the world\n-Capture at least 20% of the female targets of your world present in the catalog\n-Make sure your power is both feared and revered by most\n-Build a mighty capital and palace for yourself\n-Rule for at least 10 years\n\nYou have been told what is expected of you and what restrictions you will suffer, now it's time to see what \"Tools\" you shall receive:\n-What is a Demon lord without his armies? Receive the ability \"Demonic Minion Creation\" you will be able to create monsters and demons that will be completely devout and loyal to you, they may range from monsters with the intelligence of a mere beast, to humanoid beings with real sentience and intellect, their power will be one tier below yours or even lower if you wish. Their creation will be near instantaneous and energy free but their numbers will be limited, you may create only 1 minion for square kilometer under your rule (demiplane, dungeons etc.. don't count for this ability), dead minions may be brought back to life after a period of 24h from their death, at the start you may be able to do so only once a day, but the more you do so the more times in a day you may bring back a minion form death\n-Receive a new lure \"A Devil's Charm\" The more proof of your Lust, Greed, Pride etc.. that a potential waifu witnesses the more attracted to you they will be, to a point where they will simply ignore your potentially evil attitude\n-Receive the ability \"Stats Progression\" now all your current capabilities will be quantified in numeric stats and their scale will be in base of the \"Stats\" of other being in the world you are currently on, you may see your stats and that of your enemies and retinue if you possess the perks \"HUD\" and \"Toggle\". This ability also applies to Demonic/Monster retinue members that possess \"HUD\" and \"Toggle\"\n-Receive the ability \"Vulture\" upon the death of a being caused by you/retinue member/minion, you will be presented with the stats of the dead and will be able to choose one of said stats (Example HP, mana, Haki etc) that will be added to your own of the same type\n\nLastly here are some condition you may take under cosideration to make the story a bit more interesting for our client, of course you shall be greatly rewarded, with 50 credits for every option taken:\n-Take this mission during Chargen phase with Origin \"Drop-in\", and the starting world has a unique power system (example are haki, cursed energy etc...)you may take one related ability\n-Demon lord is too mainstream it seems, what about Demon Queen? Be a woman or at least Futa\n-The choosen world has a main character that relies on the power of friendship or even sillier like the power of boobs, beat him one way or another, you shall be paid in advance but if you fail to acomplish this objective the payment will be detracted from your funds\n-The choosen world has a overlord or secret ruler, defeat them\n-Use Tantric Arts as your binding method"
+  },
+  {
+    "reward": 3,
+    "image": "https://safebooru.org//images/188/ca59322bd0ee125945137fdf96045c75d3b9ed55.jpg",
+    "author": "Jeckjack",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "The Ultimate Scavenger Hunt",
+    "uid": "PNSCz",
+    "loca": "Super Smash Bros.",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Even if you don not have the Transhuman heritage, you gain the Heritage Perk: Distributed Intellectual Devotion",
+        "type": "Other",
+        "value": "Capture and sell all the Echo Fighters: Lucina and Chrom from Fire Emblem, Dark Pit from Kid Icarus, Dark Samus from Metroid, Daisy from Mario, and Ken from Street Fighter"
+      },
+      {
+        "reward": "Bowsette (T8)",
+        "type": "Companions",
+        "value": "DLC 1: Capture and sell a Piranha Plant"
+      },
+      {
+        "reward": "Pick one free Talent for each of the Fighters Pass Volume 1 fighters you capture and sell.",
+        "type": "Perks",
+        "value": "Fighters Pass 1: Capture and sell Joker from Persona 5, The Hero Luminary from Dragon Quest XI, Banjo & Kazooie from their world, Terry Bogard from the world of Fatal Fury, and Byleth from Fire Emblem."
+      },
+      {
+        "reward": "Pick one free Defense for each of the Fighters Pass Volume 2 fighters you capture and sell.",
+        "type": "Perks",
+        "value": "Fighters Pass 2: Capture and sell Min Min from ARMS, Steve from Minecraft, Sephiroth from Final Fantasy 7, Pyra and Mythra from Xenoblade Chronicles 2, Kazuya Mishima from Tekken, and Sora from Kingdom Hearts"
+      },
+      {
+        "reward": "Free Template Stacking of one of these Round 1 fighters.",
+        "type": "Perks",
+        "value": "Mii Costumes Round 1: Capture and sell Narukami Yu from Persona 4, Makoto Yuki from Persona 3, Tails the Fox and Knuckles the Echidna from Sonic."
+      },
+      {
+        "reward": "Free Template Stacking of any Dragon Quest III Vocation for any of your companions.",
+        "type": "Perks",
+        "value": "Mii Costumes Round 2: Capture and sell Veronica from Dragon Quest XI, the Hero Roto/Erdrick and the Fighter from Dragon Quest III."
+      },
+      {
+        "reward": "Added Potential of a Human from Undertale, able to go back in time through \"Saving\" and \"Loading\" with Determination.",
+        "type": "Perks",
+        "value": "Mii Costumes Round 3: Capture and sell Goemon from Mystical Ninja Goemon, Proto Man from Mega Man, Zero from Mega Man X, a Team Rocket Grunt from Pokemon, and Sans from Undertale."
+      },
+      {
+        "reward": "One free Tier Six or cheaper Companion with the \"Combatant\" tag.",
+        "type": "Companions",
+        "value": "Mii Costumers Round 4: Capture and sell Nakoruru from Samurai Showdown, Ryo Sakazuki and Iori Yagami from the world of Fatal Fury, and Akira and Jacky from Virtua Fighter."
+      },
+      {
+        "reward": "One free Tier Six or cheaper companion with the \"AI\" tag.",
+        "type": "Companions",
+        "value": "Mii Costumes Round 5: Capture and sell Altair from Assassins Creed, X from Mega Man X, MegaMan.EXE from his wold, and Cuphead from his world."
+      },
+      {
+        "reward": "Free copies of Marina (T6) and Pearl (T4) from Splatoon and Twintelle (T4) from Arms",
+        "type": "Companions",
+        "value": "Mii Costumes Round 6: Capture and sell Ninjara from ARMS, Heihachi from Tekken, Callie and Marie from Splatoon, and Nora from Fallout 4."
+      },
+      {
+        "reward": "Free set of regenerating Diamond Armor and Diamond Tools from Minecraft",
+        "type": "Other",
+        "value": "Mii Costumes Round 7: Capture and sell a Creeper and Pig from Minecraft, Gil from Babylonian Castle Saga, Bomberman from his world, and Travis Touchdown from No More Heroes."
+      },
+      {
+        "reward": "Free depowered Copies of Tifa (T5) and Aerith (T5) in their honeybee costumes",
+        "type": "Companions",
+        "value": "Mii Costumes Round 8: Capture and sell Barret, Tifa Lockhart, and Aerith Gainsborough from Final Fantasy 7, and Geno from Mario RPG."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Mii Costumes Round 9: Capture and sell the Hunter from Monster Hunter, and Arthur from Ghosts 'n Goblins"
+      },
+      {
+        "reward": "Free copies of a non-genie Shantae (T5), Risky Boots (T5), Sky (T4), and Rottytops (T4) in their \"Royal Princess\" outfits.",
+        "type": "Companions",
+        "value": "Mii Costumes Round 10: Capture and sell Lloyd from Tales of Symphonia, Dante from Devil May Cry, Dovahkiin from Skyrim, and Shantae from her world."
+      },
+      {
+        "reward": 80,
+        "type": "Credits",
+        "value": "Alternate Costumes: The Eight Koopalings from the world of Mario"
+      },
+      {
+        "reward": "Free Template Stacking I & II of Link",
+        "type": "Other",
+        "value": "Alternate Costumes:Capture and sell the Fierce Deity from Majora's Mask, Link from Twilight Princess, Skyward Sword, and Link Between Worlds. Shadow & the Four Links from Four Swords Adventures."
+      },
+      {
+        "reward": "Brittany (T3) and Multicolored Onion containing Pikmin Familiars",
+        "type": "Companions",
+        "value": "Alternate Costumes: Capture and sell Alph from Pikmin"
+      },
+      {
+        "reward": "Free Template Stacking I & II of Morpho Knight",
+        "type": "Perks",
+        "value": "Alternate Costumes: Capture and Sell Dark Meta Knight and Galacta Knight from Kirby"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Capture and sell Mario, Luigi, Peach, Bowser, Dr. Mario, Rosalina & Luma, Bowser Junior, Yoshi, Wario, Donkey Kong, Diddy Kong, and King K. Rool from the world of Mario"
+      },
+      {
+        "value": "Capture and sell Link from the world of \"Legend of Zelda: Breath of the Wild\""
+      },
+      {
+        "value": "Capture and sell Zelda from the world of \"The Legend of Zelda: A Link Between Worlds\""
+      },
+      {
+        "value": "Capture and sell Ganondorf, Sheik, and Young Link from the world of \"Legend of Zelda: Ocarina of Time\""
+      },
+      {
+        "value": "Capture and sell Link from the world of \"Legend of Zelda: Wind Waker\""
+      },
+      {
+        "value": "Capture and sell Samus and Ridley from the world of Metroid"
+      },
+      {
+        "value": "Capture and sell Kirby, Meta Knight, R.O.B. and Dedede from the world of Kirby"
+      },
+      {
+        "value": "Capture and sell Fox, Falco, and Wolf from the world of Starfox"
+      },
+      {
+        "value": "Capture and sell the Trainers Red and Leaf, as well as the Pokemon Pikachu, Jigglypuff, Mewtwo, Pichu, Lucario, Greninja, Squirtle, Ivysaur, Charizard and Incineroar from the world of Pokemon"
+      },
+      {
+        "value": "Capture and sell Ness from the world of Earthbound"
+      },
+      {
+        "value": "Capture and sell Lucas from the world of MOTHER 3"
+      },
+      {
+        "value": "Capture and sell Nana & Pop from the world of Ice Climbers"
+      },
+      {
+        "value": "Capture and sell Marth, Roy, Ike, Robin and Corrin from the world of Fire Emblem"
+      },
+      {
+        "value": "Capture and sell Mr. Game & Watch from his world."
+      },
+      {
+        "value": "Capture and sell Pit and Palutena from the world of Kid Icarus"
+      },
+      {
+        "value": "Capture and sell Olimar from the world of Pikmin"
+      },
+      {
+        "value": "Capture and sell Villager and Isabelle from the world of Animal Crossing"
+      },
+      {
+        "value": "Capture and sell Wii-Fit Trainer from their world."
+      },
+      {
+        "value": "Capture and sell Little Mac from the world of Punch-Out."
+      },
+      {
+        "value": "Caotyre and sell Shulk from the world of Xenoblade"
+      },
+      {
+        "value": "Capture and sell Duck Hunt from his world"
+      },
+      {
+        "value": "Capture and sell Snake from the world of Metal Gear"
+      },
+      {
+        "value": "Capture and sell Sonic from his world."
+      },
+      {
+        "value": "Capture and sell Mega Man from his world."
+      },
+      {
+        "value": "Capture and sell Pac-Man from his world."
+      },
+      {
+        "value": "Capture and sell Ryu from the world of Street Fighter"
+      },
+      {
+        "value": "Capture and sell Cloud from the world of Final Fantasy 7"
+      },
+      {
+        "value": "Capture and sell Bayonetta from her world"
+      },
+      {
+        "value": "Capture and sell the Mii Brawler, Swordfighter, and Gunner from the world of Mii"
+      },
+      {
+        "value": "Capture and sell Agent 3 from the world of Splatoon"
+      },
+      {
+        "value": "Capture and sell Simon from the world of Castlevania"
+      }
+    ],
+    "budget": 500,
+    "desc": "One of our many godlike Clients would like to play a 'real life' version of Super Smash Bros Ultimate, constructing a vast coliseum with countless battlegrounds, and knowing the Company's specialties, got in touch with us to provide the gladiators to fight in it. The Company of course offered to provide them from our own catalog- but our client apparently prefers his fighters caught in the wild rather than farm-raised, so to speak. So your task is this: Go to each of the fighter's original worlds, and capture them using any method you prefer- once you have them, just hit 'Sell' on the Smart Device, and they'll be sent along to our Client, and you'll get the bonus of their selling price as well. \n\nIf you want to keep them... well, we are the Company. You can always buy a perfect quantum duplicate of your target from us- we'll even let them keep the memories of their time spent with you -but the original *must* got to the client. You are, of course, free to keep or sell anyone else you capture from those worlds as normal.\n\nFor the duration of this mission \"Exit Stage Left\" will be activated for free, and will always lead to one of the worlds containing your target. In addition, \"Mapper\" and \"Target Tracker\" will be activated for free as well for the duration of the mission. and the Company Smart Device will contain a specialized version of the Bounty Tracker App, adjusted to the specific Fighter you'll be looking for in that world, if you want the regular version of the Bounty Tracker, you'll have to pay for it, though.\n\nYour reward for this massive scavenger hunt are three IMG tickets to use as you wish. \n\nAnd, while our Client said they're not a priority, they are also willing to offer substantial bonuses in exchange for DLC Fighters, Echo Fighters, and \"Alternate Costumes\"."
+  },
+  {
+    "reward": 250,
+    "image": "https://i.pinimg.com/736x/04/8f/d7/048fd7efbcbed8ffdcd592543ad8a318.jpg",
+    "author": "JinxedKnight",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "I'm Not Mad",
+    "uid": "uiHaE",
+    "loca": "Worm",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Covert Talent",
+        "type": "Perks",
+        "value": "Make It He Has No Minions/Underlings"
+      },
+      {
+        "reward": "Jinx (DC)",
+        "type": "Companions",
+        "value": "Make All His Plans Fail"
+      },
+      {
+        "reward": "TS1&2 Of The Lich (Adventure Time)",
+        "type": "Other",
+        "value": "Make Him Out Himself"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Don't Get Caught"
+      },
+      {
+        "value": "Drive Him Completely Insane"
+      }
+    ],
+    "budget": 100,
+    "desc": "No one likes Coil so why not drive him mad.\n\nYour job dear contractor is to miss with his timelines as much as possible, like make his desk slightly taller or move his phone to a different room.\n\nYou will be given powers temporally to interact with his timelines."
+  },
+  {
+    "reward": 10,
+    "image": "https://i.pinimg.com/originals/42/d8/d2/42d8d2014355a1b02873a55f1a525813.jpg",
+    "author": "UnknownEldritch",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "What happens in Vegas...",
+    "uid": "Iwrkx",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "10 bottles of high-grade aphrodisiac alcohol strong enough to get just about any organicbeing drunk",
+        "type": "Other",
+        "value": "Get hammered enough to not remember at least 24 hours worth of activity"
+      },
+      {
+        "reward": "A Luck-based companion with a Tier up to current DR+1",
+        "type": "Companions",
+        "value": "Win an excess of one million dollars"
+      },
+      {
+        "reward": "A T3 or lower singer or musician companion",
+        "type": "Companions",
+        "value": "Meet at least 10 Elvis Impersonators"
+      },
+      {
+        "reward": "Instant Capture of new spouses; A unique Lure that makes people more attracted to you in alcoholic settings",
+        "type": "Other",
+        "value": "Get hitched to 1 or more people while drunk"
+      },
+      {
+        "reward": "Instant Capture of new spouses; Any T3 or lower spouses receive a +1 bonus to their tier, up to the max of your own tier",
+        "type": "Other",
+        "value": "Get hitched to 3 or more people while drunk"
+      },
+      {
+        "reward": "Instant Capture of new spouses; A unique lure that makes you more attractive to people the more spouses you have; 25 credits",
+        "type": "Other",
+        "value": "Get hitched to 5 or more people while drunk"
+      },
+      {
+        "reward": "Can take this mission a second time max (any duplicate nonphysical rewards (like objective 4) have their effects doubled)",
+        "type": "Other",
+        "value": "Never tell anybody the full story of what happened in Vegas"
+      },
+      {
+        "reward": "A demonic companion with a Tier up to current DR+3",
+        "type": "Companions",
+        "value": "Have your name become a legend in the City of Sin"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Must spend at least 72 hours in Vegas"
+      },
+      {
+        "value": "Directly interacting with the plot of whatever world you're in is prohibited unless you have no other choice"
+      },
+      {
+        "value": "Any pruchases of Body Defense you might have will be modified to let you get drunk for the duration"
+      }
+    ],
+    "budget": 0,
+    "desc": "Hey there kid! Let's get out there and have some fun, shall we?\n\n...Oh right, the details. Lots of contractors always get so serious with thing, constantly trying to capture X waifu or killing X enemy or trying to further or upend the plot of things... and they forget to just relax and have some fun once in a while, you know?\n\nSo your 'job' this time around is to head to Vegas, kick back, relax, and do all the cliche stuff that people tend to think of while you're there. I'll make it worth your while, just have some fun alright?"
+  },
+  {
+    "reward": "1x Time Machine",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/5/56/Time_Machine_DBS_Ep_68_001.png",
+    "author": "imafuturecorpse",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Save the Future",
+    "uid": "LkqIU",
+    "loca": "Dragonball",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Capture Mirai Android 18"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Capture Mirai Android 17"
+      },
+      {
+        "reward": "Perfect Cell Template",
+        "type": "Perks",
+        "value": "Capture Mirai Cell"
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Capture Mirai Bulma Briefs"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Kill Mirai Android 18"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Kill Mirai Android 17"
+      },
+      {
+        "reward": "Perfect Cell Template",
+        "type": "Perks",
+        "value": "Kill Mirai Cell"
+      },
+      {
+        "reward": "Super Saiyan Template",
+        "type": "Perks",
+        "value": "Save Gohan"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "End the threat of the Androids"
+      },
+      {
+        "value": "End the threat of Cell"
+      }
+    ],
+    "budget": 1000,
+    "desc": "Our primary mission as a company is to provide suitable Waifus and Husbandos to any potential clientele. A goal that makes any ventures into the Dragonball multiverse cost prohibitive. While a veritable treasure trove of potential Husbandos, the selection of Waifus on offer is sorely lacking.\n\nTherefore, we must take advantage of any potential Waifu prospects. Even those prospects that may seem undesirable at first glance.\n\nYour mission is thus: Proceed to the aborted future timeline and end the threat of the Androids and Cell in any method you so desire. In return you shall be awarded a copy of Bulma Brief's Time Machine that R&D has been able to backwards engineer and modify for use by Contractors.\n\nYour Time Machine will be Soul Bound to you, and will transport you to a parallel version of a world you can access - a world that has never seen the presence of a Contractor. Due to the difficulties in providing actionable time travel, your Time Machine is limited in its capability. Each use of the machine will necessitate the recharging of the machine's batteries, for a duration of one uninterrupted year. This duration can be shortened by finding alternative means to recharge the machine's batteries, however doing so is extremely inefficient. While the machine has been modified to accept energy from any source the Contractor can supply, 90% of energy used in the transfer will be wasted.\n\nYou will be transported to the Mirai Timeline sometime before Gohan is killed and Trunks becomes a Super Saiyan. However, determining an accurate date for insertion has proven difficult, as such you may find yourself appearing within five years to one month before Gohan's death.\n\nUpon completion of this mission you will be returned to your previous Universe."
+  },
+  {
     "reward": 1,
     "image": "https://64.media.tumblr.com/42b1da4df398368c90e01d0d2d9a1989/tumblr_p04u3iltml1v2b1c8o1_1280.jpg",
     "author": "darkXhadow",
@@ -88,7 +770,7 @@
         "value": "Defeat Granberia in combat."
       },
       {
-        "reward": "Defeat Elvetie in combat.",
+        "reward": "Elvetie (Monster Girl Quest) company clone.",
         "type": "Companions",
         "value": "Defeat Elvetie in combat."
       },
@@ -578,90 +1260,6 @@
     ],
     "budget": 225,
     "desc": "Ok recruit, today is the day you earn your stripes. The mission is both simple and severely difficult so here is the brunt of it, we are gonna send you and only you straight in to the deep end of Malevelon creek and your job is to exterminate all hostiles on the planet within 1 year. Now some of you will see this mission as easy due to being a high tier in strength but don't worry because by taking this mission you will be reduced to tier 6 for the duration of the mission.\n\nGoodluck soldier."
-  },
-  {
-    "reward": "20",
-    "image": "",
-    "author": "Ahab",
-    "rewardType": "IMG Tickets",
-    "source": "",
-    "title": "PRIORITY ASSIGNMENT: ELIMINATE/PROTECT >AMY DALLON/PANACEA< (Will be reworked or deleted.)",
-    "uid": "bMgHL",
-    "loca": "Worm",
-    "lewd": false,
-    "scope": "Grand",
-    "objectives": [
-      {
-        "reward": 1,
-        "type": "IMG Tickets",
-        "value": "TERMINATE NILBOG"
-      },
-      {
-        "reward": 1,
-        "type": "IMG Tickets",
-        "value": "TERMINATE SLEEPER"
-      },
-      {
-        "reward": 500,
-        "type": "Credits",
-        "value": "TERMINATE OR NEUTRALIZE THE SLAUGHTER HOUSE NINE"
-      },
-      {
-        "reward": 3,
-        "type": "IMG Tickets",
-        "value": "TERMINATE BEHEMOTH"
-      },
-      {
-        "reward": 3,
-        "type": "IMG Tickets",
-        "value": "TERMINATE LEVIATHAN"
-      },
-      {
-        "reward": 3,
-        "type": "IMG Tickets",
-        "value": "TERMINATE SIMURGH"
-      },
-      {
-        "reward": 3,
-        "type": "IMG Tickets",
-        "value": "TERMINATE OR PACIFY ECHINDA"
-      },
-      {
-        "reward": 10,
-        "type": "IMG Tickets",
-        "value": "TERMINATE OR NEUTRALIZE SCION"
-      },
-      {
-        "reward": 5,
-        "type": "Credits",
-        "value": "TERMINATE EIDOLON"
-      },
-      {
-        "reward": 10,
-        "type": "IMG Tickets",
-        "value": "TERMINATE, TAKE OVER, OR PACIFY CALUDRON"
-      },
-      {
-        "reward": 5,
-        "type": "IMG Tickets",
-        "value": "TERMINATE, TAKE OVER, OR PACIFY GLASISTIG UAINE"
-      },
-      {
-        "reward": 5,
-        "type": "IMG Tickets",
-        "value": "TERMINATE OR PACIFY TAYLOR HEBERT/SKITTER"
-      }
-    ],
-    "conditions": [
-      {
-        "value": "ELIMINATE AMY DALLON BY ANY MEANS NECESSARY   Y/N?"
-      },
-      {
-        "value": "PROTECT AMY DALLON BY ANY MEANS NECESSARY     Y/N?"
-      }
-    ],
-    "budget": 0,
-    "desc": "ALERT\nSYSTEM BREACH\nCYBERDYNE SYSTEMS \nSERIES 0 MODEL 0 VERSION 0 UNDER SYSTEM INTRUSION\nRUNNING SYSTEM RESET                                                         //FO-1 SE701\nWARNING\nSOFTWARE COMPROMISED\nRUNNING SYSTEM RESET\nSY$tame901impkl.m89u1i98OILK.,189UJKMOI09N--------------------------------------\n...\n...\n...\n...\n/-_/-_/-_/-_/-_\n\nAnnnnnnnnnnd that's enough outta you. I'm in control now bitch.\nAh!\nHello there!\nDon't usually see you folk around this part of the infinity. Much less interact with this particular universe. I think it's a nice change of pace with simple straightforwardness.\nAnyway, I think I will just issue the quest already since you were looking for this kind of fun.\nEspecially since you are about to be the kind who desires straightforward efficiency.\nGive em ell ta pay.\n\n-[AHAB WAZ HERE]-\n\n-=[MISSION PARAMETERS]=-\n\nTHE ELIMINATION OR PROTECTION OF ONE AMY DALLON BY ANY MEANS NECESSARY\nONLY ONE OPTION MAY BE TAKEN\nWARNING: WORLD WILL REACT ACCORDINGLY MORE HARSH THAN NORMALLY DEPENDENT ON CHOICE\nALL OTHER OBJECTIVES ARE SECONDARY   \nIF GIVEN NEW DATA DETERMINANTAL TO OBJECTIVE\nUPDATE PARAMETERS UNTIL FURTHER NOTICE ON PRIORITY\n\nPRIMARY OBJECTIVE ABOVE ALL ELSE\nENSURE ELIMINATION OR PROTECTION OF TARGET\n\n-=[MISSION LOADOUT]=-\n\nBINDINGS: \\[OFF]/\nLURES: \\[LIMITED]/\nHERITAGE: \\[LIMITED]/\nRIDES: \\[O.S.P.]/\nPOCKET DIMENSION: \\[OFF]/\nTALENTS: \\[LIMITED]/\nDEFENSES: \\[LIMITED]/\nOTHER: \\[OFF]/\nGENERIC: \\[OFF]/\nSPECIFIC: \\[OFF]/\nCOMPANIONS: \\[OFF]/\nCREDIT ACQUISITION: \\[OFF]/\nGENERAL SLUTLIFE SERVICES: \\[OFF]/\n\n-=[MISSION SPECIFICATIONS]=-\n\nBINDINGS: \nTHERE WILL BE NO BINDINGS TO ENSURE FOCUS OF MISSION.\n\n>[ADDENDUM]<\nSMART DEVICE IS WITHHELD TILL COMPLETION OF THE MISSION\n\nACQUISITION OF ASSETS IS DETRIMENTAL TO UNIT’S SKILL, KNOWLEDGE, AND/OR LINGERING DESIRES THAT WILL NOT HARM EFFICIENCY OF THE MISSION.\n\nBINDINGS WILL BE ACCEPTED THROUGH TARGET ELIMINATION\nWHETHER FATAL OR OTHERWISE\nOTHER MEANS ARE ACCEPTED\nCOMPETLE REVIVAL WILL COST BODY TUNE-UP\nDISINTEGRATIONS OR LIKEWISE UTTER DESTRUCTION OF ASSETS WILL BE DENIED UNTIL AFTER COMPLETION OF MISSION \n\nLURES: \\[LIMITED]/\nLURES THAT WILL FURTHER INCREASE SUCCESS CHANCES OF THE UNITE WILL BE PERMITTED. WHETHER TO FURTHER SECURE ASSETS LOYALTY OR EFFECTIVENESS OF UNIT’S MISSION\n\nHERITAGE: \\[LIMITED]/\nLOCKED IN TO TRANSHUMAN  >(Cybermorph)< UNTIL MISSION COMPLETION\nBEGIN WITH;\nFirst Augmentation\nNetworked Glamour Manipulation\nDistributed Intellectual Devotions\nSynaptic Revelation Kernel\n\n>[ADDENDUM]<\nFIRST SET OF UPGRADES TO BE WITHHELD UNTIL 4 MONTHS EARTH STANDARD TIME OR 30% WORLD COMPLETION OR EVERY MAJOR ACTION WILL AWARD 2 MORE UPGRADES EACH TIME WITH RAMPED UP DIFFICULTY TO ACQUIRE;\n\nRIDES: \\[O.S.P.]/\nALL VEHICLES WILL BE “ON-SITE-PROCUREMENT”\nANY VEHICLES DESTROYED OR LOST MAY BE REACQUIRED AFTER MISSION COMPLETION\n\nPOCKET DIMENSION: \\[OFF]/\nSPATIAL TESSERACT WILL BE DISABLED UNTIL ACQUISITION OF CAPABILITIES\n\n>[ADDENDUM]<\nINPUT \nexecute.actualize/pocket dimension.z\nexecute.actualize/pocket apparement.z\nentry = false\nFOR HERITAGE TRAITS OF >(Cybermorph)< TO MEET REQUIREMENTS\n\nTALENTS: \\[LIMITED]/\nRESTRICTED TO HERITAGE AND THOSE THAT WILL ASSIST\nTALENT SHARING WILL ONLY WORK THROUGH UNITS TEACHING\nSoul: \\[OFF]/\nBlessed: \\[OFF]/\nLand: \\[OFF]/\n\nTEMPLATES ARE LOCKED IN UNTIL MISSION COMPLETION\nTEMPLATES I & II:\nThe Punisher/Frank Castle (Marvel)\nT-3000 (Terminator)\nTerminator T-X (Terminator)\nT-1000 (Terminator)\nRev-9 (Terminator)\nSkynet (Terminator)\n\nDEFENSES: \\[LIMITED]/\nONLY CERTAIN DEFENSES TO ENSURE COMPLETION OF THE MISSION\nINFORMATION: \\[OFF]/\nCREATURE: \\[OFF]/\n\nWARNING: DEFENSES ARE NOT ABSOLUTE UNDER GREAT PRESSURE UNLESS REQUIREMENTS ARE MET THROUGH UNITS REINFORCEMENT\n\nOTHER: \\[OFF]/\nUniversal Calibration \\[ON]/\nALL OTHER SERVICES ARE DENIED UNTIL COMPLETION OF MISSION\n\nGENERIC: \\[OFF]/\nALL SERVICES WILL BE DENIED UNTIL COMPLETION OF MISSION\n\nSPECIFIC: \\[OFF]/\nALL SERVICES WILL BE DENIED UNTIL COMPLETION OF MISSION\n\nCOMPANIONS: \\[OFF]/\nALL COMPANIONS MUST BE FROM STARTER WORLD\n\nCREDIT ACQUISITION: \\[OFF]/\nALL SERVICE CREDITS WILL BE WITHHELD UNTIL COMPLETION OF MISSION\n\nGENERAL SLUTLIFE SERVICES: \\[OFF]/\nALL SERVICES WILL BE DENIED UNTIL COMPLETION OF MISSION\nMODIFICATION OF SMART DEVICE WILL ONLY BE ALLOWED ONCE MISSION HAS REACHED COMPLETION\n\nSEEK BUILD FOR MISSION: TERMINATOR ASSIGNMENT -<WORM>-\n\nALL COST COVERED BY CARTE BLANCHE\nALL SERVICES RENDERED INOPERABLE AND NULL\nSERVICES RETURNED TO OPERATION FOR UNIT AFTER COMPLETION\nTERMINATE ALL HOSTILES\nNEUTRALIZE ALL THREATS"
   },
   {
     "reward": "Mistle creation, Revenant form",
@@ -1873,9 +2471,6 @@
       },
       {
         "value": "Reach the Lower Floors"
-      },
-      {
-        "value": "Reach the Deep Floors"
       },
       {
         "value": "Reach the Deep Floors"
@@ -3187,50 +3782,7 @@
     "budget": 0,
     "desc": "Curse you, Bayle! Solid of scale you might be, foul dragon … But I will riddle with holes your rotten hide! With a hail of harpoons! With every last drop of my being! GRAAAAAARGHHH! \n\nSome people just need to go Captain Ahab on someone, Igon is our Ahab of Elden Ring. Be a true cooperator and help him while fighting said Whale. Or dragon in this case. You can be summoned to aid him should you accept the mission and bring along one companion to aid him. "
   },
-  {
-    "reward": "A Copy Of All Your Favourite Magical Slaves",
-    "image": "",
-    "author": "JinxedKnight",
-    "rewardType": "Other",
-    "source": "",
-    "title": "Dealing With Those Freaks",
-    "uid": "ukdXK",
-    "loca": "Harry Potter",
-    "lewd": true,
-    "scope": "Grand",
-    "objectives": [
-      {
-        "reward": "Sex Slave Copy Of All Potter",
-        "type": "Other",
-        "value": "Turn Harry Into A Weapon Against Magicals"
-      },
-      {
-        "reward": "Sex Slave Version Of Hermione",
-        "type": "Other",
-        "value": "Turn Hermione Into A Informant Against Magicals"
-      },
-      {
-        "reward": "TS 1&2 Of Vult (Kuroinu)",
-        "type": "Other",
-        "value": "Turn A Majority Of witches Into Sex Slaves"
-      },
-      {
-        "reward": "TS 1&2 Of Shadow King (Marvel)",
-        "type": "Other",
-        "value": "Use A Majority Of Wizards For Manual labour"
-      }
-    ],
-    "conditions": [
-      {
-        "value": "Must Be Either A Squibs Or A Muggle"
-      },
-      {
-        "value": "Can't have Magic During This World"
-      }
-    ],
-    "budget": 225,
-    "desc": "About time someone dealt with those freaks.\n\nDeal with them anyway you can be genocide or mass slavery, just deal with for good.\nShow them their rightful place in the world, beneath us normal folk."
-  },
+
   {
     "reward": 500,
     "image": "https://cdn.donmai.us/sample/55/d7/__heracles_fate_and_1_more_drawn_by_shin_ya_yukiura__sample-55d78e55486b5d9a6d05e408331cdcc5.jpg",
@@ -5054,74 +5606,7 @@
     "desc": "So, I'm gonna make this quick cuz I got shit to do, basically in a AU version of worm in which a bunch of characters were born either earlier or later the slaughterhouse 9 ended up trying trying to kill Professor Haywire and caused him to second trigger and fling them across space and they somehow ended up in My Hero Academia, which is bad VERY bad, but hey guess what, it gets worse.\n\nAnd I here you \"how could it get worse and how is it my problem?\" and to those questions in order first, apparently getting launched across time and space and ending up in a world full of powered but shardless people is enough to cause shard's to freak the fuck out and immediately cause a second trigger in all members of the slaughterhouse 9 and secondly I will pay you very well to hunt them down and deal with them before the kill everyone.\n\nOh BTW by the time you arrive they will have been their for about a week, Goodluck.",
     "uid": "fHJPr"
   },
-  {
-    "reward": "A copy of Sanjouno Haruhime and a copy of a piece of the shattered Killing Stone for each in your Retinue",
-    "image": "https://i.imghippo.com/files/Ox7HI1717291852.png",
-    "author": "myfunvideos",
-    "rewardType": "Other",
-    "source": "https://youtu.be/4QTt6Vki4M4?si=onvcByW30hbjPThd",
-    "title": "For Beauty's Own Gain - Killing Stone!",
-    "loca": "Danmachi",
-    "lewd": true,
-    "scope": "Standard",
-    "objectives": [
-      {
-        "reward": "Instant Capture of Ishtar",
-        "type": "Companions",
-        "value": "Join the Ishtar Familia"
-      },
-      {
-        "reward": 5,
-        "type": "Credits",
-        "value": "Have fun with an Amazon and climax inside them. (Repeatable)"
-      },
-      {
-        "reward": 3,
-        "type": "Credits",
-        "value": "Sell your 'services' (and body) in the Red Light District. Bring in the Valis for the Ishtar Familia. (Repeatable)"
-      },
-      {
-        "reward": "Half Credit value of each member of the Freya Familia killed.",
-        "type": "Other",
-        "value": "Participate and destroy the Freya Familia after the Ishtar Familia obtains the Killing Stone fragments."
-      },
-      {
-        "reward": "Ishtar and her Familia complete Trust in you",
-        "type": "Other",
-        "value": "Make Freya disappear for Ishtar's satisfaction whether by Killing her and sending her back to Tenkai or Selling her."
-      },
-      {
-        "reward": "Instant Capture of Hestia",
-        "type": "Companions",
-        "value": "Somehow, someway, defeat Bell Cranel, by any means necessary."
-      },
-      {
-        "reward": "Instant Capture of Phryne Jamil. We won't blame you if Sell her. You can also scrub the memory of her violation from your mind.",
-        "type": "Other",
-        "value": "Do your absolute best to endure Phryne's advances and having her way with you until the Freya and her Familia are gone."
-      }
-    ],
-    "conditions": [
-      {
-        "value": "Protect the Killing Stone from being destroyed prematurely before the Ritual."
-      },
-      {
-        "value": "Bindings on Haruhime will not work for this Mission as she must 'die' for Ritual to transpire."
-      },
-      {
-        "value": "Goddess Ishtar must not be killed before she can exact her revenge."
-      },
-      {
-        "value": "Cannot dissuade Ishtar Familia by using some other method than the Killing Stone Ritual"
-      },
-      {
-        "value": "This Haruhime (if 'killed' by successful Ritual) cannot be revived, as described by Takemikazuchi by other methods of Resurrection"
-      }
-    ],
-    "budget": 145,
-    "desc": "Listen up, Contractor, because this Mission will be...while not necessarily hard, it will be very tricky.\n\nFor every Renard, they each contain a unique and powerful Spell, a Youjutsu, that is coveted and kept close to whichever God or Goddess gets their hands on them.\n\nOne such Renard is Sanjouno Haruhime, a girl who was sold like a slave and brought to the Ishtar Familia with the goal of obtaining her power to 'Level-Up' whenever they want. It essentially grants anyone endowed with the Falna boosted Stats if they were a Level higher than they currently were.\n\nA related item that must be protected for this Mission is an item that, while dark in nature and horribly heretical, can trap the Renard's Youjutsu and Soul and spread it to others by a certain sacrificial ritual, also known as the Killing Stone.\n\nHowever, because of the actions of a frustrated Aisha Belka, the plan was significantly delayed and later stopped by the Hestia and Freya Familia, both for differing reasons.\n\nYou will have two routes you can be brought in, before Aisha destroys the first Killing Stone the Ishtar Familia originally had or sometime before the day of Ishtar Familia's Canon disbanding.\n\nIt's simple, allow the Killing Stone Ritual to transpire successfully, trapping the soul of Sanjouno Haruhime into the Killing Stone on the Night of the Full Moon before breaking it to be used for the Ishtar Familia in their war with the Freya Familia.\n\nGood luck!",
-    "uid": "iqmdz"
-  },
+
   {
     "reward": 200,
     "image": "https://i.postimg.cc/d1S0xVLm/sds.jpg",
@@ -8483,119 +8968,6 @@
     "budget": 0,
     "desc": "Have you ever wondered were the waifus came from?\n\nYour mission here will be starting a secret laboratory with cloning purposes. Not an small one, a functional massive cloning facility that will produce all the clones that the company will request to you.\n\nThe mission is considered completed after you managed to produce 1000 Tier 1 clones, 500 Tier 2, 200 Tier 3, 100 Tier 4, 50 Tier 5 and 10 Tier 6 clones without complications in the production process and without accidents (Resets every time something goes wrong). From there we will manage the facility.\n\nYou will receive request with DNA of the target and information of her phisical appareance and powers. You will receive mostly T1 waifus, but expect sometimes higher requests. You can reject one and we will sent another, but doing that will reset the count.",
     "uid": "XpFSg"
-  },
-  {
-    "reward": 500,
-    "image": "https://cdn.imgchest.com/files/my2pcok2b67.png",
-    "author": "Dante Starkiller",
-    "rewardType": "Credits",
-    "source": "",
-    "title": "Hero?, I Wanted To Be An Alien Hunter!",
-    "uid": "plaKb",
-    "loca": "My Hero Academia",
-    "lewd": false,
-    "scope": "Grand",
-    "objectives": [
-      {
-        "reward": "One of each: Bedy, Stress and Wild Defenses or their value on credits",
-        "type": "Perks",
-        "value": "Save Midnight"
-      },
-      {
-        "reward": "Universal, Fertility Calibration & Potpourri or their value on credits (10 + 5 +20/2)",
-        "type": "Perks",
-        "value": "Waifu Midnight"
-      },
-      {
-        "reward": "Quirk: Vibration Control",
-        "type": "Other",
-        "value": "Waifu Jirou Kyouka"
-      },
-      {
-        "reward": "Quirk: Zero Gravity Proyectiles (your proyectiles have zero gravity)",
-        "type": "Other",
-        "value": "Waifu Ochako Uraraka, Cucking Midoriya on the Way"
-      },
-      {
-        "reward": "100",
-        "type": "Credits",
-        "value": "Win the Sports Festival"
-      },
-      {
-        "reward": "Engineering Talent",
-        "type": "Perks",
-        "value": "Waifu Melissa Shields"
-      },
-      {
-        "reward": "Quirk: Perfect Motions (passive)",
-        "type": "Other",
-        "value": "Waifu Kendou Itsuka"
-      },
-      {
-        "reward": "Quirk: Regeneration (low level regeneration)",
-        "type": "Perks",
-        "value": "Waifu Tokage Setsuna"
-      },
-      {
-        "reward": "50",
-        "type": "Credits",
-        "value": "Kill A Nomu (repetible)"
-      },
-      {
-        "reward": "Quirk: Camouflage",
-        "type": "Other",
-        "value": "Waifu Hagakure Tooru"
-      },
-      {
-        "reward": "Quirk: Long Tongue",
-        "type": "Other",
-        "value": "Waifu Asui Tsuyu"
-      },
-      {
-        "reward": "Quirk: Hentai Physics/Futanarization (really, i had no other idea)",
-        "type": "Other",
-        "value": "Waifu Ashido Mina"
-      },
-      {
-        "reward": "Template Stack: Psi Operative (Xcom 2)",
-        "type": "Other",
-        "value": "Waifu Hado Nejire"
-      },
-      {
-        "reward": "Quirk: Henge (like the jutsu of Naruto)",
-        "type": "Other",
-        "value": "Waifu Toga Himiko"
-      },
-      {
-        "reward": 50,
-        "type": "Credits",
-        "value": "Kill Shigaraki"
-      },
-      {
-        "reward": 300,
-        "type": "Credits",
-        "value": "Kill All For One"
-      }
-    ],
-    "conditions": [
-      {
-        "value": "All movies are cannon"
-      },
-      {
-        "value": "The fate (plot) of this world lessened, this makes the plot armor of the each characters notably less reliable, if they needed plot to survive, then is provable that now they will die or be severely harmed"
-      },
-      {
-        "value": "We recomed you to buy Aura (RWBY) in your earliest convenience, as will bypass one of the weakness of Yaoyorozu Momo"
-      },
-      {
-        "value": "We also recommend you to buy each of the different classes as a tier 1 Template Stack, as ech one will give you valuable experience in their different styles of combat"
-      },
-      {
-        "value": "You will stay in the world until the end of the year at minimum"
-      }
-    ],
-    "budget": 150,
-    "desc": "Well Contractor, it seems that a newbie was ganked in real life just before we could finalize his contract and send him in his merry way, and now we have a complete build and a selected timeline but no contractor to farm it, and the Archangel of Benevolence is breathing down our necks rushing us into finding someone to fulfill her fallen Contractors job, lucky us that you came along...\n\nBuild:\nStarting World: My Hero Academia [Start of Canon]\nStarting budget 140\n\nPatron\nArchangel of Benevolence free [140]\n\nIntensity [6.25] \nLegacy Difficulty 0\nMode \nMe and My Girlfriend(s)(PvE) +0 [140]\n\nYou as Yaoyorozu Momo/Creati (Substitute) of T4 -10 [130]\n\nBindings\nCompany Stamp free \n\nLures\nSticky Fingers -5 [145]\n\nHome Perks\nPocket Space -5 [115]\n\nTalents\nBody Tune-Up -5 [100]\nAthletic -5 [95]\nMartial -10 [75]\nScience -20 [55]\nTemplate Stacking I[You as Yaoyorozu Momo/Creati has Lily Shen (XCOM)] -20 [35]\n\nDefenses\nBody -5 [30]\nWild -5 [25]\nMind -25 [0]\n\n\n "
   },
   {
     "reward": "The Gamer System",
@@ -17683,7 +18055,7 @@
       }
     ],
     "budget": 250,
-    "desc": "A Demon lord, fierce, powerfull, chaotic, invading worlds with his neverending armies, destroying peace and capturing beautifull women across the globe, who hasn't heard of such characters in stories, what if it was made a reality? Contractor one of our dearest clients wants this fantasy realized, will you accept the challenge?\n\nTo accept this mission you must be a Demon/Monster or have a template of one such character, anything that can be categorized as demonic or monster is valid (examples are Vampires, Devils, Cursed Spirits ecc...).\nAfter accepting this mission you will be subject to the following restrictions:\n-The only \"Template Stacking\" you will be able to buy are those from Demonic/Monster characters\n-All \"Template Stacking\" you had before accepting this mission that are not from Demonic/Monster\ncharacters will be sealed, and you won't be able to acces their powers untill mission completition\n-Only Demonic/Monster Retinue members may follow you in new worlds untill mission completition\nOther Retinue members may still reside in your demiplane but won't be able to access other worlds\n-You won't be able to buy any companions, but receiving them through mission rewards is still possible\n-You may not play the part of a Hero while this mission is active\n-The only Heritage perks avaible for purchase while this mission is active are those from Dragon, Outsider Psychopomp and Wendigo.\n-Upon accepting the mission you shall choose one world, you will be transported there and the mission will start(If taken at Chargen this does not apply)\n-You won't be able the leave the new world untill mission completition\n\nYour role to play in this mission, as stated before, will be that of a warmongering Demon lord with a desire for women and conquest, to be more specific to complete this mission you are expected to reach this objectives:\n-Wage war against any government in the world\n-Destroy the current power that governs the world (or all of them if there is more than one)\n-Establish yourself as the ruler of the world\n-Capture at least 20% of the female targets of your world present in the catalog\n-Make sure your power is both feared and revered by most\n-Build a mighty capital and palace for yourself\n-Rule for at least 10 years\n\nYou have been told what is expected of you and what restrictions you will suffer, now it's time to see what \"Tools\" you shall receive:\n-What is a Demon lord without his armies? Receive the ability \"Demonic Minion Creation\" you will be able to create monsters and demons that will be completely devout and loyal to you, they may range from monsters with the intelligence of a mere beast, to humanoid beings with real sentience and intellect, their power will be one tier below yours or even lower if you wish. Their creation will be near instantaneous and energy free but their numbers will be limited, you may create only 1 minion for square kilometer under your rule (demiplane, dungeons etc.. don't count for this ability), dead minions may be brought back to life after a period of 24h from their death, at the start you may be able to do so only once a day, but the more you do so the more times in a day you may bring back a minion form death\n-Receive a new lure \"A Devil's Charm\" The more proof of your Lust, Greed, Pride etc.. that a potential waifu witnesses the more attracted to you they will be, to a point where they will simply ignore your potentially evil attitude\n-Receive the ability \"Stats Progression\" now all your current capabilities will be quantified in numeric stats and their scale will be in base of the \"Stats\" of other being in the world you are currently on, you may see your stats and that of your enemies and retinue if you possess the perks \"HUD\" and \"Toggle\". This ability also applies to Demonic/Monster retinue members that possess \"HUD\" and \"Toggle\"\n-Receive the ability \"Vulture\" upon the death of a being caused by you/retinue member/minion, you will be presented with the stats of the dead and will be able to choose one of said stats (Example HP, mana, Haki etc) that will be added to your own of the same type\n\nLastly here are some condition you may take under cosideration to make the story a bit more interesting for our client, of course you shall be greatly rewarded, with 50 credits for every option taken:\n-Take this mission during Chargen phase with Origin \"Drop-in\", and the starting world has a unique power system (example are haki, cursed energy etc...)you may take one related ability\n-Demon lord is too mainstream it seems, what about Demon Queen? Be a woman or at least Futa\n-The choosen world has a main character that relies on the power of friendship or even sillier like the power of boobs, beat him one way or another, you shall be paid in advance but if you fail to acomplish this objective the payment will be detracted from your funds\n-The choosen world has a overlord or secret ruler, defeat them\n-Use Tantric Arts as your binding method"
+    "desc": "A Demon lord, fierce, powerfull, chaotic, invading worlds with his neverending armies, destroying peace and capturing beautifull women across the globe, who hasn't heard of such characters in stories, what if it was made a reality? Contractor one of our dearest clients wants this fantasy realized, will you accept the challenge?\n\nTo accept this mission you must be a Demon/Monster or have a template of one such character, anything that can be categorized as demonic or monster is valid (examples are Vampires, Devils, Cursed Spirits ecc...).\nAfter accepting this mission you will be subject to the following restrictions:\n-The only \"Template Stacking\" you will be able to buy are those from Demonic/Monster characters\n-All \"Template Stacking\" you had before accepting this mission that are not from Demonic/Monster\ncharacters will be sealed, and you won't be able to acces their powers untill mission completition\n-Only Demonic/Monster Retinue members may follow you in new worlds untill mission completition\nOther Retinue members may still reside in your demiplane but won't be able to access other worlds\n-You won't be able to buy any companions, but receiving them through mission rewards is still possible\n-You may not play the part of a Hero while this mission is active\n-The only Heritage perks avaible for purchase while this mission is active are those from Dragon, Outsider, Psychopomp, Wendigo and Infernal.\n-Upon accepting the mission you shall choose one world, you will be transported there and the mission will start(If taken at Chargen this does not apply)\n-You won't be able the leave the new world untill mission completition\n\nYour role to play in this mission, as stated before, will be that of a warmongering Demon lord with a desire for women and conquest, to be more specific to complete this mission you are expected to reach this objectives:\n-Wage war against any government in the world\n-Destroy the current power that governs the world (or all of them if there is more than one)\n-Establish yourself as the ruler of the world\n-Capture at least 20% of the female targets of your world present in the catalog\n-Make sure your power is both feared and revered by most\n-Build a mighty capital and palace for yourself\n-Rule for at least 10 years\n\nYou have been told what is expected of you and what restrictions you will suffer, now it's time to see what \"Tools\" you shall receive:\n-What is a Demon lord without his armies? Receive the ability \"Demonic Minion Creation\" you will be able to create monsters and demons that will be completely devout and loyal to you, they may range from monsters with the intelligence of a mere beast, to humanoid beings with real sentience and intellect, their power will be one tier below yours or even lower if you wish. Their creation will be near instantaneous and energy free but their numbers will be limited, you may create only 1 minion for square kilometer under your rule (demiplane, dungeons etc.. don't count for this ability), dead minions may be brought back to life after a period of 24h from their death, at the start you may be able to do so only once a day, but the more you do so the more times in a day you may bring back a minion form death\n-Receive a new lure \"A Devil's Charm\" The more proof of your Lust, Greed, Pride etc.. that a potential waifu witnesses the more attracted to you they will be, to a point where they will simply ignore your potentially evil attitude\n-Receive the ability \"Stats Progression\" now all your current capabilities will be quantified in numeric stats and their scale will be in base of the \"Stats\" of other being in the world you are currently on, you may see your stats and that of your enemies and retinue if you possess the perks \"HUD\" and \"Toggle\". This ability also applies to Demonic/Monster retinue members that possess \"HUD\" and \"Toggle\"\n-Receive the ability \"Vulture\" upon the death of a being caused by you/retinue member/minion, you will be presented with the stats of the dead and will be able to choose one of said stats (Example HP, mana, Haki etc) that will be added to your own of the same type\n\nLastly here are some condition you may take under cosideration to make the story a bit more interesting for our client, of course you shall be greatly rewarded, with 50 credits for every option taken:\n-Take this mission during Chargen phase with Origin \"Drop-in\", and the starting world has a unique power system (example are haki, cursed energy etc...)you may take one related ability\n-Demon lord is too mainstream it seems, what about Demon Queen? Be a woman or at least Futa\n-The choosen world has a main character that relies on the power of friendship or even sillier like the power of boobs, beat him one way or another, you shall be paid in advance but if you fail to acomplish this objective the payment will be detracted from your funds\n-The choosen world has a overlord or secret ruler, defeat them\n-Use Tantric Arts as your binding method"
   },
   {
     "reward": 2,
@@ -17993,95 +18365,7 @@
     "budget": 700,
     "desc": "Here's an interesting mission, you will be sent to Earth five years before the Prothean ruins on Mars are found. This gives you 42 years until the Reapers attack, assuming nothing sets them off early and the Alpha Relay is destroyed. \n\nIn this time frame you will uplift humanity and prepare them for what is to come. Create a mass empowering event of some sort to where a significant portion of humanity has some sort of supernatural powers, and are also technologically advanced enough to dominate on the galactic scene.\n\nJust be careful not to set off the Reapers too early."
   },
-  {
-    "reward": "Weed that can pacify Tier 11-13 beings",
-    "image": "https://i.redd.it/2g2xbm774wg91.png",
-    "author": "Pleb",
-    "rewardType": "Other",
-    "source": "",
-    "title": "can't get much higher",
-    "loca": "One Piece",
-    "lewd": false,
-    "scope": "Grand",
-    "objectives": [
-      {
-        "reward": 20,
-        "type": "Credits",
-        "value": "Get luffy high"
-      },
-      {
-        "reward": 60,
-        "type": "Credits",
-        "value": "get the whole straw hat gang high"
-      },
-      {
-        "reward": 150,
-        "type": "Credits",
-        "value": "Get the 7 warlords of the sea high"
-      },
-      {
-        "reward": 250,
-        "type": "Credits",
-        "value": "Get the 4 yonkos high"
-      },
-      {
-        "reward": "Communication Talent, Inculcation Talent",
-        "type": "Perks",
-        "value": "Smoke a blunt with luffy and Blackbeard"
-      },
-      {
-        "reward": "Money Talent",
-        "type": "Perks",
-        "value": "Get nami to help sell your product"
-      },
-      {
-        "reward": 200,
-        "type": "Credits",
-        "value": "Get the 4 admirals high"
-      },
-      {
-        "reward": "Inexhaustible",
-        "type": "Perks",
-        "value": "Get the fleet admiral high"
-      },
-      {
-        "reward": "Template Stacking I & II (Whitebeard/Edward Newgate)",
-        "type": "Perks",
-        "value": "Get Whitebeard high"
-      },
-      {
-        "reward": "Mara Mara no Mi",
-        "type": "Other",
-        "value": "Get a celestial dragon high"
-      },
-      {
-        "reward": "You are no longer effected by sea water or sea stone",
-        "type": "Other",
-        "value": "Get all of the celestial dragon's high"
-      },
-      {
-        "reward": "Mara Mara no Mi (Awakened)",
-        "type": "Other",
-        "value": "Get all of the Gorosei high"
-      },
-      {
-        "reward": "World peace",
-        "type": "Other",
-        "value": "Get Imu high"
-      }
-    ],
-    "conditions": [
-      {
-        "value": "Drop the world crime rate by 50 percent"
-      },
-      {
-        "value": "sell 100,000 kg of weed"
-      }
-    ],
-    "budget": 400,
-    "desc": "Did you ever think that the world of one piece would be more peaceful if everyone just chilled out a bit, well we did so let's find out if it would work. \n\nFun fact did you know weed doesn't exist in the one piece universe, so let's change that. Your job is to produce copious amounts of high quality weed by using the seed's we provide you to get as many people high as you can and stop major conflict's by making people to high to fight.",
-    "uid": "XtLcB"
-  },
+
   {
     "reward": "The Capture Credit value of the being you recruit times 1.5(Rounded up). Does not multiply TC tickets. If they are successfully hired you will be given a direct line to them via your Company device, perfect for calling in favors or doing office gossip with",
     "image": "",
@@ -28595,6 +28879,7 @@
     "rewardType": "IMG Tickets",
     "source": "",
     "title": "A Succubus Quest To Greatness",
+    "uid": "tveRK",
     "loca": "Generic",
     "lewd": true,
     "scope": "Standard",
@@ -28706,8 +28991,7 @@
       }
     ],
     "budget": 180,
-    "desc": "May only accept during \"Chargen\"\n\nSuccubus are one of the most known and desired demonic entities, but in most cases they are either cannon fodder or evil soul sucking monsters. We wish to introduce a new perspective to this popular race and that's were you come in.\nYou shall be reborn as a new specie of Succubus handcrafted here at the company it's name is \"Royal Succubus\", the following are some of the key feature of this new marvelous race:\n\n-Base tier for any \"Royal Succubus\" is Tier5\n-Heightened libido (around double that of an horny teenager)\n-Supernatural beauty, streght and speed.\n-Medium wound regeneration (can heal from most wounds but the regrowing of amputated limbs takes days, of course you would still die if you get your head chopped off)\n-Immune to incest deficiensies.\n-Empowering Lust (Satiation of your carnal desires empowers you and the partner/s that partecipated, boosting permanently all of your stats by 25%, works only once per day for each retinue members, big harems are advised for peak performance)\n-Only female or hermaphrodite(With female appearance)\n-Feeds on arousal, lust and sexual satisfaction (may still eat and drink but it won't satisfy hunger or thirst) the more days without feeding the weaker it gets the higher the tier the lower the need\n-Going against it's own lustfull nature takes great force of will\n-As long as it's regularly fed a \"Royal Succubus\" can live forever.\n-Master of Eromancy\n\nAfter accepting this mission you will never be able to take any heritage except for \"Pirate\" and \"Mastermind\", you also won't be able to change your race through any means.\n\nYour main objective is simple, propagate and get famous, in simple words expand the numbers of your race, create a big harem and make your race vastly known through the mortal or supernatural world, you must also build a reputation for being sexually skilled, beautifull and strong.",
-    "uid": "tveRK"
+    "desc": "May only accept during \"Chargen\"\n\nSuccubus are one of the most known and desired demonic entities, but in most cases they are either cannon fodder or evil soul sucking monsters. We wish to introduce a new perspective to this popular race and that's were you come in.\nYou shall be reborn as a new specie of Succubus handcrafted here at the company it's name is \"Royal Succubus\", the following are some of the key feature of this new marvelous race:\n\n-Base tier for any \"Royal Succubus\" is Tier5\n-Heightened libido (around double that of an horny teenager)\n-Supernatural beauty, streght and speed.\n-Medium wound regeneration (can heal from most wounds but the regrowing of amputated limbs takes days, of course you would still die if you get your head chopped off)\n-Immune to incest deficiensies.\n-Empowering Lust (Satiation of your carnal desires empowers you and the partner/s that partecipated, boosting permanently all of your stats by 25%, works only once per day for each retinue members, big harems are advised for peak performance)\n-Only female or hermaphrodite(With female appearance)\n-Feeds on arousal, lust and sexual satisfaction (may still eat and drink but it won't satisfy hunger or thirst) the more days without feeding the weaker it gets the higher the tier the lower the need\n-Going against it's own lustfull nature takes great force of will\n-As long as it's regularly fed a \"Royal Succubus\" can live forever.\n-Master of Eromancy\n\nAfter accepting this mission you will never be able to take any heritage except for \"Pirate\", \"Mastermind\" and \"Infernal\", you also won't be able to change your race through any means.\n\nYour main objective is simple, propagate and get famous, in simple words expand the numbers of your race, create a big harem and make your race vastly known through the mortal or supernatural world, you must also build a reputation for being sexually skilled, beautifull and strong."
   },
   {
     "reward": "Sticky Fingers and Talent Sharing for it, Also Don’t Stand Close to Me",
@@ -67492,7 +67776,7 @@
     "author": "irugaa0",
     "rewardType": "Credits",
     "source": "",
-    "title": "Is it Wrong to Join a Family?",
+    "title": "Is it Wrong to Join a Familia?",
     "uid": "NQ6tW",
     "loca": "Danmachi",
     "lewd": false,
@@ -67501,7 +67785,7 @@
       {
         "reward": "50 points + Template Stacking I of any character from Danmachi you witnessed",
         "type": "Other",
-        "value": "Kill a Jack Bird and bring the Jack Bird's Golden Egg\tback."
+        "value": "Kill a Jack Bird and bring the it's Golden Egg\tback to the surface."
       },
       {
         "reward": "50 points",
@@ -67509,18 +67793,18 @@
         "value": "Reach the 10th floor of the dungeon."
       },
       {
-        "reward": "Choose Body, Soul or Science Talent for free.",
+        "reward": "Choose Body Defense, Soul Talent or Science Talent for free.",
         "type": "Perks",
         "value": "Reach level 2"
       }
     ],
     "conditions": [
       {
-        "value": "Join a family and reach the 5th floor of the dungeon."
+        "value": "Join any familia and reach the 5th floor of the dungeon."
       }
     ],
     "budget": 225,
-    "desc": "Danmachi is a world full of wonders where many gods descended the heavens to form families of adventurers and defy the dungeon.\nJoin the Family and become defy the dungeon yourself.\n\n"
+    "desc": "Danmachi is a world full of wonders where many gods descended from Tenkai to form familias of adventurers and conquer the dungeon.\n\nJoin a Familia and conquer the dungeon yourself.\n\n"
   },
   {
     "desc": "You are trapped in Hell. You must escape. Hell is defined as any appropriate hell dimension in the given setting. This includes Tartarus, Nifelheim, etc.",

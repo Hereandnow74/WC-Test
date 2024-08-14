@@ -1329,7 +1329,7 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     from: 'Honkai Impact',
     waifuUID: [
-      'u7Liz'
+      'u7Liz',
     ],
     image: 'https://images2.imgbox.com/57/92/sAWxPZO6_o.png',
     cost: 20,
@@ -2006,7 +2006,7 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     image: '',
     cost: 150,
-    desc: 'The Round Table, a gathering place for heroes: the round shape of the shield Mash and Tachie share, and its direct connection to the original Round Table, are the catalysts for Chaldea’s FATE Servant-summoning system. This perk allows you to roll on Fate/Grand Order’s infamous gacha both in- and outside of the Nasuverse. Servants summoned using this perk will arrive already marked as yours with a dormant tattoo. They may then be controlled using Command Seals or further bound by your method of choice. This perk does not alter Mash’s or Tachie’s tier rating. It may only be purchased once; a repeat purchase would have no further effect. Individuals summoned through Lord Camelot will not award credits upon capture or sale. <p>You get one free 10-roll when you purchase this perk and can earn additional Saint Quartz under the same rules as Exit Stage Left, at a rate of 1 SQ per 5% progression. Saint Quartz may also be purchased with company credits. The rates on offer may be found in the chart to the right.<p/> <h3 class="text-lg">Other Gachas</h3><p>If you have at least one character in your retinue who\u2019s from a world that started as a mobile game, that gacha\u2019s roll list will be added to Grand Order\'s. For example, having Eula Lawrence or Beidou will add the Genshin Impact roll list, having Enterprise or Zuikaku will add the Azur Lane roll list, and having Siege or Ch\u2019en will add the Arknights roll list. </p>',
+    desc: 'The Round Table, a gathering place for heroes: the round shape of the shield Mash and Tachie share, and its direct connection to the original Round Table, are the catalysts for Chaldea’s FATE Servant-summoning system. This perk allows you to roll on Fate/Grand Order’s infamous gacha both in- and outside of the Nasuverse. Servants summoned using this perk will arrive already marked as yours with a dormant tattoo. They may then be controlled using Command Seals or further bound by your method of choice. This perk does not alter Mash’s or Tachie’s tier rating. It may only be purchased once; a repeat purchase would have no further effect. Individuals summoned through Lord Camelot will not award credits upon capture or sale. <p>You get one free 10-roll when you purchase this perk and can earn additional Saint Quartz under the same rules as Exit Stage Left, at a rate of 1 SQ per 5% progression. Saint Quartz may also be purchased with company credits. The rates on offer may be found in the chart to the right.</p> <h3 class="text-lg">Other Gachas</h3><p>If you have at least one character in your retinue who\u2019s from a world that started as a mobile game, that gacha\u2019s roll list will be added to Grand Order\'s. For example, having Eula Lawrence or Beidou will add the Genshin Impact roll list, having Enterprise or Zuikaku will add the Azur Lane roll list, and having Siege or Ch\u2019en will add the Arknights roll list. </p>',
   },
   {
     uid: 'UseQ1',
@@ -2319,7 +2319,7 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     desc: '\n  <p>Shirahoshi the mermaid princess of One Piece, gains full access and control over her nature as the Ancient Weapon Poseidon.  This grants her command and control over all Sea Kings, Leviathans, Krakens, or other Aquatic Kaiju in a given setting.  If said Kaiju are sapient, then they will obey her as their natural queen.  She can also summon Sea Kings from her native  setting if she desires.</p>',
     cost: 490,
     tier: 9,
-    image: 'https://images2.imgbox.com/14/53/gVN69I3q_o.jpg',
+    image: 'https://images2.imgbox.com/bb/e5/73oxaMmn_o.png',
     title: 'Poseidon',
   },
   {
@@ -4454,7 +4454,7 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     from: 'Warcraft',
     waifu: [
       'Ner\'zhul',
-      `Arthas Menethil`,
+      'Arthas Menethil',
       'Bolvar Fordragon',
     ],
     waifuUID: [

@@ -244,7 +244,7 @@ const top25 = ref([])
 watch(page, async() => {
   if (page.value !== 4) return
   const opt = {}
-  opt.sortBy = 'likes:desc'
+  opt.sortBy = 'dislikes:desc'
   const tp25 = await searchMissions({ page: 1, limit: 25, ...opt })
   missionsLikes.value.push(...tp25)
   const uids = tp25.map(ml => ml.uid)

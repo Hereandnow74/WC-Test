@@ -6,6 +6,14 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          09 August 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>New perks and changes to the rules to be more up to date. Work done by DepressedAlucard on GitLab.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           08 August 2024
         </h3>
         <ul class="list-decimal list-inside">

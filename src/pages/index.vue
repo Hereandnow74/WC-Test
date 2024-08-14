@@ -47,10 +47,6 @@
             <h1 id="rules" class="text-xl md:text-2xl font-bold px-2">
               Waifu Catalog Amalgam <span class="text-gray-600 dark:text-gray-400">(by SwiftRosenthal)</span> + DLC Interactive v{{ VERSION }} <span class="text-gray-600 dark:text-gray-400">(by Om1cr0n)</span>
             </h1>
-            // <h3 class="px-2 text-lg md:text-xl hover:underline text-blue-700 dark:text-light-blue-400">
-              //   <a href="https://docs.google.com/document/d/1v14mjqC4tns0OhKkGE6e2LHXTq4GGQl__L8emB-YvGo/edit" target="_blank" rel="noopener noreferrer">Waifu Catalog 0.23.05 document</a>
-              //
-            </h3>
             <h3 class="px-2 md:text-lg hover:underline text-blue-700 dark:text-light-blue-400">
               <a href="https://docs.google.com/document/d/1ILzH_MYYTsS40Dx4YnnqbGiFaHiqVRZD-yJBEz4CnEg/edit" target="_blank" rel="noopener noreferrer">Waifu Catalog <b>Unstable</b> version document</a>
             </h3>
