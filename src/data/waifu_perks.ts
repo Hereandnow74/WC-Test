@@ -1727,7 +1727,7 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     tier: 5,
     image: '/img/waifu_perks/compressed/image205.png',
-    cost: 18,
+    cost: 10,
     desc: 'Sakura is instead the non-canon Tohsaka Sakura, a version who was trained in her Imaginary Numbers element and may or may not have separated from her sister. If you already have Matou Rin alongside this Sakura, they will recognize each other. This perk may not be applied to the same Sakura as Tainted Vessel, Knight of the Cherry Blossom, or Kouhai of Light. If you already have either of those perks and want Tohsaka Sakura, you may still purchase this, pre-applied to a new Sakura, for 20 credits.',
   },
   {
