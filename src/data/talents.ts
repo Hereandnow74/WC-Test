@@ -327,13 +327,13 @@ talents.push({
   desc: 'You or your subject’s template is upgraded to a version of the template rated at Tier 5. This is a flat increase to starting power, skill, and gear functionality.',
 })
 
-export const additionalDefenseDesc = `
-<h3 class="text-lf font-semibold text-center">The Outer Shell</h3>
-<p>If you or a member of your retinue is a genius loci or otherwise large enough to hold people inside them, their passengers and cargo will be protected by Defense perks as well. This includes vehicles acquired via Waifu Perks or Catch-a-Ride, but does not protect against effects that originate from within the barrier.</p>
-`
 export const authorNote = `
 <h3 class="text-lf font-semibold text-center">Authors Note</h3>
 <p>Don’t let perfect protection get in the way of a good story. All quantitative specifics for each defense are left purposely vague so you can interpret them according to your needs.</p>
+`
+export const additionalDefenseDesc = `
+<h3 class="text-lf font-semibold text-center">The Outer Shell</h3>
+<p>If you or a member of your retinue is a genius loci or otherwise large enough to hold people inside them, their passengers and cargo will be protected by Defense perks as well. This includes your pocket dimension and vehicles acquired via Waifu Perks or Catch-a-Ride, but does not protect against effects that originate from within the barrier.</p>
 `
 export const defenceDesc = `
 <p>Defense perks protect you and your retinue members, regardless of whether they were purchased or captured, from the relevant effects. All Defenses are purchased in two stages. The first stage, or copy, of a Defense offers resistance to the effects it covers, and the second expands that to total immunity. Both purchases are the same price. The total cost of both copies appears in parentheses. No lasting effect inflicted on you that is covered by an active defense will ever be permanent - everything will wear off over time, depending on circumstance or the effect’s strength.</p>
