@@ -2125,7 +2125,7 @@ export const waifu_perks: WaifuPerk[] = [
       150,
       100,
     ],
-    desc: 'Instead of the second Reinforce, you have the original. This upgrades the Tome of the Night Sky to its full power, including a non-rampant NachtWal as a personal familiar.If you have Reinforce Zwei and all four Wolkenritter, this upgrade only costs 100. If you captured Reinforce Zwei or there was any amount of time between buying her and this upgrade, Zwei will gain the complete Tome, NachtWal, and Eins’ full-size adult form, costumes, and memories, but her personality will not be affected.',
+    desc: 'Instead of the second Reinforce, you have the original. This upgrades the Tome of the Night Sky to its full power, including a non-rampant NachtWal as a personal familiar. If you have Reinforce Zwei and all four Wolkenritter, this upgrade only costs 100. If you captured Reinforce Zwei or there was any amount of time between buying her and this upgrade, Zwei will gain the complete Tome, NachtWal, and Eins’ full-size adult form, costumes, and memories, but her personality will not be affected.',
   },
   {
     uid: 'izRp1',
