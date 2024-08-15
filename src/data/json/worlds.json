@@ -361,7 +361,7 @@
     "rating": 3,
     "q": true,
     "worldName": "Ah! My Goddess",
-    "additional": "Waifus can manipulate any local universe’s operating system as if it were Yggdrasil or Nidhogg, with their same level of access rights. This isn’t always a good idea without protection.",
+    "additional": "Waifus from this setting can manipulate any local universe’s operating system as if it were Yggdrasil or Nidhogg, with their same level of access rights. This isn’t always a good idea without protection.",
     "image": "http://2.bp.blogspot.com/-5MvLE9dKNNM/UIDVcvQpHxI/AAAAAAAABJE/ocVw4H272cA/s1600/tumblr_mbozalOgvy1rndjkmo1_1280.jpg",
     "uid": "EYWVx"
   },
@@ -871,7 +871,7 @@
     "rating": 4,
     "q": true,
     "worldName": "Magi: The Labyrinth of Magic",
-    "additional": "All characters who have Household Vessels have the djinn inside their vessel as a familiar.",
+    "additional": "All characters who have Household Vessels have the djinn inside their vessel as personal familiars.",
     "image": "https://cdn.imgchest.com/files/my2pc9xw9l7.png",
     "uid": "E0yd3"
   },
@@ -1263,7 +1263,7 @@
     "rating": 5,
     "worldName": "Fairy Tail",
     "image": "https://cdn.imgchest.com/files/l4necwj3bw4.png",
-    "additional": "Fatality Defense will protect against Mavis’s Curse of Contradiction. Purchased or captured Mavises will have their curses converted into a form of death magic under her complete control. This conversion will remain even after her master’s demise. Purchasing Irene gets you Heine & Juliet for free as her familiars. Kinana can assume her Cubellios form at will.",
+    "additional": "Fatality Defense will protect against Mavis’s Curse of Contradiction. Purchased or captured Mavises will have their curses converted into a form of death magic under her complete control. This conversion will remain even after her master’s demise. Purchasing Irene gets you Heine & Juliet for free as her personal familiars. Kinana can assume her Cubellios form at will. The Dragon Slayers have their Exceed companions as personal familiars.",
     "condition": [
       {
         "name": "Canon Start (X777 to Tenrou Arc)",
@@ -1353,7 +1353,7 @@
     "rating": 5,
     "q": true,
     "worldName": "Attack on Titan",
-    "additional": "Titan Shifting no longer limits a retinue member’s lifespan.",
+    "additional": "Everlasting Talent will remove the limit on a Titan Shifter’s lifespan.",
     "image": "https://image.winudf.com/v2/image1/Y29tLlNlcnBlbnRTYW5kcy5BdHRhY2tvblRpdGFuVGhlR2FtZV9zY3JlZW5fMF8xNTc2NTQ5NDM2XzA1Ng/screen-0.jpg?fakeurl=1&type=.jpg",
     "uid": "82aP4"
   },
@@ -1612,7 +1612,7 @@
   {
     "rating": 6,
     "worldName": "Chainsaw Man",
-    "additional": "Devil Contractors have their devils as familiars.",
+    "additional": "Devil Contractors have their devils as personal familiars.",
     "condition": [
       {
         "name": "Earth",
@@ -1649,6 +1649,7 @@
   {
     "rating": 6,
     "worldName": "Bleach",
+    "additional": "The default version of Giselle available for purchase is entirely female.",
     "image": "https://cdn.imgchest.com/files/k739cnolbr7.png",
     "condition": [
       {
@@ -1774,7 +1775,7 @@
     "rating": 6,
     "q": true,
     "worldName": "Re:Creators",
-    "additional": "Hikayu has her martial arts powerup. Meteora’s “Delusion” appearance is always available as a preset if you have at least Basic Runes, Art of Transformation, or Demiplane perks.",
+    "additional": "Hikayu has her martial arts powerup. Meteora’s “Delusion” appearance is always available as a preset if you have at least Basic Runes, Art of Transformation, or Sanctuary perks.",
     "image": "https://cdn.imgchest.com/files/345xckgogm7.png",
     "uid": "conR6"
   },
@@ -1975,7 +1976,7 @@
   {
     "rating": 7,
     "worldName": "Inuyasha",
-    "additional": "Sango has Kirara as a familiar. Kikyou has up to eight soul collectors as familiars.",
+    "additional": "Sango has Kirara as a personal familiar. Kikyou has up to eight soul collectors as personal familiars.",
     "condition": [
       {
         "name": "Modern Japan",
@@ -2164,7 +2165,7 @@
   {
     "rating": 7,
     "worldName": "Evangelion",
-    "additional": "Everlasting Talent will override the the “Curse of EVA,” that halts pilots’ aging in Rebuild. All pilots can learn to manipulate their AT fields; this counts as a mystical art and is affected by Soul Talent and Advanced Template Stacking (Enlightened). Akagi Naoko may be captured posthumously by attacking MAGI instead; if so, she will be a set of triplet software AIs for whom separate bodies may be built to contain. Ikari Yui and Souryuu Kyoko Zeppelin have their full scientific knowledge, full control over their AT fields, and can transform into EVA-01 and -02, respectively. When transformed, their AT strengths are both on par with the stronger canon Angels. They can also manifest shipgirl-style avatars inside their cockpits, so you can ride them while you ride them. Original and Rebuild characters will recognize each other, if shared-timeline versions of themselves would have met.",
+    "additional": "Everlasting Talent will override the “Curse of EVA” that halts pilots’ aging in Rebuild. All pilots can learn to manipulate their AT fields; this counts as a mystical art and is affected by Soul Talent. Akagi Naoko may be captured posthumously by attacking MAGI instead; if so, she will be a set of triplet software AIs for whom separate bodies may be built to contain. Ikari Yui and Souryuu Kyoko Zeppelin have their full scientific knowledge, full control over their AT fields, and can transform into EVA-01 and -02, respectively. When transformed, their AT strengths are both on par with the stronger canon Angels. They can also manifest shipgirl-style avatars inside their cockpits, so you can ride them while you ride them. Original and Rebuild characters will recognize each other, if shared-timeline versions of themselves would have met.",
     "condition": [
       {
         "rating": 7,
@@ -2449,7 +2450,7 @@
   {
     "rating": 9,
     "worldName": "I'm a Spider, So What?",
-    "additional": "Visiting the setting or having any waifu from the work will give you access to its leveling systems. Fatality Defense will block the local leveling system’s negative effects on its users.",
+    "additional": "This setting has a globalized diegetic leveling system. Fatality Defense will block this system’s negative effects on its users.",
     "image": "https://cdn.imgchest.com/files/k739cnol8r7.png",
     "uid": "fm5gV"
   },
@@ -2998,7 +2999,7 @@
     "rating": 10,
     "q": true,
     "worldName": "Gurren Lagann",
-    "additional": "Spiral Power is an infinite escalation engine by nature, but could never instantly achieve its full might. Retinue members who can use it may only escalate to match the highest effective tier in your retinue, or an opposing force that the Spiral user is engaged against, after step 5; this occurs during step 5. TXs such as Simon and Anti-Spiral Nia will obsolete this restriction. Spiral Power’s escalation lasts until the end of an active conflict stage or the user no longer feels hot-blooded, whichever happens first.",
+    "additional": "Spiral Power is an infinite escalation engine by nature, but could never instantly achieve its full might. Retinue members who can use it may only escalate to match the highest effective tier in your retinue, or an opposing force that the Spiral user is engaged against, after step 4a; this occurs during step 5. Imaginary Tiers such as Simon and Anti-Spiral Nia will obsolete this restriction. Spiral Power’s escalation lasts until the end of an active conflict stage or the user no longer feels hot-blooded, whichever happens first.",
     "image": "https://cdn.imgchest.com/files/345xckgodm7.png",
     "uid": "9cqff"
   },
