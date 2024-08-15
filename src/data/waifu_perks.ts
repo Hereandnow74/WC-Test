@@ -493,7 +493,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 10,
     image: 'https://i.imgur.com/hPeeYdy.png',
     cost: 980,
-    desc: 'Leah is possessed by Diablo, the Prime Evil from her home plane. Their personalities are fused together, creating a new Leah who is still recognizable but (without controls) just as powerful and evil as her father. Leah/Diablo qualifies for special Alterzelu Symbiote theming.',
+    desc: 'Leah is possessed by Diablo, the Prime Evil from her home plane. Their personalities are fused together, creating a new Leah who is still recognizable but (without controls) just as powerful and evil as her father. If this perk is earned instead, you will only need Mind or Corruption Defenses. Leah/Diablo qualifies for special Alterzelu Symbiote theming.',
   },
   {
     uid: 'uY2gN',
