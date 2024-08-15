@@ -964,6 +964,7 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     from: 'Honkai Impact',
     waifuUID: [
+      'ojHDF',
       'tiCHF',
     ],
     tier: 8,
