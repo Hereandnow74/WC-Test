@@ -1647,6 +1647,20 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Rin is instead the Archer-class Pseudo-Servant Ishtar, the Mesopotamian goddess of love and war, with additional access to Summer Ishtar\'s outfits, skills, and Noble Phantasms. If you purchase or capture Rin first and apply this perk later, Rin will gain Ishtar\'s memories and emotional connections; their two personalities are so alike that Ishtar can\'t even tell that Rm\'s better traits aren\u2019t her own. if you purchase Rin and this perk simultaneously, you will only get Ishtar. If you capture Ishtar or Ereshkigal within the Babylonia Singularity while they share a body, the one who isn\'t in control at the time will be ejected and rendered vulnerable to an immediate Binding. This perk may not be applied to the same Rin as Swapped Vessel, Nameless Red Devil, or Kaleidostick Magical Ruby. If you already have any of those perks and want Ishtar, you may still purchase this, pre-applied to a new Rin, for 100 credits.',
   },
   {
+    uid: 'sTWUS',
+    title: 'Bull of Heaven',
+    waifu: [
+      'Mistress of Heaven',
+    ],
+    from: 'Nasuverse',
+    waifuUID: [
+      'NxNJJ',
+    ],
+    image: 'https://images2.imgbox.com/a8/5b/ry2aftug_o.png',
+    cost: 500,
+    desc: 'Ishtar\'s familiar, Gugalanna. was the greatest of the Mesopotamian Divine Beasts. The bull the size of a mountain required Gilgamesh and Enkidu to work together to defeat it. Ordinarily. Gugalanna is only available for capture during the Snowfield Grail War, as the version of Ishtar at the Babylonian Singularity and Chaldea sheepishly admitted that she lost her pet - though she later manifested it as a diminutive mascot. This perk restores "Gugalanna Lily" to its full power, but does not raise Ishtar\'s tier. ',
+  },
+  {
     uid: 'mCUGw',
     title: 'Blessing of Kur',
     from: 'Nasuverse',
@@ -1663,20 +1677,6 @@ export const waifu_perks: WaifuPerk[] = [
     costT: 0,
     desc: 'Rin is instead the Lancer-class Pseudo-Servant Ereshkigal, the Mesopotamian goddess of the underworld. If you purchase or capture Rin first and apply this perk later, Ereshkigal will keep her host’s memories and a blend of both host and Servant’s personalities, as if she had taken Substitute into her host’s life; if you purchase the host and this perk simultaneously, you will only get Ereshkigal. If you capture Ishtar or Ereshkigal within the Babylonia Singularity while they share a body, the one who isn’t in control at the time will be ejected and rendered vulnerable to an immediate Binding. This perk may not be applied to the same Rin as Swapped Vessel, Nameless Red Devil, Mistress of Heaven, or Kaleidostick Magical Ruby. If you already have any of those perks and want Ereshkigal, you may still purchase this, pre-applied to a new Rin, for 100 credits.',
     whitelist: [],
-  },
-  {
-    uid: 'sTWUS',
-    title: 'Bull of Heaven',
-    waifu: [
-      'Mistress of Heaven',
-    ],
-    from: 'Nasuverse',
-    waifuUID: [
-      'NxNJJ',
-    ],
-    image: 'https://images2.imgbox.com/a8/5b/ry2aftug_o.png',
-    cost: 500,
-    desc: 'Ishtar\'s familiar, Gugalanna. was the greatest of the Mesopotamian Divine Beasts. The bull the size of a mountain required Gilgamesh and Enkidu to work together to defeat it. Ordinarily. Gugalanna is only available for capture during the Snowfield Grail War, as the version of Ishtar at the Babylonian Singularity and Chaldea sheepishly admitted that she lost her pet - though she later manifested it as a diminutive mascot. This perk restores "Gugalanna Lily" to its full power, but does not raise Ishtar\'s tier. ',
   },
   {
     uid: 'kC10u',
