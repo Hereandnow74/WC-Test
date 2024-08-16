@@ -1018,7 +1018,7 @@ export const waifu_perks: WaifuPerk[] = [
       'oHFJy',
     ],
     tier: 11,
-    image: 'https://i.imgur.com/AgoOW0fl.png',
+    image: 'https://images2.imgbox.com/88/90/rsGqoFES_o.png',
     cost: 0,
     costT: 2,
     discount: 220,
