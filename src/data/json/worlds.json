@@ -3003,6 +3003,24 @@
     "uid": "9NLvW"
   },
   {
+    "worldName": "Asura's Wrath",
+    "rating": 10,
+    "image": "https://i.imgur.com/mR4Xj9c.jpeg",
+    "condition": [
+      {
+        "rating": 9,
+        "name": "Era of Emperor Strada",
+        "official": true
+      },
+      {
+        "name": "Era of the Seven Deities",
+        "rating": 10,
+        "official": true
+      }
+    ],
+    "uid": "raYGfx"
+  },
+  {
     "rating": 10,
     "q": true,
     "worldName": "Gurren Lagann",
