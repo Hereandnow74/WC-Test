@@ -312,7 +312,7 @@ export const waifu_perks: WaifuPerk[] = [
       6027,
     ],
     tier: 6,
-    image: 'https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/wan__sample_9cdccef6679f0c34b6decd492ec832f8.jpg',
+    image: 'https://images2.imgbox.com/2d/18/IZMi0e9I_o.png',
     cost: 48,
     desc: 'Nadeko has joined with the Kuchinawa of her delusions to become a snake goddess herself, freeing herself of her emotional burdens and allowing her true nature as a yandere to shine forth. If Nadeko is captured between the events of Nadeko Medusa and the finale of Hitagi End, she will always have this perk',
   },
