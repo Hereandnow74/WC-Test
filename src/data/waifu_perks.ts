@@ -1058,6 +1058,37 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Mei is now in full control of her powers as the Herrscher of Thunder, including the service of ELF Bella and the red dragon Kurikara as her personal familiars. Gathering additional Herrscher cores, as Sirin did during the Second Honkai War, will increase her tier further. Mei will always have this perk if captured during the main story, after her return to Nagazora (Chapter 17). This perk is not mutually exclusive with Captain Mei.',
   },
   {
+    uid: 'jhiZF',
+    title: 'Captain Mei',
+    waifu: [
+      'Raiden Mei (Lightning Empress)',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
+      'jhiHF',
+    ],
+    tier: 0,
+    image: 'https://images2.imgbox.com/22/1f/OZ6bA9Tl_o.png',
+    cost: 20,
+    desc: 'Mei is instead the veteran captain of the reformed Schiksal from A Post-Honkai Odyssey. Buying this perk for an existing Mei will give her new skills, memories, and gear from the decade or so between the end of the main story and APHO. This perk is not mutually exclusive with Mei’s Herrscher perks and does not raise her tier rating.',
+  },
+  {
+    uid: 'jhiZC',
+    title: 'Ascendance of Origin',
+    waifu: [
+      'Raiden Mei (Herrscher of Thunder)',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
+      2371982,
+      'jhiZF',
+    ],
+    tier: 9,
+    image: 'https://images2.imgbox.com/43/e7/BCVx1TNd_o.png',
+    cost: 300,
+    desc: 'Mei has accepted both sides of herself - her kind normal self and the partially-awakened stigma that she shunted her negativity into - and inherited Elysia’s will in the Land of Origin to become the new Herrscher of Origin. Mei will always have this perk if captured after her canonical ascension in chapter 34.',
+  },
+  {
     uid: 'JDJfo',
     title: 'Herrscher of Reason',
     waifu: [
