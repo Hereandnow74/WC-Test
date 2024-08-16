@@ -14,7 +14,7 @@ ridePerksFull.push({
   category: 'RidePerk',
   image: 'https://i.ibb.co/F3vk1fs/Catch-ARide-Crew-Training-Program.jpg',
   cost: 5,
-  requires: 'at least one registered vehicle',
+  requires: 'At least one registered vehicle',
   flag: 'hasARide',
   desc: `
 <p>We at the company fully realize that, in some cases, you and your waifus may lack the necessary skills needed to properly operate or maintain your chosen ride, which would make using them impractical at best and impossible at worst. To rectify that, for a small fee you can opt to have your newly purchased waifus undergo a 24 hour training course, during which all the skills needed to properly operate, repair, and maintain all your registered rides will be downloaded into their brains. Delivery of waifus will be delayed until completion of the course. For rides that are unusable without a particular genetic key, such as the Lantean City-ship, that key will be spliced into your crew and treated the same as any other skill.</p>
