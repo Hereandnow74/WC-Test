@@ -1119,6 +1119,20 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Bronya has absorbed the other 300,000 souls that make up the Herrscher of Reason, metamorphosing her power into the Herrscher of Truth. In Extremum form, Bronya fights with a spear and uses her Authority to conjure flying drones. In Continuation form, she assembles a mech suit around herself for extreme firepower. Bronya will always have this perk if captured after the events of New Atra and the Final Crater (Chapter 31).',
   },
   {
+    uid: 'LogLf',
+    title: 'Silverwing N-EX',
+    waifu: [
+      'Bronya Zaychik',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
+      7262,
+    ],
+    image: 'https://images2.imgbox.com/be/b8/nukXwZNf_o.png',
+    cost: 20,
+    desc: 'Bronya is instead her adult self, the veteran captain of the reformed Schicksal (and game developer) from A Post-Honkai Odyssey. Buying this perk for an existing Bronya will give her new skills, memories, and gear from the decade or so between the end of the main story and APHO. This perk is not mutually exclusive with Herrscher of Reason and does not raise Bronya’s tier rating.',
+  },
+  {
     uid: 'qUDIq',
     title: 'Twilight Paladin',
     waifu: [
@@ -1132,6 +1146,36 @@ export const waifu_perks: WaifuPerk[] = [
     image: '/img/waifu_perks/compressed/image255.png',
     cost: 50,
     desc: 'The limiters built into Theresa during her creation are released, allowing her to access her full power as a clone of Kallen Kaslana. This perk represents the Godslayer-type battlesuit, Twilight Paladin. Theresa will always have this perk if captured after the events of chapter 12.',
+  },
+  {
+    uid: 'oLu1E',
+    title: 'HUA: Wings of Origin',
+    waifu: [
+      'Fu Hua',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
+      7263,
+    ],
+    tier: 8,
+    image: 'https://i.imgur.com/0mSiLygl.png',
+    cost: 150,
+    desc: 'Fu Hua gets access to all her memories of the past without any negative effects or periodic cleaning with Fenghuang Down, as well as the physicals of her time as a MANTIS Flame Chaser and the Book of Fuxi as a familiar. Fu Hua will always have this perk if captured during the Previous Era or medieval Shenzhou. She will not have the battlesuits Phoenix or Azure Empyrea without this perk.',
+  },
+  {
+    uid: 'oLu1Z',
+    title: 'Fenghuang of Vicissitude',
+    waifu: [
+      'Fu Hua (Wings of Origin)',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
+      'oLu1E',
+    ],
+    tier: 9,
+    image: 'https://images2.imgbox.com/0c/d3/3ME85dqa_o.png',
+    cost: 300,
+    desc: 'Fu Hua now has full control of her Active Honkai Reaction, the expression of the Garuda beast used for her MANTIS surgery. She will always have this perk if captured after the events in Phosphorus and Hesperus (Chapters 40-42).',
   },
   // {
   //   uid: 'NCt8k',
@@ -1191,35 +1235,6 @@ export const waifu_perks: WaifuPerk[] = [
   //   cost: 100,
   //   desc: 'While Bronya did not exist in the Previous Era, the Super Al known as Prometheus bears a stunning resemblance to the girl. As such the Company has deemed the similarity sufficient enough to model Prometheus in this way. This perk greatly increases Bronya\u2019s computing ability and Haxxor Bunny\'s own skill (if that perk is also applied).',
   // },
-  {
-    uid: 'oLu1E',
-    title: 'HUA: Wings of Origin',
-    waifu: [
-      'Fu Hua',
-    ],
-    from: 'Honkai Impact',
-    waifuUID: [
-      7263,
-    ],
-    tier: 8,
-    image: 'https://i.imgur.com/0mSiLygl.png',
-    cost: 150,
-    desc: 'Fu Hua gets access to all her memories of the past without any negative effects or periodic cleaning with Fenghuang Down, as well as the physicals of her time as a MANTIS Flame Chaser and the Book of Fuxi as a familiar. Fu Hua will always have this perk if captured during the Previous Era or medieval Shenzhou. She will not have the battlesuits Phoenix or Azure Empyrea without this perk.',
-  },
-  {
-    uid: 'LogLf',
-    title: 'Silverwing N-EX',
-    waifu: [
-      'Bronya Zaychik',
-    ],
-    from: 'Honkai Impact',
-    waifuUID: [
-      7262,
-    ],
-    image: 'https://images2.imgbox.com/be/b8/nukXwZNf_o.png',
-    cost: 20,
-    desc: 'Bronya is instead her adult self, the veteran captain of the reformed Schicksal (and game developer) from A Post-Honkai Odyssey. Buying this perk for an existing Bronya will give her new skills, memories, and gear from the decade or so between the end of the main story and APHO. This perk is not mutually exclusive with Herrscher of Reason and does not raise Bronya’s tier rating.',
-  },
   // {
   //   uid: 'iCn3S',
   //   title: 'Herrscher of Sentience',
