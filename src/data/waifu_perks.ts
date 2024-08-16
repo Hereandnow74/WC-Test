@@ -1500,8 +1500,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 8,
     image: 'https://images2.imgbox.com/07/33/PGCTB3qU_o.png',
     cost: 100,
-    desc: `Griseo has returned from space as a grown woman, having developed her color empathy into a fully-usable form, absorbed most of what MEI, Mobius, and Vill-V’s manuals could teach her about engineering, and also learned the art of the blade from a few strange planets full of civilized Honkai beasts. Griseo will always have this perk if captured after her awakening in Phosphorus and Hesperus (Chapter 41).
-    <p>If this perk is applied to a Griseo who was captured directly from the Elysian Realm, she will also receive a full upload of the memories and personality development of her original physical self up to the end of the Phosphorus arc (Chapter 42).</p>`,
+    desc: 'Griseo has returned from space as a grown woman, having developed her color empathy into a fully-usable form, absorbed most of what MEI, Mobius, and Vill-V’s manuals could teach her about engineering, and also learned the art of the blade from a few strange planets full of civilized Honkai beasts. Griseo will always have this perk if captured after her awakening in Phosphorus and Hesperus (Chapter 41). If this perk is applied to a Griseo who was captured directly from the Elysian Realm, she will also receive a full upload of the memories and personality development of her original physical self up to the end of the Phosphorus arc (Chapter 42).',
   },
   {
     uid: '1xKBt',
