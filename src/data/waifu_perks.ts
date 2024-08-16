@@ -1485,8 +1485,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 0,
     image: 'https://images2.imgbox.com/5f/f4/RN2fbq9L_o.png',
     cost: 20,
-    desc: `Theresa’s experiences in Yae Sakura’s stigma space have turned her… foxy. “Magical Girl TeriTeri” can now switch to her Sakuno Rondo battlesuit, an emulation of Yae Sakura’s appearance and many of her abilities. Theresa will always have this perk if captured after the events of Sakura Samsara. This perk does not raise Theresa’s tier rating and is not mutually exclusive with Twilight Paladin.
-    <p>The TeRiRi of the magical girl universe where the Captain of Hyperion met and recruited Sirin (Miracle Magical Girl) is visually identical to Sakuno Rondo but otherwise unrelated.</p>`,
+    desc: 'Theresa’s experiences in Yae Sakura’s stigma space have turned her… foxy. “Magical Girl TeriTeri” can now switch to her Sakuno Rondo battlesuit, an emulation of Yae Sakura’s appearance and many of her abilities. Theresa will always have this perk if captured after the events of Sakura Samsara. This perk does not raise Theresa’s tier rating and is not mutually exclusive with Twilight Paladin. The TeRiRi of the magical girl universe where the Captain of Hyperion met and recruited Sirin (Miracle Magical Girl) is visually identical to Sakuno Rondo but otherwise unrelated.',
   },
   {
     uid: 'sHVbz',
