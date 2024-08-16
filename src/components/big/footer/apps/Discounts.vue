@@ -1,11 +1,11 @@
 <template>
   <div class="p-2 flex flex-col gap-2 h-full">
     <p class="border border-gray-600 rounded p-1">
-      Listed Discounts applied <b>automatically</b>, this app only show them for you to know which ones got applied.
+      Listed Discounts are applied <b>automatically</b>, this app only shows them for you to know which ones got applied.
     </p>
     <div class="flex flex-col gap-2">
       <div>
-        {{ maxHeritageDiscount.archetype }} heritage max discount:
+        {{ maxHeritageDiscount.archetype }} Heritage max discount:
         <span class="text-amber-500 text-lg">{{ maxHeritageDiscount.value }}</span> used:
         <span class="text-green-500 text-lg">{{ usedHeritageDiscount }}</span>
       </div>
