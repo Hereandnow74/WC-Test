@@ -86,22 +86,6 @@
     "uid": "ahrSGd"
   },
   {
-    "worldName": "Golarion/Pathfinder",
-    "rating": 9,
-    "condition": [
-      {
-        "name": "Kingmaker",
-        "rating": 9
-      },
-      {
-        "name": "Wrath of the Righteous",
-        "rating": 10
-      }
-    ],
-    "image": "https://i.ytimg.com/vi/ESoB9KD3yKg/maxresdefault.jpg",
-    "uid": "HVlmdR"
-  },
-  {
     "worldName": "Horizon: Zero Dawn",
     "rating": 5,
     "condition": [
@@ -245,7 +229,15 @@
     "rating": 9,
     "condition": [
       {
+        "name": "Kingmaker",
+        "rating": 9
+      },
+      {
         "name": "Planar Crisis",
+        "rating": 10
+      },
+      {
+        "name": "Wrath of the Righteous",
         "rating": 10
       }
     ],
@@ -4170,12 +4162,6 @@
     "uid": "lFujXE"
   },
   {
-    "worldName": "Planescape",
-    "rating": 9,
-    "image": "https://cdn.imgchest.com/files/k46aca5mlo7.png",
-    "uid": "WvdSxT"
-  },
-  {
     "worldName": "Ragnarok - The Animation",
     "rating": 5,
     "image": "https://cdn.imgchest.com/files/pyvdcbe2x9y.png",
@@ -6567,6 +6553,10 @@
       },
       {
         "name": "Dark Sun",
+        "rating": 9
+      },
+      {
+        "name": "Planescape",
         "rating": 9
       }
     ]
