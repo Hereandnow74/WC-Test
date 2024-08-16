@@ -977,13 +977,7 @@ DLCridePerks.push({
   category: 'RidePerk',
   image: 'https://i.ibb.co/VH89J0p/Catch-ARide-Custom-Crew.jpg',
   cost: 20,
-  desc: `
-  <p>Maybe you want your ship's crew to be less... uhm... biological in their nature. Or maybe you want a crew of demi-humans. Or crew of monster-girls.</p>
-  <p>This purchase will allow us to please your tastes.</p>
-  <p>Instead of a team of clones, the crew of your ship will be customized up to your tastes.</p>
-  <p>And accordingly, instead of a clone production facility, we will provide you with an automatic mini-factory for the production of AI-powered machines, summoning room for extra-dimensional creatures, or incubators for exotic organisms.</p>
-  <p>Just make a choice.</p>
-  `,
+  desc: 'Maybe you want your ship\'s crew to be less biological in their nature. Or maybe you want a crew of demi-humans. Or a crew of pretty monster-girls. With the purchase of this perk, instead of a team of clones, the crew of your ship will be customized to your tastes. And accordingly, instead of a clone production facility, we will provide you with an automatic mini-factory for the production of AI-powered machines, summoning room for extra-dimensional creatures, or incubators for exotic organisms.',
   whitelist: ['Catch-A-Ride Crew Production Program'],
 })
 
@@ -994,11 +988,7 @@ DLCridePerks.push({
   title: 'Catch-A-Ride Crew Tier Upgrade',
   category: 'RidePerk',
   cost: 40,
-  desc: `
-  <p>Perhaps you are not satisfied with the current power level of your crew.</p>
-  <p>This purchase will let you fix that.</p>
-  <p>One purchase and under your command now a crew equal to the T3 companions</p>
-  `,
+  desc: 'If you are not satisfied with the current power level and competency of your crew, that can be fixed. The purchase of this perk will elevate the baseline level of your crew to be the equalivalent of T3 companions.',
   whitelist: ['Catch-A-Ride Crew Production Program'],
 })
 
