@@ -1634,12 +1634,12 @@
     "worldName": "Borderlands",
     "condition": [
       {
-        "name": "Pandora (no active Vault)",
+        "name": "Vault currently closed",
         "rating": 6,
         "official": true
       },
       {
-        "name": "Pandora (active Vault)",
+        "name": "Vault currently open",
         "rating": 7,
         "official": true
       }
