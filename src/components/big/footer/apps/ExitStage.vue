@@ -5,7 +5,7 @@
         Main
       </div>
       <div border="t l r gray-500" class="rounded-t px-1 cursor-pointer hover:text-green-500" @click="tabIndex = 1">
-        Jump log
+        Jump Log
       </div>
     </div>
     <div v-if="tabIndex === 0 && findIndex(miscPerks, {title: 'Exit Stage Left'}) != -1" class="min-h-0 overflow-y-auto scrollbar pb-2">
@@ -14,7 +14,7 @@
       >
         <template v-if="progress < 100">
           <EditableProgressbar v-model="progress" />
-          <Button class="self-center px-2" size="Small" label="fill" bg-color="bg-teal-600" @click="progress = 100" />
+          <Button class="self-center px-2" size="Small" label="Fill to 100%" bg-color="bg-teal-600" @click="progress = 100" />
         </template>
         <div v-else class="flex flex-col gap-2">
           <div class="flex justify-center gap-2">
@@ -66,7 +66,7 @@
         <MiniWorldCard v-for="world in jumpChain" :key="world.worldName" :world="world" />
       </div>
     </div>
-    <Desc v-if="findIndex(miscPerks, {title: 'Exit Stage Left'}) === -1" :desc="`You don't have access to this app, you need to buy Exit Stage Left first`" />
+    <Desc v-if="findIndex(miscPerks, {title: 'Exit Stage Left'}) === -1" :desc="`You don\'t have access to this app, you need to buy Exit Stage Left first.`" />
     <div class="flex gap-2">
       <Button
         v-if="tabIndex === 1"
@@ -162,7 +162,7 @@ async function chooseWorld(world: World, i: number) {
 }
 
 async function clearJumpLog() {
-  if (!(await confirmDialog('If you clear the jump log credits lost due to Loan rules will not be refunded, continue?'))) return
+  if (!(await confirmDialog('If you clear the jump log, credits lost due to Loan rules will not be refunded. Continue?'))) return
   const saveWorld = { worldName: startingWorld.value.worldName, rating: startingWorld.value.rating }
   if (startingWorld.value.condition) saveWorld.condition = startingWorld.value.condition
   currentWorld.value = saveWorld
@@ -179,7 +179,7 @@ function jumpToManual() {
 }
 
 async function reroll() {
-  if (await confirmDialog('You can\'t reroll by the catalog rules, this function was created for your convenience in the case when you don\'t know any of the suggested worlds.'))
+  if (await confirmDialog('You can\'t reroll by catalog rules, with this function being created for your convenience in case you don\'t know any of the suggested worlds. Continue?'))
     rdnWorld.value = randomWorld(currentWorld.value.rating, minus.value, plus.value, numberOfChoices.value, jumpChain.value)
 }
 </script>
