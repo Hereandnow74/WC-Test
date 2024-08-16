@@ -242,7 +242,7 @@ talents.push({
   image: 'https://images2.imgbox.com/fa/e7/zYsq4729_o.jpeg',
   cost: 140,
   whitelist: ['Everlasting Talent', 'Drain Defense (2x)'],
-  desc: 'You will never run out of inner mystical energies - vital, magical, psychic, or soul power - to fuel your abilities with. This perk does not help you use an ability that requires more energy than your reserve - that can be developed over time with training and Soul Talent - but any abilities below that threshold can be used freely. The benefits of this perk will automatically be shared with any of your subjects who are soul-bound to you, whether they’re connected by Conjunction, a familiar bond, or some other means. If you have Evolutionary Engine Array, the engines’ effective output and storage capacities will be doubled.',
+  desc: 'You will never run out of inner mystical energies - vital, magical, psychic, or soul power - to fuel your abilities with. This perk does not help you use an ability that requires more energy than your reserve - that can be developed over time with training and Soul Talent - but any abilities below that threshold can be used freely. The benefits of this perk will automatically be shared with any of your subjects who are soul-bound to you, whether they’re connected by Conjunction, Art of Sympathies, a familiar bond, or some other means. If you have Evolutionary Engine Array, the engines’ effective output and storage capacities will be doubled.',
 })
 
 talents.push({
@@ -275,7 +275,7 @@ talents.push({
 <p>Sometimes you just want to copy a powerset, either a generic one or a specific character’s. This perk lets you do just that. The target ability must be copper-, silver-, or gold-star in tier; the use of this perk on blue-star abilities produces incoherent results. Imaginary Tier abilities, abilities that originated in other CYOAs, and abilities found elsewhere in this catalog, including the loadouts of other contractors, are not eligible. The exact capabilities at the time of purchase will be scaled down to Tier 4.</p>
 <p>This perk is not necessary for any abilities that your subjects might grant you via surgery, ritual, or other means. Templates for characters who are only purchasable in sets must be bought separately. Templates for alternative versions of the same character must also be bought separately, unless otherwise specified. Characters who are represented as Specific Waifu Perks may be purchased as templates for individuals who are not eligible for the actual perks, whether natively or with Power Swap, and follow any mutual exclusivity rules stated in the perk descriptions.</p>
 <p>All templates come with a skill framework, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological abilities as well. Iconic equipment is included with this perk, but may see its parameters and functionality locked until you’re capable of using it safely or have trained enough with the more basic features.</p>
-<p>After the skill framework runs out and you’ve achieved the typical heights of the template, the appropriate Basic Talent will let you continue to train beyond that point, as described in the opening of that section. Any familiars that would normally come with a template (i.e. are included with a purchase or Power Swap) must be purchased, captured or otherwise spawned separately.</p>
+<p>After the skill framework runs out and you’ve achieved the typical heights of the template, the appropriate Talent will let you continue to train beyond that point, as described in the opening of that section. Any personal familiars that would normally come with a template (i.e. are included with a purchase or Power Swap) must be purchased, captured or otherwise spawned separately.</p>
 <p>For racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.), unlike Advanced Runes: Body, a living, natural example of that template is not required for your selection with this perk. Racial templates otherwise follow the same rules as in that perk.</p>
 <p>Other powers that are only available to those who were born with them, such as hereditary magic systems, may be acquired through this perk at any time, just as with Added Potential.</p>
 <p>Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, can be unique to you or copied from a specific character. You may not use company means to acquire more than one of each type of ability at a time.</p>`,
@@ -681,7 +681,7 @@ perks.push({
   image: 'https://i.ibb.co/2jSnGdg/Target-Tracker.jpg',
   cost: 10,
   whitelist: ['Mapper'],
-  desc: 'This app adds the ability to track any mobile target you take a picture of, whether it’s a person, a vehicle, or anything else capable of moving under its own power, appearing as a stylized but recognizable icon of the tracked target. Basic status information will also be displayed if you tap on the icon. You can hide specific icons and cancel tracking of a target at any time. You will need to take a new picture of a target once you cancel tracking if you want to resume. “Missing” familiars of retinue members you’ve captured, who didn’t have their familiars yet when you did so, will automatically be entered into this tracker.',
+  desc: 'This app adds the ability to track any mobile target you take a picture of, whether it’s a person, a vehicle, or anything else capable of moving under its own power, appearing as a stylized but recognizable icon of the tracked target. Basic status information will also be displayed if you tap on the icon. You can hide specific icons and cancel tracking of a target at any time. You will need to take a new picture of a target once you cancel tracking if you want to resume. “Missing” personal familiars of retinue members you’ve captured, who didn’t have their familiars yet when you did so, will automatically be entered into this tracker.',
 })
 
 perks.push({
@@ -691,7 +691,7 @@ perks.push({
   image: 'https://i.ibb.co/41KHd9r/Bounty-Tracker.jpg',
   cost: 50,
   whitelist: ['Target Tracker'],
-  desc: 'This app integrates the catalog bounties with the map. Any bounty targets listed in the catalog for the current world can be added as tracked targets. Additionally, for any captures that you acquired “early,” the familiars and standard equipment that they would have if you had purchased them will automatically appear in this app, with different markers than the ones used for new bounties.',
+  desc: 'This app integrates the catalog bounties with the map. Any bounty targets listed in the catalog for the current world can be added as tracked targets. Additionally, for any captures that you acquired “early,” the personal familiars and standard equipment that they would have if you had purchased them will automatically appear in this app, with different markers than the ones used for new bounties.',
 })
 
 // Travel Perks
@@ -768,7 +768,7 @@ perks.push({
   cost: 0,
   costT: 2,
   desc: `
-<p>Run the <a href="https://imgur.com/gallery/dUkFmZF" target="_blank" rel="noopener noreferrer" class="text-red-500 hover:underline"> Built in the Heavens CYOA</a>, (<a href="https://built-in-the-heavens.neocities.org/"  target="_blank" rel="noopener noreferrer" class="text-red-500 hover:underline">Interactive version</a>), ignoring the origins choice and all personal perks. The only allowed complications are the ones that grant followers. These followers will count as their original inspirations: Broken Toy (YorHa A2), Jewelled Collar (Starfire and Blackfire), All According to Plan (Taldeer), Yan Yan Dere Dere (Just Monika), Forgotten and Lost (Dragon from Worm, in the body of Cibo from Blame!) or A Loyal Vizier (Caster Tamamo-no-Mae). From Heights Brought Low (Shub-Niggurath) must be purchased separately. These followers cannot be refunded for credits, so you should only take the ones you want. Otherwise, follow its rules as written.</p>
+<p>Run the <a href="https://imgur.com/gallery/dUkFmZF" target="_blank" rel="noopener noreferrer" class="text-red-500 hover:underline"> Built in the Heavens CYOA</a>, (<a href="https://built-in-the-heavens.neocities.org/"  target="_blank" rel="noopener noreferrer" class="text-red-500 hover:underline">Interactive version</a>), ignoring the origins choice and all personal perks. The only allowed complications are the ones that grant followers. These followers will count as their original inspirations: Broken Toy (YorHa A2), Jewelled Collar (Starfire and Blackfire), All According to Plan (Taldeer), Forgotten and Lost (Dragon from Worm, in the body of Cibo from Blame!) or A Loyal Vizier (Caster Tamamo-no-Mae). Yan Yan Dere Dere (Just Monika) and From Heights Brought Low (Shub-Niggurath) must be purchased separately. These followers cannot be refunded for credits, so you should only take the ones you want. Otherwise, follow its rules as written.</p>
 <p>You will start aboard your ship, in the same star system as your starting world, unless you also purchased Life’s A Beach. Your ship's AI counts as a purchased waifu of Tier 6. Alternatively, you may plug one of your purchased or captured waifus into your ship to make her a pseudo-AI or shipgirl and take a 50-credit toward future purchases, you monster. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet.</p>
 <p>In addition to the ship’s Imaginary Tier-granted multiversal capability, if you have a subject capable of time-travel, they'll be able to channel their power through your ship so it can make such journeys too, even if you keep the Heavenbuilt AI as a separate subject.</p>
 `,
@@ -893,7 +893,7 @@ genericPerks.push({
   complex: 'flavor',
   image: 'https://images2.imgbox.com/bb/99/VjEw3SDu_o.png',
   cost: 1,
-  desc: 'You may find yourself adopting a kid - and not just because you killed one parent and captured the other into your retinue. Under normal circumstances, that kid will forever be your familiar, never equal to your true-blooded offspring. This perk will tell our systems to treat them as your descendants and follow the relevant Offspring rules instead.',
+  desc: 'You may find yourself adopting a kid - and not just because you killed one parent and captured the other into your retinue. Under normal circumstances, that kid will forever be your Follower, never equal to your true-blooded offspring. This perk will tell our systems to treat them as your descendants and follow the relevant Offspring rules instead.',
 })
 
 genericPerks.push({

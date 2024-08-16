@@ -14,7 +14,7 @@ export const startingWorld = `<h4 class="font-bold text-xl pt-4 pb-2">Your Start
 export const startingBudget = `
 <h4 class="font-bold text-xl pt-4 pb-2">Your Starting Budget</h4>
 <p>Now that you know your Intensity and the DR of your starting world, you can match the two on the chart below to find your starting budget. This budget is only granted once. Traveling to a new world, region, or time period will not grant you additional credits, not even the difference between the lower DR and the higher. The following chart shows the budget for each DR at each of the major Intensity intervals.</p>
-<p>Now that you know your budget, pick your Origin, one Binding-type control, and as many of the Lures, Other Controls, Perks, Companions, and Fаmiliars as you desire or can afford.</p>`
+<p>Now that you know your budget, pick your Origin, one Binding-type control, and as many of the Lures, Other Controls, Perks, Companions, and Followers as you desire or can afford.</p>`
 
 export const intensityTableTitles = ['Intensity', 'DR 1', 'DR 2', 'DR 3', 'DR 4', 'DR 5', 'DR 6', 'DR 7', 'DR 8', 'DR 9', 'DR 10']
 export const intensityTable = [
@@ -41,18 +41,21 @@ export const yourDevice = `
 
 export const glossary = `
 <h3 class="font-bold underline text-lg text-center">Glossary</h3>
-<div><b>Contractor</b>: You.</div>
-<div><b>Retainers, Subjects</b>: Any living thing you own.</div>
-<div><b>Companions</b>: Your waifus and/or husbandos, i.e. subjects that you intend to have intimate relations with.</div>
-<div><b>Fаmiliars</b>: Any subject that is not a companion..</div>
-<div><b>Retinue</b>: The group of you and all subjects.</div>
+<div><b>Contractor:</b> You.</div>
+<div><b>Retainers or Subjects:</b> Any living thing you own.</div>
+<div><b>Companions:</b> Your waifus and/or husbandos, i.e. subjects that you intend to have intimate relations with.</div>
+<div><b>Followers:</b> Any subject that is not a companion.</div>
+<div><b>Fаmiliars:</b> Typically non-humanoid, personal pets of your own or your subjects.</div>
+<div><b>Retinue:</b> The group of you and all subjects, including Familiars.</div>
+<div><b>Chargen:</b> Character Generation, your starting build.</div>
+<div><b>Dominion:</b> Any company-provided space, whether it comes from a Heritage, Catch-A-Ride, Strongholds & Sanctuaries, or some other source.</div>
 `
 
 export const captures = `<h3 class="font-bold text-xl pt-4 pb-2">Captures</h3>
 <p>Additional companions may be acquired by “capturing” them in their homeworlds. This is typically achieved by using a Binding or certain Other Controls, or when a target gives you a sincere love confession - usually romantic, but false positives occasionally happen and trigger a capture that isn’t entirely merited. This love may be assisted by any means, including the use of Lure-type controls or third-party mind control.</p>
 <p>Confessions must either be delivered in-person or by a two-way live feed of any sort. The target does not need to be aware that you received their confession at the time it was given, but a target with full awareness of their surroundings should be reasonably expected to know that you could. The exact wording of any confession varies greatly with the target’s personality and cultural context.</p>
 <p>When you capture a Tier 1-10 target, we’ll pay you a certain fraction of their purchase price of their effective tier at step 1a, rising with your Intensity and then rounded down to the next full credit. If, due to your retinue’s actions, their effective tier at step 3 is less than step 1a, we’ll use that value instead. Capture credits are not granted for local versions of targets that you’ve purchased or alternate versions that you’ve already captured once, unless they’re a unique entry in the lists proper or as a waifu perk. If a target is only listed as part of a group entry, you will only get the credits after capturing every member of the group.</p>
-<p>If you capture a character “early,” before they’ve achieved the potential reflected in the version available for purchase, you will still receive their full capture value. As compensation for the subject’s relative weakness, we at the company will download the missing abilities and a framework for the missing skills into your capture target at no charge. This framework will also guide the capture to any missing equipment or fаmiliars, but you must hunt those down, and provide the subject with the training needed to master their new power, on your own time.</p>
+<p>If you capture a character “early,” before they’ve achieved the potential reflected in the version available for purchase, you will still receive their full capture value. As compensation for the subject’s relative weakness, we at the company will download the missing abilities and a framework for the missing skills into your capture target at no charge. This framework will also guide the capture to any missing equipment or personal familiars, but you must hunt those down, and provide the subject with the training needed to master their new power, on your own time.</p>
 `
 
 export const captureExtra = `<h3 class="font-bold text-xl pt-4 pb-2">Capturing Eхtras</h3>
@@ -80,9 +83,10 @@ export const effectiveTiers = `<h3 class="font-bold">Effective Tiers</h3>
   </ul>
   <p>Many individuals’ powers rely on henshin devices, personal familiars, or special equipment that they can be easily separated from and reduced to, usually, only T1-T3. These items are accounted for in their listed tiers, but not included in their effective tier calculations until step 3.</p>`
 
-export const familiars = `<h3 class="font-bold text-xl pt-4 pb-2">Fаmiliars</h3>
-<p>Broadly speaking, a fаmiliar is any individual in your retinue that isn’t a member of your harem proper. This can include beloved pets, support staff, adopted children, people important to your harem that you aren’t interested in maintaining an emotional and sexual relationship with, or more traditional magical beasts such as Pokémon or magical girl mascots. Many purchasable companions are packaged with their fаmiliars and specified as such in the setting-specific rules; this is by no means a comprehensive list. Some fаmiliars named in the setting-specific rules are also present in the catalog listing as companions. If you capture a fаmiliar’s master first, you’ll get the fаmiliar too and receive the full value for both. Much like with humanoid captures, only the first copy of any type of generic magical or other beast is worth capture or sale credits.</p>
-<p>Fаmiliars can be captured using local fаmiliar bonding methods, such as rituals or Pokéballs, or Binding or Other controls like anyone else, and are not subject to the romantic or sexual interest that your Bindings instill in your companions. If a humanoid fаmiliar is bound to you by local methods, they will count as captured for all purposes. No special methods are needed to distinguish a companion binding from a fаmiliar binding; intent is enough. Companion and Fаmiliar statuses are not permanent and may be changed in the app at any time. This change will always be intentional.</p>
+export const familiars = `<h3 class="font-bold text-xl pt-4 pb-2">Followers and Fаmiliars</h3>
+<p>Broadly speaking, a Follower is any individual in your retinue that isn’t a member of your harem proper. This can include beloved pets, support staff, adopted children, people important to your harem that you aren’t interested in maintaining an emotional and sexual relationship with, or more traditional magical beasts such as Pokémon or magical girl mascots.</p>
+<p>Many purchasable companions are packaged with their personal familiars and specified as such in the setting-specific rules; this is by no means a comprehensive list. Some personal familiars named in the setting-specific rules are also present in the catalog listing as companions. If you capture a familiar’s master first, you’ll get the familiar too and receive the full value for both. Much like with humanoid captures, only the first copy of any type of generic magical or other beast is worth capture or sale credits.</p>
+<p>Followers and Familiars can be captured using local familiar bonding methods, such as rituals or Pokéballs, or Binding or Other controls like anyone else, and are not subject to the romantic or sexual interest that your Bindings instill in your companions. If a Follower or Familiar is bound to you by local methods, they will count as captured for all purposes. No special methods are needed to distinguish a companion binding from a Follower binding; intent is enough. Companion and Follower statuses are not permanent and may be changed in the app at any time. This change will always be intentional.</p>
 `
 
 export const device = `<h3 class="font-bold text-xl pt-4 pb-2">Your Contractor Smart Device</h3>
@@ -92,7 +96,7 @@ export const device = `<h3 class="font-bold text-xl pt-4 pb-2">Your Contractor S
 `
 
 export const purchases = `<h3 class="font-bold text-xl pt-4 pb-2">Extending Your Build: Purchases</h3>
-<p>The company’s Companions and Fаmiliars are all clones manufactured on demand, except where noted. They come packaged with their iconic outfits, personal equipment, and fаmiliars or treasured pets, when appropriate. The largest equipment normally allowed are motorcycles, but there are some rare exceptions. For your own ease of accounting, you may only purchase one copy of any distinct entry at a time.</p>
+<p>The company’s Companions and Followers are all clones manufactured on demand, except where noted. They come packaged with their iconic outfits, personal equipment, and familiars or treasured pets, when appropriate. The largest equipment normally allowed are motorcycles, but there are some rare exceptions. For your own ease of accounting, you may only purchase one copy of any distinct entry at a time.</p>
 <p>Most companions are sorted into ten tiers, each of which has a different cost</p>
 <p>All purchase prices are rounded up. Some Controls and Heritage perks include free copies of lesser perks, primarily Basic Talents and Defenses. These can ignore the normal prerequisites. If you’ve already purchased a perk before getting a free copy, you may take a discount on the new purchase equal to the free perk’s value. The total of all discounts applied to a single perk, unless it’s a Talent or Defense, is capped at -80% of the list price.</p>
 <p>No powers found in this catalog will directly impact a Contractor’s own mind without an explicit warning otherwise (such as in Memoria). The company is not responsible for any power’s indirect effects on a Contractor’s decision-making.</p>
@@ -102,7 +106,7 @@ If they have powers that rely on a background magical field, the connection to y
 `
 
 export const sales = `<h3 class="font-bold text-xl pt-4 pb-2">Extending Your Build: Sales</h3>
-<p>If you only wanted a capture for their credit value, you may ship them to us at the company. We’ll pay you a certain fraction of the purchase price of their effective tier at step 3, rising with your Intensity and then rounded down to the next full credit. This applies regardless of whether step 1a or step 3 has the higher value. Humanoid fаmiliars gained for free from an Origin choice will not count for capture credits, but may still be sold at the normal rate. As with captures, payouts for sales are not granted for local versions of targets that you’ve purchased or alternate versions that you’ve already sold once, unless they’re a unique entry in the lists proper or as a waifu perk. Extras have no additional sale value.</p>
+<p>If you only wanted a capture for their credit value, you may ship them to us at the company. We’ll pay you a certain fraction of the purchase price of their effective tier at step 3, rising with your Intensity and then rounded down to the next full credit. This applies regardless of whether step 1a or step 3 has the higher value. Personal familiars gained for free from an Origin choice will not count for capture credits, but may still be sold at the normal rate. As with captures, payouts for sales are not granted for local versions of targets that you’ve purchased or alternate versions that you’ve already sold once, unless they’re a unique entry in the lists proper or as a waifu perk. Extras have no additional sale value.</p>
 <p>Selling a subject only takes a single button press in the company app on your smart device. We’ll reprocess the captures and send them where they need to go. Otherwise, captures are yours to keep.</p>
 `
 
@@ -216,7 +220,7 @@ export const pvpRules = `
   `
 
 export const services = `<h3 class="font-bold text-xl pt-4 pb-2">Clientele</h3>
-<p>We the company do actually have regular clients. Clients use their own local currency or property to buy clones made from the companions and fаmiliars that Contractors pick up in their operations. These products are stamped with company tattoos keyed to their new owners. A Contractor encountering a Client and their purchase during the course of their operations is rare, but not unheard-of.</p>
+<p>We the company do actually have regular clients. Clients use their own local currency or property to buy clones made from the companions, followers, and familiars that Contractors pick up in their operations. These products are stamped with company tattoos keyed to their new owners. A Contractor encountering a Client and their purchase during the course of their operations is rare, but not unheard-of.</p>
 `
 
 export const salary = `<h3 class="font-bold text-xl pt-4 pb-2">Contractor Salary</h3>
@@ -326,7 +330,7 @@ export const arrangedSpecial = `<h3 class="font-bold text-xl pt-4 pb-2">Special 
 `
 
 export const rip = `<h3 class="font-bold text-xl pt-4 pb-2">R.I.P.</h3>
-<p>In the event of your death, your retinue will have three days (72 hours) to revive you before your account is terminated. During this period, your companions or Executor (if you have Only Familiars or a more restrictive intensity option) will gain the ability to interact with contractor-only functions on your smart device. This includes loans. The shopping app will additionally display a list of all potential subjects who could resurrect you, considering all relevant factors.</p>
+<p>In the event of your death, your retinue will have three days (72 hours) to revive you before your account is terminated. During this period, your companions or Executor (if you have Only Followers or a more restrictive intensity option) will gain the ability to interact with contractor-only functions on your smart device. This includes loans. The shopping app will additionally display a list of all potential subjects who could resurrect you, considering all relevant factors.</p>
 <p>If you have an automatic resurrection system in place at the time of your death, including an ability that automatically resurrects you from the dead or a retinue member with the ability to resurrect you from the dead, then this mode will not trigger until that automatic resurrection method fails. It is possible to rely on third party resurrection methods to delay the activation of this mode, assuming that you know enough about that third party method to reliably plan around it. If your resurrection method fails, then R.I.P. will trigger at that point. The ability for your waifu to buy a resurrection method on the shopping app does not count as an automatic resurrection method.</p>
 <p>If the local world has a “playable” afterlife, that interacts regularly with the mortal and other planes, this ruleset will not trigger until your soul body is destroyed. Additionally, treat your soul body as your regular body for the purposes of Drain and Fatality Defenses.</p>
 <p>When your account is terminated, all of your former subjects will be freed and all perks that rely on our backing deleted. This includes our apps on your Smart Device, any Bindings (including physical aspects of Bindings such as individual Tempest pieces), Lures and Other Controls, your demiplane, Talents, Defenses, and Other Perks. Any retinue member or purchased or registered Catch-a-Ride vehicle that is still inside your former demiplane will be ejected into the last world they, personally, visited, as the pocket dimension ceases to exist. Freed retinue members will retain every ability and benefit up to step 3 on the effective tier calculations.</p>

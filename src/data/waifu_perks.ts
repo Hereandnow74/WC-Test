@@ -222,7 +222,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 5,
     image: 'https://w0.peakpx.com/wallpaper/730/429/HD-wallpaper-teamwork-ghost-in-the-shell-gits-cyborg-guns-sparkle-mecha-future-team-shooting-motoko-tachikoma-machine-sexy-cute-cool-kusanagi-funny-major.jpg',
     cost: 10,
-    desc: 'Motoko now has a Tachikoma tank as an Al familiar. Additional Tachikomas may be produced by a sufficiently-capable Al- and vehicles-engineer. Fuchikomas and Logicomas are also available. This perk may be purchased for any Section 9 operative, not just the Major.',
+    desc: 'Motoko now has a Tachikoma tank as an AI personal familiar. Additional Tachikomas may be produced by a sufficiently capable AI- and vehicular engineer. Fuchikomas and Logicomas are also available. This perk may be purchased multiple times, once for each Section 9 operative in your service, not just the Major.',
   },
   {
     uid: 'VU1cv',
@@ -269,7 +269,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 8,
     image: 'https://i.imgur.com/KVqAymYl.png',
     cost: 190,
-    desc: 'Ranka\'s familiar Ai-kun is actually an infant member of the Vajra, the hostile bug race of her home series. This perk allows a purchased Ranka\'s Ai-kun to mature to adulthood and qualifies Ranka for special Alterzelu Symbiote theming. Captured or Substituted Rankas will earn this perk when Ai-kun fully matures.',
+    desc: 'Ranka’s personal familiar Ai-kun is actually an infant member of the Vajra, the hostile bug race of her home series. This perk allows a purchased Ranka’s Ai-kun to mature to adulthood and qualifies Ranka for special Alterzelu Symbiote theming. A Captured or Substituted Ranka will earn this perk when Ai-kun fully matures.',
   },
   {
     uid: 'ckO71',
@@ -1022,7 +1022,7 @@ export const waifu_perks: WaifuPerk[] = [
     cost: 0,
     costT: 2,
     discount: 220,
-    desc: 'The Herrscher of Flamescion has reached the Cocoon of Finality and passed its test. This perk adds the Herrscher of Finality battlesuit to Kiana’s panoply, as well as ELF Kiana Kaslana as a familiar. Kiana (K423) will always have this perk if captured after her canonical ascension in chapter 35. This perk is unavailable to Sirin.',
+    desc: 'The Herrscher of Flamescion has reached the Cocoon of Finality and passed its test. This perk adds the Herrscher of Finality battlesuit to Kiana’s panoply, as well as ELF Kiana Kaslana as a personal familiar. Kiana (K423) will always have this perk if captured after her canonical ascension in chapter 35. This perk is unavailable to Sirin.',
   },
   {
     uid: 'jhiHF',
@@ -1486,7 +1486,7 @@ export const waifu_perks: WaifuPerk[] = [
     image: 'https://images2.imgbox.com/f8/cb/ChKFpQXH_o.png',
     tier: 7,
     cost: 50,
-    desc: 'Yae Sakura has purified the Black Box of Corruption and forged that core into the Divine Key it always was meant to be. Now able to wield the curse that once haunted her, she and her familiar Higokumaru can now unleash the deadly force that is the 12th Herrscher of the Previous Era.',
+    desc: 'Yae Sakura has purified the Black Box of Corruption and forged that core into the Divine Key it always was meant to be. Now able to wield the curse that once haunted her, she and her personal familiar Higokumaru can now unleash the deadly force that is the 12th Herrscher of the Previous Era.',
   },
   {
     uid: '1xKBz',
@@ -1596,7 +1596,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 7,
     image: 'https://images2.imgbox.com/44/f8/LRHATgYy_o.png',
     cost: 50,
-    desc: 'Sion is fused with the 13th Dead Apostle Ancestor, the Night of Wallachia aka TATARI. She has White Len as a familiar, if you don\'t already have a White Len via Aozaki Aoko, and qualifies for special Alterzelu Symbiote theming. ',
+    desc: 'Sion is fused with the 13th Dead Apostle Ancestor, the Night of Wallachia aka TATARI. She has White Len as a personal  familiar, if you don’t already have a White Len via Aozaki Aoko, and qualifies for special Alterzelu Symbiote theming.',
   },
   {
     uid: 'p57Pq',
@@ -1704,7 +1704,7 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     image: 'https://images2.imgbox.com/a8/5b/ry2aftug_o.png',
     cost: 500,
-    desc: 'Ishtar\'s familiar, Gugalanna. was the greatest of the Mesopotamian Divine Beasts. The bull the size of a mountain required Gilgamesh and Enkidu to work together to defeat it. Ordinarily. Gugalanna is only available for capture during the Snowfield Grail War, as the version of Ishtar at the Babylonian Singularity and Chaldea sheepishly admitted that she lost her pet - though she later manifested it as a diminutive mascot. This perk restores "Gugalanna Lily" to its full power, but does not raise Ishtar\'s tier. ',
+    desc: 'Ishtar’s personal familiar, Gugalanna, was the greatest of the Mesopotamian Divine Beasts. The bull the size of a mountain required Gilgamesh and Enkidu to work together to defeat it. Ordinarily, Gugalanna is only available for capture during the Snowfield Grail War, as the version of Ishtar at the Babylonian Singularity and Chaldea sheepishly admitted that she lost her pet - though she later manifested it as a diminutive mascot. This perk restores “Gugalanna Lily” to its full power, but does not raise Ishtar’s tier.',
   },
   {
     uid: 'mCUGw',
@@ -1942,7 +1942,7 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     image: 'https://i.imgur.com/xgs8Ohe.png?1',
     cost: 1000,
-    desc: 'Altrouge\'s or Mash\'s pet. known by the former as Primate Murder and the latter as just Fou, is no mere familiar, but the dormant form of Beast IV (Comparison). When either of its mistresses is purchased or captured, it will appear in its non-sapient, depowered form as their familiar; merely applying a binding will not bypass the purchase of this perk, even if you capture the real Primate Murder/Fou before it\'s depowered. This perk restores its intelligence and powers to their full potential and allows it to assume a humanoid form if desired. You may only have one Beast IV at a time, whether or not this perk is applied; if you have both Altrouge and Mash, they will both take care of it. This perk will not affect Altrouge\'s or Mash\'s own tier ratings.',
+    desc: 'Altrouge’s or Mash’s pet, known by the former as Primate Murder and the latter as just Fou, is no mere personal familiar, but the dormant form of Beast IV (Comparison). When either of its mistresses is purchased or captured, it will appear in its non-sapient, depowered form as their familiar; merely applying a binding will not bypass the purchase of this perk, even if you capture the real Primate Murder/Fou before it’s depowered. This perk restores its intelligence and powers to their full potential and allows it to assume a humanoid form if desired. You may only have one Beast IV at a time, whether or not this perk is applied; if you have both Altrouge and Mash, they will both take care of it. This perk will not affect Altrouge\'s or Mash\'s own tier ratings.',
   },
   {
     uid: 'vSSIq',
