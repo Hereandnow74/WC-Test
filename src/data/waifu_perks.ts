@@ -1763,6 +1763,21 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Sakura or Tsubone is instead the Lancer-class Pseudo- Servant Parvati, the Hindu goddess and wife of Shiva. If you purchase or capture the intended host first and apply this perk later, Parvati will keep her host’s memories and a blend of both host and Servant’s personalities, as if she had taken Substitute into her host’s life; if you purchase the host and this perk simultaneously, you will only get Parvati. This perk may not be applied to the same Sakura as Tainted Vessel, Kama Sammohana, Undivided, or Knight of the Cherry Blossom. You can only apply this perk to one of human Sakura, AI Sakura, or Tsubone at a time.',
   },
   {
+    uid: 'C6YyZ',
+    title: 'Kama Sammohana',
+    waifu: [
+      'Matou Sakura',
+    ],
+    from: 'Nasuverse',
+    waifuUID: [
+      9769,
+    ],
+    tier: 8,
+    image: 'https://images2.imgbox.com/e3/9a/3vVEhau3_o.png',
+    cost: 190,
+    desc: 'Sakura is instead the Assassin-class Pseudo-Servant Kama, the Hindu deity of love - originally male, but inhabiting Sakura’s female body and identifying with now-her host. If you purchase or capture Sakura first and apply this perk later, Kama will keep her host’s memories and a blend of both host and Servant’s personalities, as if she had taken Substitute into her host’s life; if you purchase the host and this perk simultaneously, you will only get Kama. This perk may not be applied to the same Sakura as Tainted Vessel, Undivided, Knight of the Cherry Blossom, or Kouhai of Light. If you already have any of those perks and want Kama, you may still purchase this, applied to a new Sakura, for 200 credits.',
+  },
+  {
     uid: 'Bat3e',
     title: 'Snow Fairy',
     waifu: [
