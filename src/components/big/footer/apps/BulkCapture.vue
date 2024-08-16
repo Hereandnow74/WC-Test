@@ -4,7 +4,7 @@
       Bulk capture calculator
     </h3>
     <p>
-      This calculator exist because of the 5% capture credits for T5+ 'extra' characters <router-link class="text-blue-300 underline" to="/#fivepercent">
+      This calculator exists because of the 5% capture credits for T5+ 'Extra' characters <router-link class="text-blue-300 underline" to="/#fivepercent">
         rule
       </router-link>
     </p>

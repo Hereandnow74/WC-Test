@@ -23,8 +23,8 @@
       :is-revealing="isRevealing"
     />
     <div class="flex gap-2 self-center items-center">
-      <Button label="Roll for 3c" size="Small" bg-color="bg-orange-400" @click="onePull" />
-      <Button v-if="orientation" label="10 pull for 30c" size="Small" bg-color="bg-purple-500" @click="tenPull" />
+      <Button label="Roll 1 for 3c" size="Small" bg-color="bg-orange-400" @click="onePull" />
+      <Button v-if="orientation" label="Roll 10 for 30c" size="Small" bg-color="bg-purple-500" @click="tenPull" />
       <bi:gear-fill class="icon-btn" @click="showSettings = true" />
     </div>
   </div>
