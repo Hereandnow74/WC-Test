@@ -39,7 +39,7 @@
         <li>Alternative versions of same characters. If the tier and personality is close to original - its a duplicate.</li>
         <li>Tier 1-2 characters with no tags, mediocre image or from relatively <b>unpopular</b> works.</li>
         <li>NSFW images that not NSFW in nature. NSFW means nudity in this case, not porn, porn, as well as images with sexual fluids are not accepted.</li>
-        <li>VTubers, except for those found in the Official Spreadsheet. By default, they are considered too close to real people.</li>
+        <li>VTubers, as they are considered too close to real people.</li>
         <li>Monsters or Generic beings without good image and some unique tags, as well as those from unpopular worlds/works.</li>
         <li>Non-standard symbols used in naming, such as è, õ, ü, etc are to be avoided.  </li>
       </ul>
