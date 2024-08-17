@@ -314,7 +314,7 @@ const originText = computed(() => {
 })
 
 async function finishBuild() {
-  const confirm = await confirmDialog('This action will lock all \'chargen\' perks and if you return any of your chosen perks/companions you will only receive 80% of their cost back.')
+  const confirm = await confirmDialog('You are exiting Chargen. This action will lock all \'Chargen Only\' perks. From this point on, if you attempt to return/refund any of your chosen perks/companions you will only receive 80% of their cost back.')
   if (confirm)
     flags.value.chargen = false
 }
@@ -327,7 +327,7 @@ async function publishBuildOnServer() {
 }
 
 async function returnToChargen() {
-  const confirm = await confirmDialog('This is Interactive only feature you can\'t return to character generation by the catalog rules.')
+  const confirm = await confirmDialog('Note this is an Interactive-only feature made for your convenience. By normal catalog rules, you can\'t return to the character generation (Chargen) phase.')
   if (confirm)
     flags.value.chargen = true
 }

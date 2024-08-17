@@ -2,19 +2,19 @@
   <Modal :label="`Report errors for ${character.name}`">
     <div class="p-2 flex flex-col gap-2 min-h-0 overflow-y-auto max-h-[85vh] max-w-screen-md">
       <h3 class="-mb-2 fonst font-semibold text-gray-600 dark:text-gray-400">
-        Toggle on what wrong with it:
+        Toggle for what is wrong with the entry:
       </h3>
       <div class="flex flex-wrap gap-2">
         <Toggle v-model="wrongTier" label="Tier" />
         <Toggle v-model="wrongTags" label="Tags" />
-        <Toggle v-model="isDuplicate" label="Is Duplicate" />
+        <Toggle v-model="isDuplicate" label="Is a Duplicate" />
         <Toggle v-model="wrongName" label="Name" />
         <Toggle v-model="wrongWorld" label="World" />
         <Toggle v-model="wrongImage" label="Image" />
       </div>
       <div v-if="wrongTier" class="flex flex-col gap-2">
         <Note v-if="character.tags.includes('C')" title="Official WC" type="error">
-          Only acceptable argument for characters with Official WC tag is - "tier was changed in official spreadsheet", if not send your arguments to SwiftRosenthal on QQ or Discord.
+          The only acceptable argument for characters with the Official WC tag is - "tier was changed in official spreadsheet", if not send your arguments to SwiftRosenthal on QQ or Discord.
         </Note>
         <div class="flex gap-2 justify-between">
           <div>Current tier: {{ character.tier }}</div>
@@ -28,14 +28,14 @@
         <TextArea
           v-model="args"
           rows="3"
-          placeholder="Arguments on why tier is incorrect, preferable with examples of similar characters from Official Catalog Spreadsheet (have tag Official WC). "
+          placeholder="Arguments on why tier is incorrect, preferably with examples/comparison of similar characters from the Official Catalog Spreadsheet (have Official WC tag). "
           :error-message="errors.args"
         />
       </div>
       <TagInput
         v-if="wrongTags"
         v-model="tags"
-        placeholder="Tags - press Enter to add"
+        placeholder="Tags - Press Enter to add"
         :error-message="errors.tags"
       />
       <div v-if="isDuplicate" class="flex flex-col gap-2">
@@ -49,7 +49,7 @@
           v-model="fixWorld"
           idd="worldSearch"
           :list="allWorlds"
-          placeholder="Correct World name"
+          placeholder="Correct World Name"
           label="World name"
           class="flex-grow"
           :error-message="errors.fixWorld"
@@ -57,7 +57,7 @@
         <div class="flex gap-2 items-center">
           <InputWithSearch
             v-model="fixSub"
-            placeholder="Correct Sub world name (optional)"
+            placeholder="Correct Sub-World Name (Optional)"
             idd="subSearch"
             :list="allSubs"
             label="Subcategory"

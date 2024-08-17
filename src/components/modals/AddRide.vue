@@ -89,7 +89,7 @@
         </div>
       </Foldable>
       <div v-if="serverSave" class="p-1 rounded border-2 border-red-500">
-        Adding rides to global are not in the current plans, you can still add them so if I change my mind your work won't be lost.
+        Adding rides to global is not in the current plans, you can still add them so if I change my mind your work won't be lost.
       </div>
       <div class="flex gap-2">
         <Checkbox v-model="localSave" label="Local save" />

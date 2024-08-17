@@ -32,7 +32,7 @@ const generating = ref(false)
 const isDone = ref(false)
 
 async function shareBuild() {
-  const confirm = await confirmDialog('This action will post your build globally and everyone would be able to see it, proceed?')
+  const confirm = await confirmDialog('This action will post your build globally and everyone will be able to see it, proceed?')
   if (confirm) {
     if (userNickname.value.length <= 2) return
     if (title.value.length <= 2) return
