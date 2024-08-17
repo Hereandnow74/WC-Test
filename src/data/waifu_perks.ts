@@ -2503,7 +2503,7 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     ],
     tier: 11,
     image: 'https://i.imgur.com/N2QaPHpl.jpg',
-    cost: 200,
+    discount: 200,
     costT: 2,
     desc: 'Instead of Benjamin Tennyson, it\'s Gwendolyn Tennyson that found the Omnitrix in that crater on that one faithful summer night. Not only is she now a witch of considerable talent and half Anodite to boot, but she\'s also now the heroine that saves the day. Possessing all of the aliens used by her cousin in an alternate timeline, Gwen now holds the key to might unimaginable, possessing the strongest weapon ever made in the universe. With an alien to transform into for every situation she might face, Gwen has under her fingertips all the power she might ever need to truly show and solidify herself as the superior cousin.',
     whitelist: [],
