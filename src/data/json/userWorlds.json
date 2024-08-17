@@ -909,13 +909,6 @@
     "uid": "xo01ZV"
   },
   {
-    "worldName": "Bloodborne",
-    "rating": 9,
-    "additional": "Body Defense will protect you from the beast plague and physical effect of insight while Mind Defense will protect you from it’s mental effects",
-    "image": "https://cdn.shazoo.ru/c1200x525/467982_MX4j1ndcp9_bloodborne.jpg",
-    "uid": "EmUGJJ"
-  },
-  {
     "worldName": "Until Dawn",
     "rating": 4,
     "additional": "Possession Defense will protect you from becoming a Wendigo",
@@ -4583,7 +4576,6 @@
     "image": "https://cdn.imgchest.com/files/345xckgjvp7.png",
     "uid": "sPvbTy"
   },
-  {"uid":"OWxTkr", "worldName":"Super Smash Bros.", "rating":4, "image":"https://i.kym-cdn.com/photos/images/original/000/198/582/8b0.jpg", "condition":[{"name":"World of Light/Ultimate", "rating":10, "official":true}, {"name":"Subspace Emissary/Brawl ", "rating":9, "official":false}]},
   {
     "worldName": "The Outer Worlds",
     "rating": 3,

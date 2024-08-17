@@ -483,13 +483,18 @@
     "worldName": "Starcraft",
     "condition": [
       {
-        "name": "pre-SC1, post-HotS",
+        "name": "Peacetime",
         "rating": 4,
         "official": true
       },
       {
-        "name": "During SC1, SC2",
+        "name": "Wartime",
         "rating": 6,
+        "official": true
+      },
+      {
+        "name": "Major Zerg Incursions (Tarsonis, Auir)",
+        "rating": 7,
         "official": true
       }
     ],
@@ -681,6 +686,29 @@
     ],
     "image": "https://cdn.imgchest.com/files/wye3cpjkoe4.png",
     "uid": "g7Je1"
+  },  
+  {
+    "rating":4,
+    "worldName":"Super Smash Bros.",
+    "condition": [
+      {
+        "name": "Standard",
+        "rating": 4,
+        "official": true
+      },
+      {
+        "name": "Subspace Emissary/Brawl",
+        "rating": 9,
+        "official": true
+      },
+      {
+        "name": "World of Light/Ultimate",
+        "rating": 10,
+        "official": true
+      }
+    ],
+    "image":"https://i.kym-cdn.com/photos/images/original/000/198/582/8b0.jpg",
+    "uid":"OWxTkr"
   },
   {
     "rating": 4,
@@ -967,18 +995,28 @@
     "uid": "7udhY"
   },
   {
-    "rating": 5,
+    "rating": 6,
     "worldName": "The Witcher",
     "image": "https://cdn.imgchest.com/files/3yrgckwlka4.png",
     "condition": [
       {
-        "name": "Toussaint, peaceful regions",
+        "name": "Toussaint, Peaceful regions",
         "rating": 5,
         "official": true
       },
       {
-        "name": "prewar Northern Kingdoms, TW3",
+        "name": "Pre-war Northern Kingdoms",
         "rating": 6,
+        "official": true
+      },
+      {
+        "name": "The Witcher 3",
+        "rating": 6,
+        "official": true
+      },
+      {
+        "name": "Conjunction of the Speheres",
+        "rating": 8,
         "official": true
       }
     ],
@@ -2180,7 +2218,12 @@
       },
       {
         "rating": 8,
-        "name": "End, post-timeskip Rebuild",
+        "name": "End of Evangelion",
+        "official": true
+      },
+      {
+        "rating": 8,
+        "name": "Rebuild (Post-Timeskip)",
         "official": true
       }
     ],
@@ -2595,13 +2638,35 @@
     "additional": "Anastacia of Astora and the Darkmoon Knightess allow you and your waifus to pay for level-ups with soul energy, just like their counterparts from the other games.",
     "condition": [
       {
-        "name": "Demon's Souls, Dark Souls 1-3",
+        "name": "Demon's Souls",
+        "rating": 9,
+        "official": true
+      },
+      {
+        "name": "Dark Souls 1",
+        "rating": 9,
+        "official": true
+      },
+      {
+        "name": "Dark Souls 2",
+        "rating": 9,
+        "official": true
+      },
+      {
+        "name": "Dark Souls 3",
         "rating": 9,
         "official": true
       }
     ],
     "image": "https://cdn.imgchest.com/files/w7w6cmg8pxy.png",
     "uid": "jmunw"
+  },
+  {
+    "worldName": "Bloodborne",
+    "rating": 9,
+    "additional": "Body Defense will protect you from the beast plague and physical effect of insight while Mind Defense will protect you from it’s mental effects",
+    "image": "https://cdn.shazoo.ru/c1200x525/467982_MX4j1ndcp9_bloodborne.jpg",
+    "uid": "EmUGJJ"
   },
   {
     "worldName": "Elden Ring",
@@ -2640,7 +2705,7 @@
         "official": true
       },
       {
-        "name": "New World (multiple active guilds)",
+        "name": "New World (Multiple active guilds)",
         "rating": 9,
         "official": true
       }
@@ -2977,15 +3042,18 @@
     "condition": [
       {
         "name": "Diablo 1",
-        "rating": 9
+        "rating": 9,
+        "official": true
       },
       {
         "name": "Diablo 2",
-        "rating": 9
+        "rating": 9,
+        "official": true
       },
       {
         "name": "Diablo 2.5",
-        "rating": 9
+        "rating": 9,
+        "official": true
       },
       {
         "name": "Diablo 3",
