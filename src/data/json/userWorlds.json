@@ -195,7 +195,7 @@
     "worldName": "Nanatsu No Taizai/Seven Deadly Sins",
     "image": "https://cdn.imgchest.com/files/myd5czx2r94.png",
     "rating": 7,
-    "additional": "Captured copies of Elizabeth and Meliodas(Excluding Holy War(Past)) will remain affected by their respective curses unless both stages of Destiny Defense are bought for them>",
+    "additional": "Captured copies of Elizabeth and Meliodas (Excluding their Holy War versions) will remain affected by their respective curses unless both stages of Destiny Defense are bought.",
     "condition": [
       {
         "name": "Start of Canon",
@@ -782,7 +782,7 @@
   {
     "worldName": "Digimon",
     "rating": 1,
-    "additional": "You can pay 5 points to have your Digimon gain human forms that they can freely transform to and back from",
+    "additional": "You may pay 5 credits to have your Digimon gain human forms that they can freely transform to and back from.",
     "condition": [
       {
         "name": "Adventure",
@@ -847,7 +847,7 @@
   {
     "worldName": "Psyren",
     "rating": 6,
-    "additional": "Walk in/Drop-in do not gain a power from psyren's atmosphere, Extras do but it is completely random strength.",
+    "additional": "Walk in/Drop-in's do not gain a power from psyren's atmosphere. Extra's do but it is completely random in strength.",
     "image": "https://i.imgur.com/tiqT2k6l.jpg",
     "uid": "vBucLx"
   },
@@ -870,7 +870,7 @@
   {
     "worldName": "Tenjou Tenge",
     "rating": 4,
-    "additional": "Possession Defense will protect you from Noriko Dragon Roar ability.\n\nInformation Defense will protect you from the Dragon Eyes prediction ability.",
+    "additional": "Possession Defense will protect you from Noriko's Dragon Roar ability while Trace Defense will protect you from the Dragon Eyes prediction ability.",
     "image": "https://cdn.imgchest.com/files/pyq9c5pqv54.png",
     "uid": "sw9X84"
   },
@@ -918,7 +918,7 @@
   {
     "worldName": "Yu-Gi-Oh!",
     "rating": 1,
-    "additional": "May purchase decks from catalog for 1 point. Summoning methods of later generations are not usable on duel disks of earlier generations. Psychic Dueling can be bought using local power template option.",
+    "additional": "Summoning methods of later generations are not usable on duel disks of earlier generations.",
     "condition": [
       {
         "name": "Ancient Egypt",
@@ -965,7 +965,6 @@
   {
     "worldName": "Command and Conquer",
     "rating": 4,
-    "additional": "Rating is variable by time period/Timeline.",
     "condition": [
       {
         "name": "Red Alert/2/Yuri's Revenge",
@@ -1270,7 +1269,6 @@
     "worldName": "Soul Eater",
     "rating": 5,
     "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/10/Soul-Eater-featured-image-Cropped-1.jpg",
-    "additional": "It is recommended that you purchase a madness nullifying or sanity protecting power/defense.",
     "uid": "rJ8ZPg"
   },
   {
@@ -1336,7 +1334,7 @@
     "uid": "ADZX3Z"
   },
   {
-    "worldName": "Guild Wars / Boundless",
+    "worldName": "Guild Wars/Boundless",
     "rating": 8,
     "image": "https://i.pinimg.com/736x/ca/dd/c8/caddc830e3de3af6364d455da35d1669.jpg",
     "additional": "All Techniques and Magic you learn inside the F.I.V.R. MMORPG 'Boundless' is real. Ingredients, Materials and other Items can be stored inside your Pocket Space/Inventory and will even be automatically supplied should you have a Warehouse District.",
@@ -1378,7 +1376,7 @@
     "worldName": "Danny Phantom",
     "image": "https://cdn.imgchest.com/files/wye3cpjnqq4.png",
     "rating": 5,
-    "additional": "All ghost beacome halfa's, being able to change between their new human half-human-half-ghsot form or their full ghost form",
+    "additional": "All captured ghosts beacome halfa's, able to freely change between their new human half-human-half-ghost form or their full ghost form.",
     "condition": [
       {
         "rating": 5,
@@ -1444,7 +1442,7 @@
     "worldName": "Phantasy Star Online",
     "rating": 7,
     "image": "https://i.imgur.com/8BA6IsKl.jpg",
-    "additional": "Photon Arts require Martial Talent, Soul Talent, Science Talent,and Engineering Talent.\nPartner Machines will be treated like familiars if you capture their owners or as Waifus in an AU.\nPets will be treated as familiars or as Waifus in an AU\nTo heal both Mirei Mikuna and Karen Erra when captured you need Drain Defense x2 and Body Defense x2.\nCapturing Lou also means capturing her other clones/replicas, the actual number of Lou models made is classified, but the number is known to exceed 905. All Lou's are connected through thought and can rely information to any model at anytime assuming no interference takes place.",
+    "additional": "Photon Arts require Martial Talent, Soul Talent, Science Talent, and Engineering Talent. Partner Machines will be treated like personal familiars if you capture their owners or as Waifus in an AU. Pets will be treated as personal familiars or as Waifus in an AU. To heal both Mirei Mikuna and Karen Erra when captured you need both instances of Drain Defense and Body Defense. Capturing Lou also means capturing her other clones/replicas, the actual number of Lou models made is classified, but the number is known to exceed 905. All Lou's are connected through thought and can rely information to any model at anytime assuming no interference takes place.",
     "condition": [
       {
         "name": "Phantasy Star Universe",
@@ -1515,7 +1513,7 @@
   {
     "worldName": "Arifureta: From Commonplace to World's Strongest",
     "rating": 6,
-    "additional": "All monster created or modificated by Ancient Magic mekes them into familiars",
+    "additional": "All monster created or modified by Ancient Magic makes them into either offspring or personal familiars.",
     "image": "https://cdn.imgchest.com/files/345xckg52x7.png",
     "uid": "Nzmt8N"
   },
@@ -1620,7 +1618,7 @@
     "worldName": "Terminator",
     "rating": 4,
     "image": "https://www.planocritico.com/wp-content/uploads/2015/06/O-Exterminador-do-Futuro-The-Terminator-EUA-1984.jpg",
-    "additional": "John Connor has a T-800 or Cameron as a familiar. Terminator Genisys Sarah Connor has a T-800 as a familiar.",
+    "additional": "John Connor has a T-800 or Cameron as a personal familiar. Terminator Genisys Sarah Connor has a T-800 as a personal familiar.",
     "condition": [
       {
         "name": "Terminator",
@@ -1756,7 +1754,7 @@
   {
     "worldName": "ARK: Survival Evolved",
     "rating": 3,
-    "additional": "All Fauna are capturable as familiars by the contractor or by companions.  They may be captured by in universe methods or by stamp or other company provided methods.",
+    "additional": "All Fauna are capturable as personal familiars by the contractor or his companions.",
     "condition": [
       {
         "name": "Arctic Biome",
@@ -1896,7 +1894,7 @@
     "worldName": "Code Vein",
     "rating": 7,
     "image": "https://image.api.playstation.com/vulcan/img/cfn/11307ddV-pWycIHQcqD63yAxAoKAJIqKmdhMTd0WH0a0NjzojY-mnKc0V3zz61d4PoTgncPqkHOSgwOs1ktRnVdO8_YETFWE.png",
-    "additional": "Mistles work as intended for those with both Soul Talent and Everlasting Talents, but can be corrupted and turn into \"Lost\" this can be resisted and/or prevented with enough \"Willpower/Mental-Fortitude\", or those with both the Curruption and Possession Defenses.\n\nThese only apply to those wishing to use Mistles for their intended purposes.",
+    "additional": "Mistles work as intended for those with both Soul Talent and Everlasting Talents, but can be corrupted and turn into \"Lost\". This can be resisted and/or prevented with enough \"Willpower/Mental-Fortitude\", or those with both the Corruption Defense and Possession Defense.",
     "condition": [
       {
         "rating": 9,
@@ -1954,7 +1952,7 @@
     "worldName": "Jackie Chan Adventures",
     "rating": 4,
     "image": "https://images-na.ssl-images-amazon.com/images/I/81huuaiNR8L._RI_.jpg",
-    "additional": "Shendu has all 12 talismans, and Tarakudo has all nine Oni Generals as familiars.",
+    "additional": "Shendu has all 12 talismans, and Tarakudo has all nine Oni Generals as personal familiars.",
     "uid": "BrDEGv"
   },
   {
@@ -2002,7 +2000,7 @@
   {
     "worldName": "Owari no Seraph",
     "rating": 5,
-    "additional": "Companion's Cursed Gear become a familiar when captured",
+    "additional": "Companion's Cursed Gear become a personal familiar when captured",
     "image": "https://cdn.imgchest.com/files/d7ogc8qze8y.png",
     "uid": "AyIvp6"
   },
@@ -2106,7 +2104,7 @@
     "worldName": "Mermaid Melody",
     "rating": 3,
     "image": "https://m.media-amazon.com/images/M/MV5BYTg1NDhhYjQtMGJlMC00ZmM3LWE4MzgtNjBjYTk2MTA1MTIxXkEyXkFqcGdeQXVyODI2MTU1ODE@._V1_.jpg",
-    "additional": "The mermaids are able to control their transformations when entering water rather than automatically turning into mermaids. Their pets serve as familiars.",
+    "additional": "The mermaids are able to control their transformations when entering water rather than automatically turning into mermaids. Their pets serve as personal familiars.",
     "uid": "vh2Xpp"
   },
   {
@@ -2221,7 +2219,7 @@
     "worldName": "Teen Wolf",
     "rating": 4,
     "image": "https://seriestvinfo.files.wordpress.com/2017/09/122.jpg",
-    "additional": "Were-Waifus/Husbandos are inmune to full moons when captured",
+    "additional": "Were-Waifus/Husbandos become immune to full moons after capture.",
     "uid": "umX6vu"
   },
   {
@@ -2273,7 +2271,7 @@
     "worldName": "Chaos Seeds",
     "rating": 5,
     "image": "https://cdn.imgchest.com/files/pyvdcbeqj2y.png",
-    "additional": "Due to the nature of The Land while the barrier is in place no gods can enter.\n\nDue to the nature of this universe when entering if you have any Talents at all you gain access to the gamer/litrpg system this reality uses.\n\nEldritch magic BAD.",
+    "additional": "Due to the nature of The Land, while the barrier is in place, no gods can enter. Entering this world automatically grants you access to it's gamer/litrpg system.",
     "condition": [
       {
         "name": "Earth start of age of Chaos",
@@ -2919,7 +2917,7 @@
   {
     "worldName": "Jagaaaaaan",
     "rating": 6,
-    "additional": "Fractured Human weaknesses are removed and they can now shift forms at will.<bg>Frenzied Frog and its variants are all considered Familiars.",
+    "additional": "Fractured Human weaknesses are removed and they can now shift forms at will. Frenzied Frog and its variants are all considered personal familiars.",
     "image": "https://cdn.imgchest.com/files/j7mmcwlxk27.png",
     "uid": "Wlwp97"
   },
@@ -2932,7 +2930,7 @@
   {
     "worldName": "Tales of Demons and Gods",
     "rating": 7,
-    "additional": "Non-humanoid familiars may be integrated as demon spirits. (Pokemon, Digimon, etc.)\nDemon Spirit integration counts as an independent control method.",
+    "additional": "Non-humanoid personal familiars may be integrated as demon spirits (Pokemon, Digimon, etc.). Demon Spirit integration counts as an independent control method.",
     "condition": [
       {
         "rating": 6,
@@ -3000,7 +2998,7 @@
     "worldName": "Mary skelter",
     "rating": 7,
     "image": "https://cdn.donmai.us/original/b7/43/__alice_mary_skelter_drawn_by_nanameda_kei__b743491dd64aea629efd318a59ba4463.jpg",
-    "additional": "If you can get a blood transfusion from a blood youth(T4) or a blood maiden(T5) you can be come one yourself. (Depending upon which blood you had transfused.)",
+    "additional": "A blood transfusion from a blood youth (T4) or a blood maiden (T5) will allow you to turn into either a youth or maiden yourself.",
     "uid": "l46f5W"
   },
   {
@@ -3246,7 +3244,7 @@
   {
     "worldName": "Twin Star Exorcists",
     "rating": 5,
-    "additional": "Resistance/Immunity to the Yin aura of Magano is granted by the Wyldscape Defense perk.",
+    "additional": "Protection from the Yin aura of Magano is granted by Wyldscape Defense.",
     "condition": [
       {
         "name": "Anime Timeline",
@@ -3306,7 +3304,7 @@
     "worldName": "Infinite Dendrogram",
     "rating": 2,
     "image": "https://cdn.donmai.us/sample/e1/c4/__nemesis_shu_starling_milianne_grandria_babylon_liliana_grandria_and_8_more_infinite_dendrogram__sample-e1c420079bd9c816659c6b7704fe6b11.jpg",
-    "additional": "All characters with profiles in Infinite Dendrogram will benefit from their toons’ statistics, skills, equipment, and Embryos.",
+    "additional": "All characters with profiles in Infinite Dendrogram will benefit from their avatar's statistics, skills, equipment, and Embryos.",
     "condition": [
       {
         "rating": 2,
@@ -3511,7 +3509,7 @@
   {
     "worldName": "Kabaneri of the Iron Fortress",
     "rating": 4,
-    "additional": "Polymorph Defense will prevent being turned into a Kabane",
+    "additional": "Polymorph Defense will protect you from being turned into a Kabane.",
     "image": "https://cdn.imgchest.com/files/j7kzceoll37.png",
     "uid": "EeFYwc"
   },
@@ -3647,7 +3645,7 @@
   {
     "worldName": "The World Ends With You",
     "rating": 5,
-    "additional": "Psychic Talent Allows you to use all Pins to their Maximum Effect in the RG like in the Reapers Game.If you have Fatality Defense you can still die to participate in the Reapers Game but you can't be erased in said Game",
+    "additional": "Psychic Talent allows one to use all Pins to their maximum effect in the RG like in the Reapers Game. If you have Fatality Defense you can still die to participate in the Reapers Game but you can't be erased in said game.",
     "condition": [
       {
         "name": "Real Ground",
@@ -3977,7 +3975,7 @@
     "worldName": "Kiseki/Trails",
     "rating": 5,
     "image": "https://external-preview.redd.it/W3se6bMcX4AQoBMASDNKDeFHPSBWspiYk6KfzxrvX-o.jpg?auto=webp&s=7e71afe25e59d6af78eb92f49c283b9153425f8b",
-    "additional": "Captured targets that are Awakeners will also automatically add their Divine Knights as familiars.",
+    "additional": "Captured targets that are Awakeners have their Divine Knights as personal familiars.",
     "condition": [
       {
         "name": "Erebonian Civil War",
@@ -4127,7 +4125,7 @@
     "worldName": "Demon Kings Town Planning! ~The Strongest Dungeon is a Modern City",
     "rating": 7,
     "image": "https://cdn.imgchest.com/files/345xckgjav7.png",
-    "additional": "Captured Demon Lords will have three named monsters/demons under his control as Familiars.",
+    "additional": "Captured Demon Lords will have the three named monsters/demons under their control as personal familiars.",
     "uid": "v3WlTY"
   },
   {
@@ -4632,7 +4630,7 @@
     "worldName": "Fringe",
     "rating": 4,
     "image": "https://cdn.imgchest.com/files/6yxkcjm9za7.png",
-    "additional": "Observers/Invaders upon capture will have their emotional faculties restored and their high intelligence won't deteriorate be like Michael, AKA The Child, AKA Anomaly XB-678646.",
+    "additional": "Observers/Invaders upon capture will have their emotional faculties restored and their high intelligence won't deteriorate like Michael, AKA The Child, AKA Anomaly XB-678646.",
     "condition": [
       {
         "name": "Blue Universe (Main Universe)",
@@ -4727,7 +4725,7 @@
   {
     "worldName": "The Incredibles",
     "rating": 3,
-    "additional": "Jack-Jack has full control of his powers. Purchased versions of him are aged to adulthood.",
+    "additional": "Jack-Jack has full control of his powers. Purchased versions of him are aged up to adulthood.",
     "image": "https://images7.alphacoders.com/566/thumb-1920-566562.jpg",
     "condition": [
       {
@@ -4854,7 +4852,7 @@
     "worldName": "Demon Lord, Retry!",
     "image": "https://cdn.imgchest.com/files/l7lxcgwopk7.png",
     "rating": 6,
-    "additional": "Entering this world allows Company Personnel and Contractors access to the Infinity Game leveling system which has a max level of 30 and allows you to trade skill points from killing enemies to acquire skills and items in exchange for said skill points.",
+    "additional": "Entering this world automatically gives access to the Infinity Game leveling system which by default has a max level of 30.",
     "uid": "rEULIa"
   },
   {
@@ -4916,7 +4914,7 @@
     "worldName": "Matrix",
     "rating": 4,
     "image": "https://cdn.imgchest.com/files/3yrgckwend4.png",
-    "additional": "All characters with profiles in the matrix will benefit from their matrix powers, skills, and equipment, and other factors. If have a Grand Manor, each purchased character has a matrix connecting chair and equipment in a workshop.",
+    "additional": "All characters with profiles in the matrix will benefit from their matrix powers, skills, and equipment, and other factors. If you have a Grand Manor, each purchased matrix-user will automatically recieve a matrix connecting chair and equipment in a workshop.",
     "uid": "Of6iUg"
   },
   {
@@ -5533,7 +5531,7 @@
     "worldName": "Black Rock Shooter",
     "rating": 7,
     "image": "https://cdn.donmai.us/original/46/9d/__black_rock_shooter_dead_master_strength_and_black_gold_saw_black_rock_shooter_drawn_by_iceky__469dd0d58cce3d5d285912902d4c3501.jpg",
-    "additional": "All humans have their Otherselves as familiars. If you already have the otherself when you buy their human counterpart, you’ll be refunded the appropriate familiars’ full costs.",
+    "additional": "All humans have their Otherselves as personal familiars. If you already have the otherself when you buy their human counterpart, you’ll be refunded the appropriate familiars’ full costs.",
     "condition": [
       {
         "rating": 6,
@@ -6106,7 +6104,7 @@
     "worldName": "How a Realist Hero Rebuilt the Kingdom",
     "rating": 4,
     "image": "https://wallpapercave.com/wp/wp9954430.jpg",
-    "additional": "You do not gain Magic of the land upon entry, it would require [Added Potential] as you did not come from the Ritual as a Hero.",
+    "additional": "The magic of this world is not obtained upon entry by default. It requires it's purchase through Added Potential, unless you arrive through the ritual used to summon a hero.",
     "condition": [
       {
         "rating": 2,
@@ -6238,7 +6236,6 @@
     "worldName": "Hybrid x Heart Magias Academy Ataraxia",
     "rating": 8,
     "image": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/169c6922669f253b862966c08d649584.jpe",
-    "additional": "[Added Potential] does not allow to break the gender-specific limitations, you would need [Template Stacking I/II] to do so.",
     "condition": [
       {
         "rating": 9,
@@ -6402,7 +6399,7 @@
     "worldName": "Shadow of the Colossus",
     "rating": 5,
     "image": "https://i.imgur.com/I7V8Rcml.jpg",
-    "additional": "You would need both [Corruption Defense] and [Drain Defense] to protect yourself from the Curse after slaying a Collossus.",
+    "additional": "Both Corruption Defense and Drain Defense are necessary to protect oneself from the Curse after slaying a Collossus.",
     "uid": "2nByDU"
   },
   {
@@ -6551,7 +6548,8 @@
     "uid": "qmeTPL",
     "worldName": "Ready Player One",
     "rating": 4,
-    "image": "https://ichef.bbci.co.uk/images/ic/1200x675/p0dcd5pr.jpg"
+    "image": "https://ichef.bbci.co.uk/images/ic/1200x675/p0dcd5pr.jpg",
+    "additional":"All characters with profiles in OASIS will benefit from their avatar's statistics, skills, equipment, and other factors. They may freely shift between the IRL and avatar's appearance."
   },
   {
     "uid": "HJGctg",
@@ -6570,7 +6568,6 @@
     "worldName": "My Next Life as a Villainess: All Routes Lead to Doom!",
     "rating": 3,
     "image": "https://images.fanart.tv/fanart/my-next-life-as-a-villainess-all-routes-lead-to-doom-617683c88f4a5.jpg",
-    "additional": "",
     "condition": [
       {
         "name": "On the Verge of Doom - Timeline",
