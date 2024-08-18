@@ -38,7 +38,7 @@ const appsList = [
   { icon: 'clarity:note-edit-line', name: 'Notes', component: 'Notes', color: '#e9d385' },
   { icon: 'bx:bx-calculator', name: 'Bulk Capture Calculator', component: 'BulkCapture', color: '#c1c1c1' },
   { icon: 'tabler:shopping-cart-discount', name: 'Discounts', component: 'Discounts', color: '#5a933d' },
-  { icon: 'emojione:kiss-mark', name: 'Companion / Familiar / Sell game', component: 'KissKillMarry', color: '#5a933d' },
+  { icon: 'emojione:kiss-mark', name: 'Companion / Follower / Sell game', component: 'KissKillMarry', color: '#5a933d' },
   { icon: 'noto-v1:wrapped-gift', name: 'Gacha', component: 'Gacha', color: '#5a933d' },
   { icon: 'fa-solid:dungeon', name: 'Dungeon', component: 'Dungeon', color: '#555555' },
   { icon: 'game-icons:alien-bug', name: 'Symbiote', component: 'Symbiote', color: 'rgb(112 17 212)' },
