@@ -1141,6 +1141,49 @@
     "uid": "YqKDD"
   },
   {
+    "worldName": "Command and Conquer",
+    "rating": 5,
+    "condition": [
+      {
+        "name": "World War II (RA1/Tiberium)",
+        "rating": 5,
+        "official": true
+      },
+      {
+        "name": "Tiberium: First Tiberium War (1998-2003)",
+        "rating": 6,
+        "official": true
+      },
+      {
+        "rating": 8,
+        "name": "Tiberium: Second Tiberium War (2030)",
+        "official": true
+      },
+      {
+        "rating": 8,
+        "name": "Tiberium: Firestorm Conflict (2031)",
+        "official": true
+      },
+      {
+        "rating": 9,
+        "name": "Tiberium: Third Tiberium War (2047)",
+        "official": true
+      },
+      {
+        "rating": 9,
+        "name": "Tiberium: Incursion War (2062-2073)",
+        "official": true
+      },
+      {
+        "rating": 9,
+        "name": "Tiberium: Fouth Tiberium War (2077)",
+        "official": true
+      }
+    ],
+    "image": "https://i.imgur.com/ZI8mfGAl.jpg",
+    "uid": "8V5d6O"
+  },
+  {
     "rating": 5,
     "worldName": "Babylon 5",
     "condition": [
