@@ -560,6 +560,9 @@ export const perks: PerkFull[] = []
 // <p>Neither your Pocket Apartment nor your vehicles granted by Catch-a-Ride or Heavenbuilt Proto can be affected by recalibration. If left behind in an old worldline when you recalibrate, the vehicles will bounce forward into the new one; if you have Life's a Beach, the vehicles may instead return to their parking/docking/landing site.</p>`,
 // })
 
+export const miscDesc = `Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen. Some of these perks may be partly or entirely redundant, depending on your choice of Origin.
+`
+
 perks.push({
   uid: 'ZVCai',
   title: 'Universal Calibration',
@@ -938,7 +941,7 @@ genericPerks.push({
   cost: 20,
   desc: `Dead or Alive, Neptunia, Utawarerumono, Hololive, and others have all had guest appearances on the high seas. This perk grants these characters their shipgirl riggings, allowing them to play by those rules instead and making them eligible for Bifurcation and Space Shipgirl below. If a collaboration shipgirl’s tier after step 1a is less than the following, it will be raised to that value.
 <ul class="list-disc list-inside">
-  <li>T4: 22, 33, Akizuki Ritsuko, Futami Ami, Futami Mami, Minato Aqua, Princess Hime, Homura/li>
+  <li>T4: 22, 33, Akizuki Ritsuko, Futami Ami, Futami Mami, Minato Aqua, Princess Hime, Homura</li>
   <li>T5: Marie Rose, Misaki, Miura Azusa, Namiko, Minami Yume, HDN Neptune, Noire, Blanc, Black Heart, White Heart, Kuon, Nekone, Rurutie, Uruuru, Saraana, Kizuna AI, Elegant Kizuna AI, Natsuiro Matsuri, Nakiri Ayame, Lila Decyrus, Kala Ideas, Ikaruga, Yuuyaki</li>
   <li>T6: Honoka, Kasumi, Nagisa, Nyotengu, Monica, Amami Haruka, Takarada Rikka, Shinjo Akane, Hass, Mujina, Vert, Purple Heart, Green Heart, Fumiruiru, Shirakami Fubuki, Murasaki Shion, Ookami Mio, Reisalin Stout, Klaudia Valentz, Serri Glaus, Luna, Asuka</li>
   <li>T7: Kisaragi Chihaya, Minase Iori, Asukagawa Chise, Anniversary Kizuna AI, Super Gamer Kizuna AI, Tokino Sora, Patricia Abelheim, Tamaki, The 2nd, Yumi, Fubuki (Senran Kagura)</li>

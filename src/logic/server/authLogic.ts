@@ -108,7 +108,7 @@ export async function _refreshTokens(SERVER_URL: string, API_VERSION: string): P
       if (response.status === 401) {
         user.value = {}
         tokens.value = {}
-        return 'Unauthorized'
+        return 'Unauthorized for some reason'
       }
       const errorText = await response.text()
       try {
@@ -129,8 +129,6 @@ export async function _refreshTokens(SERVER_URL: string, API_VERSION: string): P
 }
 
 export async function _logoutFromServer(SERVER_URL: string, API_VERSION: string, token: string): Promise<string> {
-  user.value = {}
-  tokens.value = {}
   try {
     if (token) {
       const apiUrl = `${SERVER_URL}/${API_VERSION}/auth/logout`
@@ -141,21 +139,17 @@ export async function _logoutFromServer(SERVER_URL: string, API_VERSION: string,
         },
         body: JSON.stringify({ refreshToken: tokens.value.refresh.token }),
       })
-
-      if (!response.ok) {
-        const errorText = await response.text()
-        return JSON.parse(errorText).message
-      }
-      else {
-        return 'Success'
-      }
     }
-    return 'No Token'
   }
   catch (error) {
+    user.value = {}
+    tokens.value = {}
     console.error(error)
     return 'Error'
   }
+  user.value = {}
+  tokens.value = {}
+  return 'Logged out'
 }
 
 export async function _resetPassword(SERVER_URL: string, API_VERSION: string, password: string, token: string): Promise<string> {

@@ -9,7 +9,7 @@
       </h3>
       <div class="flex flex-col gap-2 flex-grow min-h-0 overflow-y-auto scrollbar">
         <div v-for="_, i in rewards" :key="i" class="flex gap-2">
-          <Select v-model="types[i]" :disabled="!!missionSave" label="Type" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perk', 'Companion', 'Other']" />
+          <Select v-model="types[i]" :disabled="!!missionSave" label="Type" placeholder="Reward Type" :options="['Credits', 'IMG Tickets', 'Perk', 'Companion', 'Other']" />
           <template v-if="types[i] === 'Perk'">
             <div class="text-red-500 text-xs max-w-40">
               Perk rewards can be buggy, advised to use only for simple perks for now.

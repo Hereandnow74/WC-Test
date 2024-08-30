@@ -1,6 +1,6 @@
 <template>
   <div class="sm:p-2">
-    <Desc :desc="talentsDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
+    <Desc :desc="miscDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <div
       class="column-gap pb-8"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
@@ -41,7 +41,7 @@
 </template>
 
 <script lang='ts' setup>
-import { talentsDesc } from '~/data/talents'
+import { miscDesc } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import { choosePerk, miscAvailable } from '~/logic'
