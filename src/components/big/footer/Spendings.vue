@@ -75,7 +75,7 @@
       Profit from Selling: <span class="text-yellow-500">{{ companionProfitSold }}</span>
     </div>
     <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
-      Salary: monthly - <span class="text-yellow-500">10000$</span> bonus for captures
+      Monthly Salary: <span class="text-yellow-500">10000$</span> Bonus for captures:
       <span class="text-yellow-500">{{ companionTotalCredits * 100 }}$</span>
     </div>
   </div>

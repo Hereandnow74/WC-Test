@@ -4,9 +4,9 @@
     <div class="flex gap-2 self-center mt-2">
       <Button label="Roll" size="Small" bg-color="bg-orange-500" class="px-2" @click="getRandomCharFromServer" />
       <Checkbox v-model="onlyFemale" label="Only female" />
-      <NumberInput v-model="minTier" label="Tier" :min="1" :max="13" />
+      <NumberInput v-model="minTier" label="Tier Range:" :min="1" :max="13" />
       <NumberInput v-model="maxTier" :min="1" :max="13" />
-      <NumberInput v-model="likes" class="ml-2" label="Likes" :min="0" />
+      <NumberInput v-model="likes" class="ml-2" label="Minimum Likes:" :min="0" />
     </div>
   </div>
 </template>

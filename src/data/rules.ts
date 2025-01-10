@@ -14,7 +14,7 @@ export const startingWorld = `<h4 class="font-bold text-xl pt-4 pb-2">Your Start
 export const startingBudget = `
 <h4 class="font-bold text-xl pt-4 pb-2">Your Starting Budget</h4>
 <p>Now that you know your Intensity and the DR of your starting world, you can match the two on the chart below to find your starting budget. This budget is only granted once. Traveling to a new world, region, or time period will not grant you additional credits, not even the difference between the lower DR and the higher. The following chart shows the budget for each DR at each of the major Intensity intervals.</p>
-<p>Now that you know your budget, pick your Origin, one Binding-type control, and as many of the Lures, Other Controls, Perks, Companions, and Fаmiliars as you desire or can afford.</p>`
+<p>Now that you know your budget, pick your Origin, one Binding-type control, and as many of the Lures, Other Controls, Perks, Companions, and Followers as you desire or can afford.</p>`
 
 export const intensityTableTitles = ['Intensity', 'DR 1', 'DR 2', 'DR 3', 'DR 4', 'DR 5', 'DR 6', 'DR 7', 'DR 8', 'DR 9', 'DR 10']
 export const intensityTable = [
@@ -41,18 +41,21 @@ export const yourDevice = `
 
 export const glossary = `
 <h3 class="font-bold underline text-lg text-center">Glossary</h3>
-<div><b>Contractor</b>: You.</div>
-<div><b>Retainers, Subjects</b>: Any living thing you own.</div>
-<div><b>Companions</b>: Your waifus and/or husbandos, i.e. subjects that you intend to have intimate relations with.</div>
-<div><b>Fаmiliars</b>: Any subject that is not a companion..</div>
-<div><b>Retinue</b>: The group of you and all subjects.</div>
+<div><b>Contractor:</b> You.</div>
+<div><b>Retainers or Subjects:</b> Any living thing you own.</div>
+<div><b>Companions:</b> Your waifus and/or husbandos, i.e. subjects that you intend to have intimate relations with.</div>
+<div><b>Followers:</b> Any subject that is not a companion.</div>
+<div><b>Fаmiliars:</b> Typically non-humanoid, personal pets of your own or your subjects.</div>
+<div><b>Retinue:</b> The group of you and all subjects, including Familiars.</div>
+<div><b>Chargen:</b> Character Generation, your starting build.</div>
+<div><b>Dominion:</b> Any company-provided space, whether it comes from a Heritage, Catch-A-Ride, Strongholds & Sanctuaries, or some other source.</div>
 `
 
 export const captures = `<h3 class="font-bold text-xl pt-4 pb-2">Captures</h3>
 <p>Additional companions may be acquired by “capturing” them in their homeworlds. This is typically achieved by using a Binding or certain Other Controls, or when a target gives you a sincere love confession - usually romantic, but false positives occasionally happen and trigger a capture that isn’t entirely merited. This love may be assisted by any means, including the use of Lure-type controls or third-party mind control.</p>
 <p>Confessions must either be delivered in-person or by a two-way live feed of any sort. The target does not need to be aware that you received their confession at the time it was given, but a target with full awareness of their surroundings should be reasonably expected to know that you could. The exact wording of any confession varies greatly with the target’s personality and cultural context.</p>
 <p>When you capture a Tier 1-10 target, we’ll pay you a certain fraction of their purchase price of their effective tier at step 1a, rising with your Intensity and then rounded down to the next full credit. If, due to your retinue’s actions, their effective tier at step 3 is less than step 1a, we’ll use that value instead. Capture credits are not granted for local versions of targets that you’ve purchased or alternate versions that you’ve already captured once, unless they’re a unique entry in the lists proper or as a waifu perk. If a target is only listed as part of a group entry, you will only get the credits after capturing every member of the group.</p>
-<p>If you capture a character “early,” before they’ve achieved the potential reflected in the version available for purchase, you will still receive their full capture value. As compensation for the subject’s relative weakness, we at the company will download the missing abilities and a framework for the missing skills into your capture target at no charge. This framework will also guide the capture to any missing equipment or fаmiliars, but you must hunt those down, and provide the subject with the training needed to master their new power, on your own time.</p>
+<p>If you capture a character “early,” before they’ve achieved the potential reflected in the version available for purchase, you will still receive their full capture value. As compensation for the subject’s relative weakness, we at the company will download the missing abilities and a framework for the missing skills into your capture target at no charge. This framework will also guide the capture to any missing equipment or personal familiars, but you must hunt those down, and provide the subject with the training needed to master their new power, on your own time.</p>
 `
 
 export const captureExtra = `<h3 class="font-bold text-xl pt-4 pb-2">Capturing Eхtras</h3>
@@ -65,24 +68,25 @@ export const effectiveTiers = `<h3 class="font-bold">Effective Tiers</h3>
   <ul>
     <li><b>1.</b>  Companion’s unmodified tier. This is the number given in their Catalog entry.
       <ul class="pl-4">
-        <li><b>a.</b> Apply any waifu perks.</li>
+        <li><b>a.</b> Apply any Specific Waifu Perks.</li>
         <li><b>b.</b> Apply any permanent bonuses from Heritages.</li>
       </ul>
     </li>
-    <li><b>2.</b>  Account for cross-training (including the benefits from training with Talents), Added Potential, Template Stacking, and any sort of third-party augmentations (biological, cybernetic, spiritual, etc.). This step represents an individual’s state if they were suddenly freed from their contractor or otherwise not (or no longer) associated with the company… and also naked.</li>
+    <li><b>2.</b>  Account for cross-training (including the benefits from training with Talents), General Waifu Perks, and any sort of third-party augmentations (biological, cybernetic, spiritual, etc.). This step represents an individual’s state if they were suddenly freed from their contractor or otherwise not (or no longer) associated with the company… and also naked.</li>
     <li><b>3.</b>  Account for any special or empowering equipment that the individual has. This step represents the individual’s state if they were suddenly freed from their contractor or otherwise not (or no longer) associated with the company.</li>
     <li><b>4.</b>  Account for the direct effects of Binding-type controls.
       <ul class="pl-4">
-        <li><b>a.</b> Account for the ongoing effects of all other persistent catalog options: Lures, Demiplane/Dungeon access, Talents and Defenses, and Other Perks. This is the individual’s usual state within a contractor’s retinue.</li> 
+        <li><b>a.</b> Account for the ongoing effects of all other persistent catalog options: Lures, Demiplane access, Talents and Defenses, and Other Perks. This is the individual’s usual state within a contractor’s retinue.</li> 
       </ul>
     </li>
     <li><b>5.</b>  Apply any conditional or other temporary effects from Heritage perks, personal abilities or other sources.</li>
   </ul>
-  <p>Many individuals’ powers rely on henshin devices, fаmiliars, or special equipment that they can be easily separated from and reduced to, usually, only T1-T3. These items are accounted for in their listed tiers, but not included in their effective tier calculations until step 3.</p>`
+  <p>Many individuals’ powers rely on henshin devices, personal familiars, or special equipment that they can be easily separated from and reduced to, usually, only T1-T3. These items are accounted for in their listed tiers, but not included in their effective tier calculations until step 3.</p>`
 
-export const familiars = `<h3 class="font-bold text-xl pt-4 pb-2">Fаmiliars</h3>
-<p>Broadly speaking, a fаmiliar is any individual in your retinue that isn’t a member of your harem proper. This can include beloved pets, support staff, adopted children, people important to your harem that you aren’t interested in maintaining an emotional and sexual relationship with, or more traditional magical beasts such as Pokémon or magical girl mascots. Many purchasable companions are packaged with their fаmiliars and specified as such in the setting-specific rules; this is by no means a comprehensive list. Some fаmiliars named in the setting-specific rules are also present in the catalog listing as companions. If you capture a fаmiliar’s master first, you’ll get the fаmiliar too and receive the full value for both. Much like with humanoid captures, only the first copy of any type of generic magical or other beast is worth capture or sale credits.</p>
-<p>Fаmiliars can be captured using local fаmiliar bonding methods, such as rituals or Pokéballs, or Binding or Other controls like anyone else, and are not subject to the romantic or sexual interest that your Bindings instill in your companions. If a humanoid fаmiliar is bound to you by local methods, they will count as captured for all purposes. No special methods are needed to distinguish a companion binding from a fаmiliar binding; intent is enough. Companion and Fаmiliar statuses are not permanent and may be changed in the app at any time. This change will always be intentional.</p>
+export const familiars = `<h3 class="font-bold text-xl pt-4 pb-2">Followers and Fаmiliars</h3>
+<p>Broadly speaking, a Follower is any individual in your retinue that isn’t a member of your harem proper. This can include beloved pets, support staff, adopted children, people important to your harem that you aren’t interested in maintaining an emotional and sexual relationship with, or more traditional magical beasts such as Pokémon or magical girl mascots.</p>
+<p>Many purchasable companions are packaged with their personal familiars and specified as such in the setting-specific rules; this is by no means a comprehensive list. Some personal familiars named in the setting-specific rules are also present in the catalog listing as companions. If you capture a familiar’s master first, you’ll get the familiar too and receive the full value for both. Much like with humanoid captures, only the first copy of any type of generic magical or other beast is worth capture or sale credits.</p>
+<p>Followers and Familiars can be captured using local familiar bonding methods, such as rituals or Pokéballs, or Binding or Other controls like anyone else, and are not subject to the romantic or sexual interest that your Bindings instill in your companions. If a Follower or Familiar is bound to you by local methods, they will count as captured for all purposes. No special methods are needed to distinguish a companion binding from a Follower binding; intent is enough. Companion and Follower statuses are not permanent and may be changed in the app at any time. This change will always be intentional.</p>
 `
 
 export const device = `<h3 class="font-bold text-xl pt-4 pb-2">Your Contractor Smart Device</h3>
@@ -92,7 +96,7 @@ export const device = `<h3 class="font-bold text-xl pt-4 pb-2">Your Contractor S
 `
 
 export const purchases = `<h3 class="font-bold text-xl pt-4 pb-2">Extending Your Build: Purchases</h3>
-<p>The company’s Companions and Fаmiliars are all clones manufactured on demand, except where noted. They come packaged with their iconic outfits, personal equipment, and fаmiliars or treasured pets, when appropriate. The largest equipment normally allowed are motorcycles, but there are some rare exceptions. For your own ease of accounting, you may only purchase one copy of any distinct entry at a time.</p>
+<p>The company’s Companions and Followers are all clones manufactured on demand, except where noted. They come packaged with their iconic outfits, personal equipment, and familiars or treasured pets, when appropriate. The largest equipment normally allowed are motorcycles, but there are some rare exceptions. For your own ease of accounting, you may only purchase one copy of any distinct entry at a time.</p>
 <p>Most companions are sorted into ten tiers, each of which has a different cost</p>
 <p>All purchase prices are rounded up. Some Controls and Heritage perks include free copies of lesser perks, primarily Basic Talents and Defenses. These can ignore the normal prerequisites. If you’ve already purchased a perk before getting a free copy, you may take a discount on the new purchase equal to the free perk’s value. The total of all discounts applied to a single perk, unless it’s a Talent or Defense, is capped at -80% of the list price.</p>
 <p>No powers found in this catalog will directly impact a Contractor’s own mind without an explicit warning otherwise (such as in Memoria). The company is not responsible for any power’s indirect effects on a Contractor’s decision-making.</p>
@@ -102,7 +106,7 @@ If they have powers that rely on a background magical field, the connection to y
 `
 
 export const sales = `<h3 class="font-bold text-xl pt-4 pb-2">Extending Your Build: Sales</h3>
-<p>If you only wanted a capture for their credit value, you may ship them to us at the company. We’ll pay you a certain fraction of the purchase price of their effective tier at step 3, rising with your Intensity and then rounded down to the next full credit. This applies regardless of whether step 1a or step 3 has the higher value. Humanoid fаmiliars gained for free from an Origin choice will not count for capture credits, but may still be sold at the normal rate. As with captures, payouts for sales are not granted for local versions of targets that you’ve purchased or alternate versions that you’ve already sold once, unless they’re a unique entry in the lists proper or as a waifu perk. Extras have no additional sale value.</p>
+<p>If you only wanted a capture for their credit value, you may ship them to us at the company. We’ll pay you a certain fraction of the purchase price of their effective tier at step 3, rising with your Intensity and then rounded down to the next full credit. This applies regardless of whether step 1a or step 3 has the higher value. Personal familiars gained for free from an Origin choice will not count for capture credits, but may still be sold at the normal rate. As with captures, payouts for sales are not granted for local versions of targets that you’ve purchased or alternate versions that you’ve already sold once, unless they’re a unique entry in the lists proper or as a waifu perk. Extras have no additional sale value.</p>
 <p>Selling a subject only takes a single button press in the company app on your smart device. We’ll reprocess the captures and send them where they need to go. Otherwise, captures are yours to keep.</p>
 `
 
@@ -216,7 +220,7 @@ export const pvpRules = `
   `
 
 export const services = `<h3 class="font-bold text-xl pt-4 pb-2">Clientele</h3>
-<p>We the company do actually have regular clients. Clients use their own local currency or property to buy clones made from the companions and fаmiliars that Contractors pick up in their operations. These products are stamped with company tattoos keyed to their new owners. A Contractor encountering a Client and their purchase during the course of their operations is rare, but not unheard-of.</p>
+<p>We the company do actually have regular clients. Clients use their own local currency or property to buy clones made from the companions, followers, and familiars that Contractors pick up in their operations. These products are stamped with company tattoos keyed to their new owners. A Contractor encountering a Client and their purchase during the course of their operations is rare, but not unheard-of.</p>
 `
 
 export const salary = `<h3 class="font-bold text-xl pt-4 pb-2">Contractor Salary</h3>
@@ -326,7 +330,7 @@ export const arrangedSpecial = `<h3 class="font-bold text-xl pt-4 pb-2">Special 
 `
 
 export const rip = `<h3 class="font-bold text-xl pt-4 pb-2">R.I.P.</h3>
-<p>In the event of your death, your retinue will have three days (72 hours) to revive you before your account is terminated. During this period, your companions or Executor (if you have Only Familiars or a more restrictive intensity option) will gain the ability to interact with contractor-only functions on your smart device. This includes loans. The shopping app will additionally display a list of all potential subjects who could resurrect you, considering all relevant factors.</p>
+<p>In the event of your death, your retinue will have three days (72 hours) to revive you before your account is terminated. During this period, your companions or Executor (if you have Only Followers or a more restrictive intensity option) will gain the ability to interact with contractor-only functions on your smart device. This includes loans. The shopping app will additionally display a list of all potential subjects who could resurrect you, considering all relevant factors.</p>
 <p>If you have an automatic resurrection system in place at the time of your death, including an ability that automatically resurrects you from the dead or a retinue member with the ability to resurrect you from the dead, then this mode will not trigger until that automatic resurrection method fails. It is possible to rely on third party resurrection methods to delay the activation of this mode, assuming that you know enough about that third party method to reliably plan around it. If your resurrection method fails, then R.I.P. will trigger at that point. The ability for your waifu to buy a resurrection method on the shopping app does not count as an automatic resurrection method.</p>
 <p>If the local world has a “playable” afterlife, that interacts regularly with the mortal and other planes, this ruleset will not trigger until your soul body is destroyed. Additionally, treat your soul body as your regular body for the purposes of Drain and Fatality Defenses.</p>
 <p>When your account is terminated, all of your former subjects will be freed and all perks that rely on our backing deleted. This includes our apps on your Smart Device, any Bindings (including physical aspects of Bindings such as individual Tempest pieces), Lures and Other Controls, your demiplane, Talents, Defenses, and Other Perks. Any retinue member or purchased or registered Catch-a-Ride vehicle that is still inside your former demiplane will be ejected into the last world they, personally, visited, as the pocket dimension ceases to exist. Freed retinue members will retain every ability and benefit up to step 3 on the effective tier calculations.</p>
@@ -347,11 +351,26 @@ export const offspring = `<h3 class="font-bold text-xl pt-4 pb-2">Offspring</h3>
 <p class="break-all">If you are an <b>Outsider</b>:██████████████████████████████████████████████████████████████████████████████████████████████████████ ███████████████████████████████████████████████████████████████████████████████</p>
 `
 export const nasuDLC = `
-<h3 class="font-bold text-xl pt-4 pb-2">Pseudo-Servants and Other Alternates</h3>
-<p>The following pairs are mutually exclusive at chargen: Saint Kiara and Devil Kiara; Nero and Nero Alter; Medea and Medea Lily; Medusa and Gorgon. If you buy a Pseudo-Servant waifu perk at any time after you purchased or captured them, the Servant’s memories and personality will seamlessly integrate into the host’s, in much the same way as the Memoria perk or Extra and Substitute origins.</p>
-<p>Not mutually exclusive: Kama and BB with any Sakura and each other; Ereshkigal and Space Ishtar with any Rin and each other; Scáthach and Skadi; Carmilla and Elizabeth Bathory.</p>
+<h3 class="font-bold text-xl pt-4 pb-2">Kara no Kyoukai</h3>
+<p>Purchased copies of Kokutou Azaka will believe you to be her sibling and cannot be convinced otherwise. If you go to KnK and capture Shiki there, she will always be the basic Tier 7 version; this does not apply to the Saber-class guest-star at Chaldea.</p>
+<h3 class="font-bold text-xl pt-4 pb-2">Tsukihime/Melty Blood</h3>
+<p>Tohno Shiki has Len as a personal familiar. Aoko has White Len as a personal familiar. If you already have Len when you buy Shiki or White Len when you buy Aoko, you’ll be refunded the appropriate familiars’ full costs. Purchased and captured versions of Ciel are still immortal even without Roa’s presence.</p>
+<h3 class="font-bold text-xl pt-4 pb-2">Fate/Apocrypha</h3>
+<p>Body Tune-Up will cure Fiore’s paralysis without requiring her to lose her Magic Circuits.</p>
+<h3 class="font-bold text-xl pt-4 pb-2">Prisma Illya</h3>
+<p>Prisma Illya has the Saber (Artoria classic, but with Lily’s dress), Assassin (Hundred Faces), Berserker (Heracles), and Rider (Medusa) Class Cards. Miyu has the Saber (Artoria classic), Assassin (Serenity), Caster (Medea), and Lancer (Cú Chulainn classic) Class Cards. Angelica has her real body, Archer (Gilgamesh)’s Class Card, and a fully-stocked Gate of Babylon. She can use her version of Ea just as easily as the real Gilgamesh. Beatrice has Berserker (Magni)’s Class Card.</p>
+<p><b>Class Cards:</b> A sufficiently capable mage can produce more Class Cards with access to examples of the originals. If you have Mash Kyrielight with the Lord Camelot perk and at least one holder of Class Cards, unwanted Servants may appear as Class Cards instead. This also includes unwanted summons from other gacha titles; their class titles and card designs will reflect their home setting instead of the Nasuverse.</p>
+<h3 class="font-bold text-xl pt-4 pb-2">Fate/Extra</h3>
+<p>Rani VIII and the Extra version of Rin are both demi-Servants with Lu Bu and Cú Chulainn, respectively, as they were in Last Encore. If you already have Saint Kiara, the T10 Devil Kiara purchase may instead apply as a waifu perk, giving her the abilities of either her Devil or hypothetical Saver versions (one or the other) with no changes to her personality.</p>
+<h3 class="font-bold text-xl pt-4 pb-2">Fate/Grand Order</h3>
+<p>All Olympian gods, including Aphrodite, Artemis, and Demeter, can change to their machine forms and have their divine nanomachines.</p>
+<p>For the purposes of Exit Stage Left and Rainbow Bridge, each of Singularities 1-7, the Pseudo-Singularities, the Servant Universe, and the Lostbelts count as separate worlds, so that completing each one unlocks a new world through our systems. This also includes some other major events, such as GUDAGUDA, SE.RA.PH, Ooku, and Imaginary Scramble. The primary Fate/Grand Order world will count as completed at the end of the Observer on Timeless Temple or (if the contractor arrives afterward) Cosmos in the Lostbelt arcs.</p>
+<p>Capturing Olga Marie within Singularity F will convert that form into a new real body and allow her to Rayshift back to Chaldea normally.</p>
+<h3 class="font-bold text-xl pt-4 pb-2">Pseudo-Servants and Alternate Classes</h3>
+<p>If you buy a Pseudo-Servant waifu perk at any time after you purchased or captured them, the Servant’s memories and personality will seamlessly integrate into the host’s, in much the same way as the Memoria perk or Extra and Substitute origins.</p>
+<p>All Servants with Summer, Santa, or Halloween forms can use the associated skills and NPs at will. The same applies to same-person-different-loadouts situations such as Atalanta, Boudica, Da Vinci, Nero, Nobunaga, and Mysterious Heroine X Alter. Alter Servants and Lily Servants are treated as separate individuals from their standard adult selves, with the exception of Medusa Lancer Alter (to Medusa Rider). The same applies to Elizabeth Báthory from Carmilla and the two adult Artoria Sabers from the two Lancers. When copying a Servant’s power through Template Stacking, all qualifying alternate classes are included in the same template.</p>
 <h3 class="font-bold text-xl pt-4 pb-2">Command Seals</h3>
-<p>The following female characters count as valid Masters:
+<p>The following female characters count as valid Masters, without any need for waifu perks:
 <ul class="list-inside list-disc">
   <li>Fifth Grail War: Tohsaka Rin, Matou Rin, Dark Rin, Matou Sakura, Tohsaka Sakura, Dark Sakura, Beast Rin, Beast Sakura, mainline Illya, Luvia Edelfelt, Bazette, Caren, Kaleido Ruby, Kaleido Sapphire.</li>
   <li>Fourth Grail War: Sola-Ui, Irisviel.</li>
@@ -362,24 +381,22 @@ export const nasuDLC = `
   <li>Snowfield Grail War: Prelati, Tiné, Tsubaki.</li>
   <li>Tokyo Grail War: Ayaka, Manaka.</li>
   <li>London: Reines, Gray, Yvette, Hishiri.</li>
-  <li>Chaldea: Ritsuka, Yu, Ophelia</li>
+  <li>Chaldea: Ritsuka, Yu, Ophelia.</li>
   <li>Requiem: Erice.</li>
 </ul> 
 Pseudo-Servants and Demi-Servants are Servants, not Masters.</p>
-<h3 class="font-bold text-xl pt-4 pb-2">Alternate Classes and Outfits</h3>
-<p>All Servants with Summer, Santa, or Halloween forms can use the associated skills and NPs at will. The same applies to Atalanta’s, Boudica’s, Da Vinci’s, Nero’s, Nobunaga’s, and Mysterious Heroine X Alter’s alternate classes. Alter Servants and Lily Servants are treated as separate individuals from their standard adult selves, with the exception of Medusa Lancer Alter (to Medusa Rider). The same applies to Elizabeth Báthory and Carmilla, Medusa Rider and Gorgon, and the two adult Artoria Sabers from the two Lancers. When copying a Servant’s power through Template Stacking, all qualifying alternate classes are included in the same template.</p>
 <h3 class="font-bold text-xl pt-4 pb-2">Alter Egos</h3>
 <p>Purchasing Amaterasu gives you all of the Tamamo Nine as well: Caster Tamamo, Tamamo Cat, and seven others that have not yet appeared in canon. Tamamovich Koyanskya is not a true member. If you have already bought at least one of the Tamamo Nine at the time of purchasing Amaterasu, all credits that you paid for those nine will be refunded. If you instead capture Amaterasu, you will get any applicable refunds for purchased members of the Tamamo Nine and may purchase any missing ones for free. This is not automatic, in case you wish to capture the full set instead. Purchased or captured versions of any Tamamo will remain themselves as they grow more tails, not becoming Amaterasu even if they have a full set of nine.</p>
 <p>BB has lost her connection to Nyarlathotep. BB may instead spawn new copies of her Alter Egos if you do not already have them; any that she spawns will not count for capture or sale credits.</p>
 <h3 class="font-bold text-xl pt-4 pb-2">Servants</h3>
 <p>Captured Servants are no longer connected to the Throne of Heroes and will not affect their greater Heroic Spirits. All Servants exist in a quantum state where they are both fully incarnated and able to enter Spirit Form. Servants benefit from their homeland bonus in any version of their homeland, whether the past, their own time, the present, or the future. This does not include unrelated counterpart cultures and replaces the general background magical field rule. The body-modification suite is capable of changing Servants who have Golden Rule (Body), Divine Core of the Goddess, and other such skills.</p>
-<p><b>Saber</b>: Empyreal Eye overuse may cause Musashi to travel between worlds and eras on her own; if that happens and you have Rainbow Bridge, the portal room will connect to her new location as if it were intentional. She can learn to control this ability with practice. Artoria Saber (not Alter) has the souped-up Yamaha V-Max originally given to her in the Fourth Grail War. Artoria Saber (Alter) has Cavall the 2nd as a fаmiliar. Nero Claudius may access her Saber Venus form if you also have Altera. Okita’s summer cyborgization cured her tuberculosis in canon; it remains cured here even if she only uses her Saber abilities.</p>
-<p><b>Archer</b>: The true love condition for Tomoe Gozen’s NP is transferred to you. Artemis has the mascot version of Orion as a fаmiliar. Ishtar has Gugalanna Lily as a fаmiliar.</p>
-<p><b>Lancer</b>: Artoria Lancer (not Alter) benefits from Goddess Rhongomyniad’s added power; the two will be treated as the same person. Purchased versions of Gareth have the memories of her fairy self from Lostbelt 6, in addition to her PHH version.</p>
-<p><b>Rider</b>: Sakamoto Ryouma has Oryou as a humanoid fаmiliar; if you already have Oryou when you buy Ryouma, you’ll be refunded her full cost. Saint Martha has her dragon Tarrasque as a fаmiliar. Nero Alter has Beast VI, the Beast of the Sea, as a fаmiliar. This is a different Beast VI than the one Manaka can summon. Habetrot will not be harmed by touching advanced technology, including her Black Barrel; purchased versions of her will have her memories from both Pan-Human History and Lostbelt 6.</p>
-<p><b>Assassin</b>: Hundred Faces Hassan’s main body is the adult female one. Carmilla’s Femme Fatale (False) does not affect her feelings toward you. Shuten Douji and Ibuki Douji are separate beings. Ibuki may be brought forth if you involve yourself in the events of Lostbelt 5.5, but the two oni are otherwise purchased and captured separately. Tamamovich Koyanskaya’s Independent Manifestation is limited to one local multiverse at a time.</p>
-<p><b>Avenger</b>: Space Ishtar (Ishtar Astoreth) can split off Astoreth and Space Ishtar/Rin into their own bodies, at will, and re-combine with them on contact.</p>
-<p><b>Ruler</b>: The Morgan le Fay of Pan-Human History has three distinct selves: her human aspect, Morgan, and her fairy aspect, Viviane, alongside her aspect as the embodiment of Britain and inheritor of its Mystery, Morgan le Fay. She can split off Morgan and Viviane into their own bodies, at will, and re-combine with them on contact.</p>
-<p><b>Alter Ego</b>: Kingprotea can control her size, all the way down to regular human height or the smallest you’ve been since the start of your journey, whichever is smaller.</p>
-<p><b>Foreigner</b>: Katsushika Oui has Tokitarou as a fаmiliar; he’ll remain in the mental backseat while the two are fused.</p>
+<p><b>Saber:</b> Empyreal Eye overuse may cause Musashi to travel between worlds and eras on her own; if that happens and you have Rainbow Bridge, the portal room will connect to her new location as if it were intentional. She can learn to control this ability with practice. Artoria Saber (not Alter) has the souped-up Yamaha V-Max originally given to her in the Fourth Grail War. Artoria Saber (Alter) has Cavall the 2nd as a familiar. Nero Claudius may access her Saber Venus form if you also have Altera. Okita’s summer cyborgization cured her tuberculosis in canon; it remains cured here even if she only uses her Saber abilities.</p>
+<p><b>Archer:</b> If you have Tomoe Gozen as a companion, the true love condition for Oṃ Ālolik Svāhā is transferred to you. Artemis becomes erratic without an Orion to focus on, whether the teddy-bear version (as a familiar, at no extra cost), a contractor with Super Orion as an Origin, Super Orion as a fellow subject, or a contractor or fellow subject with Template Stacking (Super Orion). Any of those options will keep her stable. Ishtar has Gugalanna Lily as a personal familiar.</p>
+<p><b>Lancer:</b> Artoria Lancer (not Alter) benefits from Goddess Rhongomyniad’s added power; the two will be treated as the same person. Purchased versions of Gareth have the memories of her fairy self from Lostbelt 6, in addition to her PHH version. Valkyrie Squad B has identical abilities to Valkyrie Squad A, including both Lancer and Summer Assassin classes.</p>
+<p><b>Rider:</b> Sakamoto Ryouma has Oryou as a personal humanoid familiar; if you already have Oryou when you buy Ryouma, you’ll be refunded her full cost. Saint Martha has her dragon Tarrasque as a personal familiar. Nero Alter is a different Beast VI than the one Manaka can summon. Habetrot will not be harmed by touching advanced technology, including her Black Barrel; purchased versions of her will have her memories from both Pan-Human History and Lostbelt 6. Kyokutei Bakin has her eight dogs as personal familiars.</p>
+<p><b>Assassin:</b> Hundred Faces Hassan’s main body is the adult female one. Carmilla’s Femme Fatale (False) does not affect her feelings toward you. Shuten Douji and Ibuki Douji are separate beings. Ibuki may be brought forth if you involve yourself in the events of Lostbelt 5.5, but the two oni are otherwise purchased and captured separately. Tamamovich Koyanskaya’s Independent Manifestation is limited to one local multiverse at a time. Wu Zetian can switch between her youthful Assassin and mature Summer Caster bodies at any time.</p>
+<p><b>Avenger:</b> Space Ishtar (Ishtar Astoreth) can split off Astoreth and Space Ishtar/Rin into their own bodies, at will, and re-combine with them on contact.</p>
+<p><b>Ruler:</b> The Morgan le Fay of Pan-Human History has three distinct selves: her human aspect, Morgan, and her fairy aspect, Viviane, alongside her aspect as the embodiment of Britain and inheritor of its Mystery, Morgan le Fay. She can split off Morgan and Viviane into their own bodies, at will, and re-combine with them on contact.</p>
+<p><b>Alter Ego:</b> Kingprotea can control her size, all the way down to regular human height or the smallest you’ve been since the start of your journey, whichever is smaller.</p>
+<p><b>Foreigner:</b> Katsushika Oui has Tokitarou as a personal familiar; he’ll remain in the mental backseat while the two are fused.</p>
 `

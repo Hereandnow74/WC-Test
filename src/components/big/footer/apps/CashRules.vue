@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col gap-2 p-2 overflow-y-auto scrollbar min-h-0">
     <div v-if="csr || !flags.chargen || loan.owed || loan.gained" class="flex flex-col gap-2">
-      <div>You can take maximum <span class="text-blue-400">{{ creditLimit - loan.owed }}</span> credits loan.</div>
+      <div>You can take a loan of a maximum <span class="text-blue-400">{{ creditLimit - loan.owed }}</span> credits.</div>
       <div class="flex gap-2">
         <NumberInput
           v-model="loanAmount"
@@ -15,7 +15,7 @@
         <Button label="Take max loan" size="Small" @click="takeMaxLoan" />
       </div>
       <div v-if="flags.chargen" class="text-sm text-red-500">
-        Returning a loan in chargen stage is not advised and can cause bugs
+        Returning a loan in chargen stage is not advised and can cause bugs.
       </div>
       <div v-if="underLoan" class="flex gap-2">
         <NumberInput v-model="payAmount" label="Return amount" class="whitespace-nowrap" :min="1" :max="loan.owed" />
@@ -41,7 +41,7 @@
         </div>
       </div>
     </div>
-    <Desc v-else desc="To take a loan you need Cash Still Rules perk or end chargen phase." />
+    <Desc v-else desc="To take a loan you need to either take the Cash Still Rules intensity or exit the Chargen phase." />
   </div>
 </template>
 
@@ -74,7 +74,7 @@ function payLoan() {
   if (payAmount.value > 0 && budget.value >= payAmount.value) {
     fee.value += payAmount.value
     loan.value.owed -= payAmount.value
-    trHistory.value.push(`Paid for the loan ${payAmount.value} credits.`)
+    trHistory.value.push(`Paid ${payAmount.value} credits of the loan.`)
   }
 }
 

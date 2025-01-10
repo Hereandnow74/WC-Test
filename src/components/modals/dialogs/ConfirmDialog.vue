@@ -1,5 +1,5 @@
 <template>
-  <Modal v-if="showConfirm" label="Confirm ?" @click="cancel">
+  <Modal v-if="showConfirm" label="Confirm?" @click="cancel">
     <div class="text-lg p-2" v-html="dialogMessage">
     </div>
     <div class="flex justify-center gap-4 p-2">

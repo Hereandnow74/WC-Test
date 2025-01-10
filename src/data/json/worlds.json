@@ -2,6 +2,7 @@
   {
     "rating": 3,
     "worldName": "To Love-Ru",
+    "additional": "Memorze: Joined pairs of twins, such as Run and her brother Ren, are captured simultaneously. Their separation is a natural process and will occur in due time. It may also be accelerated using the body-modification suite.",
     "condition": [
       {
         "name": "Earth",
@@ -23,22 +24,22 @@
     "additional": "Purchased (not captured) trainers will have up to six of their most iconic and strongest mons from their canon appearances, bound to them as their trainer is to you. These and other mons that Pokemon trainers in your retinue (including yourself) acquire by any means are spirit familiars that cannot be killed, only knocked out. Pokemon familiars lose this protection if they’re released or traded away. Pokemon will always be familiars, not waifus or husbandos, unless you enter a deviant AU where they’re anthropomorphic enough to make pokephilia relatively mainstream.",
     "condition": [
       {
-        "name": "Games (not following canon)",
+        "name": "Games (Not following canon)",
         "rating": 1,
         "official": true
       },
       {
-        "name": "Anime (not following canon)",
+        "name": "Anime (Not following canon)",
         "rating": 2,
         "official": true
       },
       {
-        "name": "Anime (canon storyline)",
+        "name": "Anime (Canon storyline)",
         "rating": 4,
         "official": true
       },
       {
-        "name": "Games (canon storyline)",
+        "name": "Games (Canon storyline)",
         "rating": 4,
         "official": true
       },
@@ -48,8 +49,13 @@
         "official": true
       },
       {
-        "name": "Adventures/Special (manga)",
+        "name": "Adventures/Special (Manga)",
         "rating": 6,
+        "official": true
+      },
+      {
+        "name": "Pokédex-Accurate",
+        "rating": 10,
         "official": true
       }
     ],
@@ -326,7 +332,7 @@
         "official": true
       },
       {
-        "name": "House of the dragons",
+        "name": "House of the Dragon",
         "rating": 4
       }
     ],
@@ -361,7 +367,7 @@
     "rating": 3,
     "q": true,
     "worldName": "Ah! My Goddess",
-    "additional": "Waifus can manipulate any local universe’s operating system as if it were Yggdrasil or Nidhogg, with their same level of access rights. This isn’t always a good idea without protection.",
+    "additional": "Waifus from this setting can manipulate any local universe’s operating system as if it were Yggdrasil or Nidhogg, with their same level of access rights. This isn’t always a good idea without protection.",
     "image": "http://2.bp.blogspot.com/-5MvLE9dKNNM/UIDVcvQpHxI/AAAAAAAABJE/ocVw4H272cA/s1600/tumblr_mbozalOgvy1rndjkmo1_1280.jpg",
     "uid": "EYWVx"
   },
@@ -395,7 +401,7 @@
     "rating": 3,
     "q": true,
     "worldName": "Those Who Hunt Elves",
-    "additional": "Ritsuko has her cat-possessed tank Mihke as a familiar.",
+    "additional": "Ritsuko has her cat-possessed tank Mihke as a personal familiar.",
     "image": "https://cdn.imgchest.com/files/my8xclwrx64.png",
     "uid": "0lryD"
   },
@@ -404,7 +410,7 @@
     "image": "https://cdn.imgchest.com/files/345xckgozj7.png",
     "rating": 3,
     "q": true,
-    "additional": "D.Va has her personal mech. Ashe has B.O.B. as a familiar. Mei has Snowball as a familiar.",
+    "additional": "D.Va has her personal mech as a familiar. Ashe has B.O.B. as a personal familiar. Mei has Snowball as a personal familiar.",
     "condition": [
       {
         "name": "Omnic Crisis",
@@ -425,7 +431,7 @@
     "rating": 4,
     "worldName": "Avatar",
     "image": "https://cdn.imgchest.com/files/84apcdkml94.png",
-    "additional": "Avatars can give anyone the ability to bend, not just people who were already benders. The new bender’s element will always be the best match for their personality type. Korra has her polar bear dog Naga as a familiar.",
+    "additional": "Avatars can give anyone the ability to bend, not just people who were already benders. The new bender’s element will always be the best match for their personality type. Korra has her polar bear dog Naga as a personal familiar.",
     "condition": [
       {
         "name": "The Last Airbender",
@@ -444,7 +450,7 @@
     "rating": 3,
     "q": true,
     "worldName": "Cardcaptor Sakura",
-    "additional": "Sakura has a full deck of all 53 Sakura Cards, including the Hope, and Keroberos and Yue as familiars. Don’t worry about Tsubasa Reservoir Chronicle.",
+    "additional": "Sakura has a full deck of all 53 Sakura Cards, including the Hope, and Keroberos and Yue as personal familiars. Don’t worry about the events of Tsubasa Reservoir Chronicle if you don’t want to.",
     "condition": [
       {
         "name": "Pre Cards Captured",
@@ -477,13 +483,18 @@
     "worldName": "Starcraft",
     "condition": [
       {
-        "name": "pre-SC1, post-HotS",
+        "name": "Peacetime",
         "rating": 4,
         "official": true
       },
       {
-        "name": "During SC1, SC2",
+        "name": "Wartime",
         "rating": 6,
+        "official": true
+      },
+      {
+        "name": "Major Zerg Incursions (Tarsonis, Auir)",
+        "rating": 7,
         "official": true
       }
     ],
@@ -569,7 +580,30 @@
       }
     ]
   },
-  {"uid":"ltiymP", "worldName":"My Hero Academia", "rating":4, "image":"https://img3.gelbooru.com//samples/81/6b/sample_816ba9a2c61b8da5ee1f3e64c258b963.jpg", "additional":"Eri has full control of her powers. Purchased versions of her are aged to adulthood. Toru can toggle her invisibility on and off at will, and it will include anything she’s wearing within the effect. While she’s invisible, the rest of your retinue will see a ghostly outline around her.", "condition":[{"name":"Start of Canon", "rating":4, "official":true}, {"name":"Post-Retirement", "rating":5, "official":true}, {"name":"Pre-All Might", "rating":6, "official":true}]},
+  {
+    "rating":4,
+    "uid":"ltiymP", 
+    "worldName":"My Hero Academia", 
+    "additional":"Eri has full control of her powers. Purchased versions of her are aged to adulthood. Toru can toggle her invisibility on and off at will, and it will include anything she’s wearing within the effect. While she’s invisible, the rest of your retinue will see a ghostly outline around her.",
+    "image":"https://img3.gelbooru.com//samples/81/6b/sample_816ba9a2c61b8da5ee1f3e64c258b963.jpg", 
+    "condition":[
+      {
+        "name":"Start of Canon", 
+        "rating":4,
+        "official":true
+      }, 
+      {
+        "name":"Post-Retirement",
+        "rating":5,
+        "official":true
+      },
+      {
+        "name":"Pre-All Might",
+        "rating":6, 
+        "official":true
+      }
+    ]
+  },
   {
     "rating": 4,
     "worldName": "Mass Effect",
@@ -665,7 +699,7 @@
   {
     "rating": 4,
     "worldName": "A Song of Ice and Fire",
-    "additional": "Dragon riders have their dragons as familiars.",
+    "additional": "Dragon riders have their dragons as personal familiars.",
     "condition": [
       {
         "name": "Books continuity",
@@ -675,11 +709,34 @@
     ],
     "image": "https://cdn.imgchest.com/files/wye3cpjkoe4.png",
     "uid": "g7Je1"
+  },  
+  {
+    "rating":4,
+    "worldName":"Super Smash Bros.",
+    "condition": [
+      {
+        "name": "Standard",
+        "rating": 4,
+        "official": true
+      },
+      {
+        "name": "Subspace Emissary/Brawl",
+        "rating": 9,
+        "official": true
+      },
+      {
+        "name": "World of Light/Ultimate",
+        "rating": 10,
+        "official": true
+      }
+    ],
+    "image":"https://i.kym-cdn.com/photos/images/original/000/198/582/8b0.jpg",
+    "uid":"OWxTkr"
   },
   {
     "rating": 4,
     "worldName": "Log Horizon",
-    "additional": "All characters benefit from Elder Tale mechanics, tied to your Demiplane or Dungeon if you have one.",
+    "additional": "All characters benefit from Elder Tale mechanics, tied to your Stronghold or Sanctuary if you have one.",
     "condition": [
       {
         "name": "Akibahara",
@@ -871,7 +928,7 @@
     "rating": 4,
     "q": true,
     "worldName": "Magi: The Labyrinth of Magic",
-    "additional": "All characters who have Household Vessels have the djinn inside their vessel as a familiar.",
+    "additional": "All characters who have Household Vessels have the djinn inside their vessel as personal familiars.",
     "image": "https://cdn.imgchest.com/files/my2pc9xw9l7.png",
     "uid": "E0yd3"
   },
@@ -889,7 +946,7 @@
     "q": true,
     "rating": 4,
     "image": "https://www.pcworld.com/wp-content/uploads/2023/04/bioshock-collection.jpg",
-    "additional": "Elizabeth’s Tears are limited to the local multiverse surrounding wherever she happens to be at the time.",
+    "additional": "Elizabeth’s Tears are limited to dimensional travel/hopping of the local multiverse (should it exist) of whatever world she happens to be in.",
     "condition": [
       {
         "name": "Bioshock",
@@ -909,7 +966,7 @@
     "rating": 4,
     "q": true,
     "worldName": "Darkstalkers",
-    "additional": "If you purchase Morrigan, you get Lilith for free. If you already have Lilith when you purchase Morrigan, you’ll be refunded Lilith’s full cost.",
+    "additional": "Morrigan has Lilith as a personal humanoid familiar.",
     "image": "https://cdn.imgchest.com/files/l7lxcgwmg27.png",
     "uid": "2RGfO"
   },
@@ -917,7 +974,7 @@
     "rating": 4,
     "q": true,
     "worldName": "Grandia",
-    "additional": "Sue has Puffy as a familiar.",
+    "additional": "Sue has Puffy as a personal familiar.",
     "image": "https://cdn.imgchest.com/files/84jdcwrdwb4.png",
     "uid": "Esxce"
   },
@@ -925,7 +982,7 @@
     "rating": 4,
     "q": true,
     "worldName": "(SNK) The King of Fighters",
-    "additional": "Hotaru has Itokatsu as a familiar.",
+    "additional": "Hotaru has Itokatsu as a personal familiar.",
     "image": "https://cdn.atomix.vg/wp-content/uploads/2019/10/king-.jpg",
     "uid": "b8778"
   },
@@ -961,18 +1018,28 @@
     "uid": "7udhY"
   },
   {
-    "rating": 5,
+    "rating": 6,
     "worldName": "The Witcher",
     "image": "https://cdn.imgchest.com/files/3yrgckwlka4.png",
     "condition": [
       {
-        "name": "Toussaint, peaceful regions",
+        "name": "Toussaint, Peaceful regions",
         "rating": 5,
         "official": true
       },
       {
-        "name": "prewar Northern Kingdoms, TW3",
+        "name": "Pre-war Northern Kingdoms",
         "rating": 6,
+        "official": true
+      },
+      {
+        "name": "The Witcher 3",
+        "rating": 6,
+        "official": true
+      },
+      {
+        "name": "Conjunction of the Speheres",
+        "rating": 8,
         "official": true
       }
     ],
@@ -1072,6 +1139,54 @@
     ],
     "image": "https://cdn.imgchest.com/files/w7w6cmg8mjy.png",
     "uid": "YqKDD"
+  },
+  {
+    "worldName": "Command and Conquer",
+    "rating": 5,
+    "condition": [
+      {
+        "name": "World War II (RA1/Tiberium)",
+        "rating": 5,
+        "official": true
+      },
+      {
+        "name": "Tiberium: First Tiberium War (1998-2003)",
+        "rating": 6,
+        "official": true
+      },
+      {
+        "rating": 7,
+        "name": "Tiberium: Second Tiberium War (2030)",
+        "official": true
+      },
+      {
+        "rating": 7,
+        "name": "Tiberium: Firestorm Conflict (2031)",
+        "official": true
+      },
+      {
+        "rating": 8,
+        "name": "Tiberium: Third Tiberium War (2047)",
+        "official": true
+      },
+      {
+        "rating": 9,
+        "name": "Tiberium: Scrin Invasion (2047)",
+        "official": true
+      },
+      {
+        "rating": 9,
+        "name": "Tiberium: Incursion War (2062-2073)",
+        "official": true
+      },
+      {
+        "rating": 9,
+        "name": "Tiberium: Fouth Tiberium War (2077)",
+        "official": true
+      }
+    ],
+    "image": "https://i.imgur.com/ZI8mfGAl.jpg",
+    "uid": "8V5d6O"
   },
   {
     "rating": 5,
@@ -1263,7 +1378,7 @@
     "rating": 5,
     "worldName": "Fairy Tail",
     "image": "https://cdn.imgchest.com/files/l4necwj3bw4.png",
-    "additional": "Fatality Defense will protect against Mavis’s Curse of Contradiction. Purchased or captured Mavises will have their curses converted into a form of death magic under her complete control. This conversion will remain even after her master’s demise. Purchasing Irene gets you Heine & Juliet for free as her familiars. Kinana can assume her Cubellios form at will.",
+    "additional": "Fatality Defense will protect against Mavis’s Curse of Contradiction. Purchased or captured Mavises will have their curses converted into a form of death magic under her complete control. This conversion will remain even after her master’s demise. Purchasing Irene gets you Heine & Juliet for free as her personal familiars. Kinana can assume her Cubellios form at will. The Dragon Slayers have their Exceed companions as personal familiars.",
     "condition": [
       {
         "name": "Canon Start (X777 to Tenrou Arc)",
@@ -1353,7 +1468,7 @@
     "rating": 5,
     "q": true,
     "worldName": "Attack on Titan",
-    "additional": "Titan Shifting no longer limits a retinue member’s lifespan.",
+    "additional": "Everlasting Talent will remove the limit on a Titan Shifter’s lifespan.",
     "image": "https://image.winudf.com/v2/image1/Y29tLlNlcnBlbnRTYW5kcy5BdHRhY2tvblRpdGFuVGhlR2FtZV9zY3JlZW5fMF8xNTc2NTQ5NDM2XzA1Ng/screen-0.jpg?fakeurl=1&type=.jpg",
     "uid": "82aP4"
   },
@@ -1368,7 +1483,7 @@
   {
     "rating": 6,
     "worldName": "Re:Zero",
-    "additional": "Rem and Ram both have one horn. Frederica has her transformation crystal. Emilia has Puck as a familiar.",
+    "additional": "Rem and Ram both have one horn. Frederica has her transformation crystal. Emilia has Puck as a personal familiar.",
     "image": "https://cdn.imgchest.com/files/j7kzceor957.png",
     "uid": "jFrHY"
   },
@@ -1376,7 +1491,7 @@
     "worldName": "Castlevania",
     "rating": 5,
     "q": true,
-    "additional": "The Lecarde sisters are humans when first bought. Carmilla no longer suffers from her vampire weaknesses.",
+    "additional": "The Lecarde sisters are humans when first bought. Carmilla no longer suffers from her vampire weaknesses. Soma Cruz can absorb the souls of monsters from other worlds, identically to how he does to Dracula’s monsters. When copying his power through Template Stacking, the user will only start with the basics and have to fill a new soul library on their own.",
     "condition": [
       {
         "name": "2017 Show",
@@ -1399,7 +1514,7 @@
     "q": true,
     "worldName": "Golden Sun",
     "rating": 5,
-    "additional": "If you have any Adept in your retinue, a full set of the original 72 Djinn will appear in or near your path, allowing you and your waifus access to the game’s class system. Some sidequesting may be required. If you have Conjunction, retinue members within your network can access any combination of nine active (“Set”) Djinn that you’ve acquired. Djinn on standby or recovering from a summoning are on standby or recovery for everyone they’re connected to. Without Conjunction, this feature may still be accessed through certain Heritage perks such as the third stage of Philosopher’s Transmortality Engine.",
+    "additional": "If you have any Adept in your retinue, a full set of the original 72 Djinn will appear in or near your path, allowing you and your waifus access to the game’s class system. Some sidequesting may be required. If you have Conjunction, retinue members within your network can access any combination of nine active (“Set”) Djinn that you’ve acquired. Djinn on standby or recovering from a summoning are on standby or recovery for everyone they’re connected to. Without Conjunction, this feature may still be accessed through certain Heritage perks, such as Philosopher’s Transmortality Engine.",
     "condition": [
       {
         "name": "No Crisis",
@@ -1500,7 +1615,7 @@
         "rating": 10
       }
     ],
-    "additional": "Usagi has Luna as a humanoid familiar; if you bought Luna before Usagi, you’ll be refunded the moon cat’s full cost. The same applies to Minako and Artemis.",
+    "additional": "Usagi has Luna as a personal humanoid familiar; if you bought Luna before Usagi, you’ll be refunded the moon cat’s full cost. The same applies to Minako and Artemis.",
     "image": "https://cdn.imgchest.com/files/pyq9c5prbe4.png",
     "uid": "EyPLw"
   },
@@ -1565,7 +1680,7 @@
     "rating": 6,
     "worldName": "Naruto",
     "image": "https://cdn.imgchest.com/files/84jdcwrd2l4.png",
-    "additional": "The various jinchuuriki have their Tailed Beasts as familiars. Chakra is a form of ki, affected by Soul Talent, and usable by anyone. Clone techniques split the user’s internal energy pools evenly across the original body and all clones; Inexhaustible merely prevents these diminished pools from depleting. Stress Defense will protect against the drawbacks of mass clone-based training.",
+    "additional": "The various jinchuuriki have their Tailed Beasts as personal familiars. Chakra is a form of ki, affected by Soul Talent, and usable by anyone. Clone techniques split the user’s internal energy pools evenly across the original body and all clones; Inexhaustible merely prevents these diminished pools from depleting. Stress Defense will protect against the drawbacks of mass clone-based training.",
     "condition": [
       {
         "name": "Standard",
@@ -1612,7 +1727,7 @@
   {
     "rating": 6,
     "worldName": "Chainsaw Man",
-    "additional": "Devil Contractors have their devils as familiars.",
+    "additional": "Devil Contractors have their devils as personal familiars.",
     "condition": [
       {
         "name": "Earth",
@@ -1633,12 +1748,12 @@
     "worldName": "Borderlands",
     "condition": [
       {
-        "name": "Pandora (no active Vault)",
+        "name": "Vault currently closed",
         "rating": 6,
         "official": true
       },
       {
-        "name": "Pandora (active Vault)",
+        "name": "Vault currently open",
         "rating": 7,
         "official": true
       }
@@ -1649,6 +1764,7 @@
   {
     "rating": 6,
     "worldName": "Bleach",
+    "additional": "The default version of Giselle available for purchase is entirely female.",
     "image": "https://cdn.imgchest.com/files/k739cnolbr7.png",
     "condition": [
       {
@@ -1686,7 +1802,7 @@
     "rating": 6,
     "worldName": "League of Legends",
     "image": "https://cdn.imgchest.com/files/w7w6cmg86xy.png",
-    "additional": "Anivia and Rek'Sai can switch between humanoid and bestial forms.",
+    "additional": "Anivia and Rek’Sai can switch between humanoid and bestial forms.",
     "condition": [
       {
         "name": "Arcane",
@@ -1774,7 +1890,7 @@
     "rating": 6,
     "q": true,
     "worldName": "Re:Creators",
-    "additional": "Hikayu has her martial arts powerup. Meteora’s “Delusion” appearance is always available as a preset if you have at least Basic Runes, Art of Transformation, or Demiplane perks.",
+    "additional": "Hikayu has her martial arts powerup. Meteora’s “Delusion” appearance is always available as a preset if you have at least Basic Runes, Art of Transformation, or Sanctuary perks.",
     "image": "https://cdn.imgchest.com/files/345xckgogm7.png",
     "uid": "conR6"
   },
@@ -1783,7 +1899,7 @@
     "q": true,
     "worldName": "Genshin Impact",
     "image": "https://cdn.imgchest.com/files/84apcdkmkd4.png",
-    "additional": "Lumine (and Aether) has the T1 version of Paimon as a humanoid familiar. If you have both, they’ll share her.",
+    "additional": "Lumine (and Aether) has the T1 version of Paimon as a personal familiar. If you have both, they’ll share her. Raiden Shogun’s sword is her connection to Raiden Ei, so the Shroud can only capture Ei from outside her realm if Shogun is wielding the sword.",
     "condition": [
       {
         "name": "Canon/Game-Start",
@@ -1820,7 +1936,7 @@
     "rating": 6,
     "q": true,
     "worldName": "Okami",
-    "additional": "Princess Fuse has all eight Canine Warriors as familiars. They’re all regular dogs, not doggirl waifus. Demon Lord Ninetails is exactly what she presents herself as, not the elderly one-tailed male fox of canon.",
+    "additional": "Princess Fuse has all eight Canine Warriors as personal familiars. They’re all regular dogs by default, not kemonomimi. Demon Lord Ninetails is exactly what she presents herself as, not the elderly one-tailed male fox of canon.",
     "image": "https://cdn.imgchest.com/files/pyvdcbeleey.png",
     "uid": "qLO9L"
   },
@@ -1975,7 +2091,7 @@
   {
     "rating": 7,
     "worldName": "Inuyasha",
-    "additional": "Sango has Kirara as a familiar. Kikyou has up to eight soul collectors as familiars.",
+    "additional": "Sango has Kirara as a personal familiar. Kikyou has up to eight soul collectors as personal familiars.",
     "condition": [
       {
         "name": "Modern Japan",
@@ -2164,7 +2280,7 @@
   {
     "rating": 7,
     "worldName": "Evangelion",
-    "additional": "Everlasting Talent will override the the “Curse of EVA,” that halts pilots’ aging in Rebuild. All pilots can learn to manipulate their AT fields; this counts as a mystical art and is affected by Soul Talent and Advanced Template Stacking (Enlightened). Akagi Naoko may be captured posthumously by attacking MAGI instead; if so, she will be a set of triplet software AIs for whom separate bodies may be built to contain. Ikari Yui and Souryuu Kyoko Zeppelin have their full scientific knowledge, full control over their AT fields, and can transform into EVA-01 and -02, respectively. When transformed, their AT strengths are both on par with the stronger canon Angels. They can also manifest shipgirl-style avatars inside their cockpits, so you can ride them while you ride them. Original and Rebuild characters will recognize each other, if shared-timeline versions of themselves would have met.",
+    "additional": "Everlasting Talent will override the “Curse of EVA” that halts pilots’ aging in Rebuild. All pilots can learn to manipulate their AT fields; this counts as a mystical art and is affected by Soul Talent. Akagi Naoko may be captured posthumously by attacking MAGI instead; if so, she will be a set of triplet software AIs for whom separate bodies may be built to contain. Ikari Yui and Souryuu Kyoko Zeppelin have their full scientific knowledge, full control over their AT fields, and can transform into EVA-01 and -02, respectively. When transformed, their AT strengths are both on par with the stronger canon Angels. They can also manifest shipgirl-style avatars inside their cockpits, so you can ride them while you ride them. Original and Rebuild characters will recognize each other, if shared-timeline versions of themselves would have met.",
     "condition": [
       {
         "rating": 7,
@@ -2173,7 +2289,12 @@
       },
       {
         "rating": 8,
-        "name": "End, post-timeskip Rebuild",
+        "name": "End of Evangelion",
+        "official": true
+      },
+      {
+        "rating": 8,
+        "name": "Rebuild (Post-Timeskip)",
         "official": true
       }
     ],
@@ -2227,13 +2348,14 @@
         "rating": 10
       }
     ],
-    "additional": "Cortana will be plugged into your smart device. The Tier 5 version of her reflects her status at the end of the original trilogy. Body Tune-Up will give Spartans a functioning sex drive.",
+    "additional": "Cortana will be plugged into your smart device. The Tier 6 version of her reflects her status at the end of the original trilogy. Body Tune-Up will give Spartans a functioning sex drive.",
     "image": "https://cdn.imgchest.com/files/l7lxcgwmz57.png",
     "uid": "yZvEr"
   },
   {
     "rating": 8,
     "worldName": "Warframe",
+    "additional": "Individual Warframes’ abilities are purchasable via Template Stacking or Power Swap. These are treated as henshin forms for their bearers and count as unique expressions of a generic ability. Therefore, you may not use company means to acquire more than one set of Warframe abilities at a time for any given subject.",
     "condition": [
       {
         "name": "Vor's Prize(Game Start)",
@@ -2250,7 +2372,7 @@
   {
     "rating": 8,
     "worldName": "Symphogear",
-    "additional": "All Gear users have their Gears; all Alchemists have Faust Robes. Soul Talent will guarantee full Gear compatibility for all canon Candidates, including the ones normally reliant on LiNKER. Contractors and other retinue members need a compatible Origin or Added Potential. Elfnein has a fully-functional adult body. Purchased versions of Kanade and Serena are their alternate-timeline versions from XDU. Carol has all four of her Autoscorers as familiars.",
+    "additional": "All Gear users have their Gears; all Alchemists have Faust Robes. Soul Talent will guarantee full Gear compatibility for all canon Candidates, including the ones normally reliant on LiNKER. Contractors and other retinue members need a compatible Origin or Added Potential. Elfnein has a fully-functional adult body. Purchased versions of Kanade and Serena are their alternate-timeline versions from XDU. Carol has all four of her Autoscorers as personal humanoid familiars.",
     "condition": [
       {
         "name": "Anime",
@@ -2449,7 +2571,7 @@
   {
     "rating": 9,
     "worldName": "I'm a Spider, So What?",
-    "additional": "Visiting the setting or having any waifu from the work will give you access to its leveling systems. Fatality Defense will block the local leveling system’s negative effects on its users.",
+    "additional": "This setting has a globalized diegetic leveling system. Fatality Defense will block this system’s negative effects on its users.",
     "image": "https://cdn.imgchest.com/files/k739cnol8r7.png",
     "uid": "fm5gV"
   },
@@ -2472,7 +2594,7 @@
     "worldName": "Warhammer Fantasy",
     "rating": 6,
     "image": "https://i.imgur.com/rqmYEib.jpeg",
-    "additional": "The Lady and Lileath would be identical twins if not for their different races; if you have both, they’ll argue over which one is the older sister. Vampires no longer suffer from any of their weaknesses. Hellebron and Morathi are both young again. Khalida is alive and young again. Valkia is metaphysically separated from Khorne.",
+    "additional": "The Lady and Lileath would be identical twins if not for their different races; if you have both, they’ll argue over which one is the older sister. Storm of Chaos and End Times are mutually exclusive events; End Times is the post-retcon version. Vampires no longer suffer from any of their weaknesses. Hellebron and Morathi are both young again. Khalida is alive and young again. Valkia is metaphysically separated from Khorne.",
     "condition": [
       {
         "name": "No major crisis",
@@ -2584,16 +2706,38 @@
   {
     "rating": 9,
     "worldName": "Soulsborne",
-    "additional": "Anastacia of Astora and the Darkmoon Knightess allows you and your waifus to pay for level-ups with soul energy, just like their counterparts from the other games.",
+    "additional": "Anastacia of Astora and the Darkmoon Knightess allow you and your waifus to pay for level-ups with soul energy, just like their counterparts from the other games.",
     "condition": [
       {
-        "name": "Demon's Souls, Dark Souls 1-3",
+        "name": "Demon's Souls",
+        "rating": 9,
+        "official": true
+      },
+      {
+        "name": "Dark Souls 1",
+        "rating": 9,
+        "official": true
+      },
+      {
+        "name": "Dark Souls 2",
+        "rating": 9,
+        "official": true
+      },
+      {
+        "name": "Dark Souls 3",
         "rating": 9,
         "official": true
       }
     ],
     "image": "https://cdn.imgchest.com/files/w7w6cmg8pxy.png",
     "uid": "jmunw"
+  },
+  {
+    "worldName": "Bloodborne",
+    "rating": 9,
+    "additional": "Body Defense will protect you from the beast plague and physical effect of insight while Mind Defense will protect you from it’s mental effects",
+    "image": "https://cdn.shazoo.ru/c1200x525/467982_MX4j1ndcp9_bloodborne.jpg",
+    "uid": "EmUGJJ"
   },
   {
     "worldName": "Elden Ring",
@@ -2632,7 +2776,7 @@
         "official": true
       },
       {
-        "name": "New World (multiple active guilds)",
+        "name": "New World (Multiple active guilds)",
         "rating": 9,
         "official": true
       }
@@ -2928,7 +3072,7 @@
   {
     "rating": 10,
     "worldName": "(NIS) Disgaea",
-    "additional": "Visiting the setting or having any waifu from Disgaea will give you access to its leveling systems. Any system that relies on infrastructure will only be available once you have a home turf that it can be built into, whether that’s a local property, Ride, Demiplane, Dungeon, or Heritage-granted personal world. Note that good experience, by Disgaea standards, is extremely rare outside of Item Worlds or the Disgaea setting itself.",
+    "additional": "This setting has a globalized diegetic leveling system. Any subsystem that relies on infrastructure will only be available once you have a home turf that it can be built into, whether that’s a local property, Ride, or company space of any kind, including your Sanctuary or Stronghold. Note that good experience, by Disgaea standards, is extremely rare outside of Item Worlds or the Disgaea setting itself.",
     "condition": [
       {
         "rating": 6,
@@ -2969,15 +3113,18 @@
     "condition": [
       {
         "name": "Diablo 1",
-        "rating": 9
+        "rating": 9,
+        "official": true
       },
       {
         "name": "Diablo 2",
-        "rating": 9
+        "rating": 9,
+        "official": true
       },
       {
         "name": "Diablo 2.5",
-        "rating": 9
+        "rating": 9,
+        "official": true
       },
       {
         "name": "Diablo 3",
@@ -2995,10 +3142,28 @@
     "uid": "9NLvW"
   },
   {
+    "worldName": "Asura's Wrath",
+    "rating": 10,
+    "image": "https://i.imgur.com/mR4Xj9c.jpeg",
+    "condition": [
+      {
+        "rating": 9,
+        "name": "Era of Emperor Strada",
+        "official": true
+      },
+      {
+        "name": "Era of the Seven Deities",
+        "rating": 10,
+        "official": true
+      }
+    ],
+    "uid": "raYGfx"
+  },
+  {
     "rating": 10,
     "q": true,
     "worldName": "Gurren Lagann",
-    "additional": "Spiral Power is an infinite escalation engine by nature, but could never instantly achieve its full might. Retinue members who can use it may only escalate to match the highest effective tier in your retinue, or an opposing force that the Spiral user is engaged against, after step 5; this occurs during step 5. TXs such as Simon and Anti-Spiral Nia will obsolete this restriction. Spiral Power’s escalation lasts until the end of an active conflict stage or the user no longer feels hot-blooded, whichever happens first.",
+    "additional": "Spiral Power is an infinite escalation engine by nature, but could never instantly achieve its full might. Retinue members who can use it may only escalate to match the highest effective tier in your retinue, or an opposing force that the Spiral user is engaged against, after step 4a; this occurs during step 5. Imaginary Tiers such as Simon and Anti-Spiral Nia will obsolete this restriction. Spiral Power’s escalation lasts until the end of an active conflict stage or the user no longer feels hot-blooded, whichever happens first.",
     "image": "https://cdn.imgchest.com/files/345xckgodm7.png",
     "uid": "9cqff"
   },
@@ -3056,7 +3221,7 @@
     "worldName": "Azur Lane",
     "rating": 8,
     "q": true,
-    "additional": "All ships who have µ (idol) variants can swap to the alternative rigging in your Pocket Apartment. If you also have Apportation, they can change loadouts on the fly. When copying a shipgirl’s power through Template Stacking, µ (idol) variants must still be purchased individually.",
+    "additional": "All ships who have µ (idol) variants can swap to the alternative rigging in your Pocket Apartment. If you also have Apportation, they can change loadouts on the fly.",
     "image": "https://cdn.imgchest.com/files/k46aca56k87.png",
     "uid": "3zRYI"
   },

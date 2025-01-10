@@ -2,8 +2,8 @@
   <div class="flex flex-col p-2 gap-2 h-full">
     <div v-for="machine, i in machines" :key="i" class="">
       <div class="flex gap-2">
-        <NumberInput v-model="machine.dice" label="Dice" :min="6" />
-        <NumberInput v-model="machine.diceCount" label="Number of dices" class="whitespace-nowrap" />
+        <NumberInput v-model="machine.dice" label="Dice Sides" :min="6" />
+        <NumberInput v-model="machine.diceCount" label="Number of Dice" class="whitespace-nowrap" />
         <Button label="Toss" size="Small" bg-color="bg-amber-600" @click="toss(i)" />
         <Button label="Delete" size="Small" bg-color="ml-auto bg-red-600" @click="removeMachine(i)" />
       </div>

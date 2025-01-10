@@ -68,7 +68,7 @@ rides.push({
   size: 'Small',
   image: 'https://i.ibb.co/sC2QMMr/Molcar.jpg',
   cost: 5,
-  desc: 'half-vehicle half-guinea pig hybrid, very cute',
+  desc: 'Half-vehicle Half-guinea pig hybrid. Very cute.',
   capacity: '1 driver, 1 passenger',
 })
 
@@ -152,7 +152,7 @@ rides.push({
 rides.push({
   uid: 'NSNlf',
   title: 'Nautilus',
-  source: 'League of Extraordinary Gentlemen(Movie)',
+  source: 'League of Extraordinary Gentlemen (Movie)',
   category: 'Sea',
   size: 'Medium',
   image: 'https://i.ibb.co/2KNq6vH/Nautilus-Movie.jpg',
@@ -264,7 +264,7 @@ rides.push({
   image: 'https://i.ibb.co/6ncdTTv/Fahrenheit.jpg',
   cost: 50,
   desc: 'AAM launchers, laser cannons',
-  addons: [['Completed restoration - main cannons can fire more than twice without repairs, automated missile production that only requires feedstock', 20]],
+  addons: [['Completed Restoration - Main cannons can fire more than twice without repairs, automated missile production that only requires feedstock', 20]],
 })
 
 rides.push({
@@ -275,7 +275,7 @@ rides.push({
   size: 'Medium',
   image: 'https://i.ibb.co/m54N0Kh/Delphinus.jpg',
   cost: 75,
-  desc: 'Moonstone cannon',
+  desc: 'Has a Moonstone cannon',
   capacity: '>4 crew',
 })
 
@@ -287,7 +287,7 @@ rides.push({
   size: 'Small',
   image: 'https://i.ibb.co/tP34MMs/Epoch.jpg',
   cost: 100,
-  desc: 'time drive, little passenger space',
+  desc: 'Has a Time drive. Note small amount of passenger space.',
   capacity: '1 driver, 2 passengers',
 })
 
@@ -299,7 +299,7 @@ rides.push({
   size: 'Large',
   image: '',
   cost: 150,
-  desc: 'a floating fortress-city, warded by sorcery and capable of containing an entire army, as well as a port to be a mobile harbor.',
+  desc: 'A floating fortress-city, warded by sorcery and capable of containing an entire army, as well as a port to be a mobile harbor.',
   addons: [['Sorceress Cabin & Spire of Sorcery', 25], ['Monster Hold & Dragon Tower', 50], ['War Galley', 20]],
 })
 

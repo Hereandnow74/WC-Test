@@ -10,7 +10,7 @@
         </div>
       </h6> -->
       <div>
-        Time I spent on the Interactive Waifu Catalog so far -
+        Time I have spent on the Interactive Waifu Catalog so far -
         <span class="text-amber-500">more than a 1000</span> hours in
         <span class="text-amber-500">more than two years</span>.
       </div>

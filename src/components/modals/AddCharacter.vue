@@ -4,7 +4,7 @@
       <img ref="testImage" class="absolute h-[1px] w-[1px]" :src="image" alt="" @load="imageLoaded">
       <div class="flex flex-col p-2 gap-2 min-h-0 overflow-y-auto scrollbar">
         <Note type="warning" title="Rules">
-          Before adding characters to global - read <b>rules</b> first! If you think your character have <b>only a small chance</b> of passing, just keep it local.
+          Before adding characters to global - read the <b>rules</b> first! If you think your character has <b>only a small chance</b> of passing, just keep it as a local entry.
           <Button label="Rules" size="Small" bg-color="bg-red-500" @click="showRules = true" />
         </Note>
         <div class="flex gap-2">
@@ -37,7 +37,7 @@
           {{ imageErrorMessage }}
         </div>
         <div v-if="image_nsfw" class="text-orange-600 dark:text-orange-300 text-sm">
-          No pornographic images please, ideally image should have only submitted character without any extras.
+          No pornographic images please. Ideally an image should only have the submitted character without any extras.
         </div>
         <Input v-model="image_nsfw" placeholder="NSFW Image URL" :error-message="errors.image_nsfw" />
         <InputWithSearch
@@ -162,7 +162,7 @@ const zodObject = zod.object({
   tags: zod.string().max(24, { message: 'Max tag length is 24 chars' }).min(1, 'No empty tags').array().refine(tagsArr => difference(tagsArr, defTags).length <= 10, { message: 'Maximum 10 tags' }),
 })
 
-const zodGlobal = zodObject.extend({ nickname: zod.string().min(1, 'Nickname is required').max(32, 'Max length of nickname is 32 symbols') })
+const zodGlobal = zodObject.extend({ nickname: zod.string().min(1, 'Nickname is required').max(32, 'Maximum length of nickname is 32 symbols') })
 
 const zodSWP = zodGlobal.extend({ SWP: zod.string().min(1, 'SWP title is required').max(128, { message: 'Maximum length is 128 symbols' }) })
 
@@ -233,7 +233,7 @@ const addCharacter = handleSubmit((values) => {
       return
     }
     if (values.image.includes('wiki') && !tierConfirm.value) {
-      tierError.value = 'Do you really want to add a plain image from wiki? If yes click "Add" again'
+      tierError.value = 'Do you really want to add a plain image from a wiki? If yes click "Add" again'
       tierConfirm.value = true
       return
     }
@@ -250,7 +250,7 @@ const addCharacter = handleSubmit((values) => {
 
   if (serverSave.value) {
     if (props.editMode && props.character.tier !== values.tier) {
-      tierError.value = 'To change character tier you need to use Error Report function.'
+      tierError.value = 'To change a character\'s tier you need to use Error Report function.'
       return
     }
     values.uid = props.character.uid || random(10000000, 99999999)

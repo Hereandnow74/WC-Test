@@ -2,12 +2,12 @@
   <div class="flex flex-col gap-2 h-full p-2 scrollbar overflow-y-auto">
     <Desc
       class="p-0"
-      :desc="'If you think calculating Dragon Aura actual effect is too difficult, use this simple calculator! Just choose the target Aura Tier and see how much time would it take for them to be overcome with lust and come running into your hands.'"
+      :desc="'If you think calculating Dragon Aura\'s actual effect is too difficult, you can use this simple calculator. Just choose the target\'s Aura Tier and see how much time would it take for them to be overcome with lust and come running into your hands.'"
     />
     <div class="flex gap-1 flex-wrap">
-      <NumberInput v-model="auraTier" :min="4" :max="50" label="Target Aura Tier" class="whitespace-nowrap" />
-      <Variants v-model="timeOption" :list="['Minute', 'Hour', 'Day', 'Week']" theme="dark" label="Time spent" class="whitespace-nowrap ml-2" />
-      <NumberInput v-model="spentTime" :min="1" :max="9999" :label="`${timeOption}'s`" class="whitespace-nowrap" />
+      <NumberInput v-model="auraTier" :min="4" :max="50" label="Target Aura Tier:" class="whitespace-nowrap" />
+      <Variants v-model="timeOption" :list="['Minute', 'Hour', 'Day', 'Week']" theme="dark" label="Time spent:" class="whitespace-nowrap ml-2" />
+      <NumberInput v-model="spentTime" :min="1" :max="9999" :label="`${timeOption}'s:`" class="whitespace-nowrap" />
     </div>
 
     <Table :headers="['Time','%', 'Distance', 'Example']" :rows="auraData" class="text-sm font-semibold" />
